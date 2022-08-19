@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Types for Steel Design</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Welcome to RFEM Documentation">
+    
+    <link rel="preload" href="/assets/css/0.styles.04c79715.css" as="style"><link rel="preload" href="/assets/js/app.a4552659.js" as="script"><link rel="preload" href="/assets/js/2.1e498d66.js" as="script"><link rel="preload" href="/assets/js/40.8affe142.js" as="script"><link rel="prefetch" href="/assets/js/10.6763030a.js"><link rel="prefetch" href="/assets/js/11.eacc3d10.js"><link rel="prefetch" href="/assets/js/12.4f2b7301.js"><link rel="prefetch" href="/assets/js/13.d220ec25.js"><link rel="prefetch" href="/assets/js/14.7e10bd34.js"><link rel="prefetch" href="/assets/js/15.4505c809.js"><link rel="prefetch" href="/assets/js/16.1e48b262.js"><link rel="prefetch" href="/assets/js/17.74b5a3cb.js"><link rel="prefetch" href="/assets/js/18.8351237e.js"><link rel="prefetch" href="/assets/js/19.71275ae8.js"><link rel="prefetch" href="/assets/js/20.e4899167.js"><link rel="prefetch" href="/assets/js/21.c320014d.js"><link rel="prefetch" href="/assets/js/22.a98b3041.js"><link rel="prefetch" href="/assets/js/23.adde11a6.js"><link rel="prefetch" href="/assets/js/24.9d80516a.js"><link rel="prefetch" href="/assets/js/25.1ecad9ef.js"><link rel="prefetch" href="/assets/js/26.dcbf290f.js"><link rel="prefetch" href="/assets/js/27.25b1e94e.js"><link rel="prefetch" href="/assets/js/28.11bc408b.js"><link rel="prefetch" href="/assets/js/29.6ce17234.js"><link rel="prefetch" href="/assets/js/3.18fbabbe.js"><link rel="prefetch" href="/assets/js/30.d38f213b.js"><link rel="prefetch" href="/assets/js/31.ddce3bc5.js"><link rel="prefetch" href="/assets/js/32.2437db5c.js"><link rel="prefetch" href="/assets/js/33.d214885e.js"><link rel="prefetch" href="/assets/js/34.14619a36.js"><link rel="prefetch" href="/assets/js/35.d0687569.js"><link rel="prefetch" href="/assets/js/36.905495a3.js"><link rel="prefetch" href="/assets/js/37.e7edcef4.js"><link rel="prefetch" href="/assets/js/38.5a4af0d5.js"><link rel="prefetch" href="/assets/js/39.dee840d1.js"><link rel="prefetch" href="/assets/js/4.530e789b.js"><link rel="prefetch" href="/assets/js/41.812d395e.js"><link rel="prefetch" href="/assets/js/42.43d5107c.js"><link rel="prefetch" href="/assets/js/43.1bf57478.js"><link rel="prefetch" href="/assets/js/44.d47ae261.js"><link rel="prefetch" href="/assets/js/45.b4c51dfb.js"><link rel="prefetch" href="/assets/js/46.6e137450.js"><link rel="prefetch" href="/assets/js/5.1fe6bd0f.js"><link rel="prefetch" href="/assets/js/6.4186f08a.js"><link rel="prefetch" href="/assets/js/7.649c2163.js"><link rel="prefetch" href="/assets/js/8.dc09d5ea.js"><link rel="prefetch" href="/assets/js/9.e5c82c7a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.04c79715.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/dev_docs.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="User Guide" class="dropdown-title"><span class="title">User Guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="User Guide" class="mobile-dropdown-title"><span class="title">User Guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link router-link-active">
+  Quick Start
+</a></li><li class="dropdown-item"><!----> <a href="/guide/ready.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/guide/netintro.html" class="nav-link">
+  .NET
+</a></li><li class="dropdown-item"><!----> <a href="/guide/MD/AnalysisSettings.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/guide/tutorialintro.html" class="nav-link">
+  Tutorials
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.dlubal.com/en" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  About
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/Dlubal-Software/RFEM_Python_Client" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="User Guide" class="dropdown-title"><span class="title">User Guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="User Guide" class="mobile-dropdown-title"><span class="title">User Guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link router-link-active">
+  Quick Start
+</a></li><li class="dropdown-item"><!----> <a href="/guide/ready.html" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/guide/netintro.html" class="nav-link">
+  .NET
+</a></li><li class="dropdown-item"><!----> <a href="/guide/MD/AnalysisSettings.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/guide/tutorialintro.html" class="nav-link">
+  Tutorials
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.dlubal.com/en" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  About
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/Dlubal-Software/RFEM_Python_Client" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Quick Start 🏃‍♀️</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="sidebar-link">Before You Start</a></li><li><a href="/guide/getStarted.html" class="sidebar-link">Get Started</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Python HLF 🐍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/ready.html" class="sidebar-link">Your Journey with Python</a></li><li><a href="/guide/init.html" class="sidebar-link">Initialize Your Model</a></li><li><a href="/guide/RFEM.BasicObjects.html" class="sidebar-link">Basic Objects</a></li><li><a href="/guide/RFEM.ConcreteDesign.html" class="sidebar-link">Concrete Design</a></li><li><a href="/guide/RFEM.Imperfections.html" class="sidebar-link">Imperfections</a></li><li><a href="/guide/RFEM.LoadCasesAndCombinations.html" class="sidebar-link">Load Cases and Combinations</a></li><li><a href="/guide/RFEM.Loads.html" class="sidebar-link">Loads</a></li><li><a href="/guide/RFEM.SpecialObjects.html" class="sidebar-link">Special Objects</a></li><li><a href="/guide/RFEM.TypesforConcreteDesign.html" class="sidebar-link">Types for Concrete Design</a></li><li><a href="/guide/RFEM.TypesForLines.html" class="sidebar-link">Types for Lines</a></li><li><a href="/guide/RFEM.TypesForMembers.html" class="sidebar-link">Types for Members</a></li><li><a href="/guide/RFEM.TypesForNodes.html" class="sidebar-link">Types for Nodes</a></li><li><a href="/guide/RFEM.TypesForSolids.html" class="sidebar-link">Types for Solids</a></li><li><a href="/guide/RFEM.TypesForSpecialObjects.html" class="sidebar-link">Types for Special Objects</a></li><li><a href="/guide/RFEM.TypesForSteelDesign.html" aria-current="page" class="active sidebar-link">Types for Steel Design</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/RFEM.TypesForSteelDesign.html#steelboundaryconditions" class="sidebar-link">SteelBoundaryConditions</a></li><li class="sidebar-sub-header"><a href="/guide/RFEM.TypesForSteelDesign.html#steeleffectivelengths" class="sidebar-link">SteelEffectiveLengths</a></li><li class="sidebar-sub-header"><a href="/guide/RFEM.TypesForSteelDesign.html#steelmemberlocalsectionreduction" class="sidebar-link">SteelMemberLocalSectionReduction</a></li><li class="sidebar-sub-header"><a href="/guide/RFEM.TypesForSteelDesign.html#steelmemberrotationalrestraint" class="sidebar-link">SteelMemberRotationalRestraint</a></li><li class="sidebar-sub-header"><a href="/guide/RFEM.TypesForSteelDesign.html#steelmembershearpanel" class="sidebar-link">SteelMemberShearPanel</a></li></ul></li><li><a href="/guide/RFEM.TypesForSurfaces.html" class="sidebar-link">Types for Surfaces</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>.NET HLF</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/netintro.html" class="sidebar-link">.NET</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JavaScript Commands</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/MD/AnalysisSettings.html" class="sidebar-link">Analysis Settings</a></li><li><a href="/guide/MD/BasicObjects.html" class="sidebar-link">Basic Objects</a></li><li><a href="/guide/MD/GuideObjects.html" class="sidebar-link">Guide Objects</a></li><li><a href="/guide/MD/Loading.html" class="sidebar-link">Loading</a></li><li><a href="/guide/MD/Loads.html" class="sidebar-link">Loads</a></li><li><a href="/guide/MD/LoadWizards.html" class="sidebar-link">Load Wizards</a></li><li><a href="/guide/MD/SpecialObjects.html" class="sidebar-link">Special Objects</a></li><li><a href="/guide/MD/TypesForLines.html" class="sidebar-link">Types For Lines</a></li><li><a href="/guide/MD/TypesForMembers.html" class="sidebar-link">Types For Members</a></li><li><a href="/guide/MD/TypesForNodes.html" class="sidebar-link">Functions</a></li><li><a href="/guide/MD/TypesForSolids.html" class="sidebar-link">Types For Solids</a></li><li><a href="/guide/MD/TypesForSurfaces.html" class="sidebar-link">Types For Surfaces</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Tutorials</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/tutorialintro.html" class="sidebar-link">Tutorial Videos</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="types-for-steel-design"><a href="#types-for-steel-design" class="header-anchor">#</a> Types for Steel Design</h1> <p>Go to <em><a href="https://github.com/Dlubal-Software/RFEM_Python_Client/tree/main/RFEM/TypesForSteelDesign" target="_blank" rel="noopener noreferrer">[source]<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></em></p> <h2 id="steelboundaryconditions"><a href="#steelboundaryconditions" class="header-anchor">#</a> SteelBoundaryConditions</h2> <h3 id="steelboundaryconditions-no-user-defined-name-members-member-sets-intermediate-nodes-different-properties-supports-different-properties-hinges-nodal-supports-member-hinges-comment-params-model"><a href="#steelboundaryconditions-no-user-defined-name-members-member-sets-intermediate-nodes-different-properties-supports-different-properties-hinges-nodal-supports-member-hinges-comment-params-model" class="header-anchor">#</a> SteelBoundaryConditions(no, user_defined_name, members, member_sets, intermediate_nodes, different_properties_supports, different_properties_hinges, nodal_supports, member_hinges, comment, params, model)</h3> <ul><li><p><strong>Parameters</strong></p> <ul><li><p><strong>no</strong> (<em>int</em>) – Boundary Conditions Tag</p></li> <li><p><strong>user_defined_name</strong> (<em>str</em>) – User Defined Boundary Conditions Name</p></li> <li><p><strong>members</strong> (<em>str</em>) – Assigned Members</p></li> <li><p><strong>member_sets</strong> (<em>str</em>) – Assigned Member Sets</p></li> <li><p><strong>intermediate_nodes</strong> (<em>bool</em>) – Enable/Disable Intermediate Nodes Option</p></li> <li><p><strong>different_properties_supports</strong> (<em>bool</em>) – Different Properties Option for Supports</p></li> <li><p><strong>different_properties_hinges</strong> (<em>bool</em>) – Different Properties Option for Hinges</p></li> <li><p><strong>nodal_supports</strong> (<em>list of lists</em>) – Nodal Supports Table Definition</p> <blockquote><p>nodal_supports[i][0] (int)= Node Sequence No.<br>
+nodal_supports[i][1] (enum)= Support Type Enumeration<br>
+nodal_supports[i][2] (bool)= Support in X Direction Option<br>
+nodal_supports[i][3] (bool)= Support in Y Direction Option<br>
+nodal_supports[i][4] (bool)= Support in Z Direction Option<br>
+nodal_supports[i][5] (bool)= Restraint About X Option<br>
+nodal_supports[i][6] (bool)= Restraint About Y Option<br>
+nodal_supports[i][7] (bool)= Restraint About Z Option<br>
+nodal_supports[i][8] (bool)= Restraint Warping Option<br>
+nodal_supports[i][9] (float)= Rotation Magnitude<br>
+nodal_supports[i][10] (float)= Rotation About X Magnitude<br>
+nodal_supports[i][11] (float)= Rotation About Y Magnitude<br>
+nodal_supports[i][12] (float)= Rotation About Z Magnitude<br>
+nodal_supports[i][13] (float)= Support Spring X<br>
+nodal_supports[i][14] (float)= Support Spring Y<br>
+nodal_supports[i][15] (float)= Support Spring Z<br>
+nodal_supports[i][16] (float)= Restraint Spring About X Magnitude<br>
+nodal_supports[i][17] (float)= Restraint Spring About Y Magnitude<br>
+nodal_supports[i][18] (float)= Restraint Spring About Z Magnitude<br>
+nodal_supports[i][19] (float)= Restraint Spring Warping Magnitude<br>
+nodal_supports[i][20] (enum)= Eccentricity Type in Z Enumeration<br>
+nodal_supports[i][21] (float)= Eccentricity in X Magnitude<br>
+nodal_supports[i][22] (float)= Eccentricity in Y Magnitude<br>
+nodal_supports[i][23] (float)= Eccentricity in Z Magnitude<br>
+nodal_supports[i][24] (str)= Assigned Nodes</p></blockquote></li> <li><p><strong>member_hinges</strong> (<em>list of lists</em>) – Member Hinges Table Definition</p> <blockquote><p>member_hinges[i][0] = Node Sequence No.<br>
+member_hinges[i][1] = Release in X Option<br>
+member_hinges[i][2] = Release in Y Option<br>
+member_hinges[i][3] = Release in Z Option<br>
+member_hinges[i][4] = Release About X Option<br>
+member_hinges[i][5] = Release About Y Option<br>
+member_hinges[i][6] = Release About Z Option<br>
+member_hinges[i][7] = Release Warping Option<br>
+member_hinges[i][8] = Release Spring in X Magnitude<br>
+member_hinges[i][9] = Release Spring in Y Magnitude<br>
+member_hinges[i][10] = Release Spring in Z Magnitude<br>
+member_hinges[i][11] = Release Spring About X Magnitude<br>
+member_hinges[i][12] = Release Spring About Y Magnitude<br>
+member_hinges[i][13] = Release Spring About Z Magnitude<br>
+member_hinges[i][14] = Release Spring Warping Magnitude<br>
+member_hinges[i][15] = Assigned Nodes</p></blockquote></li> <li><p><strong>comment</strong> (<em>str</em>, <em>optional</em>) – Comment</p></li> <li><p><strong>params</strong> (<em>dict</em>, <em>optional</em>) – Any WS Parameter relevant to the object and its value in form of a dictionary</p></li> <li><p><strong>model</strong> (<em>RFEM Class, optional</em>) – Model to be edited</p></li></ul></li></ul> <h2 id="steeleffectivelengths"><a href="#steeleffectivelengths" class="header-anchor">#</a> SteelEffectiveLengths</h2> <h3 id="steeleffectivelengths-no-members-member-sets-flexural-buckling-about-y-flexural-buckling-about-z-torsional-buckling-lateral-torsional-buckling-principal-section-axes-geometric-section-axes-user-defined-name-nodal-supports-factors-intermediate-nodes-different-properties-factors-definition-absolute-import-from-stability-analysis-enabled-determination-of-mcr-comment-params-model"><a href="#steeleffectivelengths-no-members-member-sets-flexural-buckling-about-y-flexural-buckling-about-z-torsional-buckling-lateral-torsional-buckling-principal-section-axes-geometric-section-axes-user-defined-name-nodal-supports-factors-intermediate-nodes-different-properties-factors-definition-absolute-import-from-stability-analysis-enabled-determination-of-mcr-comment-params-model" class="header-anchor">#</a> SteelEffectiveLengths(no, members, member_sets, flexural_buckling_about_y, flexural_buckling_about_z, torsional_buckling, lateral_torsional_buckling, principal_section_axes, geometric_section_axes, user_defined_name, nodal_supports, factors, intermediate_nodes, different_properties, factors_definition_absolute, import_from_stability_analysis_enabled, determination_of_mcr, comment, params, model)</h3> <ul><li><p><strong>Parameters</strong></p> <ul><li><p><strong>no</strong> (<em>int</em>) – Steel Effective Length Tag</p></li> <li><p><strong>members</strong> (<em>str</em>) – Assigned Members</p></li> <li><p><strong>member_sets</strong> (<em>str</em>) – Assigned Member Sets</p></li> <li><p><strong>flexural_buckling_about_y</strong> (<em>bool</em>) – Flexural Buckling About Y Option</p></li> <li><p><strong>flexural_buckling_about_z</strong> (<em>bool</em>) – Flexural Buckling About Z Option</p></li> <li><p><strong>torsional_buckling</strong> (<em>bool</em>) – Torsional Buckling Option</p></li> <li><p><strong>lateral_torsional_buckling</strong> (<em>bool</em>) – Lateral Torsional Buckling Option</p></li> <li><p><strong>principal_section_axes</strong> (<em>bool</em>) – Principal Section Axes Option</p></li> <li><p><strong>geometric_section_axes</strong> (<em>bool</em>) – Geometric Section Axes Option</p></li> <li><p><strong>user_defined_name</strong> (<em>str</em>) – User Defined Effective Length Name</p></li> <li><p><strong>nodal_supports</strong> (<em>list of lists</em>) – Nodal Supports Table Definition</p> <blockquote><p>nodal_supports[i][0] (enum): Support Type Enumeration Type<br>
+nodal_supports[i][1] (bool): Support in Z Option<br>
+nodal_supports[i][2] (float): Support Spring in Y Coefficient<br>
+nodal_supports[i][3] (enum): Eccentricity Type Enumeration Type<br>
+nodal_supports[i][4] (float): Eccentricity in Z Direction<br>
+nodal_supports[i][5] (float): Restraint Spring About X Coefficient<br>
+nodal_supports[i][6] (float): Restraint Spring About Z Coefficient<br>
+nodal_supports[i][7] (float): Restraint Spring Warping Coefficient<br>
+nodal_supports[i][8] (enum): Support Type in Y Enumeration Type<br>
+nodal_supports[i][9] (enum): Restraint Type in X Enumeration Type<br>
+nodal_supports[i][10] (enum): Restraint Type in Z Enumeration Type<br>
+nodal_supports[i][11] (enum): Restraint Type Warping Enumeration Type<br>
+nodal_supports[i][12] (str): Assigned Nodes</p></blockquote></li> <li><p><strong>factors</strong> (<em>list of lists</em>) – Effective Length Factors</p> <blockquote><p>factors[i][0] (float): Flexural Buckling in U Coefficient<br>
+factors[i][1] (float): Flexural Buckling in V Coefficient<br>
+factors[i][2] (float): Flexural Buckling in Y Coefficient<br>
+factors[i][3] (float): Flexural Buckling in Z Coefficient<br>
+factors[i][4] (float): Torsional Buckling Coefficient<br>
+factors[i][5] (float): Lateral Torsional Buckling Coefficient<br>
+factors[i][6] (float): Lateral Torsional Buckling Top Coefficient<br>
+factors[i][7] (float): Lateral Torsional Buckling Bottom Coefficient<br>
+factors[i][8] (float): Twist Restraint Coefficient<br>
+factors[i][9] (float): Lateral Torsional Restraint Coefficient<br>
+factors[i][10] (float): Critical Moment</p></blockquote></li> <li><p><strong>intermediate_nodes</strong> (<em>bool</em>) – Intermediate Nodes Option</p></li> <li><p><strong>different_properties</strong> (<em>bool</em>) – Different Properties Option</p></li> <li><p><strong>factors_definition_absolute</strong> (<em>bool</em>) – Absolute Factors Definition Option</p></li> <li><p><strong>import_from_stability_analysis_enabled</strong> (<em>bool</em>) – Import From Stability Analysis Option</p></li> <li><p><strong>determination_of_mcr</strong> (<em>enum</em>) – Steel Effective Lengths Determination Mcr Europe Enumeration Item</p></li> <li><p><strong>comment</strong> (<em>str</em>, <em>optional</em>) – Comment</p></li> <li><p><strong>params</strong> (<em>dict</em>, <em>optional</em>) – Any WS Parameter relevant to the object and its value in form of a dictionary</p></li> <li><p><strong>model</strong> (<em>RFEM Class, optional</em>) – Model to be edited</p></li></ul></li></ul> <h2 id="steelmemberlocalsectionreduction"><a href="#steelmemberlocalsectionreduction" class="header-anchor">#</a> SteelMemberLocalSectionReduction</h2> <h3 id="steelmemberlocalsectionreduction-no-members-member-sets-components-user-defined-name-comment-params-model"><a href="#steelmemberlocalsectionreduction-no-members-member-sets-components-user-defined-name-comment-params-model" class="header-anchor">#</a> SteelMemberLocalSectionReduction(no, members, member_sets, components, user_defined_name, comment, params, model)</h3> <ul><li><p><strong>Parameters</strong></p> <ul><li><p><strong>no</strong> (<em>int</em>) – Member Local Section Reduction Tag</p></li> <li><p><strong>members</strong> (<em>str</em>) – Assigned Members</p></li> <li><p><strong>member_sets</strong> (<em>str</em>) – Assigned Member Sets</p></li> <li><p><strong>components</strong> (<em>list of lists</em>) – Components Table Definition</p> <blockquote><p>components[i][0] (enum): Steel Member Local Section Reduction Type Enumeration</p></blockquote> <blockquote><p>components[i][1] (float): Position Value</p></blockquote> <blockquote><p>components[i][2] (bool): Enable/Disable Multiple Option</p></blockquote> <blockquote><p>components[i][3] (enum): Fastener Definition Type Enumeration</p> <blockquote><ul><li>for components[i][3] == FastenerDefinitionType.DEFINITION_TYPE_ABSOLUTE:<br>
+components[i][4] (float): Reduction Area</li></ul></blockquote> <blockquote><ul><li>for components[i][3] == FastenerDefinitionType.DEFINITION_TYPE_RELATIVE:<br>
+components[i][4] (float): Reduction Area Factor (value must be between 0.0 and 1.0)</li></ul></blockquote></blockquote> <blockquote><p>if components[i][2] == True<br>
+components[i][5] (int): Multiple Number<br>
+components[i][6] (enum): Multiple Offset Definition Type Enumeration</p> <blockquote><ul><li>for MultipleOffsetDefinitionType.OFFSET_DEFINITION_TYPE_ABSOLUTE:<br>
+components[i][7] (float): Multiple Offset Value</li></ul></blockquote> <blockquote><ul><li>for MultipleOffsetDefinitionType.OFFSET_DEFINITION_TYPE_RELATIVE:<br>
+components[i][7] (float): Multiple Offset Value (value must be between 0.0 and 1.0)</li></ul></blockquote></blockquote></li> <li><p><strong>user_defined_name</strong> (<em>str</em>) – User Defined Local Section Reduction Name</p></li> <li><p><strong>comment</strong> (<em>str</em>, <em>optional</em>) – Comment</p></li> <li><p><strong>params</strong> (<em>dict</em>, <em>optional</em>) – Any WS Parameter relevant to the object and its value in form of a dictionary</p></li> <li><p><strong>model</strong> (<em>RFEM Class, optional</em>) – Model to be edited</p></li></ul></li></ul> <h2 id="steelmemberrotationalrestraint"><a href="#steelmemberrotationalrestraint" class="header-anchor">#</a> SteelMemberRotationalRestraint</h2> <h3 id="steelmemberrotationalrestraint-no-user-defined-name-definition-type-members-member-sets-categories-parameters-comment-params-model"><a href="#steelmemberrotationalrestraint-no-user-defined-name-definition-type-members-member-sets-categories-parameters-comment-params-model" class="header-anchor">#</a> SteelMemberRotationalRestraint(no, user_defined_name, definition_type, members, member_sets, categories, parameters, comment, params, model)</h3> <ul><li><p><strong>Parameters</strong></p> <ul><li><p><strong>no</strong> (<em>int</em>) – Steel Member Rotational Restraint Tag</p></li> <li><p><strong>user_defined_name</strong> (<em>list</em>) – User Defined Member Rotational Restraint Name</p> <blockquote><ul><li>for user_defined_name[0] == False:<br>
+pass</li></ul></blockquote> <blockquote><ul><li>for user_defined_name == True:<br>
+user_defined_name[1] = Defined Name</li></ul></blockquote></li> <li><p><strong>definition_type</strong> (<em>enum</em>) – Steel Member Rotational Restraint Type Enumeration</p></li> <li><p><strong>members</strong> (<em>str</em>) – Assigned Members</p></li> <li><p><strong>member_sets</strong> (<em>str</em>) – Assigned Member Sets</p></li> <li><p><strong>categories</strong> (<em>list</em>) – Categories List</p> <blockquote><ul><li>for definition_type = SteelMemberRotationalRestraintType.TYPE_CONTINUOUS:<br>
+categories[0] = Sheeting Material Name<br>
+categories[1] = Sheeting Name<br>
+categories[2] = Position of Sheeting<br>
+categories[3] = Continuous Beam Effect<br>
+categories[4] = Section Deformation Option</li></ul></blockquote> <blockquote><ul><li>for definition_type = SteelMemberRotationalRestraintType.TYPE_DISCRETE:<br>
+categories[0] = Section Material Name<br>
+categories[1] = Section Name<br>
+categories[2] = Rotational Stifness<br>
+categories[3] = Continuous Beam Effect<br>
+categories[4] = Section Deformation Option</li></ul></blockquote> <blockquote><ul><li>for definition_type = SteelMemberRotationalRestraintType.TYPE_MANUALLY:<br>
+categories = None</li></ul></blockquote></li> <li><p><strong>parameters</strong> (<em>list</em>) – Parameters List</p> <blockquote><ul><li>for definition_type = SteelMemberRotationalRestraintType.TYPE_CONTINUOUS:<br>
+parameters[0] = Modulus of Elasticity<br>
+parameters[1] = Sheeting Thickness<br>
+parameters[2] = Sheeting Moment of Inertia<br>
+parameters[3] = Sheeting Distance of Ribs<br>
+parameters[4] = Width of Sheeting Flanges<br>
+parameters[5] = Spring Stiffness<br>
+parameters[6] = Beam Spacing</li></ul></blockquote> <blockquote><ul><li>for definition_type = SteelMemberRotationalRestraintType.TYPE_DISCRETE:<br>
+parameters[0] = Modulus of Elasticity<br>
+parameters[1] = Section Moment of Inertia<br>
+parameters[2] = Purlin Spacing<br>
+parameters[3] = Beam Spacing</li></ul></blockquote> <blockquote><ul><li>for definition_type = SteelMemberRotationalRestraintType.TYPE_MANUALLY:<br>
+parameters[0] = Rotational Spring Stifness</li></ul></blockquote></li> <li><p><strong>comment</strong> (<em>str</em>, <em>optional</em>) – Comment</p></li> <li><p><strong>params</strong> (<em>dict</em>, <em>optional</em>) – Any WS Parameter relevant to the object and its value in form of a dictionary</p></li> <li><p><strong>model</strong> (<em>RFEM Class, optional</em>) – Model to be edited</p></li></ul></li></ul> <h2 id="steelmembershearpanel"><a href="#steelmembershearpanel" class="header-anchor">#</a> SteelMemberShearPanel</h2> <h3 id="steelmembershearpanel-no-user-defined-name-definition-type-members-member-sets-categories-parameters-comment-params"><a href="#steelmembershearpanel-no-user-defined-name-definition-type-members-member-sets-categories-parameters-comment-params" class="header-anchor">#</a> SteelMemberShearPanel(no, user_defined_name, definition_type, members, member_sets, categories, parameters, comment, params)</h3> <ul><li><p><strong>Parameters</strong></p> <ul><li><p><strong>no</strong> (<em>int</em>) – Steel Member Rotational Restraint Tag</p></li> <li><p><strong>user_defined_name</strong> (<em>list</em>) – User Defined Member Shear Panel Name</p> <blockquote><ul><li>for user_defined_name[0] == False:<br>
+pass</li></ul></blockquote> <blockquote><ul><li>for user_defined_name == True:<br>
+user_defined_name[1] = Defined Name</li></ul></blockquote></li> <li><p><strong>definition_type</strong> (<em>enum</em>) – Steel Member Shear Panel Definition Type Enumeration</p></li> <li><p><strong>members</strong> (<em>str</em>) – Assigned Members</p></li> <li><p><strong>member_sets</strong> (<em>str</em>) – Assigned Member Sets</p></li> <li><p><strong>categories</strong> (<em>list</em>) – Categories List</p> <blockquote><ul><li>for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_TRAPEZOIDAL_SHEETING:<br>
+categories[0] = Section Position Enumeration Type<br>
+categories[1] = Sheeting Name<br>
+categories[2] = Fastening Arrangment Enumeration Type</li></ul></blockquote> <blockquote><ul><li>for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_BRACING:<br>
+categories[0] = Section Position Enumeration Type<br>
+categories[1] = Diagonal Section Name<br>
+categories[2] = Post Section Name</li></ul></blockquote> <blockquote><ul><li>for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_TRAPEZOIDAL_SHEETING_AND_BRACING:<br>
+categories[0] = Section Position Enumeration Type<br>
+categories[1] = Sheeting Name<br>
+categories[2] = Digonal Section Name<br>
+categories[3] = Post Section Name<br>
+categories[4] = Fastening Arrangment Enumeration Type</li></ul></blockquote> <blockquote><ul><li>for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_DEFINE_S_PROV:<br>
+categories[0] = Section Position Enumeration Type</li></ul></blockquote></li> <li><p><strong>parameters</strong> (<em>list</em>) – Parameters List</p> <blockquote><ul><li>for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_TRAPEZOIDAL_SHEETING:<br>
+parameters[0] = Panel Length<br>
+parameters[1] = Beam Spacing<br>
+parameters[2] = K1 Coefficient<br>
+parameters[3] = K2 Coefficient</li></ul> <blockquote><ul><li>if categories[0] == &quot;POSITION_DEFINE&quot;:<br>
+parameters[4] = Position on Section Value</li></ul></blockquote></blockquote> <blockquote><ul><li>for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_BRACING:<br>
+parameters[0] = Panel Length<br>
+parameters[1] = Beam Spacing<br>
+parameters[2] = Post Spacing<br>
+parameters[3] = Number of Bracings<br>
+parameters[4] = Diagonals Section Area<br>
+parameters[5] = Post Section Area</li></ul> <blockquote><ul><li>if categories[0] == &quot;POSITION_DEFINE&quot;:<br>
+parameters[6] = Position on Section Value</li></ul></blockquote></blockquote> <blockquote><ul><li>for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_TRAPEZOIDAL_SHEETING_AND_BRACING:<br>
+parameters[0] = Panel Length<br>
+parameters[1] = Beam Spacing<br>
+parameters[2] = K1 Coefficient<br>
+parameters[3] = K2 Coefficient<br>
+parameters[4] = Post Spacing<br>
+parameters[5] = Number of Bracing<br>
+parameters[6] = Diagonals Section Area<br>
+parameters[7] = Post Section Area</li></ul> <blockquote><ul><li>if categories[0] == &quot;POSITION_DEFINE&quot;:<br>
+parameters[8] = Position on Section Value</li></ul></blockquote></blockquote> <blockquote><ul><li>for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_DEFINE_S_PROV:<br>
+parameters[0] = Stifness</li></ul> <blockquote><ul><li>if categories[0] == &quot;POSITION_DEFINE&quot;:<br>
+parameters[1] = Position on Section Value</li></ul></blockquote></blockquote></li> <li><p><strong>comment</strong> (<em>str</em>, <em>optional</em>) – Comment</p></li> <li><p><strong>params</strong> (<em>dict</em>, <em>optional</em>) – Any WS Parameter relevant to the object and its value in form of a dictionary</p></li></ul></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/RFEM.TypesForSpecialObjects.html" class="prev">
+        Types for Special Objects
+      </a></span> <span class="next"><a href="/guide/RFEM.TypesForSurfaces.html">
+        Types for Surfaces
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a4552659.js" defer></script><script src="/assets/js/2.1e498d66.js" defer></script><script src="/assets/js/40.8affe142.js" defer></script>
+  </body>
+</html>

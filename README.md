@@ -13,5 +13,4 @@ Dlubal Software GmbH
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Dlubal-Software/RFEM_Python_Client)
 ![image](https://img.shields.io/badge/coverage-87%25-green)
 
-## Description
-We are hosting our documentation files in this repository.
+

@@ -2,7 +2,10 @@ const { auto } = require("async");
 
 module.exports = {
     title: 'RFEM Documentation',
+    theme: "@vuepress/theme-blog",
     base: "/",
+    plugins: [
+    ],
     themeConfig: {
         logo: '/images/dev_docs.png',
         nav: [

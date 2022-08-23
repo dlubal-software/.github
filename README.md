@@ -14,3 +14,6 @@ Dlubal Software GmbH
 ![image](https://img.shields.io/badge/coverage-87%25-green)
 
 
+### .github Repository
+  
+We are hosting our documentation files in this repository.

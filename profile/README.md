@@ -1,8 +1,11 @@
 # Dlubal Software GmbH
 
-<p align="center">
-<img src="https://github.com/Dlubal-Software/RFEM_Python_Client/blob/main/img/logo.png"  width="180" height="180">
-</p>
+<div align="center">
+
+[<img src="/profile/img/logo.png" width="180" height="180">](https://www.dlubal.com/en)
+
+</div>
+
 
 [![image](https://img.shields.io/twitter/follow/dlubal_en?style=social)](https://twitter.com/dlubal_en "Twitter Follow")
 [![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/dlubal-software/)

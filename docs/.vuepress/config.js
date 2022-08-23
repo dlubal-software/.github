@@ -1,9 +1,8 @@
 const { auto } = require("async");
 
 module.exports = {
-    title: '',
-    description: 'Welcome to RFEM Documentation',
-    base: "/.github/",
+    title: 'RFEM Documentation',
+    base: "/",
     themeConfig: {
         logo: '/images/dev_docs.png',
         nav: [

@@ -1,8 +1,7 @@
-const { auto } = require("async");
+// const { auto } = require("async");
 
 module.exports = {
     title: 'RFEM Documentation',
-    theme: "@vuepress/theme-blog",
     base: "/",
     plugins: [
     ],

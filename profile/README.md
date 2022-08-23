@@ -1,7 +1,7 @@
 # Dlubal Software GmbH
 
 <p align="center">
-<img src="img/logo.png"  width="180" height="180">
+<img src="https://github.com/Dlubal-Software/RFEM_Python_Client/blob/main/img/logo.png"  width="180" height="180">
 </p>
 
 [![image](https://img.shields.io/twitter/follow/dlubal_en?style=social)](https://twitter.com/dlubal_en "Twitter Follow")

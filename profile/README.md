@@ -25,7 +25,7 @@ We are also publishing open source libraries which we have used for development 
 # Documentation
 
 
-[![image](https://img.shields.io/badge/docs-API-darkblue?logo=read-the-docs&amp;logoColor=white)](https://dlubal-software.github.io/RFEM_Python_Client/ "RFEM Latest")
+[![image](https://img.shields.io/badge/docs-API-darkblue?logo=read-the-docs&amp;logoColor=white)](https://dlubal-software.github.io/.github/ "RFEM Latest")
 
 <!--
 

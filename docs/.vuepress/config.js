@@ -1,7 +1,7 @@
 // const { auto } = require("async");
 
 module.exports = {
-    title: '',
+    title: 'Dlubal Dev Docs',
     base: '/.github/',
     themeConfig: {
         logo: '/images/dev_docs.png',

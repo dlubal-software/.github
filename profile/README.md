@@ -10,7 +10,7 @@ Dlubal Software GmbH
 [![image](https://img.shields.io/twitter/follow/dlubal_en?style=social)](https://twitter.com/dlubal_en "Twitter Follow")
 [![image](https://img.shields.io/badge/LinkedIn-Dlubal_Software-darkblue?logo=linkedin&amp;logoColor=white)](https://www.linkedin.com/company/dlubal-software/)
 [![image](https://img.shields.io/badge/Instagram-Dlubal_Software-darkblue?logo=instagram&amp;logoColor=white)](https://www.instagram.com/dlubal_software/)
-[![image](https://img.shields.io/badge/http://-dlubal.com-darkblue)](https://www.dlubal.com/en-US "RFEM Latest")
+[![image](https://img.shields.io/badge/http://-dlubal.com-darkblue?logo=Google-Chrome&amp;logoColor=white)](https://www.dlubal.com/en-US "RFEM Latest")
 
 [![image](https://img.shields.io/badge/RFEM-v6.0-blue)](https://www.dlubal.com/en/products/rfem-fea-software/what-is-rfem "RFEM")
 [![image](https://img.shields.io/badge/RSTAB-v9.0-blue)](https://www.dlubal.com/en/products/rstab-beam-structures/what-is-rstab "RFEM")

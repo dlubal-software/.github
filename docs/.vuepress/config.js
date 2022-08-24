@@ -2,7 +2,7 @@
 
 module.exports = {
     title: 'RFEM Documentation',
-    base: "",
+    base: "/",
     themeConfig: {
         logo: '/images/dev_docs.png',
         nav: [

@@ -2,7 +2,7 @@
 
 module.exports = {
     title: 'RFEM Documentation',
-    base: ".github/tree/gh_pages",
+    base: "",
     themeConfig: {
         logo: '/images/dev_docs.png',
         nav: [

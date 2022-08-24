@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /images/structure.png
-heroText: RFEM6/RSTAB9 API
+heroText: RFEM6/RSTAB9 WebServices&API
 tagline: Do Cool Stuff in Structural Analysis
 actionText: Get Started 🚀
 actionLink: /guide/

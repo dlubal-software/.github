@@ -8,9 +8,8 @@ Dlubal Software GmbH
 
   
 [![image](https://img.shields.io/twitter/follow/dlubal_en?style=social)](https://twitter.com/dlubal_en "Twitter Follow")
-[![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/dlubal-software/)
-[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dlubal_software/)
-[![image](https://img.shields.io/badge/GitHub-Dlubal_Software-darkblue?logo=github&amp;)](https://github.com/Dlubal-Software "Github Follow")
+[![image](https://img.shields.io/badge/LinkedIn-Dlubal_Software-darkblue?logo=linkedin&amp;logoColor=white)](https://www.linkedin.com/company/dlubal-software/)
+[![image](https://img.shields.io/badge/Instagram-Dlubal_Software-darkblue?logo=instagram&amp;logoColor=white)](https://www.instagram.com/dlubal_software/)
 [![image](https://img.shields.io/badge/http://-dlubal.com-darkblue)](https://www.dlubal.com/en-US "RFEM Latest")
 
 [![image](https://img.shields.io/badge/RFEM-v6.0-blue)](https://www.dlubal.com/en/products/rfem-fea-software/what-is-rfem "RFEM")
@@ -23,7 +22,7 @@ We are glad that you visited our Dlubal's company GitHub. We are publishing our 
 We are also publishing open source libraries which we have used for development of our commercial applications and we did some modifications.
 
 # Documentation 📚
-For complete description of classes and functions visit our [![image](https://img.shields.io/badge/GitHub-page-darkblue?logo=github&amp;)](https://dlubal-software.github.io/.github/)
+For complete description of classes and functions visit our [![image](https://img.shields.io/badge/docs-API-darkblue?logo=read-the-docs&amp;logoColor=white)](https://dlubal-software.github.io/.github/)
 
 <!--
 

@@ -17,12 +17,12 @@ Dlubal Software GmbH
 [![image](https://img.shields.io/badge/RSTAB-v9.0-blue)](https://www.dlubal.com/en/products/rstab-beam-structures/what-is-rstab "RFEM")
 
   
-# Welcome
+# Welcome 🙂
   
 We are glad that you visited our Dlubal's company GitHub. We are publishing our open source libraries developed in Python & C# for WebService.
 We are also publishing open source libraries which we have used for development of our commercial applications and we did some modifications.
 
-## Documentation 📚
+# Documentation 📚
 For complete description of classes and functions visit our [![image](https://img.shields.io/badge/GitHub-page-darkblue?logo=github&amp;)](https://dlubal-software.github.io/.github/)
 
 <!--

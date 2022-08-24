@@ -16,4 +16,4 @@ Dlubal Software GmbH
 
 ### .github Repository
   
-We are hosting our documentation in this repository.
+We are hosting our documentation files in this repository.

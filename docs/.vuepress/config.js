@@ -2,7 +2,7 @@
 
 module.exports = {
     title: 'RFEM Documentation',
-    base: "Dlubal-Software/.github",
+    base: ".github/tree/gh_pages",
     themeConfig: {
         logo: '/images/dev_docs.png',
         nav: [

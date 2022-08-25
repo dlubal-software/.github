@@ -4,7 +4,7 @@ module.exports = {
     title: 'Dlubal Dev Docs',
     base: '/.github/',
     themeConfig: {
-        logo: '/images/dev_docs.png',
+        logo: '/images/dev_docs1.png',
         nav: [
             { text: 'Home', link: '/'},
             { text: 'User Guide',

@@ -4,5 +4,8 @@
   },
   "dependencies": {
     "vuepress": "^1.9.7"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.7"
   }
 }

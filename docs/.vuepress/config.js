@@ -32,17 +32,22 @@ module.exports = {
                 children: ["ready", "init", "RFEM.BasicObjects", "RFEM.ConcreteDesign", "RFEM.Imperfections", "RFEM.LoadCasesAndCombinations", "RFEM.Loads", "RFEM.SpecialObjects", "RFEM.TypesforConcreteDesign", "RFEM.TypesForLines", "RFEM.TypesForMembers", "RFEM.TypesForNodes", "RFEM.TypesForSolids", "RFEM.TypesForSpecialObjects", "RFEM.TypesForSteelDesign", "RFEM.TypesForSurfaces"]
               },
               {
-                title: ".NET HLF",
+                title: ".NET HLF 🕸️",
                 collapsable: false,
                 children: ["netintro"]
               },
               {
-                title: "JavaScript Commands",
+                title: "JavaScript Commands 📜",
                 collapsable: false,
                 children: ["MD/AnalysisSettings", "MD/BasicObjects", "MD/GuideObjects", "MD/Loading", "MD/Loads", "MD/LoadWizards", "MD/SpecialObjects", "MD/TypesForLines", "MD/TypesForMembers", "MD/TypesForNodes", "MD/TypesForSolids", "MD/TypesForSurfaces"]
               },
               {
-                title: "Tutorials",
+                title: "Articles 📰",
+                collapsable: false,
+                children: ["wikiHome", "wikiMultimodel", "wikiGetresult", "wikiQuery", "wikiStart", "wikiPerfo", "wikiWSapp", "wikiWSmodel"]
+              },
+              {
+                title: "Tutorials 🗼",
                 collapsable: false,
                 children: ["tutorialintro"]
               },

@@ -11,6 +11,7 @@ module.exports = {
               items: [
                 {text: 'Quick Start', link: '/guide/'},
                 {text: 'Python', link: '/guide/ready'},
+                {text: 'Articles', link: '/guide/wikiMultimodel'},
                 {text: '.NET', link: '/guide/netintro'},
                 {text: 'JavaScript', link: '/guide/MD/AnalysisSettings'},
                 {text: 'Tutorials', link: '/guide/tutorialintro'},
@@ -32,6 +33,11 @@ module.exports = {
                 children: ["ready", "init", "RFEM.BasicObjects", "RFEM.ConcreteDesign", "RFEM.Imperfections", "RFEM.LoadCasesAndCombinations", "RFEM.Loads", "RFEM.SpecialObjects", "RFEM.TypesforConcreteDesign", "RFEM.TypesForLines", "RFEM.TypesForMembers", "RFEM.TypesForNodes", "RFEM.TypesForSolids", "RFEM.TypesForSpecialObjects", "RFEM.TypesForSteelDesign", "RFEM.TypesForSurfaces"]
               },
               {
+                title: "Articles 📰",
+                collapsable: false,
+                children: ["wikiMultimodel", "wikiGetresult", "wikiQuery", "wikiStart", "wikiPerfo", "wikiWSapp", "wikiWSmodel"]
+              },
+              {
                 title: ".NET HLF 🕸️",
                 collapsable: false,
                 children: ["netintro"]
@@ -40,11 +46,6 @@ module.exports = {
                 title: "JavaScript Commands 📜",
                 collapsable: false,
                 children: ["MD/AnalysisSettings", "MD/BasicObjects", "MD/GuideObjects", "MD/Loading", "MD/Loads", "MD/LoadWizards", "MD/SpecialObjects", "MD/TypesForLines", "MD/TypesForMembers", "MD/TypesForNodes", "MD/TypesForSolids", "MD/TypesForSurfaces"]
-              },
-              {
-                title: "Articles 📰",
-                collapsable: false,
-                children: ["wikiHome", "wikiMultimodel", "wikiGetresult", "wikiQuery", "wikiStart", "wikiPerfo", "wikiWSapp", "wikiWSmodel"]
               },
               {
                 title: "Tutorials 🗼",

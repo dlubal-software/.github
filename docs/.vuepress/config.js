@@ -11,7 +11,7 @@ module.exports = {
               items: [
                 {text: 'Quick Start', link: '/guide/'},
                 {text: 'Python', link: '/guide/ready'},
-                {text: 'Articles', link: '/guide/wikiMultimodel'},
+                {text: 'Articles', link: '/guide/Articles'},
                 {text: '.NET', link: '/guide/netintro'},
                 {text: 'JavaScript', link: '/guide/MD/AnalysisSettings'},
                 {text: 'Tutorials', link: '/guide/tutorialintro'},
@@ -35,7 +35,7 @@ module.exports = {
               {
                 title: "Articles 📰",
                 collapsable: false,
-                children: ["wikiMultimodel", "wikiGetresult", "wikiQuery", "wikiStart", "wikiPerfo", "wikiWSapp", "wikiWSmodel"]
+                children: ["Articles"]
               },
               {
                 title: ".NET HLF 🕸️",

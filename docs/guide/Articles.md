@@ -1,10 +1,546 @@
-# WS Model Methods and Types
+# Articles
+
+## How to edit multiple models in one script
+
+If your project requires editing multiple models you can do it. There are 3 options to choose from:
+
+1. Default option is the same as it was from beginning. Initialize Model() once and you don't have to care about it at all during execution. That corresponds to the original idea of the Client.
+2. If you want to do tens or hundreds of operations in one model and then switch to another, you can do it easily by calling Model() before switching it. This is executed in one session i.e. as fast as possible.
+3. Create instance of a Model() and use this as method parameter to apply changes to specific model. This comes handy when making small amount of changes between a lot of models.
+
+### Examples
+
+Ad 1.
+
+```js
+Model(True, "TestModel") <-- create new model
+Material(1,'S235') <-- assign material to TestModel
+Material(2,'S235') <-- assign material to TestModel
+```
+
+Ad 2.
+
+```js
+model1 = Model(True, 'TestModel1') <-- create new model
+Material(1,'S235') <-- assign material to TestModel1
+Material(2,'S235') <-- assign material to TestModel1
+
+model2 = Model(True, 'TestModel2') <-- create new model
+Material(3,'S275') <-- assign material to TestModel2
+
+Model(False, 'TestModel1') <-- switch
+Material(4,'S235') <-- assign material to TestModel1
+
+Model(False, 'TestModel2') <-- switch
+Material(5,'S275') <-- assign material to TestModel2
+```
+
+Ad 3.
+
+```js
+model1 = Model(True, 'TestModel1') <-- create new model
+Material(1,'S235', model = model1) <-- assign to TestModel1
+Material(2,'S235', model = model1) <-- assign to TestModel1
+
+model2 = Model(True, 'TestModel2') <-- create new model
+Material(3,'S275', model = model2) <-- assign to TestModel2
+
+Material(4,'S235', model = model1) <-- assign to TestModel1
+
+Material(5,'S275', model = model2) <-- assign to TestModel2
+```
+
+## How to get results
+
+Although RFEM Python Client is nice and shiny, without results it doesn't bring much fruit. This changes soon. 
+
+### HTML result report
+Right now there is option to get all of the results in concise HTML format via function **ExportResultTablesToHtml()** in [Reports/html.py](https://github.com/Dlubal-Software/RFEM_Python_Client/blob/main/RFEM/Reports/html.py). This comes handy when overall table report is needed containing tens or even hundreds of tables. See example [here](https://user-images.githubusercontent.com/37547309/184657585-48d7b48e-86e9-434f-9ee3-147cd2dc02a2.png).
+
+### Result tables 
+But when the task is to optimize the structure or to get that one specific result, single table comes long way. For this we are bringing 258 functions to retrieve table for any combination of loading type, loading number, and object number. Summary tables are included. With this we will also prepare functions to get list of available parameters, maximums, and minimums. For more details look at the implementation at [Results/resultTables.py](https://github.com/Dlubal-Software/RFEM_Python_Client/blob/main/RFEM/Results/resultTables.py).
+
+### Missing functions 
+If there is a specific function you are missing, please use [Discussions](https://github.com/Dlubal-Software/RFEM_Python_Client/discussions) or [Issues](https://github.com/Dlubal-Software/RFEM_Python_Client/issues) section to report it. Will be more than happy to discuss it.
+
+### Soon available result table functions 
+
+```js
+BuildingStoriesForcesInSpandrels()
+BuildingStoriesForcesInShearWalls()
+BuildingStoriesCentresMassRigidity()
+BuildingStoriesInterstoryDrifts()
+BuildingStoriesStoryActions()
+CalculationDiagrams()
+CriticalLoadFactors()
+EfeectiveLengthsAndCriticalLoadsByEigenvector()
+EfeectiveLengthsAndCriticalLoadsByMember()
+EigenvectorsByMember()
+EigenvectorsByNode()
+EigenvectorsBySolid()
+EigenvectorsBySurface()
+Errors()
+LineHingesDeformations()
+LineHingesForces()
+LinesSlabWallConnections()
+LinesSupportForces()
+MembersByEigenvector()
+MembersContactForces()
+MembersGlobalDeformations()
+MembersHingeDeformations()
+MembersHingeForces()
+MembersInternalForces()
+MembersInternalForcesByMemberSet()
+MembersInternalForcesBySection()
+MembersLocalDeformations()
+MembersStrains()
+ModalAnalysisEffectiveModalMasses()
+ModalAnalysisMassesInLocations()
+ModalAnalysisMembersByModeShape()
+ModalAnalysisModeShapesByMember()
+ModalAnalysisModeShapesByNode()
+ModalAnalysisModeShapesBySolid()
+ModalAnalysisModeShapesBySurface()
+ModalAnalysisNaturalFrequencies()
+ModalAnalysisNodesByModeShape()
+ModalAnalysisParticipationFactors()
+ModalAnalysisSolidsByModeShape()
+ModalAnalysisSurfacesByModeShape()
+NodesByEigenvector()
+NodesDeformations()
+NodesSupportForces()
+SolidsBasicPlasticStrains()
+SolidsBasicStresses()
+SolidsBasicTotalStrains()
+SolidsByEigenvector()
+SolidsDeformations()
+SolidsEquivalentPlasticStrains()
+SolidsEquivalentStresses()
+SolidsEquivalentTotalStrains()
+SolidsGasQuantities()
+SolidsPrincipalPlasticStrains()
+SolidsPrincipalStresses()
+SolidsPrincipalTotalStrains()
+SpectralAnalysisBuildingStoriesCentresMassRigidity()
+SpectralAnalysisBuildingStoriesForcesInShearWalls()
+SpectralAnalysisBuildingStoriesForcesInSpandrels()
+SpectralAnalysisBuildingStoriesInterstoryDrifts()
+SpectralAnalysisBuildingStoriesStoryActions()
+SpectralAnalysisLineHingesDeformations()
+SpectralAnalysisLineHingesForces()
+SpectralAnalysisLinesSlabWallConnections()
+SpectralAnalysisLinesSupportForces()
+SpectralAnalysisMembersContactForces()
+SpectralAnalysisMembersGlobalDeformations()
+SpectralAnalysisMembersHingeDeformations()
+SpectralAnalysisMembersHingeForces()
+SpectralAnalysisMembersInternalForces()
+SpectralAnalysisMembersInternalForcesByMemberSet()
+SpectralAnalysisMembersInternalForcesBySection()
+SpectralAnalysisMembersLocalDeformations()
+SpectralAnalysisMembersStrains()
+SpectralAnalysisNodesDeformations()
+SpectralAnalysisNodesPseudoAccelerations()
+SpectralAnalysisNodesPseudoVelocities()
+SpectralAnalysisNodesSupportForces()
+SpectralAnalysisSolidsBasicStresses()
+SpectralAnalysisSolidsBasicTotalStrains()
+SpectralAnalysisSolidsDeformations()
+SpectralAnalysisSolidsEquivalentStresses()
+SpectralAnalysisSolidsEquivalentTotalStrains()
+SpectralAnalysisSolidsGasQuantities()
+SpectralAnalysisSolidsPrincipalStresses()
+SpectralAnalysisSolidsPrincipalTotalStrains()
+SpectralAnalysisSummary()
+SpectralAnalysisSurfacesBasicInternalForces()
+SpectralAnalysisSurfacesBasicStresses()
+SpectralAnalysisSurfacesBasicTotalStrains()
+SpectralAnalysisSurfacesContactStresses()
+SpectralAnalysisSurfacesDesignInternalForces()
+SpectralAnalysisSurfacesElasticStressComponents()
+SpectralAnalysisSurfacesEquivalentStressesBach()
+SpectralAnalysisSurfacesEquivalentStressesMises()
+SpectralAnalysisSurfacesEquivalentStressesRankine()
+SpectralAnalysisSurfacesEquivalentStressesTresca()
+SpectralAnalysisSurfacesEquivalentTotalStrainsBach()
+SpectralAnalysisSurfacesEquivalentTotalStrainsMises()
+SpectralAnalysisSurfacesEquivalentTotalStrainsRankine()
+SpectralAnalysisSurfacesEquivalentTotalStrainsTresca()
+SpectralAnalysisSurfacesGlobalDeformations()
+SpectralAnalysisSurfacesLocalDeformations()
+SpectralAnalysisSurfacesMaximumTotalStrains()
+SpectralAnalysisSurfacesPrincipalInternalForces()
+SpectralAnalysisSurfacesPrincipalStresses()
+SpectralAnalysisSurfacesPrincipalTotalStrains()
+StabilityIncrementalAnalysisBuildingStoriesCentresMassRigidity()
+StabilityIncrementalAnalysisBuildingStoriesForcesInShearWalls()
+StabilityIncrementalAnalysisBuildingStoriesForcesInSpandrels()
+StabilityIncrementalAnalysisBuildingStoriesInterstoryDrifts()
+StabilityIncrementalAnalysisBuildingStoriesStoryActions()
+StabilityIncrementalAnalysisCalculationDiagrams()
+StabilityIncrementalAnalysisLineHingesDeformations()
+StabilityIncrementalAnalysisLineHingesForces()
+StabilityIncrementalAnalysisLinesSlabWallConnections()
+StabilityIncrementalAnalysisLinesSupportForces()
+StabilityIncrementalAnalysisMembersContactForces()
+StabilityIncrementalAnalysisMembersGlobalDeformations()
+StabilityIncrementalAnalysisMembersHingeDeformations()
+StabilityIncrementalAnalysisMembersHingeForces()
+StabilityIncrementalAnalysisMembersInternalForces()
+StabilityIncrementalAnalysisMembersInternalForcesByMemberSet()
+StabilityIncrementalAnalysisMembersInternalForcesBySection()
+StabilityIncrementalAnalysisMembersLocalDeformations()
+StabilityIncrementalAnalysisMembersStrains()
+StabilityIncrementalAnalysisNodesDeformations()
+StabilityIncrementalAnalysisNodesSupportForces()
+StabilityIncrementalAnalysisSolidsBasicPlasticStrains()
+StabilityIncrementalAnalysisSolidsBasicStresses()
+StabilityIncrementalAnalysisSolidsBasicTotalStrains()
+StabilityIncrementalAnalysisSolidsDeformations()
+StabilityIncrementalAnalysisSolidsEquivalentPlasticStrains()
+StabilityIncrementalAnalysisSolidsEquivalentStresses()
+StabilityIncrementalAnalysisSolidsEquivalentTotalStrains()
+StabilityIncrementalAnalysisSolidsGasQuantities()
+StabilityIncrementalAnalysisSolidsPrincipalPlasticStrains()
+StabilityIncrementalAnalysisSolidsPrincipalStresses()
+StabilityIncrementalAnalysisSolidsPrincipalTotalStrains()
+StabilityIncrementalAnalysisSummary()
+StabilityIncrementalAnalysisSurfacesBasicInternalForces()
+StabilityIncrementalAnalysisSurfacesBasicPlasticStrains()
+StabilityIncrementalAnalysisSurfacesBasicStresses()
+StabilityIncrementalAnalysisSurfacesBasicTotalStrains()
+StabilityIncrementalAnalysisSurfacesContactStresses()
+StabilityIncrementalAnalysisSurfacesDesignInternalForces()
+StabilityIncrementalAnalysisSurfacesElasticStressComponents()
+StabilityIncrementalAnalysisSurfacesEquivalentPlasticStrainsBach()
+StabilityIncrementalAnalysisSurfacesEquivalentPlasticStrainsMises()
+StabilityIncrementalAnalysisSurfacesEquivalentPlasticStrainsRankine()
+StabilityIncrementalAnalysisSurfacesEquivalentPlasticStrainsTresca()
+StabilityIncrementalAnalysisSurfacesEquivalentStressesBach()
+StabilityIncrementalAnalysisSurfacesEquivalentStressesMises()
+StabilityIncrementalAnalysisSurfacesEquivalentStressesRankine()
+StabilityIncrementalAnalysisSurfacesEquivalentStressesTresca()
+StabilityIncrementalAnalysisSurfacesEquivalentTotalStrainsBach()
+StabilityIncrementalAnalysisSurfacesEquivalentTotalStrainsMises()
+StabilityIncrementalAnalysisSurfacesEquivalentTotalStrainsRankine()
+StabilityIncrementalAnalysisSurfacesEquivalentTotalStrainsTresca()
+StabilityIncrementalAnalysisSurfacesGlobalDeformations()
+StabilityIncrementalAnalysisSurfacesLocalDeformations()
+StabilityIncrementalAnalysisSurfacesMaximumPlasticStrains()
+StabilityIncrementalAnalysisSurfacesMaximumTotalStrains()
+StabilityIncrementalAnalysisSurfacesPrincipalInternalForces()
+StabilityIncrementalAnalysisSurfacesPrincipalPlasticStrains()
+StabilityIncrementalAnalysisSurfacesPrincipalStresses()
+StabilityIncrementalAnalysisSurfacesPrincipalTotalStrains()
+Summary()
+SurfacesBasicInternalForces()
+SurfacesBasicPlasticStrains()
+SurfacesBasicStresses()
+SurfacesBasicTotalStrains()
+SurfacesByEigenvector()
+SurfacesContactStresses()
+SurfacesDesignInternalForces()
+SurfacesElasticStressComponents()
+SurfacesEquivalentPlasticStrainsBach()
+SurfacesEquivalentPlasticStrainsMises()
+SurfacesEquivalentPlasticStrainsRankine()
+SurfacesEquivalentPlasticStrainsTresca()
+SurfacesEquivalentStressesBach()
+SurfacesEquivalentStressesMises()
+SurfacesEquivalentStressesRankine()
+SurfacesEquivalentStressesTresca()
+SurfacesEquivalentTotalStrainsBach()
+SurfacesEquivalentTotalStrainsMises()
+SurfacesEquivalentTotalStrainsRankine()
+SurfacesEquivalentTotalStrainsTresca()
+SurfacesGlobalDeformations()
+SurfacesLocalDeformations()
+SurfacesMaximumPlasticStrains()
+SurfacesMaximumTotalStrains()
+SurfacesPrincipalInternalForces()
+SurfacesPrincipalPlasticStrains()
+SurfacesPrincipalStresses()
+SurfacesPrincipalTotalStrains()
+TimeHistoryAnalysisBuildingStoriesCentresMassRigidity()
+TimeHistoryAnalysisBuildingStoriesForcesInShearWalls()
+TimeHistoryAnalysisBuildingStoriesForcesInSpandrels()
+TimeHistoryAnalysisBuildingStoriesInterstoryDrifts()
+TimeHistoryAnalysisBuildingStoriesStoryActions()
+TimeHistoryAnalysisLineHingesDeformations()
+TimeHistoryAnalysisLineHingesForces()
+TimeHistoryAnalysisLinesSlabWallConnections()
+TimeHistoryAnalysisLinesSupportForces()
+TimeHistoryAnalysisMembersContactForces()
+TimeHistoryAnalysisMembersGlobalDeformations()
+TimeHistoryAnalysisMembersHingeDeformations()
+TimeHistoryAnalysisMembersHingeForces()
+TimeHistoryAnalysisMembersInternalForces()
+TimeHistoryAnalysisMembersInternalForcesByMemberSet()
+TimeHistoryAnalysisMembersInternalForcesBySection()
+TimeHistoryAnalysisMembersLocalDeformations()
+TimeHistoryAnalysisMembersStrains()
+TimeHistoryAnalysisNodesAccelerations()
+TimeHistoryAnalysisNodesDeformations()
+TimeHistoryAnalysisNodesSupportForces()
+TimeHistoryAnalysisNodesVelocities()
+TimeHistoryAnalysisSolidsBasicPlasticStrains()
+TimeHistoryAnalysisSolidsBasicStresses()
+TimeHistoryAnalysisSolidsBasicTotalStrains()
+TimeHistoryAnalysisSolidsDeformations()
+TimeHistoryAnalysisSolidsEquivalentPlasticStrains()
+TimeHistoryAnalysisSolidsEquivalentStresses()
+TimeHistoryAnalysisSolidsEquivalentTotalStrains()
+TimeHistoryAnalysisSolidsGasQuantities()
+TimeHistoryAnalysisSolidsPrincipalPlasticStrains()
+TimeHistoryAnalysisSolidsPrincipalStresses()
+TimeHistoryAnalysisSolidsPrincipalTotalStrains()
+TimeHistoryAnalysisSummary()
+TimeHistoryAnalysisSurfacesBasicInternalForces()
+TimeHistoryAnalysisSurfacesBasicPlasticStrains()
+TimeHistoryAnalysisSurfacesBasicStresses()
+TimeHistoryAnalysisSurfacesBasicTotalStrains()
+TimeHistoryAnalysisSurfacesContactStresses()
+TimeHistoryAnalysisSurfacesDesignInternalForces()
+TimeHistoryAnalysisSurfacesElasticStressComponents()
+TimeHistoryAnalysisSurfacesEquivalentPlasticStrainsBach()
+TimeHistoryAnalysisSurfacesEquivalentPlasticStrainsMises()
+TimeHistoryAnalysisSurfacesEquivalentPlasticStrainsRankine()
+TimeHistoryAnalysisSurfacesEquivalentPlasticStrainsTresca()
+TimeHistoryAnalysisSurfacesEquivalentStressesBach()
+TimeHistoryAnalysisSurfacesEquivalentStressesMises()
+TimeHistoryAnalysisSurfacesEquivalentStressesRankine()
+TimeHistoryAnalysisSurfacesEquivalentStressesTresca()
+TimeHistoryAnalysisSurfacesEquivalentTotalStrainsBach()
+TimeHistoryAnalysisSurfacesEquivalentTotalStrainsMises()
+TimeHistoryAnalysisSurfacesEquivalentTotalStrainsRankine()
+TimeHistoryAnalysisSurfacesEquivalentTotalStrainsTresca()
+TimeHistoryAnalysisSurfacesGlobalDeformations()
+TimeHistoryAnalysisSurfacesLocalDeformations()
+TimeHistoryAnalysisSurfacesMaximumPlasticStrains()
+TimeHistoryAnalysisSurfacesMaximumTotalStrains()
+TimeHistoryAnalysisSurfacesPrincipalInternalForces()
+TimeHistoryAnalysisSurfacesPrincipalPlasticStrains()
+TimeHistoryAnalysisSurfacesPrincipalStresses()
+TimeHistoryAnalysisSurfacesPrincipalTotalStrains()
+HasAnyResults()
+HasResults()
+```
+
+## How to query the model
+
+To query the model you start with initializing the connection. This can be done via `Model(False, "model_name")`. Then use any getter you need to retrieve the data. Our unit tests (RFEM_Python_Client/UnitTests/) are good examples of setting values and getting them back for checking correctness. But in the tests we use currently available (active) model, that is why you see just `Model()` there.
+
+If you want to see all currently available web service model functions and types just `print(Model.clientModel)`. This is the easiest way SUDS module shows everything it recognizes. Even easier is to look at methods and types for [model](https://github.com/Dlubal-Software/RFEM_Python_Client/wiki/WS-Model-Methods-and-Types) and [application](https://github.com/Dlubal-Software/RFEM_Python_Client/wiki/WS-Application-Methods-and-Types) in our Wiki, but it can be outdated with the new development, meaning new functions will be added.
+
+Whole example:
+
+```js
+from suds.client import Client
+import sys
+
+client = Client('http://localhost:8081/wsdl')
+# printout all application functions and types
+print(client)
+modelLst = client.service.get_model_list()
+new = client.service.get_active_model()+'wsdl'
+model = Client(new)
+# printout all model functions and types
+print(model)
+```
+
+## How to start
+
+You journey with our RFEM Python Client should start here especially if you are beginner or intermediate when it comes to Python scripting. Here we describe the basic structure, syntax and commands. 
+
+If you want to skip this step by step guide just take a look at our examples. These will provide everything needed. Feel free to reuse any part that holds value to your task.
+
+### Structure 
+The client structure is designed to allow the simplest possible setting of objects and their parameters very much simmilar to RFEM both in structure and parameters. Start with creating the model. Then any RFEM object and type can be set. When everything is set the model can be calculated, exported or saved. I would not recommend to create optimization tasks because this can be done with better efficiency via Optimization and Cost Add-on.
+
+### Syntax 
+First start with import of relevat modules.
+
+```js
+from RFEM.initModel import Model
+from RFEM.BasicObjects import Material
+from RFEM.BasicObjects import Line
+```
+
+Add boilerplate code that protects users from accidentally invoking the script when they didn't intend to.
+
+```js
+if __name__ == '__main__':
+```
+
+Then you need to create a model. Here it's as simple as in RFEM, just enter True if you're creating a new model and model name. For starters, I might add that we omit the standard indent here. 
+
+```js
+Model(True, 'MyModel')
+```
+
+Now follows all objects and types you want to set in RFEM. If you want to use the default object type than just object is sufficient (see Material bellow) or put object, than dot (.) and then put type of object. Every object and type of object has method with default parameters to describe what to put where to sucessfully create it. To make it even easier the default parameters enable to specify any parameter disregarding its possition with the name of the parameter followed by '=' and value.
+
+```js
+Material(1, 'S235')
+Line.Arc(1, [10,0,0], 3, comment='my first arc')
+```
+
+### WS functions
+
+We have whole GitHub documentation [page](https://dlubal-software.github.io/RFEM_Python_Client/), where you can find all of our Python classes and methods together with description. These are here to make it easy and organized. However if you consider yourself experienced enough to work directly with Web Service functions or just looking for that specific one, then you'll appreciate our two Wiki pages summarizing all accesible [application](https://github.com/Dlubal-Software/RFEM_Python_Client/wiki/WS-Application-Methods-and-Types) and [model](https://github.com/Dlubal-Software/RFEM_Python_Client/wiki/WS-Model-Methods-and-Types) functions.
+
+## Let's talk performance
+
+Here we would like to address some questions and issues regarding performance that came up during the development. These informations are suitable for experienced developers and curious users.
+
+We use SOAP package called SUDS to be able to communicate with RFEM. This was chosen for many good reasons. Believe that we saw the Zeep and SUDS is simply better for our usage. The SUDS makes new connection with any request and terminates it immediately. That leeds to poor performance and the connection is apparent by RFEM 'flickering' going from locked(*) state to unlocked many times over. 
+
+### Persistent connection 
+To shorten the response the first step is to create persistent conection. SUDS enable us to create such connection by using [requests](https://pypi.org/project/requests/) and [suds_requests](https://pypi.org/project/suds_requests/)(**). Connection pool in HTTPAdapter is set to 1, then mounted to session and as RequestsTransport object passed to SUDS Client (used to access the model) as transport parameter.
+This speeds up the proces 3 times. You can find the implementation in [RFEM\initModel.py](https://github.com/Dlubal-Software/RFEM_Python_Client/blob/main/RFEM/initModel.py#line30:~:text=%23%20Persistent%20connection).
+
+### Asynchronous execution 
+You may be familiar with the concept of asynchronous execution and well known libraries [asyncio](https://pypi.org/project/asyncio/) and [aiohttp](https://pypi.org/project/aiohttp/). Those should enable to create async loop and send the requests to server as quickly as possible. All in one connection, using one thread, just awaiting the callbacks. Which is exactly the thing that slows the execution. Don't get us wrong, we tried to implement it, but neither asyncio or async-suds (SUDS based on asyncio) wants to work here. To add to the trouble, we think that it is not much usefull feature. Large number of the executions are order dependent anyway. RFEM can't create line if there is one point missing. So if the order is the same but client doesn't have to wait for individual responces, it could be utilized. Anyway, if you know how to speedup the process, any contributions are welcomed.
+
+(*) The application is locked to avoid ambiguity during connection.
+
+(**) Author: Jason Michalski, email: armooo@armooo.net
+
+## WS Application Methods and Types
+
+To obtain this list just execute print(client). 
+
+Usage: client.service.get_active_model()
+
+### Methods
+
+Methods (29):
+
+```js
+close_application()
+close_model(xs:int index, xs:boolean save_changes)
+delete_project(xs:string project_path)
+get_active_model()
+get_conversion_tables()
+get_current_project()
+get_detailed_logging()
+get_information()
+get_list_of_existing_projects()
+get_list_of_existing_templates()
+get_model(xs:int index)
+get_model_list()
+get_project(xs:string project_path)
+get_saf_settings()
+get_settings_program_language()
+get_template(xs:string template_path)
+import_from(xs:string file_path)
+new_model(xs:string model_name)
+new_model_as_copy(xs:string model_name, xs:string file_path)
+new_model_from_template(xs:string model_name, xs:string file_path)
+new_project(ns0:project_info project_info)
+new_template(ns0:project_info template_info)
+open_model(xs:string model_path)
+save_model(xs:int index)
+set_as_current_project(xs:string project_path)
+set_conversion_tables(ns0:ConversionTables value)
+set_detailed_logging(xs:boolean value)
+set_saf_settings(ns0:SafConfiguration value)
+set_settings_program_language(ns0:settings_program_language settings_program_language)
+```
+### Types
+
+Types(80)
+
+```js
+ns0:ConversionTable
+ns0:ConversionTables
+ns0:MaterialConversionTablesManager
+ns0:MaterialConversionTablesManager_config
+ns0:MaterialConversionTablesManager_configs
+ns0:SafConfiguration
+ns0:SectionConversionTablesManager
+ns0:SectionConversionTablesManager_config
+ns0:SectionConversionTablesManager_configs
+ns0:application_information
+ns0:application_types
+ns0:array_of_model_names
+ns0:array_of_projects
+ns0:array_of_templates
+ns0:close_application
+ns0:close_applicationResponse
+ns0:close_model
+ns0:close_modelResponse
+ns0:delete_project
+ns0:delete_projectResponse
+ns0:get_active_model
+ns0:get_active_modelResponse
+ns0:get_conversion_tables
+ns0:get_conversion_tablesResponse
+ns0:get_current_project
+ns0:get_current_projectResponse
+ns0:get_detailed_logging
+ns0:get_detailed_loggingResponse
+ns0:get_information
+ns0:get_informationResponse
+ns0:get_list_of_existing_projects
+ns0:get_list_of_existing_projectsResponse
+ns0:get_list_of_existing_templates
+ns0:get_list_of_existing_templatesResponse
+ns0:get_model
+ns0:get_modelResponse
+ns0:get_model_list
+ns0:get_model_listResponse
+ns0:get_project
+ns0:get_projectResponse
+ns0:get_saf_settings
+ns0:get_saf_settingsResponse
+ns0:get_settings_program_language
+ns0:get_settings_program_languageResponse
+ns0:get_template
+ns0:get_templateResponse
+ns0:import_from
+ns0:import_fromResponse
+ns0:import_from_output
+ns0:new_model
+ns0:new_modelResponse
+ns0:new_model_as_copy
+ns0:new_model_as_copyResponse
+ns0:new_model_from_template
+ns0:new_model_from_templateResponse
+ns0:new_project
+ns0:new_projectResponse
+ns0:new_template
+ns0:new_templateResponse
+ns0:open_model
+ns0:open_modelResponse
+ns0:program_language_name_type
+ns0:project_info
+ns0:region_type
+ns0:save_model
+ns0:save_modelResponse
+ns0:set_as_current_project
+ns0:set_as_current_projectResponse
+ns0:set_conversion_tables
+ns0:set_conversion_tablesResponse
+ns0:set_detailed_logging
+ns0:set_detailed_loggingResponse
+ns0:set_saf_settings
+ns0:set_saf_settingsResponse
+ns0:set_settings_program_language
+ns0:set_settings_program_languageResponse
+ns0:settings_program_language
+ns0:string_and_string_pair
+ns0:string_and_string_pair_array
+ns0:unit_system_type
+```
+
+## WS Model Methods and Types
 
 To obtain this list just execute print(Model.clientModel).
 
 Usage: Model.clientModel.service.cancel_modification()
 
-## Models
+### Models
 
 Methods (303):
 
@@ -313,7 +849,7 @@ set_wind_simulation(ns0:wind_simulation value)
 set_wind_simulation_analysis_settings(ns0:wind_simulation_analysis_settings value)
 unite_nodes_and_supports(xs:double tolerance)
 ```
-## Types
+### Types
 
 Types (1935):
 

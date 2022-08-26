@@ -1,6 +1,9 @@
 // const { auto } = require("async");
 
 module.exports = {
+    head: [
+      ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ],
     title: 'Dlubal Dev Docs',
     base: '/.github/',
     plugins: ['@vuepress/back-to-top'],

@@ -54,6 +54,7 @@ module.exports = {
             ]
         },
         searchPlaceholder: 'Search...',
+        searchMaxSuggestions: 10,
         smoothScroll: true
     }
 }

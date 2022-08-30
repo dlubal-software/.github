@@ -51,11 +51,6 @@ module.exports = {
                 collapsable: false,
                 children: ["tutorialintro"]
               },
-              {
-                title: "Discussion Forum 💬",
-                collapsable: false,
-                children: ["Announcements", "General", "Ideas", "Polls", "Q&A", "Show&tell", "CODE_OF_CONDUCT"]
-              },
             ]
         },
         searchPlaceholder: 'Search...',

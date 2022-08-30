@@ -54,7 +54,7 @@ module.exports = {
               {
                 title: "Discussion Forum 💬",
                 collapsable: false,
-                children: ["Announcements", "General", "Ideas", "Polls", "Q&A", "Show&tell", "../../CODE_OF_CONDUCT"]
+                children: ["Announcements", "General", "Ideas", "Polls", "Q&A", "Show&tell", "CODE_OF_CONDUCT"]
               },
             ]
         },

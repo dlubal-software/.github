@@ -1,6 +1,6 @@
 # General 
 
-For more detailed click [here](https://github.com/orgs/Dlubal-Software/discussions/categories/general)
+For more details click [here](https://github.com/orgs/Dlubal-Software/discussions/categories/general)
 
 ### **Welcome**
 

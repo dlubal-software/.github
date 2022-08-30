@@ -2,7 +2,7 @@
 
 For more detailed announcments click [here](https://github.com/orgs/Dlubal-Software/discussions/categories/announcements)
 
-### Development documentation page 
+### **Development documentation page** 
 
 *Jaroslav Broz announced in [Announcments](https://github.com/orgs/Dlubal-Software/discussions/categories/announcements)*
 

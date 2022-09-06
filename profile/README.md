@@ -3,7 +3,7 @@ Dlubal Software GmbH
 <br>
 <br>
   
-[<img src="/profile/img/logo.png" width="180" height="180">](https://www.dlubal.com/en)
+[<img src="/profile/img/logo.gif" width="180" height="180">](https://www.dlubal.com/en)
 
 
   

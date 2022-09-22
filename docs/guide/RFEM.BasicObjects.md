@@ -471,7 +471,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'is_deactivated_for_calculation': , 'member_eccentricity_end': , 'member_eccentricity_start': , 'member_hinge_end': , 'member_hinge_start': , 'member_nonlinearity': , 'member_result_intermediate_point': , 'support': }
+        params = {'member_hinge_start':, 'member_hinge_end': , 'member_eccentricity_start': , 'member_eccentricity_end': , 'support':, 'member_nonlinearity': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'member_result_intermediate_point' : , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -521,7 +521,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'is_deactivated_for_calculation': False, 'member_eccentricity_end': , 'member_eccentricity_start': , 'member_nonlinearity': }
+        params = {'member_eccentricity_start': , 'member_eccentricity_end': , 'member_nonlinearity': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -570,7 +570,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'is_deactivated_for_calculation': }
+        params = {'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -620,7 +620,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'is_deactivated_for_calculation': False, 'member_eccentricity_end': , 'member_eccentricity_start': , 'member_nonlinearity': }
+        params = {'member_eccentricity_start': , 'member_eccentricity_end': , 'member_nonlinearity': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -844,7 +844,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'is_deactivated_for_calculation': , 'member_eccentricity_end': , 'member_eccentricity_start': , 'member_hinge_end': , 'member_hinge_start': , 'member_nonlinearity': , 'member_result_intermediate_point': }
+        params = {'member_hinge_start':, 'member_hinge_end': , 'member_eccentricity_start': , 'member_eccentricity_end': , 'member_nonlinearity': , 'member_result_intermediate_point' : , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -950,7 +950,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'member_result_intermediate_point': }
+        params = {'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'member_result_intermediate_point' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -997,7 +997,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'is_deactivated_for_calculation': , 'member_hinge_end': , 'member_hinge_start': , 'member_result_intermediate_point': , 'support': }
+        params = {'member_hinge_start':, 'member_hinge_end': , 'support':, 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'member_result_intermediate_point' : , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -1044,7 +1044,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'is_deactivated_for_calculation': , 'member_eccentricity_end': , 'member_eccentricity_start': , 'member_hinge_end': , 'member_hinge_start': , 'member_nonlinearity': , 'member_result_intermediate_point': , 'support': }
+        params = {'member_hinge_start':, 'member_hinge_end': , 'member_eccentricity_start': , 'member_eccentricity_end': , 'support':, 'member_nonlinearity': , 'member_result_intermediate_point' : , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -1094,7 +1094,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'is_deactivated_for_calculation': , 'member_eccentricity_end': , 'member_eccentricity_start': , 'member_nonlinearity': }
+        params = {'member_eccentricity_start': , 'member_eccentricity_end': , 'member_nonlinearity': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -1144,7 +1144,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'is_deactivated_for_calculation': , 'member_eccentricity_end': , 'member_eccentricity_start': , 'member_nonlinearity': }
+        params = {'member_eccentricity_start': , 'member_eccentricity_end': , 'member_nonlinearity': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -1194,7 +1194,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
-        params = {'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'is_deactivated_for_calculation': , 'member_eccentricity_end': , 'member_eccentricity_start': , 'member_nonlinearity': }
+        params = {'member_eccentricity_start': , 'member_eccentricity_end': , 'member_nonlinearity': , 'end_modifications_member_start_extension': , 'end_modifications_member_start_slope_y': , 'end_modifications_member_start_slope_z': , 'end_modifications_member_end_extension': , 'end_modifications_member_end_slope_y': , 'end_modifications_member_end_slope_z': , 'is_deactivated_for_calculation' : }
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited

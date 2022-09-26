@@ -217,9 +217,9 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         > if components[i][2] == True   
         components[i][5] (int): Multiple Number         
         components[i][6] (enum): Multiple Offset Definition Type Enumeration    
-                >> * for MultipleOffsetDefinitionType.OFFSET_DEFINITION_TYPE_ABSOLUTE:          
+                >> * for components[i][6] == MultipleOffsetDefinitionType.OFFSET_DEFINITION_TYPE_ABSOLUTE:          
                 components[i][7] (float): Multiple Offset Value         
-                >> * for MultipleOffsetDefinitionType.OFFSET_DEFINITION_TYPE_RELATIVE:              
+                >> * for components[i][6] == MultipleOffsetDefinitionType.OFFSET_DEFINITION_TYPE_RELATIVE:              
                 components[i][7] (float): Multiple Offset Value (value must be between 0.0 and 1.0)  
 
 

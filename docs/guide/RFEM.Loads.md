@@ -275,9 +275,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **comment** (*str*, *optional*) – Comments
 
 
-    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
-
-        params = {'imposed_displacement_line_end_x': , 'imposed_displacement_line_end_y': , 'imposed_displacement_line_end_z': , 'imposed_displacement_line_start_x': , 'imposed_displacement_line_start_y': , 'imposed_displacement_line_start_z': , 'imposed_rotation_line_end': , 'imposed_rotation_line_start': }
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary, Here params = LineDeformationParams
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -285,7 +283,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 #### LineDeformationParams
 
-* LineDeformationParams = {'imposed_displacement_line_end_x': 0.0, 'imposed_displacement_line_end_y': 0.0, 'imposed_displacement_line_end_z': 0.0002, 'imposed_displacement_line_start_x': 0.0, 'imposed_displacement_line_start_y': 0.0, 'imposed_displacement_line_start_z': 0.003, 'imposed_rotation_line_end': 0.0, 'imposed_rotation_line_start': 0.0}
+* LineDeformationParams = {'imposed_displacement_line_start_x' : , 'imposed_displacement_line_start_y' : , 'imposed_displacement_line_start_z': , 'imposed_rotation_line_start' : , 'imposed_displacement_line_end_x': , 'imposed_displacement_line_end_y': , 'imposed_displacement_line_end_z': , 'imposed_rotation_line_end': }
 
 
 
@@ -970,7 +968,7 @@ Load distribution is Uniform by default.
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
     
         > * for force_eccentricity == True:     
-        params = {‘eccentricity_horizontal_alignment’: MemberLoadEccentricityHorizontalAlignment.ALIGN_NONE, ‘eccentricity_vertical_alignment’: MemberLoadEccentricityVerticalAlignment.ALIGN_NONE, ‘eccentricity_section_middle’: MemberLoadEccentricitySectionMiddle.LOAD_ECCENTRICITY_SECTION_MIDDLE_CENTER_OF_GRAVITY, ‘is_eccentricity_at_end_different_from_start’: False, ‘eccentricity_y_at_end’: 0.0, ‘eccentricity_y_at_start’: 0.0,     ‘eccentricity_z_at_end’: 0.0, ‘eccentricity_z_at_start’: 0.0}
+        params = {‘eccentricity_horizontal_alignment’: MemberLoadEccentricityHorizontalAlignment.ALIGN_NONE, ‘eccentricity_vertical_alignment’: MemberLoadEccentricityVerticalAlignment.ALIGN_NONE, ‘eccentricity_section_middle’: MemberLoadEccentricitySectionMiddle.LOAD_ECCENTRICITY_SECTION_MIDDLE_CENTER_OF_GRAVITY, ‘is_eccentricity_at_end_different_from_start’: False, ‘eccentricity_y_at_end’: 0.0, ‘eccentricity_y_at_start’: 0.0, ‘eccentricity_z_at_end’: 0.0, ‘eccentricity_z_at_start’: 0.0}
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited

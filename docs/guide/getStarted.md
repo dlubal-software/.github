@@ -4,7 +4,7 @@ Before you start, make sure that your RFEM is ready to communicate via server. B
 
 ![server](./img/serverOption.png)
 
-### Installation of Python High Level Library
+### Installation of Python High Level Functions (HLF) Library
 
 The aforementioned HLF libraries can easily be found on our Dlubal GitHub account and is available as open-source. The following links will guide you to our libraries for each respective programming language.
 
@@ -14,7 +14,7 @@ If you would like to work with RFEM library globally in your computer easily ent
 
 `pip install RFEM`
 
-### Installation of C# High Level Library
+### Installation of C# High Level Functions Library
 
 You can download actual [release](https://github.com/Dlubal-Software/Dlubal_CSharp_Client/releases/) of our C# library and the use it for your project or you can clone / fork our repository and compile our library by yourself following steps below.
 

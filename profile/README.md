@@ -14,6 +14,7 @@ Dlubal Software GmbH
 
 [![image](https://img.shields.io/badge/RFEM-v6.0-blue)](https://www.dlubal.com/en/products/rfem-fea-software/what-is-rfem "RFEM")
 [![image](https://img.shields.io/badge/RSTAB-v9.0-blue)](https://www.dlubal.com/en/products/rstab-beam-structures/what-is-rstab "RFEM")
+[![image](https://img.shields.io/badge/RSECTION-v1.0-blue)](https://www.dlubal.com/en/products/cross-section-properties-software/rsection "RSECTION")
 
   
 # Welcome 

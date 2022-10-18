@@ -2,7 +2,7 @@
 
 Welcome to RFEM/RSTAB Webservices&API documentation! :book:
 
-### What is WebServices&API? 
+### What is WebServices & API? 
 
 Web service is a programmable interaction system for RFEM/RSTAB for structural analysis and design. With the help of this technology, RFEM/RSTAB provides a server service that can be reached locally or via a network. Easily send some request and get responses from RFEM/RSTAB!
 

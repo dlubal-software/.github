@@ -28,32 +28,32 @@ module.exports = {
         sidebar: {
             "/guide/": [
               {
-                title: "Quick Start 🏃‍♀️",
+                title: "Quick Start",
                 collapsable: false,
                 children: ["", "getStarted"]
               },
               {
-                title: "RFEM Python HLF 🐍",
+                title: "RFEM Python HLF",
                 collapsable: true,
                 children: ["ready", "init", "RFEM.BasicObjects", "RFEM.ConcreteDesign", "RFEM.Imperfections", "RFEM.LoadCasesAndCombinations", "RFEM.Loads", "RFEM.SpecialObjects", "RFEM.TypesforConcreteDesign", "RFEM.TypesForLines", "RFEM.TypesForMembers", "RFEM.TypesForNodes", "RFEM.TypesForSolids", "RFEM.TypesForSpecialObjects", "RFEM.TypesForSteelDesign", "RFEM.TypesForSurfaces", "Articles"]
               },
               {
-                title: "RSTAB Python HLF 🐍",
+                title: "RSTAB Python HLF",
                 collapsable: true,
                 children: ["RSTAB.BasicObjects", "RSTAB.ConcreteDesign", "RSTAB.Imperfections", "RSTAB.LoadCasesAndCombinations", "RSTAB.Loads", "RSTAB.SpecialObjects", "RSTAB.TypesforConcreteDesign", "RSTAB.TypesForMembers", "RSTAB.TypesForNodes", "RSTAB.TypesForSpecialObjects", "RSTAB.TypesForSteelDesign"]
               },
               {
-                title: ".NET HLF 🕸️",
+                title: ".NET HLF",
                 collapsable: true,
                 children: ["netintro"]
               },
               {
-                title: "JavaScript Commands 📜",
+                title: "JavaScript Commands",
                 collapsable: true,
                 children: ["MD/AnalysisSettings", "MD/BasicObjects", "MD/GuideObjects", "MD/Loading", "MD/Loads", "MD/LoadWizards", "MD/SpecialObjects", "MD/TypesForLines", "MD/TypesForMembers", "MD/TypesForNodes", "MD/TypesForSolids", "MD/TypesForSurfaces"]
               },
               {
-                title: "Tutorials 🗼",
+                title: "Tutorials",
                 collapsable: true,
                 children: ["tutorialintro"]
               },

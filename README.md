@@ -18,3 +18,10 @@ Dlubal Software GmbH
 ### .github Repository
   
 📚 We are hosting our documentation files in this repository.
+
+
+## Contributors
+
+</br>
+
+[![Contributors](https://contrib.rocks/image?repo=Dlubal-Software/.github)](https://github.com/Dlubal-Software/.github/graphs/contributors)

@@ -101,7 +101,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## LoadCombination
 
 
-### LoadCombination(no, analysis_type, design_situation, user_defined_name, static_analysis_settings, consider_imperfection, consider_initial_state, structure_modification, to_solve, combination_items, comment, params, model)
+### LoadCombination(no, analysis_type, design_situation, name, static_analysis_settings, consider_imperfection, consider_initial_state, structure_modification, to_solve, combination_items, comment, params, model)
 
 * **Parameters**
 
@@ -115,7 +115,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **design_situation** (*int*) – Design Situation
 
 
-    * **user_defined_name** (*list*) – User defined Combination Name
+    * **name** (*str*) – User defined Combination Name
 
 
     * **static_analysis_settings** (*int*) – Static Analysis Settings Number

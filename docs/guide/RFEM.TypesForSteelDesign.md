@@ -4,7 +4,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 ## SteelBoundaryConditions
 
-### SteelBoundaryConditions(no, user_defined_name, members, member_sets, intermediate_nodes, different_properties_supports, different_properties_hinges, nodal_supports, member_hinges, comment, params, model)
+### SteelBoundaryConditions(no, name, members, member_sets, intermediate_nodes, different_properties_supports, different_properties_hinges, nodal_supports, member_hinges, comment, params, model)
 
 * **Parameters**
 
@@ -12,7 +12,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **no** (*int*) – Boundary Conditions Tag
 
 
-    * **user_defined_name** (*str*) – User Defined Boundary Conditions Name
+    * **name** (*str*) – User Defined Boundary Conditions Name
 
 
     * **members** (*str*) – Assigned Members
@@ -92,7 +92,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## SteelEffectiveLengths
 
 
-### SteelEffectiveLengths(no, members, member_sets, flexural_buckling_about_y, flexural_buckling_about_z, torsional_buckling, lateral_torsional_buckling, principal_section_axes, geometric_section_axes, user_defined_name, nodal_supports, factors, intermediate_nodes, different_properties, factors_definition_absolute, import_from_stability_analysis_enabled, determination_of_mcr, comment, params, model)
+### SteelEffectiveLengths(no, members, member_sets, flexural_buckling_about_y, flexural_buckling_about_z, torsional_buckling, lateral_torsional_buckling, principal_section_axes, geometric_section_axes, name, nodal_supports, factors, intermediate_nodes, different_properties, factors_definition_absolute, import_from_stability_analysis_enabled, determination_of_mcr, comment, params, model)
 
 * **Parameters**
 
@@ -124,7 +124,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **geometric_section_axes** (*bool*) – Geometric Section Axes Option
 
 
-    * **user_defined_name** (*str*) – User Defined Effective Length Name
+    * **name** (*str*) – User Defined Effective Length Name
 
 
     * **nodal_supports** (*list of lists*) – Nodal Supports Table Definition
@@ -239,7 +239,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## SteelMemberRotationalRestraint
 
 
-### SteelMemberRotationalRestraint(no, user_defined_name, definition_type, members, member_sets, categories, parameters, comment, params, model)
+### SteelMemberRotationalRestraint(no, name, definition_type, members, member_sets, categories, parameters, comment, params, model)
 
 * **Parameters**
 
@@ -247,13 +247,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **no** (*int*) – Steel Member Rotational Restraint Tag
 
 
-    * **user_defined_name** (*list*) – User Defined Member Rotational Restraint Name
-
-        > * for user_defined_name[0] == False:  
-                pass
-        
-        > * for user_defined_name == True:  
-                user_defined_name[1] = Defined Name
+    * **name** (*str*) – User Defined Member Rotational Restraint Name
     
 
     * **definition_type** (*enum*) – Steel Member Rotational Restraint Type Enumeration
@@ -321,7 +315,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## SteelMemberShearPanel
 
 
-### SteelMemberShearPanel(no, user_defined_name, definition_type, members, member_sets, categories, parameters, comment, params)
+### SteelMemberShearPanel(no, name, definition_type, members, member_sets, categories, parameters, comment, params)
 
 * **Parameters**
 
@@ -329,14 +323,8 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **no** (*int*) – Steel Member Rotational Restraint Tag
 
 
-    * **user_defined_name** (*list*) – User Defined Member Shear Panel Name
+    * **name** (*str*) – User Defined Member Shear Panel Name
 
-        > * for user_defined_name[0] == False:  
-                pass
-        
-        > * for user_defined_name == True:  
-                user_defined_name[1] = Defined Name
-    
 
     * **definition_type** (*enum*) – Steel Member Shear Panel Definition Type Enumeration
 

@@ -13,10 +13,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **no** (*int*) – Member Definable Stiffness Tag
 
 
-    * **name** (*list*) – User Defined Name
-
-        > * for name[0] == True:     
-        name[1] == Uer Defined Name
+    * **name** (*str*) – User Defined Name
 
 
     * **members** (*str*) – Assigned Members
@@ -79,7 +76,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **no** (*int*) – Eccentricity Tag
 
 
-    * **name** (*list*) – User Defined Name
+    * **name** (*str*) – User Defined Name
 
 
     * **eccentricity_type** (*enum*) – Member Eccentricity Specification Type Enumeration

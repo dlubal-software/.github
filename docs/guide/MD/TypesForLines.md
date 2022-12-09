@@ -3,14 +3,14 @@
 <a name="LineHinge"></a>
 
 ## LineHinge
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_LineHinge_new"></a>
 
 ### new LineHinge(no, surface, lines, comment, params)
 Creates line hinge
 
-**Returns**: <code>Object</code> - Created line hinge
+**Returns**: <code>Object</code> - Created line hinge  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -25,8 +25,8 @@ Creates line hinge
 ### lineHinge.Translation(ux, uy, uz) ⇒ <code>Object</code>
 Set translation constants ux, uy, uz to line hinge
 
-**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)
-**Returns**: <code>Object</code> - line hinge in parent
+**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)  
+**Returns**: <code>Object</code> - line hinge in parent  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -39,8 +39,8 @@ Set translation constants ux, uy, uz to line hinge
 ### lineHinge.TranslationX(ux) ⇒ <code>Object</code>
 Set translation constant ux to line hinge
 
-**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)
-**Returns**: <code>Object</code> - line hinge in parent
+**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)  
+**Returns**: <code>Object</code> - line hinge in parent  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -51,8 +51,8 @@ Set translation constant ux to line hinge
 ### lineHinge.TranslationY(uy) ⇒ <code>Object</code>
 Set translation constant uy to line hinge
 
-**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)
-**Returns**: <code>Object</code> - line hinge in parent
+**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)  
+**Returns**: <code>Object</code> - line hinge in parent  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -63,8 +63,8 @@ Set translation constant uy to line hinge
 ### lineHinge.TranslationZ(uz) ⇒ <code>Object</code>
 Set translation constant uz to line hinge
 
-**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)
-**Returns**: <code>Object</code> - line hinge in parent
+**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)  
+**Returns**: <code>Object</code> - line hinge in parent  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -75,8 +75,8 @@ Set translation constant uz to line hinge
 ### lineHinge.Rotation(rx) ⇒ <code>Object</code>
 Set rotation constant rx to line hinge
 
-**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)
-**Returns**: <code>Object</code> - line hinge in parent
+**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)  
+**Returns**: <code>Object</code> - line hinge in parent  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ Set rotation constant rx to line hinge
 ### lineHinge.AssignTo(surface, lines)
 Assign line hinge to line and surface (line must be involved in the surface)
 
-**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)
+**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -99,7 +99,7 @@ Assign line hinge to line and surface (line must be involved in the surface)
 ### lineHinge.WallSlabConnection(surface, or)
 Assign wall-slab connection to line hinge
 
-**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)
+**Kind**: instance method of [<code>LineHinge</code>](#LineHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -109,14 +109,14 @@ Assign wall-slab connection to line hinge
 <a name="LineMeshRefinement"></a>
 
 ## LineMeshRefinement
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_LineMeshRefinement_new"></a>
 
 ### new LineMeshRefinement(no, targetFELength, numberOfLayers, lines, comment, params)
 Creates line mesh refinement
 
-**Returns**: <code>Object</code> - Created line mesh refinement HLF
+**Returns**: <code>Object</code> - Created line mesh refinement HLF  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -132,8 +132,8 @@ Creates line mesh refinement
 ### lineMeshRefinement.TargetFELength(targetFELength, numberOfLayers, lines) ⇒ <code>Object</code>
 Change line mesh refinement to type based on element length
 
-**Kind**: instance method of [<code>LineMeshRefinement</code>](#LineMeshRefinement)
-**Returns**: <code>Object</code> - Created line mesh refinement
+**Kind**: instance method of [<code>LineMeshRefinement</code>](#LineMeshRefinement)  
+**Returns**: <code>Object</code> - Created line mesh refinement  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -146,8 +146,8 @@ Change line mesh refinement to type based on element length
 ### lineMeshRefinement.NumberFiniteElements(numberOfFiniteElements, numberOfLayers, lines) ⇒ <code>Object</code>
 Change line mesh refinement to type based on number of elements on line
 
-**Kind**: instance method of [<code>LineMeshRefinement</code>](#LineMeshRefinement)
-**Returns**: <code>Object</code> - Created line mesh refinement
+**Kind**: instance method of [<code>LineMeshRefinement</code>](#LineMeshRefinement)  
+**Returns**: <code>Object</code> - Created line mesh refinement  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -160,8 +160,8 @@ Change line mesh refinement to type based on number of elements on line
 ### lineMeshRefinement.Gradual(gradual_rows, numberOfLayers, lines) ⇒ <code>Object</code>
 Change line mesh refinement to type gradually changed due to distance from the line
 
-**Kind**: instance method of [<code>LineMeshRefinement</code>](#LineMeshRefinement)
-**Returns**: <code>Object</code> - Created line mesh refinement
+**Kind**: instance method of [<code>LineMeshRefinement</code>](#LineMeshRefinement)  
+**Returns**: <code>Object</code> - Created line mesh refinement  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -174,8 +174,8 @@ Change line mesh refinement to type gradually changed due to distance from the l
 ### lineMeshRefinement.SetLines(gradual_rows, lines) ⇒ <code>Object</code>
 Function for assign lines to line mesh refinement
 
-**Kind**: instance method of [<code>LineMeshRefinement</code>](#LineMeshRefinement)
-**Returns**: <code>Object</code> - Created line mesh refinement
+**Kind**: instance method of [<code>LineMeshRefinement</code>](#LineMeshRefinement)  
+**Returns**: <code>Object</code> - Created line mesh refinement  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -183,3 +183,40 @@ Function for assign lines to line mesh refinement
 | lines | <code>Number</code> \| <code>Array</code> | Lines assigned to this refinement, can be undefined |
 
 <a name="createLineHinge"></a>
+
+## createLineHinge(no, comment, params) ⇒ <code>Object</code>
+Creates line hinge
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - Created line hinge  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of line hinge, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | line hinge parameters, can be undefined |
+
+<a name="CreateHingeConstant"></a>
+
+## CreateHingeConstant(hinge) ⇒ <code>Object</code>
+Creates line hinge constant
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - Created hinge constant  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| hinge | <code>Boolean</code> \| <code>Float</code> | hinge input (true, false, number(stiffness)) |
+
+<a name="CreateHinge"></a>
+
+## CreateHinge(hinge) ⇒
+Creates Hinge
+
+**Kind**: global function  
+**Returns**: Hinge object  
+
+| Param | Type |
+| --- | --- |
+| hinge | <code>Object</code> | 
+

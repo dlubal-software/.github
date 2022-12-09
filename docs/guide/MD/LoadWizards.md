@@ -3,7 +3,7 @@
 <a name="MemberLoadFromAreaLoadWizard"></a>
 
 ## MemberLoadFromAreaLoadWizard
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_MemberLoadFromAreaLoadWizard_new"></a>
 
@@ -23,7 +23,7 @@ Creates member load wizard
 ### memberLoadFromAreaLoadWizard.Uniform(no, load_case, uniform_magnitude, coordinate_system, load_direction, comment, params)
 Creates uniform member load wizard
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ Creates uniform member load wizard
 ### memberLoadFromAreaLoadWizard.Linear(no, load_case, magnitude_1, node_1, magnitude_2, node_2, magnitude_3, node_3, coordinate_system, load_direction, comment, params)
 Creates linear member load wizard
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ Creates linear member load wizard
 ### memberLoadFromAreaLoadWizard.VaryingInX(no, load_case, load_distribution_values, coordinate_system, load_direction, comment, params)
 Creates varying in X member load wizard
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -79,7 +79,7 @@ Creates varying in X member load wizard
 ### memberLoadFromAreaLoadWizard.VaryingInY(no, load_case, load_distribution_values, coordinate_system, load_direction, comment, params)
 Creates varying in Y member load wizard
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -96,7 +96,7 @@ Creates varying in Y member load wizard
 ### memberLoadFromAreaLoadWizard.VaryingInZ(no, load_case, load_distribution_values, coordinate_system, load_direction, comment, params)
 Creates varying in Z member load wizard
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -113,7 +113,7 @@ Creates varying in Z member load wizard
 ### memberLoadFromAreaLoadWizard.SetCornerNodes(corner_nodes)
 Sets corner nodes for member load from area load wizard
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -124,7 +124,7 @@ Sets corner nodes for member load from area load wizard
 ### memberLoadFromAreaLoadWizard.SetExcludedMembers(excluded_members, excluded_parallel_members)
 Sets excluded members for member load from area load wizard
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -136,7 +136,7 @@ Sets excluded members for member load from area load wizard
 ### memberLoadFromAreaLoadWizard.LockForNewMembers(lock_for_new_members)
 Sets lock for new members
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -147,7 +147,7 @@ Sets lock for new members
 ### memberLoadFromAreaLoadWizard.SmoothConcentratedLoad(smooth_punctual_load_enabled)
 Sets smooth concentrated load
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -158,7 +158,7 @@ Sets smooth concentrated load
 ### memberLoadFromAreaLoadWizard.ConsiderMemberEccentricity(consider_member_eccentricity)
 Sets consider member eccentricity
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -169,7 +169,7 @@ Sets consider member eccentricity
 ### memberLoadFromAreaLoadWizard.ConsiderSectionDistribution(consider_section_distribution)
 Sets consider section distribution
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -180,7 +180,7 @@ Sets consider section distribution
 ### memberLoadFromAreaLoadWizard.AbsoluteToleranceForMembersOnPlane(absolute_tolerance)
 Sets absolute tolerance for member on plane
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -191,7 +191,7 @@ Sets absolute tolerance for member on plane
 ### memberLoadFromAreaLoadWizard.RelativeToleranceForMembersOnPlane(relative_tolerance)
 Sets relative tolerance for member on plane
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -202,7 +202,7 @@ Sets relative tolerance for member on plane
 ### memberLoadFromAreaLoadWizard.AbsoluteToleranceForNodesOnLine(absolute_tolerance)
 Sets absolute tolerance for nodes on line
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -213,7 +213,7 @@ Sets absolute tolerance for nodes on line
 ### memberLoadFromAreaLoadWizard.RelativeToleranceForNodesOnLine(relative_tolerance)
 Sets relative tolerance for nodes on line
 
-**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromAreaLoadWizard</code>](#MemberLoadFromAreaLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -222,7 +222,7 @@ Sets relative tolerance for nodes on line
 <a name="MemberLoadFromFreeLineLoadWizard"></a>
 
 ## MemberLoadFromFreeLineLoadWizard
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_MemberLoadFromFreeLineLoadWizard_new"></a>
 
@@ -242,7 +242,7 @@ Creates member load wizard
 ### memberLoadFromFreeLineLoadWizard.Uniform(no, load_case, uniform_magnitude, node_1, node_2, coordinate_system, load_direction, comment, params)
 Creates uniform member load wizard
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -261,7 +261,7 @@ Creates uniform member load wizard
 ### memberLoadFromFreeLineLoadWizard.Linear(no, load_case, magnitude_1, node_1, magnitude_2, node_2, coordinate_system, load_direction, comment, params)
 Creates linear member load wizard
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -281,7 +281,7 @@ Creates linear member load wizard
 ### memberLoadFromFreeLineLoadWizard.AbsoluteToleranceForMembersOnPlane(absolute_tolerance)
 Sets absolute tolerance for member on plane
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -292,7 +292,7 @@ Sets absolute tolerance for member on plane
 ### memberLoadFromFreeLineLoadWizard.RelativeToleranceForMembersOnPlane(relative_tolerance)
 Sets relative tolerance for member on plane
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -303,7 +303,7 @@ Sets relative tolerance for member on plane
 ### memberLoadFromFreeLineLoadWizard.AbsoluteToleranceForNodesOnLine(absolute_tolerance)
 Sets absolute tolerance for nodes on line
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -314,7 +314,7 @@ Sets absolute tolerance for nodes on line
 ### memberLoadFromFreeLineLoadWizard.RelativeToleranceForNodesOnLine(relative_tolerance)
 Sets relative tolerance for nodes on line
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -325,7 +325,7 @@ Sets relative tolerance for nodes on line
 ### memberLoadFromFreeLineLoadWizard.ExcludedMembers(excluded_members, excluded_parallel_members)
 Sets excluded members
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -337,7 +337,7 @@ Sets excluded members
 ### memberLoadFromFreeLineLoadWizard.LockForNewMembers(lock_for_new_members)
 Sets lock for new members
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -348,7 +348,7 @@ Sets lock for new members
 ### memberLoadFromFreeLineLoadWizard.ConsiderMemberEccentricity(consider_member_eccentricity)
 Sets consider member eccentricity
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -359,7 +359,7 @@ Sets consider member eccentricity
 ### memberLoadFromFreeLineLoadWizard.ConsiderSectionDistribution(consider_section_distribution)
 Sets consider section distribution
 
-**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)
+**Kind**: instance method of [<code>MemberLoadFromFreeLineLoadWizard</code>](#MemberLoadFromFreeLineLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -368,7 +368,7 @@ Sets consider section distribution
 <a name="SnowLoadWizard"></a>
 
 ## SnowLoadWizard
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_SnowLoadWizard_new"></a>
 
@@ -387,7 +387,7 @@ Creates empty snow load wizard
 ### snowLoadWizard.SetMonoPitchRoofType(no, roof_corner_nodes, load_case, comment, params)
 Creates flat/monopitch snow load wizard
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -402,7 +402,7 @@ Creates flat/monopitch snow load wizard
 ### snowLoadWizard.SetDuopitch(no, roof_corner_nodes, load_case_1, load_case_2, load_case_3, comment, params)
 Creates duopitch snow load wizard
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -419,7 +419,7 @@ Creates duopitch snow load wizard
 ### snowLoadWizard.SetLoadedRoofs(loaded_planes_accessibility)
 Sets loaded roofs
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -430,7 +430,7 @@ Sets loaded roofs
 ### snowLoadWizard.WithoutLoadsOnMembers(objects_without_loads, objects_without_loads_parallel_to)
 Generated on members
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -442,7 +442,7 @@ Generated on members
 ### snowLoadWizard.WithoutLoadsOnSurfaces(objects_without_loads, objects_without_loads_parallel_to)
 Generated on surfaces
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -454,7 +454,7 @@ Generated on surfaces
 ### snowLoadWizard.WithoutLoadsOnLines(objects_without_loads, objects_without_loads_parallel_to)
 Generated on lines
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -466,7 +466,7 @@ Generated on lines
 ### snowLoadWizard.SnowOverhang(enabled)
 Sets snow overhang
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -477,7 +477,7 @@ Sets snow overhang
 ### snowLoadWizard.SnowGuard(enabled)
 Sets snow guard
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -488,7 +488,7 @@ Sets snow guard
 ### snowLoadWizard.LockForNewObjects(enabled)
 Sets lock for new members
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -499,7 +499,7 @@ Sets lock for new members
 ### snowLoadWizard.ConsiderMemberEccentricity(enabled)
 Sets consider member eccentricity
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -510,7 +510,7 @@ Sets consider member eccentricity
 ### snowLoadWizard.ConsiderSectionDistribution(enabled)
 Sets consider section distribution
 
-**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)
+**Kind**: instance method of [<code>SnowLoadWizard</code>](#SnowLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -519,7 +519,7 @@ Sets consider section distribution
 <a name="WindLoadWizard"></a>
 
 ## WindLoadWizard
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_WindLoadWizard_new"></a>
 
@@ -538,7 +538,7 @@ Creates empty wind load wizard
 ### windLoadWizard.WallsRoofMonopitch(no, base_corner_nodes, roof_corner_nodes, load_cases, wind_directions, comment, params)
 Creates vertical walls with flat/monopitch roof
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -555,7 +555,7 @@ Creates vertical walls with flat/monopitch roof
 ### windLoadWizard.WallsRoofDuoPitch(no, base_corner_nodes, roof_corner_nodes, load_cases, wind_directions, comment, params)
 Creates vertical walls with duopitch roof
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -572,7 +572,7 @@ Creates vertical walls with duopitch roof
 ### windLoadWizard.RoofMonoPitch(no, roof_corner_nodes, load_cases, wind_directions, comment, params)
 Creates flat/monopitch roof
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -588,7 +588,7 @@ Creates flat/monopitch roof
 ### windLoadWizard.RoofDuopitch(no, roof_corner_nodes, load_cases, wind_directions, comment, params)
 Creates duopitch roof
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -604,7 +604,7 @@ Creates duopitch roof
 ### windLoadWizard.SetLoadedWallsAndRoofs(roofs_accessibility)
 Sets loaded walls/roofs
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -615,7 +615,7 @@ Sets loaded walls/roofs
 ### windLoadWizard.WithoutLoadsOnMembers(objects_without_loads, objects_without_loads_parallel_to)
 Generated on members
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -627,7 +627,7 @@ Generated on members
 ### windLoadWizard.WithoutLoadsOnSurfaces(objects_without_loads, objects_without_loads_parallel_to)
 Generated on surfaces
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -639,7 +639,7 @@ Generated on surfaces
 ### windLoadWizard.WithoutLoadsOnLines(objects_without_loads, objects_without_loads_parallel_to)
 Generated on lines
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -651,7 +651,7 @@ Generated on lines
 ### windLoadWizard.LockForNewObjects(enabled)
 Sets lock for new members
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -662,7 +662,7 @@ Sets lock for new members
 ### windLoadWizard.ConsiderMemberEccentricity(enabled)
 Sets consider member eccentricity
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -673,10 +673,133 @@ Sets consider member eccentricity
 ### windLoadWizard.ConsiderSectionDistribution(enabled)
 Sets consider section distribution
 
-**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)
+**Kind**: instance method of [<code>WindLoadWizard</code>](#WindLoadWizard)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | enabled | <code>Boolean</code> | Can be undefined, true as default |
 
 <a name="createBaseMemberLoadFromAreaLoadWizard"></a>
+
+## createBaseMemberLoadFromAreaLoadWizard(no, load_case, comment, params) ⇒
+Creates member load wizard (private)
+
+**Kind**: global function  
+**Returns**: Created member load wizard  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Member load wizard index, can be undefined |
+| load_case | <code>Object</code> | Load case |
+| comment | <code>String</code> | Comment |
+| params | <code>Object</code> | Additional parameters |
+
+<a name="setMemberLoadFromAreaLoadWizardDistribution"></a>
+
+## setMemberLoadFromAreaLoadWizardDistribution(member_wizard, load_distribution, load_distribution_values) ⇒
+Sets load distribution to member load wizard (private)
+
+**Kind**: global function  
+**Returns**: Modified member load wizard  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member_wizard | <code>Object</code> | Member load wizard |
+| load_distribution | <code>Number</code> | Load distribution |
+| load_distribution_values | <code>Array</code> | Load distribution values |
+
+<a name="createBaseMemberLoadFromFreeLineLoadWizard"></a>
+
+## createBaseMemberLoadFromFreeLineLoadWizard(no, load_case, comment, params) ⇒
+Creates member load wizard (private)
+
+**Kind**: global function  
+**Returns**: Created member load wizard  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Member load wizard index, can be undefined |
+| load_case | <code>Object</code> | Load case |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Additional parameters, can be undefined |
+
+<a name="setMemberLoadFromFreeLineLoadWizardDistribution"></a>
+
+## setMemberLoadFromFreeLineLoadWizardDistribution(member_wizard, load_distribution, load_distribution_values) ⇒
+Sets load distribution to member load wizard (private)
+
+**Kind**: global function  
+**Returns**: Modified member load wizard  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member_wizard | <code>Object</code> | Member load wizard |
+| load_distribution | <code>Number</code> | Load distribution |
+| load_distribution_values | <code>Array</code> | Load distribution values |
+
+<a name="withoutLoadsOn"></a>
+
+## withoutLoadsOn(snow_load_wizard, table_row, objects_without_loads, objects_without_loads_parallel_to)
+Sets objects without load (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| snow_load_wizard | <code>Object</code> | Snow load wizard |
+| table_row | <code>Number</code> | Table row to which values hes to be set |
+| objects_without_loads | <code>Array</code> | Object's indexes without loads |
+| objects_without_loads_parallel_to | <code>Array</code> | Object's indexes without loads parallel to |
+
+<a name="createSnowLoadWizard"></a>
+
+## createSnowLoadWizard(no, comment, params)
+Creates empty snow load wizard (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Snow load wizard index, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Additional parameters, can be undefined |
+
+<a name="setWindDirections"></a>
+
+## setWindDirections(wind_load_wizard, roof_sides_accessibility)
+Sets wind perpendicular to roofs (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| wind_load_wizard | <code>Object</code> | Wind load wizard to set |
+| roof_sides_accessibility | <code>Array</code> | Roof sides accessibility                                             [Wall 1, Wall 2, Wall 3, Wall 4] (Vertical walls with flat/monopitch roof, Vertical walls with duopitch roof)                                             [Direction 1, Direction 2, Direction 3, Direction 4] (Flat monopitch roof, Duopitch roof) |
+
+<a name="withoutLoadsOn"></a>
+
+## withoutLoadsOn(wind_load_wizard, table_row, objects_without_loads, objects_without_loads_parallel_to)
+Sets objects without load (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| wind_load_wizard | <code>Object</code> | Wind load wizard |
+| table_row | <code>Number</code> | Table row to which values hes to be set |
+| objects_without_loads | <code>Array</code> | Object's indexes without loads |
+| objects_without_loads_parallel_to | <code>Array</code> | Object's indexes without loads parallel to |
+
+<a name="createWindLoadWizard"></a>
+
+## createWindLoadWizard(no, comment, params)
+Creates empty wind load wizard (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Wind load wizard index, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Additional parameters, can be undefined |
+

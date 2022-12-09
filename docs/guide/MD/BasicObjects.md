@@ -2,12 +2,12 @@
 
 ## Line
 
-**Kind**: global class
+**Kind**: global class  
 
 ### new Line(no, nodes, comment, params)
 Creates line
 
-**Returns**: Created line
+**Returns**: Created line  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ Creates line
 ### new Line(no, comment, params)
 Create RSection Line
 
-**Returns**: line
+**Returns**: line  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -31,11 +31,10 @@ Create RSection Line
 
 <a name="Line+Polyline"></a>
 
-### line.Polyline(no, nodes, comment, params) ⇒
+### line.Polyline(no, nodes, comment, params)
 Creates polyline
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created polyline
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -46,11 +45,10 @@ Creates polyline
 
 <a name="Line+Arc"></a>
 
-### line.Arc(no, nodes, control_point, arc_parameters, center_of_arc, alpha_adjustement_target, comment, params) ⇒
+### line.Arc(no, nodes, control_point, arc_parameters, center_of_arc, alpha_adjustement_target, comment, params)
 Creates arc line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created arc line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -65,11 +63,10 @@ Creates arc line
 
 <a name="Line+Circle"></a>
 
-### line.Circle(no, center_of_circle, circle_radius, normal_point, comment, params) ⇒
+### line.Circle(no, center_of_circle, circle_radius, normal_point, comment, params)
 Creates circle line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created circle line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -82,11 +79,10 @@ Creates circle line
 
 <a name="Line+EllipticalArc"></a>
 
-### line.EllipticalArc(no, control_point_1, control_point_2, perimeter_point, elliptical_arc_alpha, elliptical_arc_beta, comment, params) ⇒
+### line.EllipticalArc(no, control_point_1, control_point_2, perimeter_point, elliptical_arc_alpha, elliptical_arc_beta, comment, params)
 Creates elliptical arc line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created elliptical arc line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -101,11 +97,10 @@ Creates elliptical arc line
 
 <a name="Line+Ellipse"></a>
 
-### line.Ellipse(no, nodes, control_point, comment, params) ⇒
+### line.Ellipse(no, nodes, control_point, comment, params)
 Creates ellipse line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created ellipse line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -117,11 +112,10 @@ Creates ellipse line
 
 <a name="Line+Parabola"></a>
 
-### line.Parabola(no, nodes, control_point, parabola_alpha, comment, params) ⇒
+### line.Parabola(no, nodes, control_point, parabola_alpha, comment, params)
 Creates parabola line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created parabola line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -134,11 +128,10 @@ Creates parabola line
 
 <a name="Line+Spline"></a>
 
-### line.Spline(no, nodes, comment, params) ⇒
+### line.Spline(no, nodes, comment, params)
 Creates spline
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created spline
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -149,11 +142,10 @@ Creates spline
 
 <a name="Line+NURBS"></a>
 
-### line.NURBS(no, nodes, control_points_by_components, nurbs_order, comment, params) ⇒
+### line.NURBS(no, nodes, control_points_by_components, nurbs_order, comment, params)
 Creates NURBS line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created NURBS line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -169,8 +161,8 @@ Creates NURBS line
 ### line.RectangularPolygon(no, center_point, length, width, plane, comment, params) ⇒
 Create rectangular polygon
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created rectangular polygon
+**Kind**: instance method of [<code>Line</code>](#Line)  
+**Returns**: Created rectangular polygon  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -187,8 +179,8 @@ Create rectangular polygon
 ### line.nPolygon(no, control_point, no_edges, radius, rotation_plane, rotation_angle, join, comment, params) ⇒
 Creates nPolygon
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created nPolygon
+**Kind**: instance method of [<code>Line</code>](#Line)  
+**Returns**: Created nPolygon  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -207,25 +199,19 @@ Creates nPolygon
 ### line.Rotation(rotation_values, rotation_type)
 Sets line rotation
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | rotation_values | <code>Number</code> | Rotation values depends on rotation type: 											1 - [β] 											2 - [help_node_index, rotation_plane ("x-y"|"x-z")] 											3 - [rotation_plane ("x-y"|"x-z")] |
 | rotation_type | <code>Number</code> | Line rotation via: Angle (1), Help node (2), Inside (non-straight line) (3) |
 
-<a name="Line+AssignMember"></a>
-
-### line.AssignMember()
-Sets new default beam member to line
-
-**Kind**: instance method of [<code>Line</code>](#Line)
 <a name="Line+NodesOnLine"></a>
 
 ### line.NodesOnLine(values)
 Sets nodes on line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -236,7 +222,7 @@ Sets nodes on line
 ### line.Supports(line_support)
 Sets line supports
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -247,7 +233,7 @@ Sets line supports
 ### line.MeshRefinement(line_mesh_refinement)
 Sets line mesh refinement
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -258,7 +244,7 @@ Sets line mesh refinement
 ### line.WeldedJoints(values)
 Sets line welded joints
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -267,12 +253,12 @@ Sets line welded joints
 <a name="LineSet"></a>
 
 ## LineSet
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_LineSet_new"></a>
 
 ### new LineSet(no, lines, comment, params)
-**Returns**: lineSet
+**Returns**: lineSet  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -286,7 +272,7 @@ Sets line welded joints
 ### lineSet.ContinuousLines(no, lines, comment, params)
 Create Continuous Lines lineSet type
 
-**Kind**: instance method of [<code>LineSet</code>](#LineSet)
+**Kind**: instance method of [<code>LineSet</code>](#LineSet)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -300,7 +286,7 @@ Create Continuous Lines lineSet type
 ### lineSet.GroupOfLines(no, lines, comment, params)
 Create Group of Lines
 
-**Kind**: instance method of [<code>LineSet</code>](#LineSet)
+**Kind**: instance method of [<code>LineSet</code>](#LineSet)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -312,32 +298,51 @@ Create Group of Lines
 <a name="Material"></a>
 
 ## Material
-**Kind**: global class
+**Kind**: global class  
+
 <a name="new_Material_new"></a>
 
-### new Material(no, name, comment, params)
+### new Material(no, name, basic_material, comment, params)
 Create Material
 
-**Returns**: material
 
 | Param | Type | Description |
 | --- | --- | --- |
-| no | <code>int</code> | Number of Material |
-| name | <code>string</code> | Name of Material |
-| comment | <code>string</code> | Comment for the Material |
-| params | <code>dictionary</code> | Parameters of the Material |
+| no | <code>Number</code> | Number of Material, can be undefined |
+| name | <code>String</code> | Name of Material, can be undefined |
+| basic_material | <code>String</code> | Basic material type, can be undefined (false as default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="Material+BasicProperties"></a>
+
+### material.BasicProperties(modulus_of_elasticity, shear_modulus, definition_type, poisson_ratio, specific_weight, mass_density, thermal_coefficient) ⇒
+Sets base material properties
+
+**Kind**: instance method of [<code>Material</code>](#Material)  
+**Returns**: Modified material  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| modulus_of_elasticity | <code>Number</code> | Modulus of elasticity, can be undefined (value specified by default) |
+| shear_modulus | <code>Number</code> | Shear modulus, can be undefined (value specified by default) |
+| definition_type | <code>Number</code> | Definition type, can be undefined (value specified by default) |
+| poisson_ratio | <code>Number</code> | Poisson's ration, can be undefined (value specified by default) |
+| specific_weight | <code>Number</code> | Specific weight, can be undefined (value specified by default) |
+| mass_density | <code>Number</code> | Mass density, can be undefined (value specified by default) |
+| thermal_coefficient | <code>Number</code> | Coefficient of thermal expansion, can be undefined (value specified by default) |
 
 <a name="Member"></a>
 
 ## Member
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_Member_new"></a>
 
 ### new Member(no, nodes_or_line, comment, params)
 Creates member
 
-**Returns**: Created member
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -351,8 +356,8 @@ Creates member
 ### member.Beam(no, nodes_or_line, section_start, comment, params) ⇒
 Creates beam member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -367,8 +372,8 @@ Creates beam member
 ### member.Rigid(no, nodes_or_line, comment, params) ⇒
 Creates rigid member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -382,8 +387,8 @@ Creates rigid member
 ### member.Truss(no, nodes_or_line, section_start, comment, params) ⇒
 Creates truss member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -398,8 +403,8 @@ Creates truss member
 ### member.TrussOnlyN(no, nodes_or_line, section_start, comment, params) ⇒
 Creates truss (only N) member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -414,8 +419,8 @@ Creates truss (only N) member
 ### member.Tension(no, nodes_or_line, section_start, comment, params) ⇒
 Creates tension member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -430,8 +435,8 @@ Creates tension member
 ### member.Compression(no, nodes_or_line, section_start, comment, params) ⇒
 Creates compression member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -446,8 +451,8 @@ Creates compression member
 ### member.Buckling(no, nodes_or_line, section_start, comment, params) ⇒
 Creates buckling member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -462,8 +467,8 @@ Creates buckling member
 ### member.Cable(no, nodes_or_line, section_start, comment, params) ⇒
 Creates cable member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -478,8 +483,8 @@ Creates cable member
 ### member.ResultBeam(no, nodes_or_line, section_start, result_beam_integrate_stresses_and_forces, result_beam_parameters, included_objects, excluded_objects, comment, params) ⇒
 Create result beam member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -498,8 +503,8 @@ Create result beam member
 ### member.DefinableStiffness(no, nodes_or_line, definable_stiffness, comment, params) ⇒
 Create definable stiffness member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created definable stiffness member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created definable stiffness member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -514,8 +519,8 @@ Create definable stiffness member
 ### member.CouplingRigidRigid(no, nodes_or_line, comment, params) ⇒
 Create coupling rigid-rigid member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created coupling rigid-rigid member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created coupling rigid-rigid member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -529,8 +534,8 @@ Create coupling rigid-rigid member
 ### member.CouplingRigidHinge(no, nodes_or_line, comment, params) ⇒
 Create coupling rigid-hinge member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created coupling rigid-hinge member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created coupling rigid-hinge member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -544,8 +549,8 @@ Create coupling rigid-hinge member
 ### member.CouplingHingeRigid(no, nodes_or_line, comment, params) ⇒
 Create coupling hinge-rigid member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created coupling hinge-rigid member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created coupling hinge-rigid member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -559,8 +564,8 @@ Create coupling hinge-rigid member
 ### member.CouplingHingeHinge(no, nodes_or_line, comment, params) ⇒
 Create coupling hinge-hinge member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: Created coupling hinge-hinge member
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Created coupling hinge-hinge member  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -572,8 +577,8 @@ Create coupling hinge-hinge member
 <a name="Member+Rib"></a>
 
 ### member.Rib(nodes_or_line, no, section_start, rib_alignment, surface_assignment_autodetect, align_axes, flange_dimensions, surfaces, comment, params) ⇒
-**Kind**: instance method of [<code>Member</code>](#Member)
-**Returns**: object Rib
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: object Rib  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -593,7 +598,7 @@ Create coupling hinge-hinge member
 ### member.NodesOnMember(values)
 Sets nodes on member
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -604,7 +609,7 @@ Sets nodes on member
 ### member.Hinges(member_start_hinge, member_end_hinge)
 Sets member start and/or member end hinges
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -616,7 +621,7 @@ Sets member start and/or member end hinges
 ### member.Eccentricities(member_start_eccentricity, member_end_eccentricity)
 Sets member start and/or member end eccentricities
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -628,7 +633,7 @@ Sets member start and/or member end eccentricities
 ### member.Supports(member_support)
 Sets member supports
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -639,7 +644,7 @@ Sets member supports
 ### member.Nonlinearity(member_nonlinearity)
 Sets member nonlinearity
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -648,7 +653,7 @@ Sets member nonlinearity
 <a name="Member+ResultIntermediatePoints"></a>
 
 ### member.ResultIntermediatePoints(member_result_intermediate_point)
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -659,7 +664,7 @@ Sets member nonlinearity
 ### member.EndModifications(member_start, member_end)
 Sets member start and/or member end extensions
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -671,13 +676,13 @@ Sets member start and/or member end extensions
 ### member.SectionDistributionUniform()
 Sets uniform section distribution
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 <a name="Member+SectionDistributionLinear"></a>
 
 ### member.SectionDistributionLinear(section_start, section_end, section_alignment)
 Sets linear distribution
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -690,7 +695,7 @@ Sets linear distribution
 ### member.SectionDistributionTaperedAtBothSides(section_start, section_internal, section_end, reference_type, section_distance_from_start, section_distance_from_end, section_alignment)
 Sets tapered at both sides distribution
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -707,7 +712,7 @@ Sets tapered at both sides distribution
 ### member.SectionDistributionTaperedAtStart(section_start, section_end, reference_type, section_distance_from_start, section_alignment)
 Sets tapered at start distribution
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -722,7 +727,7 @@ Sets tapered at start distribution
 ### member.SectionDistributionTaperedAtEnd(section_start, section_end, reference_type, section_distance_from_end, section_alignment)
 Sets tapered at end distribution
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -737,7 +742,7 @@ Sets tapered at end distribution
 ### member.SectionDistributionSaddle(section_start, section_internal, section_end, reference_type, section_distance_from_start, section_alignment)
 Sets saddle distribution
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -753,7 +758,7 @@ Sets saddle distribution
 ### member.SectionDistributionOffsetAtBothSides(section_start, section_internal, section_end, reference_type, section_offset_from_start, section_offset_from_end, section_alignment)
 Sets offset at both sides distribution
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -770,7 +775,7 @@ Sets offset at both sides distribution
 ### member.SectionDistributionOffsetAtStart(section_start, section_end, reference_type, section_offset_from_start, section_alignment)
 Sets offset at start distribution
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -785,7 +790,7 @@ Sets offset at start distribution
 ### member.SectionDistributionOffsetAtEnd(reference_type, section_offset_from_end, section_alignment)
 Sets offset at end distribution
 
-**Kind**: instance method of [<code>Member</code>](#Member)
+**Kind**: instance method of [<code>Member</code>](#Member)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -796,14 +801,14 @@ Sets offset at end distribution
 <a name="MemberSet"></a>
 
 ## MemberSet
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_MemberSet_new"></a>
 
 ### new MemberSet(no, members, comment, params)
 Create Member Set
 
-**Returns**: memberSet
+**Returns**: memberSet  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -817,7 +822,7 @@ Create Member Set
 ### memberSet.ContinuousMembers(no, members, comment, params)
 Create Continuous Member memberSet type
 
-**Kind**: instance method of [<code>MemberSet</code>](#MemberSet)
+**Kind**: instance method of [<code>MemberSet</code>](#MemberSet)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -831,7 +836,7 @@ Create Continuous Member memberSet type
 ### memberSet.GroupOfMembers(no, members, comment, params)
 Create Group of  Member memberSet type
 
-**Kind**: instance method of [<code>MemberSet</code>](#MemberSet)
+**Kind**: instance method of [<code>MemberSet</code>](#MemberSet)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -843,14 +848,14 @@ Create Group of  Member memberSet type
 <a name="Node"></a>
 
 ## Node
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_Node_new"></a>
 
 ### new Node(no, coordinate_X, coordinate_Y, coordinate_Z, comment, params)
 Create Node
 
-**Returns**: node
+**Returns**: node  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -863,15 +868,15 @@ Create Node
 
 <a name="Node+Standard"></a>
 
-### node.Standard(no, coordinate_system, coordinate_system_type, comment, params)
+### node.Standard(no, coordinates, coordinate_system_type, comment, params)
 Create Standard node
 
-**Kind**: instance method of [<code>Node</code>](#Node)
+**Kind**: instance method of [<code>Node</code>](#Node)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>int</code> | Number of Node |
-| coordinate_system | <code>array</code> | Coordinate of node in format [x, y, z] |
+| coordinates | <code>array</code> | Coordinate of node in format [x, y, z] |
 | coordinate_system_type | <code>string</code> | Type of Coordinate System |
 | comment | <code>string</code> | Comment for the Node |
 | params | <code>dictionary</code> | Parameters of the Node |
@@ -881,7 +886,7 @@ Create Standard node
 ### node.BetweenTwoNodes(no, start_node_no, end_node_no, node_reference, parameters, offset_y, offset_z, comment, params)
 Create Node between two nodes
 
-**Kind**: instance method of [<code>Node</code>](#Node)
+**Kind**: instance method of [<code>Node</code>](#Node)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -900,7 +905,7 @@ Create Node between two nodes
 ### node.BetweenTwoPoints(no, start_point, end_point, node_reference, parameters, offset_y, offset_z, comment, params)
 Create Node between two points
 
-**Kind**: instance method of [<code>Node</code>](#Node)
+**Kind**: instance method of [<code>Node</code>](#Node)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -919,7 +924,7 @@ Create Node between two points
 ### node.OnLine(no, line_number, node_reference, parameters, comment, params)
 Create Node On Line
 
-**Kind**: instance method of [<code>Node</code>](#Node)
+**Kind**: instance method of [<code>Node</code>](#Node)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -935,7 +940,7 @@ Create Node On Line
 ### node.OnMember(no, member_number, node_reference, parameters, comment, params)
 Create Node on Member
 
-**Kind**: instance method of [<code>Node</code>](#Node)
+**Kind**: instance method of [<code>Node</code>](#Node)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -949,14 +954,14 @@ Create Node on Member
 <a name="Opening"></a>
 
 ## Opening
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_Opening_new"></a>
 
 ### new Opening(no, boundary_lines, comment, params)
 Create Opening
 
-**Returns**: opening
+**Returns**: opening  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -970,7 +975,7 @@ Create Opening
 ### new Opening(no, comment, params)
 Create RSection Opening
 
-**Returns**: opening
+**Returns**: opening  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -981,13 +986,14 @@ Create RSection Opening
 <a name="ControlPoint"></a>
 
 ## ControlPoint
-**Kind**: global class
+**Kind**: global class  
+
 <a name="new_ControlPoint_new"></a>
 
 ### new ControlPoint(no, comment, params)
 Create RSection Control Point
 
-**Returns**: control point
+**Returns**: control point  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -995,16 +1001,46 @@ Create RSection Control Point
 | comment | <code>string</code> | Comment for the Control Point |
 | params | <code>dictionary</code> | Parameters of the Control Point |
 
+<a name="new_ControlPoint_new"></a>
+
+### new ControlPoint(no, comment, params)
+Create RSection Control Point
+
+**Returns**: control point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Control Point |
+| comment | <code>string</code> | Comment for the Control Point |
+| params | <code>dictionary</code> | Parameters of the Control Point |
+
+<a name="Dimension"></a>
+
+## Dimension
+**Kind**: global class  
+<a name="new_Dimension_new"></a>
+
+### new Dimension(no, comment, params)
+Create RSection Dimensions
+
+**Returns**: Dimension  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Dimension |
+| comment | <code>string</code> | Comment for the Dimension |
+| params | <code>dictionary</code> | Parameters of the Dimension |
+
 <a name="Element"></a>
 
 ## Element
-**Kind**: global class
+**Kind**: global class  
 <a name="new_Element_new"></a>
 
 ### new Element(no, comment, params)
 Create RSection Elements
 
-**Returns**: element
+**Returns**: element  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1015,14 +1051,14 @@ Create RSection Elements
 <a name="Line"></a>
 
 ## Line
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_Line_new"></a>
 
 ### new Line(no, nodes, comment, params)
 Creates line
 
-**Returns**: Created line
+**Returns**: Created line  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1036,7 +1072,7 @@ Creates line
 ### new Line(no, comment, params)
 Create RSection Line
 
-**Returns**: line
+**Returns**: line  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1046,11 +1082,10 @@ Create RSection Line
 
 <a name="Line+Polyline"></a>
 
-### line.Polyline(no, nodes, comment, params) ⇒
+### line.Polyline(no, nodes, comment, params)
 Creates polyline
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created polyline
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1061,11 +1096,10 @@ Creates polyline
 
 <a name="Line+Arc"></a>
 
-### line.Arc(no, nodes, control_point, arc_parameters, center_of_arc, alpha_adjustement_target, comment, params) ⇒
+### line.Arc(no, nodes, control_point, arc_parameters, center_of_arc, alpha_adjustement_target, comment, params)
 Creates arc line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created arc line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1080,11 +1114,10 @@ Creates arc line
 
 <a name="Line+Circle"></a>
 
-### line.Circle(no, center_of_circle, circle_radius, normal_point, comment, params) ⇒
+### line.Circle(no, center_of_circle, circle_radius, normal_point, comment, params)
 Creates circle line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created circle line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1097,11 +1130,10 @@ Creates circle line
 
 <a name="Line+EllipticalArc"></a>
 
-### line.EllipticalArc(no, control_point_1, control_point_2, perimeter_point, elliptical_arc_alpha, elliptical_arc_beta, comment, params) ⇒
+### line.EllipticalArc(no, control_point_1, control_point_2, perimeter_point, elliptical_arc_alpha, elliptical_arc_beta, comment, params)
 Creates elliptical arc line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created elliptical arc line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1116,11 +1148,10 @@ Creates elliptical arc line
 
 <a name="Line+Ellipse"></a>
 
-### line.Ellipse(no, nodes, control_point, comment, params) ⇒
+### line.Ellipse(no, nodes, control_point, comment, params)
 Creates ellipse line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created ellipse line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1132,11 +1163,10 @@ Creates ellipse line
 
 <a name="Line+Parabola"></a>
 
-### line.Parabola(no, nodes, control_point, parabola_alpha, comment, params) ⇒
+### line.Parabola(no, nodes, control_point, parabola_alpha, comment, params)
 Creates parabola line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created parabola line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1149,11 +1179,10 @@ Creates parabola line
 
 <a name="Line+Spline"></a>
 
-### line.Spline(no, nodes, comment, params) ⇒
+### line.Spline(no, nodes, comment, params)
 Creates spline
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created spline
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1164,11 +1193,10 @@ Creates spline
 
 <a name="Line+NURBS"></a>
 
-### line.NURBS(no, nodes, control_points_by_components, nurbs_order, comment, params) ⇒
+### line.NURBS(no, nodes, control_points_by_components, nurbs_order, comment, params)
 Creates NURBS line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created NURBS line
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1184,8 +1212,8 @@ Creates NURBS line
 ### line.RectangularPolygon(no, center_point, length, width, plane, comment, params) ⇒
 Create rectangular polygon
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created rectangular polygon
+**Kind**: instance method of [<code>Line</code>](#Line)  
+**Returns**: Created rectangular polygon  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1202,8 +1230,8 @@ Create rectangular polygon
 ### line.nPolygon(no, control_point, no_edges, radius, rotation_plane, rotation_angle, join, comment, params) ⇒
 Creates nPolygon
 
-**Kind**: instance method of [<code>Line</code>](#Line)
-**Returns**: Created nPolygon
+**Kind**: instance method of [<code>Line</code>](#Line)  
+**Returns**: Created nPolygon  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1222,25 +1250,19 @@ Creates nPolygon
 ### line.Rotation(rotation_values, rotation_type)
 Sets line rotation
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | rotation_values | <code>Number</code> | Rotation values depends on rotation type: 											1 - [β] 											2 - [help_node_index, rotation_plane ("x-y"|"x-z")] 											3 - [rotation_plane ("x-y"|"x-z")] |
 | rotation_type | <code>Number</code> | Line rotation via: Angle (1), Help node (2), Inside (non-straight line) (3) |
 
-<a name="Line+AssignMember"></a>
-
-### line.AssignMember()
-Sets new default beam member to line
-
-**Kind**: instance method of [<code>Line</code>](#Line)
 <a name="Line+NodesOnLine"></a>
 
 ### line.NodesOnLine(values)
 Sets nodes on line
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1251,7 +1273,7 @@ Sets nodes on line
 ### line.Supports(line_support)
 Sets line supports
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1262,7 +1284,7 @@ Sets line supports
 ### line.MeshRefinement(line_mesh_refinement)
 Sets line mesh refinement
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1273,7 +1295,7 @@ Sets line mesh refinement
 ### line.WeldedJoints(values)
 Sets line welded joints
 
-**Kind**: instance method of [<code>Line</code>](#Line)
+**Kind**: instance method of [<code>Line</code>](#Line)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1282,14 +1304,14 @@ Sets line welded joints
 <a name="Opening"></a>
 
 ## Opening
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_Opening_new"></a>
 
 ### new Opening(no, boundary_lines, comment, params)
 Create Opening
 
-**Returns**: opening
+**Returns**: opening  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1303,7 +1325,7 @@ Create Opening
 ### new Opening(no, comment, params)
 Create RSection Opening
 
-**Returns**: opening
+**Returns**: opening  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1314,13 +1336,13 @@ Create RSection Opening
 <a name="Part"></a>
 
 ## Part
-**Kind**: global class
+**Kind**: global class  
 <a name="new_Part_new"></a>
 
 ### new Part(no, comment, params)
 Create RSection Part
 
-**Returns**: part
+**Returns**: part  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1331,13 +1353,13 @@ Create RSection Part
 <a name="Point"></a>
 
 ## Point
-**Kind**: global class
+**Kind**: global class  
 <a name="new_Point_new"></a>
 
 ### new Point(no, coordinate_Y, coordinate_Z, comment, params)
 Create RSection Point
 
-**Returns**: point
+**Returns**: point  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1350,13 +1372,27 @@ Create RSection Point
 <a name="Stiffener"></a>
 
 ## Stiffener
-**Kind**: global class
+**Kind**: global class  
+
 <a name="new_Stiffener_new"></a>
 
 ### new Stiffener(no, comment, params)
 Create RSection Stiffener
 
-**Returns**: stiffener
+**Returns**: stiffener  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Stiffener |
+| comment | <code>string</code> | Comment for the Stiffener |
+| params | <code>dictionary</code> | Parameters of the Stiffener |
+
+<a name="new_Stiffener_new"></a>
+
+### new Stiffener(no, comment, params)
+Create RSection Stiffener
+
+**Returns**: Stiffener  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1367,13 +1403,13 @@ Create RSection Stiffener
 <a name="StressPoint"></a>
 
 ## StressPoint
-**Kind**: global class
+**Kind**: global class  
 <a name="new_StressPoint_new"></a>
 
 ### new StressPoint(no, comment, params)
 Create RSection Stress Points
 
-**Returns**: stress point
+**Returns**: stress point  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1384,13 +1420,789 @@ Create RSection Stress Points
 <a name="Subpanel"></a>
 
 ## Subpanel
-**Kind**: global class
+**Kind**: global class  
+
 <a name="new_Subpanel_new"></a>
 
 ### new Subpanel(no, comment, params)
 Create RSection Subpanel
 
-**Returns**: subpanel
+**Returns**: subpanel  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Subpanel |
+| comment | <code>string</code> | Comment for the Subpanel |
+| params | <code>dictionary</code> | Parameters of the Subpanel |
+
+<a name="new_Subpanel_new"></a>
+
+### new Subpanel(no, comment, params)
+Create RSection Subpanel
+
+**Returns**: Subpanel  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Subpanel |
+| comment | <code>string</code> | Comment for the Subpanel |
+| params | <code>dictionary</code> | Parameters of the Subpanel |
+
+<a name="ControlPoint"></a>
+
+## ControlPoint
+**Kind**: global class  
+
+<a name="new_ControlPoint_new"></a>
+
+### new ControlPoint(no, comment, params)
+Create RSection Control Point
+
+**Returns**: control point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Control Point |
+| comment | <code>string</code> | Comment for the Control Point |
+| params | <code>dictionary</code> | Parameters of the Control Point |
+
+<a name="new_ControlPoint_new"></a>
+
+### new ControlPoint(no, comment, params)
+Create RSection Control Point
+
+**Returns**: control point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Control Point |
+| comment | <code>string</code> | Comment for the Control Point |
+| params | <code>dictionary</code> | Parameters of the Control Point |
+
+<a name="RSectionElement"></a>
+
+## RSectionElement
+**Kind**: global class  
+
+<a name="new_RSectionElement_new"></a>
+
+### new RSectionElement(no, type, comment, params)
+Create RSection Element
+
+**Returns**: Element  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Element, can be undefined |
+| type | <code>String</code> | Type of Element |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionElement+SingleLine"></a>
+
+### rSectionElement.SingleLine(no, boundary_lines, thickness, shear_thickness, comment, params) ⇒
+Creates single line Element
+
+**Kind**: instance method of [<code>RSectionElement</code>](#RSectionElement)  
+**Returns**: Element  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Element, can be undefined |
+| boundary_lines | <code>Array</code> | Boundary lines |
+| thickness | <code>Number</code> | Thickness, can be undefined (10 mm by default) |
+| shear_thickness | <code>Number</code> | Shear thickness, can be undefined (not specified by default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionElement+Arc"></a>
+
+### rSectionElement.Arc(no, points_of_arc, control_point, thickness, shear_thickness, arc_parameters, arc_center, alpha_adjustment_target, comment, params) ⇒
+Creates RSection arc Element
+
+**Kind**: instance method of [<code>RSectionElement</code>](#RSectionElement)  
+**Returns**: Element  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Element, can be undefined |
+| points_of_arc | <code>Array</code> | Points numbers of arc Element |
+| control_point | <code>Array</code> | Coordinates of control point |
+| thickness | <code>Number</code> | Thickness, can be undefined (10 mm by default) |
+| shear_thickness | <code>Number</code> | Shear thickness, can be undefined (not specified by default) |
+| arc_parameters | <code>Array</code> | Arc parameters, can be undefined |
+| arc_center | <code>Array</code> | Coordinates of arc center, can be undefined |
+| alpha_adjustment_target | <code>String</code> | Subsequent adjustment of alpha by displacing point at, can be undefined (Beginning of arc by default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionElement+Circle"></a>
+
+### rSectionElement.Circle(no, circle_center, circle_radius, thickness, shear_thickness, comment, params) ⇒
+Creates RSection circle Element
+
+**Kind**: instance method of [<code>RSectionElement</code>](#RSectionElement)  
+**Returns**: Element  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Element, can be undefined |
+| circle_center | <code>Array</code> | Coordinates of circle center |
+| circle_radius | <code>Number</code> | Circle radius |
+| thickness | <code>Number</code> | Thickness, can be undefined (10 mm by default) |
+| shear_thickness | <code>Number</code> | Shear thickness, can be undefined (not specified by default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionElement+Ellipse"></a>
+
+### rSectionElement.Ellipse(no, first_point, second_point, control_point, thickness, shear_thickness, comment, params) ⇒
+Creates RSection ellipse Element
+
+**Kind**: instance method of [<code>RSectionElement</code>](#RSectionElement)  
+**Returns**: Element  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Element, can be undefined |
+| first_point | <code>Number</code> | Number of first point |
+| second_point | <code>Number</code> | Number of second point |
+| control_point | <code>Array</code> | Control point coordinates |
+| thickness | <code>Number</code> | Thickness, can be undefined (10 mm by default) |
+| shear_thickness | <code>Number</code> | Shear thickness, can be undefined (not specified by default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionElement+Parabola"></a>
+
+### rSectionElement.Parabola(no, points_of_parabola, control_point, thickness, shear_thickness, parabola_alpha, comment, params) ⇒
+Creates RSection parabola Element
+
+**Kind**: instance method of [<code>RSectionElement</code>](#RSectionElement)  
+**Returns**: Element  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Element, can be undefined |
+| points_of_parabola | <code>Array</code> | Points numbers of parabola |
+| control_point | <code>Array</code> | Control point |
+| thickness | <code>Number</code> | Thickness, can be undefined (10 mm by default) |
+| shear_thickness | <code>Number</code> | Shear thickness, can be undefined (not specified by default) |
+| parabola_alpha | <code>Number</code> | Angle of the parabola, can be undefined (0 as default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionElement+NURBS"></a>
+
+### rSectionElement.NURBS(no, control_points, nurbs_order, nurbs_knots, thickness, shear_thickness, comment, params) ⇒
+Creates RSection NURBS Element
+
+**Kind**: instance method of [<code>RSectionElement</code>](#RSectionElement)  
+**Returns**: Element  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Element, can be undefined |
+| control_points | <code>Array</code> | Control points ([[y1, z1 (, weight1)], [y2, z2, weight2], ...]) |
+| nurbs_order | <code>Number</code> | Nurbs order, can be undefine (2 as default) |
+| nurbs_knots | <code>Array</code> | Nurbs knots, can be undefined |
+| thickness | <code>Number</code> | Thickness, can be undefined (10 mm by default) |
+| shear_thickness | <code>Number</code> | Shear thickness, can be undefined (not specified by default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionElement+Thickness"></a>
+
+### rSectionElement.Thickness(thickness, shear_thickness) ⇒
+Sets thickness and/or shear thickness
+
+**Kind**: instance method of [<code>RSectionElement</code>](#RSectionElement)  
+**Returns**: Modified Element  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| thickness | <code>Number</code> | Thickness |
+| shear_thickness | <code>Number</code> | Effective thickness for shear transfer, can be undefined |
+
+<a name="RSectionLine"></a>
+
+## RSectionLine
+**Kind**: global class  
+
+<a name="new_RSectionLine_new"></a>
+
+### new RSectionLine(no, type, comment, params)
+Creates RSection Line
+
+**Returns**: Line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Line, can be undefined |
+| type | <code>String</code> | Type of line |
+| comment | <code>String</code> | Comment for the Line, can be undefined |
+| params | <code>Object</code> | Parameters of the Line, can be undefined |
+
+<a name="RSectionLine+Polyline"></a>
+
+### rSectionLine.Polyline(no, definition_points, comment, params) ⇒
+Creates RSection polyline
+
+**Kind**: instance method of [<code>RSectionLine</code>](#RSectionLine)  
+**Returns**: Line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Line, can be undefined |
+| definition_points | <code>Array</code> | Definition point numbers |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionLine+Arc"></a>
+
+### rSectionLine.Arc(no, points_of_arc, control_point, arc_parameters, arc_center, alpha_adjustment_target, comment, params) ⇒
+Creates RSection arc Line
+
+**Kind**: instance method of [<code>RSectionLine</code>](#RSectionLine)  
+**Returns**: Line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Line, can be undefined |
+| points_of_arc | <code>Array</code> | Points numbers of arc lLne |
+| control_point | <code>Array</code> | Coordinates of control point |
+| arc_parameters | <code>Array</code> | Arc parameters [height, radius, alpha], can be undefined |
+| arc_center | <code>Array</code> | Coordinates of arc center, can be undefined |
+| alpha_adjustment_target | <code>String</code> | Subsequent adjustment of alpha by displaycing point at, can be undefined (beginning of arc by default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionLine+Circle"></a>
+
+### rSectionLine.Circle(no, circle_center, circle_radius, comment, params) ⇒
+Creates RSection circle Line
+
+**Kind**: instance method of [<code>RSectionLine</code>](#RSectionLine)  
+**Returns**: Line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Line, can be undefined |
+| circle_center | <code>Array</code> | Coordinates of circle center [y, z] |
+| circle_radius | <code>Number</code> | Circle radius |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionLine+Ellipse"></a>
+
+### rSectionLine.Ellipse(no, first_point, second_point, control_point, comment, params) ⇒
+Creates RSection ellipse Line
+
+**Kind**: instance method of [<code>RSectionLine</code>](#RSectionLine)  
+**Returns**: Line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Line, can be undefined |
+| first_point | <code>Number</code> | Number of first point |
+| second_point | <code>Number</code> | Number of second point |
+| control_point | <code>Array</code> | Control point coordinates |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionLine+Parabola"></a>
+
+### rSectionLine.Parabola(no, points_of_parabola, control_point, parabola_alpha, comment, params) ⇒
+Creates RSection parabola Line
+
+**Kind**: instance method of [<code>RSectionLine</code>](#RSectionLine)  
+**Returns**: Line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Line, can be undefined |
+| points_of_parabola | <code>Array</code> | Points numbers of parabola |
+| control_point | <code>Array</code> | Control point |
+| parabola_alpha | <code>Number</code> | Angle of the parabola, can be undefined (0 as default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionLine+NURBS"></a>
+
+### rSectionLine.NURBS(no, definition_points, control_points, nurbs_order, nurbs_knots, comment, params) ⇒
+Creates RSection NURBS
+
+**Kind**: instance method of [<code>RSectionLine</code>](#RSectionLine)  
+**Returns**: Line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Line, can be undefined |
+| definition_points | <code>Array</code> | Definition points |
+| control_points | <code>Array</code> | Control points [[y1, z1 (, weight1)], [y2, z2, weight2], ...] |
+| nurbs_order | <code>Number</code> | Nurbs order, can be undefine (2 as default) |
+| nurbs_knots | <code>Array</code> | Nurbs knots, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionLine+PointsOnLine"></a>
+
+### rSectionLine.PointsOnLine(points_on_line)
+Sets points on line
+
+**Kind**: instance method of [<code>RSectionLine</code>](#RSectionLine)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| points_on_line | <code>Array</code> | [[distance1, from_start1, reference1, point_no1], [distance2, from_start2, reference2, point_no2], ...]                                  from_start = true => node distance from start, otherwise distance from end                                  reference - "L" by default                                  point_no - empty by default |
+
+<a name="RSectionOpening"></a>
+
+## RSectionOpening
+**Kind**: global class  
+
+<a name="new_RSectionOpening_new"></a>
+
+### new RSectionOpening(no, boundary_lines, comment, params)
+Creates RSection Opening
+
+**Returns**: Opening  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Opening, can be undefined |
+| boundary_lines | <code>Array</code> | Boundary lines |
+| comment | <code>string</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionOpening+Rectangle"></a>
+
+### rSectionOpening.Rectangle(no, top_left_corner, width, height, comment, params) ⇒
+Creates rectangle Opening
+
+**Kind**: instance method of [<code>RSectionOpening</code>](#RSectionOpening)  
+**Returns**: Rectangle Opening  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Opening, can be undefined |
+| top_left_corner | <code>Array</code> | Top let corner specified with y, z coordinates |
+| width | <code>Number</code> | Width |
+| height | <code>Number</code> | Height |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionOpening+Triangle"></a>
+
+### rSectionOpening.Triangle(no, first_vertex, second_vertex, third_vertex, comment, params) ⇒
+Creates triangle Opening
+
+**Kind**: instance method of [<code>RSectionOpening</code>](#RSectionOpening)  
+**Returns**: Triangle Opening  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Opening, can be undefined |
+| first_vertex | <code>Array</code> | First point specified with y, z coordinates |
+| second_vertex | <code>Array</code> | Second point specified with y, z coordinates |
+| third_vertex | <code>Array</code> | Third point specified with y, z coordinates |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionOpening+Circle"></a>
+
+### rSectionOpening.Circle(no, center_vertex, radius, comment, params) ⇒
+Creates circle Opening
+
+**Kind**: instance method of [<code>RSectionOpening</code>](#RSectionOpening)  
+**Returns**: Circle Part  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Opening, can be undefined |
+| center_vertex | <code>Array</code> | Circle center point |
+| radius | <code>Number</code> | Circle radius |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionOpening+Polygon"></a>
+
+### rSectionOpening.Polygon(no, vertex_points, comment, params) ⇒
+Creates polygon Opening
+
+**Kind**: instance method of [<code>RSectionOpening</code>](#RSectionOpening)  
+**Returns**: Polygon Opening  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Opening, can be undefined |
+| vertex_points | <code>Array</code> | Vertex points specified with y, z coordinates |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPart"></a>
+
+## RSectionPart
+**Kind**: global class  
+
+<a name="new_RSectionPart_new"></a>
+
+### new RSectionPart(no, comment, params)
+Creates RSection Part
+
+**Returns**: Part  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Part, can be undefined |
+| comment | <code>string</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPart+Rectangle"></a>
+
+### rSectionPart.Rectangle(no, top_left_corner, width, height, material, comment, params) ⇒
+Creates rectangle Part
+
+**Kind**: instance method of [<code>RSectionPart</code>](#RSectionPart)  
+**Returns**: Rectangle Part  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Part, can be undefined |
+| top_left_corner | <code>Array</code> | Top let corner specified with y, z coordinates |
+| width | <code>Number</code> | Width |
+| height | <code>Number</code> | Height |
+| material | <code>Object</code> | Material |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPart+Triangle"></a>
+
+### rSectionPart.Triangle(no, first_vertex, second_vertex, third_vertex, material, comment, params) ⇒
+Creates triangle Part
+
+**Kind**: instance method of [<code>RSectionPart</code>](#RSectionPart)  
+**Returns**: Triangle Part  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Part, can be undefined |
+| first_vertex | <code>Array</code> | First point specified with y, z coordinates |
+| second_vertex | <code>Array</code> | Second point specified with y, z coordinates |
+| third_vertex | <code>Array</code> | Third point specified with y, z coordinates |
+| material | <code>Object</code> | Material |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPart+Circle"></a>
+
+### rSectionPart.Circle(no, center_vertex, radius, material, comment, params) ⇒
+Creates circle Part
+
+**Kind**: instance method of [<code>RSectionPart</code>](#RSectionPart)  
+**Returns**: Circle Part  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Part, can be undefined |
+| center_vertex | <code>Array</code> | Circle center point |
+| radius | <code>Number</code> | Circle radius |
+| material | <code>Object</code> | Material |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPart+Polygon"></a>
+
+### rSectionPart.Polygon(no, vertex_points, material, comment, params) ⇒
+Creates polygon Part
+
+**Kind**: instance method of [<code>RSectionPart</code>](#RSectionPart)  
+**Returns**: Polygon Part  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Part, can be undefined |
+| vertex_points | <code>Array</code> | Vertex points specified with y, z coordinates |
+| material | <code>Object</code> | Material |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPart+WithBoundaryLines"></a>
+
+### rSectionPart.WithBoundaryLines(no, boundary_lines, material, comment, params) ⇒
+Creates Part with boundary line
+
+**Kind**: instance method of [<code>RSectionPart</code>](#RSectionPart)  
+**Returns**: Part  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Part, can be undefined |
+| boundary_lines | <code>Array</code> | Boundary lines |
+| material | <code>Object</code> | Material |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPart+IntegratedObjects"></a>
+
+### rSectionPart.IntegratedObjects(enable, automatic_object_detection, integrated_openings) ⇒
+Integrates objects to Part
+
+**Kind**: instance method of [<code>RSectionPart</code>](#RSectionPart)  
+**Returns**: Modified Part  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| enable | <code>Boolean</code> | Objects are integrated, can be undefined (true as default) |
+| automatic_object_detection | <code>Boolean</code> | Objects are integrated automatically, can be undefined (true as default) |
+| integrated_openings | <code>Array</code> | Integrated openings |
+
+<a name="RSectionPart+No"></a>
+
+### rSectionPart.No() ⇒
+Returns number of Part
+
+**Kind**: instance method of [<code>RSectionPart</code>](#RSectionPart)  
+**Returns**: Number of Part  
+<a name="RSectionPoint"></a>
+
+## RSectionPoint
+**Kind**: global class  
+
+<a name="new_RSectionPoint_new"></a>
+
+### new RSectionPoint(no, coordinate_y, coordinate_z, comment, params)
+Creates RSection Point
+
+**Returns**: Point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Point, can be undefined |
+| coordinate_y | <code>Number</code> | Coordinate Y |
+| coordinate_z | <code>Number</code> | Coordinate Z |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPoint+y"></a>
+
+### rSectionPoint.y()
+Returns y coordinate
+
+**Kind**: instance method of [<code>RSectionPoint</code>](#RSectionPoint)  
+<a name="RSectionPoint+z"></a>
+
+### rSectionPoint.z()
+Returns z coordinate
+
+**Kind**: instance method of [<code>RSectionPoint</code>](#RSectionPoint)  
+<a name="RSectionPoint+Standard"></a>
+
+### rSectionPoint.Standard(no, coordinate_y, coordinate_z, reference_point, comment, params) ⇒
+Creates standard RSection Point
+
+**Kind**: instance method of [<code>RSectionPoint</code>](#RSectionPoint)  
+**Returns**: Point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Point, can be undefined |
+| coordinate_y | <code>Number</code> | Coordinate Y |
+| coordinate_z | <code>Number</code> | Coordinate Z |
+| reference_point | <code>Number</code> | Reference point number, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPoint+BetweenTwoLocations"></a>
+
+### rSectionPoint.BetweenTwoLocations(no, start_location, end_location, distance_from_start, distance_from_end, distance_from_start_relative, reference_type, offset_in_local_direction, comment, params) ⇒
+Creates Between two locations RSection Point
+
+**Kind**: instance method of [<code>RSectionPoint</code>](#RSectionPoint)  
+**Returns**: Point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Point, can be undefined |
+| start_location | <code>Array</code> | Coordinates for start location [y, z] |
+| end_location | <code>Array</code> | Coordinates for end location [y, z] |
+| distance_from_start | <code>Number</code> | Distance from start |
+| distance_from_end | <code>Number</code> | Distance from end |
+| distance_from_start_relative | <code>Boolean</code> | Distance from start point, can be undefined (True as default) |
+| reference_type | <code>String</code> | Reference type, distance of start and end location along the length, in Y or Z coordination, can be undefined ("L" by default) |
+| offset_in_local_direction | <code>Number</code> | Offset in local direction, can be undefined (0 as default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPoint+BetweenTwoPoints"></a>
+
+### rSectionPoint.BetweenTwoPoints(no, start_point, end_point, distance_from_start, distance_from_end, distance_from_start_relative, reference_type, offset_in_local_direction, comment, params) ⇒
+Creates Between two points RSection Point
+
+**Kind**: instance method of [<code>RSectionPoint</code>](#RSectionPoint)  
+**Returns**: Point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Point, can be undefined |
+| start_point | <code>Object</code> | Number of start point |
+| end_point | <code>Object</code> | Number of end point |
+| distance_from_start | <code>Number</code> | Distance from start |
+| distance_from_end | <code>Number</code> | Distance from end |
+| distance_from_start_relative | <code>Boolean</code> | Distance from start point, can be undefined (True asy default) |
+| reference_type | <code>String</code> | Reference type, distance of start and end location along the length, in Y or Z coordination, can be undefined ("L" by default) |
+| offset_in_local_direction | <code>Number</code> | Offset in local direction, can be undefined (0 as default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionPoint+OnLine"></a>
+
+### rSectionPoint.OnLine(no, line, distance_from_start, distance_from_end, distance_from_start_relative, reference_type, comment, params) ⇒
+Creates On lines RSection Point
+
+**Kind**: instance method of [<code>RSectionPoint</code>](#RSectionPoint)  
+**Returns**: Point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Point, can be undefined |
+| line | <code>Number</code> | Line number |
+| distance_from_start | <code>Number</code> | Distance from start |
+| distance_from_end | <code>Number</code> | Distance from end |
+| distance_from_start_relative | <code>Boolean</code> | Distance from start point, can be undefined (True as default) |
+| reference_type | <code>String</code> | Reference type, can be undefined ("L" by default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="Stiffener"></a>
+
+## Stiffener
+**Kind**: global class  
+
+<a name="new_Stiffener_new"></a>
+
+### new Stiffener(no, comment, params)
+Create RSection Stiffener
+
+**Returns**: stiffener  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Stiffener |
+| comment | <code>string</code> | Comment for the Stiffener |
+| params | <code>dictionary</code> | Parameters of the Stiffener |
+
+<a name="new_Stiffener_new"></a>
+
+### new Stiffener(no, comment, params)
+Create RSection Stiffener
+
+**Returns**: Stiffener  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Stiffener |
+| comment | <code>string</code> | Comment for the Stiffener |
+| params | <code>dictionary</code> | Parameters of the Stiffener |
+
+<a name="RSectionStressPoint"></a>
+
+## RSectionStressPoint
+**Kind**: global class  
+
+<a name="new_RSectionStressPoint_new"></a>
+
+### new RSectionStressPoint(no, comment, params)
+Create RSection Stress Points
+
+**Returns**: Stress point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Stress point, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionStressPoint+Standard"></a>
+
+### rSectionStressPoint.Standard(no, part_no, reference_stress_point_no, non_global_coordinates, global_coordinations, element_no, comment, params) ⇒
+Creates Standard Stress point
+
+**Kind**: instance method of [<code>RSectionStressPoint</code>](#RSectionStressPoint)  
+**Returns**: Standard Stress point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Stress point, can be undefined |
+| part_no | <code>Number</code> | Part number |
+| reference_stress_point_no | <code>Number</code> | Reference Stress point number, can be undefined |
+| non_global_coordinates | <code>Array</code> | Coordinates, can be undefined |
+| global_coordinations | <code>Array</code> | Global coordinates, can be undefined |
+| element_no | <code>Number</code> | Element number, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionStressPoint+OnLine"></a>
+
+### rSectionStressPoint.OnLine(no, line_no, distance_points, reference_type, part_no, element_no, comment, params) ⇒
+Creates Stress point on line
+
+**Kind**: instance method of [<code>RSectionStressPoint</code>](#RSectionStressPoint)  
+**Returns**: Stress point on line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Stress point, can be undefined |
+| line_no | <code>Number</code> | Line number |
+| distance_points | <code>Array</code> | Distance between point and start and end points, [from_start, from_end, relative], from_start or from_end can be undefined (but at least one distance must be specified), relative can be undefined (true as default) |
+| reference_type | <code>String</code> | Reference type, distance of start and end location along the length, in Y or Z coordination, can be undefined ("L" by default) |
+| part_no | <code>Number</code> | Part number, van be undefined |
+| element_no | <code>Number</code> | Element number, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="RSectionStressPoint+OnElement"></a>
+
+### rSectionStressPoint.OnElement(no, element_no, distance_points, reference_type, element_side, comment, params) ⇒
+Creates stress point on element
+
+**Kind**: instance method of [<code>RSectionStressPoint</code>](#RSectionStressPoint)  
+**Returns**: Modified Stress point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Stress point, can be undefined |
+| element_no | <code>Number</code> | Element number |
+| distance_points | <code>Array</code> | Distance between point and start and end points, [from_start, from_end, relative], from_start or from_end can be undefined (but at least one distance must be specified), relative can be undefined (true as default) |
+| reference_type | <code>String</code> | Reference type, distance of start and end location along the length, in Y or Z coordination, can be undefined ("L" by default) |
+| element_side | <code>String</code> | Element side, can be undefined ("MIDDLE" as default) |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="Subpanel"></a>
+
+## Subpanel
+**Kind**: global class  
+
+<a name="new_Subpanel_new"></a>
+
+### new Subpanel(no, comment, params)
+Create RSection Subpanel
+
+**Returns**: subpanel  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Subpanel |
+| comment | <code>string</code> | Comment for the Subpanel |
+| params | <code>dictionary</code> | Parameters of the Subpanel |
+
+<a name="new_Subpanel_new"></a>
+
+### new Subpanel(no, comment, params)
+Create RSection Subpanel
+
+**Returns**: Subpanel  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1401,33 +2213,217 @@ Create RSection Subpanel
 <a name="Section"></a>
 
 ## Section
-**Kind**: global class
+**Kind**: global class  
+
 <a name="new_Section_new"></a>
 
-### new Section(no, name, material, comment, params)
+### new Section(no, section_name, material_no, comment, params)
 Create Section
 
-**Returns**: section
+**Returns**: Section  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| no | <code>int</code> | Number of the Section |
-| name | <code>string</code> | Name of the Section |
-| material | <code>int</code> | Number of the material |
-| comment | <code>string</code> | Comment for the Opening |
-| params | <code>dictionary</code> | Parameters of the Opening |
+| no | <code>Number</code> | Number of the Section, can be undefined |
+| section_name | <code>String</code> | Name of the Section, can be undefined (IPE 300 by default) |
+| material_no | <code>Number</code> | Number of the material |
+| comment | <code>String</code> | Comment |
+| params | <code>Object</code> | Parameters |
+
+<a name="Section+GetNo"></a>
+
+### section.GetNo() ⇒
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Number of Section  
+<a name="Section+SectionType"></a>
+
+### section.SectionType(section_type) ⇒
+Sets section type
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| section_type | <code>String</code> | Section type |
+
+<a name="Section+ManufacturingType"></a>
+
+### section.ManufacturingType(manufacturing_type) ⇒
+Sets manufacturing type
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| manufacturing_type | <code>String</code> | Manufacturing type |
+
+<a name="Section+SectionProperties"></a>
+
+### section.SectionProperties(area_shear_y, area_shear_z, warping, width_temperature_load, depth_temperature_load) ⇒
+Sets Section properties
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| area_shear_y | <code>Number</code> | Shear sectional areas, can be undefined |
+| area_shear_z | <code>Number</code> | Shear sectional areas, can be undefined |
+| warping | <code>Number</code> | Warping, van be undefined |
+| width_temperature_load | <code>Number</code> | Width (for non-uniform temperature loads), can be undefined |
+| depth_temperature_load | <code>Number</code> | Depth (for non-uniform temperature loads), can be undefined |
+
+<a name="Section+DeactivateShearStiffness"></a>
+
+### section.DeactivateShearStiffness(deactivated) ⇒
+Deactivates shear stiffness
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| deactivated | <code>Boolean</code> | Shear stiffness deactivation/activation, can be undefined (true as default) |
+
+<a name="Section+Rotation"></a>
+
+### section.Rotation(rotation_angle) ⇒
+Sets Section rotation
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| rotation_angle | <code>Number</code> | Rotation angle |
+
+<a name="Section+ThinWalledModel"></a>
+
+### section.ThinWalledModel(thin_walled_model) ⇒
+Sets thin-walled model
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| thin_walled_model | <code>Boolean</code> | Thin-walled model enabling/disabling, can be undefined (true as default) |
+
+<a name="Section+UsNotation"></a>
+
+### section.UsNotation(us_spelling_of_properties) ⇒
+Sets US notation for section properties
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| us_spelling_of_properties | <code>Boolean</code> | US notation enabling/disabling, can be undefined (true as default) |
+
+<a name="Section+StressSmoothing"></a>
+
+### section.StressSmoothing(stress_smoothing_to_avoid_singularities) ⇒
+Sets stress smoothing to avoid singularities
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| stress_smoothing_to_avoid_singularities | <code>Boolean</code> | Stress smoothing enabling/disabling, can be undefined (true as default) |
+
+<a name="Section+DeactivateWarpingStiffness"></a>
+
+### section.DeactivateWarpingStiffness(deactivated) ⇒
+Deactivates warping stiffness
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| deactivated | <code>Boolean</code> | Warping stiffness deactivation/activation, can be undefined (true as default). Torsional Warping add-on must be active. |
+
+<a name="Section+CostEstimation"></a>
+
+### section.CostEstimation(cost_estimation) ⇒
+Sets cost estimation
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| cost_estimation | <code>Boolean</code> | Cost estimation apply from material enabling/disabling, can be undefined (true as default). Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+
+<a name="Section+CostEstimationValues"></a>
+
+### section.CostEstimationValues(member_weight, member_volume, member_surface, member_length) ⇒
+Sets Cost estimation values
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member_weight | <code>Number</code> | Member weight, can be undefined. Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+| member_volume | <code>Number</code> | Member volume, can be undefined. Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+| member_surface | <code>Number</code> | Member surface, can be undefined. Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+| member_length | <code>Number</code> | Member length, can be undefined. Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+
+<a name="Section+EmissionEstimation"></a>
+
+### section.EmissionEstimation(emission_estimation) ⇒
+Sets estimation of CO2 emissions
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| emission_estimation | <code>Boolean</code> | Estimation of CO2 emissions enabling/disabling, can be undefined (true as default). Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+
+<a name="Section+EmissionEstimationValues"></a>
+
+### section.EmissionEstimationValues(member_weight, member_volume, member_surface, member_length) ⇒
+Sets Emission estimation values
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member_weight | <code>Number</code> | Member weight, can be undefined. Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+| member_volume | <code>Number</code> | Member volume, can be undefined. Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+| member_surface | <code>Number</code> | Member surface, can be undefined. Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+| member_length | <code>Number</code> | Member length, can be undefined. Optimization & Costs / CO2 Emission Estimation add-on must be active. |
+
+<a name="Section+Optimization"></a>
+
+### section.Optimization(optimization) ⇒
+Sets optimization
+
+**Kind**: instance method of [<code>Section</code>](#Section)  
+**Returns**: Modified Section  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| optimization | <code>Boolean</code> | Optimization enabling/disabling, can be undefined (true as default). Optimization & Costs / CO2 Emission Estimation add-on must be active. |
 
 <a name="Solid"></a>
 
 ## Solid
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_Solid_new"></a>
 
 ### new Solid(no, boundary_surfaces, material, comment, params)
 Create Solid
 
-**Returns**: Solid
+**Returns**: Solid  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1442,7 +2438,7 @@ Create Solid
 ### solid.Standard(no, boundary_surfaces, material, comment, params)
 Create Standard Solid
 
-**Kind**: instance method of [<code>Solid</code>](#Solid)
+**Kind**: instance method of [<code>Solid</code>](#Solid)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1457,7 +2453,7 @@ Create Standard Solid
 ### solid.Gas(no, boundary_surfaces, material, gasssolid_no, comment, params)
 Create Gas
 
-**Kind**: instance method of [<code>Solid</code>](#Solid)
+**Kind**: instance method of [<code>Solid</code>](#Solid)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1473,7 +2469,7 @@ Create Gas
 ### solid.Contact(no, boundary_surfaces, material, contact_solid_no, first_contact_surface, comment, params)
 Create Contact solid
 
-**Kind**: instance method of [<code>Solid</code>](#Solid)
+**Kind**: instance method of [<code>Solid</code>](#Solid)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1488,14 +2484,14 @@ Create Contact solid
 <a name="SolidSet"></a>
 
 ## SolidSet
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_SolidSet_new"></a>
 
 ### new SolidSet(no, solids_no, solid_set_type, comment, params)
 Create Solid Set
 
-**Returns**: Solid Set
+**Returns**: Solid Set  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1510,7 +2506,7 @@ Create Solid Set
 ### solidSet.ContinuousSolids(no, solids_no, comment, params)
 Create Continuous Solids solidSet type
 
-**Kind**: instance method of [<code>SolidSet</code>](#SolidSet)
+**Kind**: instance method of [<code>SolidSet</code>](#SolidSet)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1524,7 +2520,7 @@ Create Continuous Solids solidSet type
 ### solidSet.GroupOfSolids(no, solids_no, comment, params)
 Create Group of Solids
 
-**Kind**: instance method of [<code>SolidSet</code>](#SolidSet)
+**Kind**: instance method of [<code>SolidSet</code>](#SolidSet)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1536,14 +2532,14 @@ Create Group of Solids
 <a name="Surface"></a>
 
 ## Surface
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_Surface_new"></a>
 
 ### new Surface(no, boundary_lines, thickness, comment, params)
 Creates surface
 
-**Returns**: Created surface
+**Returns**: Created surface  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1558,8 +2554,8 @@ Creates surface
 ### surface.Standard(no, boundary_lines, thickness, comment, params) ⇒
 Creates standard surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
-**Returns**: Created surface
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+**Returns**: Created surface  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1574,8 +2570,8 @@ Creates standard surface
 ### surface.WithoutThickness(no, boundary_lines, comment, params) ⇒
 Creates without thickness surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
-**Returns**: Created surface
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+**Returns**: Created surface  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1589,8 +2585,8 @@ Creates without thickness surface
 ### surface.Rigid(no, boundary_lines, comment, params) ⇒
 Creates rigid surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
-**Returns**: Created surface
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+**Returns**: Created surface  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1604,8 +2600,8 @@ Creates rigid surface
 ### surface.Membrane(no, boundary_lines, thickness, comment, params) ⇒
 Creates membrane surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
-**Returns**: Created surface
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+**Returns**: Created surface  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1620,8 +2616,8 @@ Creates membrane surface
 ### surface.WithoutMembraneTension(no, boundary_lines, thickness, comment, params) ⇒
 Creates without membrane tension surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
-**Returns**: Created surface
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+**Returns**: Created surface  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1636,8 +2632,8 @@ Creates without membrane tension surface
 ### surface.LoadTransfer(no, boundary_lines, values, comment, params) ⇒
 Creates load transfer surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
-**Returns**: Created surface
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+**Returns**: Created surface  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1652,7 +2648,7 @@ Creates load transfer surface
 ### surface.SurfaceType(stiffness_type, material, thickness)
 Sets surface type with material and thickness
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1665,18 +2661,19 @@ Sets surface type with material and thickness
 ### surface.Plane()
 Sets plane geometry type of surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 <a name="Surface+Quadrangle"></a>
 
-### surface.Quadrangle(no, boundary_lines, thickness, boundary_line, corner_node_1, corner_node_2, corner_node_3, corner_node_4, comment, params)
+### surface.Quadrangle(no, boundary_lines, stiffness_type, thickness, boundary_line, corner_node_1, corner_node_2, corner_node_3, corner_node_4, comment, params)
 Sets quadrangle geometry type of surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>Number</code> | Index of surface, can be undefined |
 | boundary_lines | <code>Array</code> | List of boundary lines indexes |
+| stiffness_type | <code>String</code> | Stiffness type |
 | thickness | <code>Number</code> | Thickness index, can be undefined |
 | boundary_line | <code>Number</code> | Index of boundary line |
 | corner_node_1 | <code>Number</code> | Quadrangle corner 1, can be undefined |
@@ -1691,13 +2688,13 @@ Sets quadrangle geometry type of surface
 ### surface.NURBS()
 Sets NURBS geometry type of surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 <a name="Surface+Rotated"></a>
 
 ### surface.Rotated(no, boundary_lines, thickness, boundary_line, angle_of_rotation, rotation_axis_p, rotation_axis_r, comment, params)
 Sets rotated geometry type of surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1716,7 +2713,7 @@ Sets rotated geometry type of surface
 ### surface.Pipe(center_line, radius)
 Sets pipe geometry type of surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1728,7 +2725,7 @@ Sets pipe geometry type of surface
 ### surface.Hinges(hinges_values)
 Sets surface hinges
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1739,7 +2736,7 @@ Sets surface hinges
 ### surface.Support(support)
 Sets surface support
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1750,7 +2747,7 @@ Sets surface support
 ### surface.Eccentricity(eccentricity)
 Sets surface eccentricity
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1761,7 +2758,7 @@ Sets surface eccentricity
 ### surface.MeshRefinement(mesh_refinement, meshing_type)
 Sets surface mesh refinement
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1771,7 +2768,7 @@ Sets surface mesh refinement
 <a name="Surface+SpecificAxes"></a>
 
 ### surface.SpecificAxes(input_axes, result_axes)
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1783,7 +2780,7 @@ Sets surface mesh refinement
 ### surface.GridForResults(grid_type, number_of_grid_points, grid_adapt_automatically, grid_distancies, grid_rotation, grid_origin)
 Sets surface's grid for results values
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1799,7 +2796,7 @@ Sets surface's grid for results values
 ### surface.IntegratedObjects(auto_detection_of_integrated_objects, integrated_nodes, integrated_lines, integrated_openings)
 Sets integrated objects to surface
 
-**Kind**: instance method of [<code>Surface</code>](#Surface)
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1811,14 +2808,14 @@ Sets integrated objects to surface
 <a name="SurfaceSet"></a>
 
 ## SurfaceSet
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_SurfaceSet_new"></a>
 
 ### new SurfaceSet(no, surfaces, surface_set_type, comment, params)
 Create Surface Set
 
-**Returns**: surfaceSet
+**Returns**: surfaceSet  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1833,7 +2830,7 @@ Create Surface Set
 ### surfaceSet.ContinuousSurfaces(no, surfaces, comment, params)
 Create Continuous Surfaces surfaceSet type
 
-**Kind**: instance method of [<code>SurfaceSet</code>](#SurfaceSet)
+**Kind**: instance method of [<code>SurfaceSet</code>](#SurfaceSet)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1847,7 +2844,7 @@ Create Continuous Surfaces surfaceSet type
 ### surfaceSet.GroupOfSurfaces(no, surfaces, comment, params)
 Create Group of Surfaces
 
-**Kind**: instance method of [<code>SurfaceSet</code>](#SurfaceSet)
+**Kind**: instance method of [<code>SurfaceSet</code>](#SurfaceSet)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1859,14 +2856,14 @@ Create Group of Surfaces
 <a name="Thickness"></a>
 
 ## Thickness
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_Thickness_new"></a>
 
 ### new Thickness(no, name, material, uniform_thickness_d, comment, params)
 Create Thickness
 
-**Returns**: Thickness
+**Returns**: Thickness  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1879,81 +2876,81 @@ Create Thickness
 
 <a name="Thickness+Uniform"></a>
 
-### thickness.Uniform(no, name, material, properties, comment, params)
+### thickness.Uniform(no, name, material, thickness, comment, params)
 Create Uniform thickness
 
-**Kind**: instance method of [<code>Thickness</code>](#Thickness)
+**Kind**: instance method of [<code>Thickness</code>](#Thickness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>int</code> | Number of Thickness |
 | name | <code>string</code> | Name of the Thickness |
 | material | <code>int</code> | Number of material |
-| properties | <code>array</code> | Properties of thickness in format [thickness] |
+| thickness | <code>number</code> | Properties of thickness in format [thickness] |
 | comment | <code>string</code> | Comment for the Thickness |
 | params | <code>dictionary</code> | Parameters of the Thickness |
 
 <a name="Thickness+Variable_3Nodes"></a>
 
-### thickness.Variable\_3Nodes(no, name, material, properties, comment, params)
+### thickness.Variable\_3Nodes(no, name, material, thicknessProperties, comment, params)
 Create Variable - 3 Nodes thickness
 
-**Kind**: instance method of [<code>Thickness</code>](#Thickness)
+**Kind**: instance method of [<code>Thickness</code>](#Thickness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>int</code> | Number of Thickness |
 | name | <code>string</code> | Name of the Thickness |
 | material | <code>int</code> | Number of material |
-| properties | <code>array</code> | Properties of thickness |
+| thicknessProperties | <code>array</code> | Properties of thickness [thickness_1,node_1,thickness_2,node_2,thickness_3,node_3] |
 | comment | <code>string</code> | Comment for the Thickness |
 | params | <code>dictionary</code> | Parameters of the Thickness |
 
 <a name="Thickness+Variable_2NodesAndDirection"></a>
 
-### thickness.Variable\_2NodesAndDirection(no, name, material, properties, comment, params)
+### thickness.Variable\_2NodesAndDirection(no, name, material, thicknessProperties, comment, params)
 Create Variable - 2 Nodes and Direction thickness
 
-**Kind**: instance method of [<code>Thickness</code>](#Thickness)
+**Kind**: instance method of [<code>Thickness</code>](#Thickness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>int</code> | Number of Thickness |
 | name | <code>string</code> | Name of the Thickness |
 | material | <code>int</code> | Number of material |
-| properties | <code>array</code> | Properties of thickness |
+| thicknessProperties | <code>array</code> | Properties of thickness [thickness_1,node_1,thickness_2,node_2,direction] |
 | comment | <code>string</code> | Comment for the Thickness |
 | params | <code>dictionary</code> | Parameters of the Thickness |
 
 <a name="Thickness+Variable_4SurfaceCorners"></a>
 
-### thickness.Variable\_4SurfaceCorners(no, name, material, properties, comment, params)
+### thickness.Variable\_4SurfaceCorners(no, name, material, thicknessProperties, comment, params)
 Create Variable - 4 Surface Corners thickness
 
-**Kind**: instance method of [<code>Thickness</code>](#Thickness)
+**Kind**: instance method of [<code>Thickness</code>](#Thickness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>int</code> | Number of Thickness |
 | name | <code>string</code> | Name of the Thickness |
 | material | <code>int</code> | Number of material |
-| properties | <code>array</code> | Properties of thickness |
+| thicknessProperties | <code>array</code> | Properties of thickness [thickness_1,node_1,thickness_2,node_2,thickness_3,node_3,thickness_4,node_4] |
 | comment | <code>string</code> | Comment for the Thickness |
 | params | <code>dictionary</code> | Parameters of the Thickness |
 
 <a name="Thickness+Variable_Circle"></a>
 
-### thickness.Variable\_Circle(no, name, material, properties, comment, params)
+### thickness.Variable\_Circle(no, name, material, thicknessProperties, comment, params)
 Create Variable - Circle thickness
 
-**Kind**: instance method of [<code>Thickness</code>](#Thickness)
+**Kind**: instance method of [<code>Thickness</code>](#Thickness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>int</code> | Number of Thickness |
 | name | <code>string</code> | Name of the Thickness |
 | material | <code>int</code> | Number of material |
-| properties | <code>array</code> | Properties of thickness |
+| thicknessProperties | <code>array</code> | Properties of thickness [thickness_circle_center,thickness_circle_line] |
 | comment | <code>string</code> | Comment for the Thickness |
 | params | <code>dictionary</code> | Parameters of the Thickness |
 
@@ -1962,13 +2959,13 @@ Create Variable - Circle thickness
 ### thickness.Layers(no, name, layers, comment, params)
 Create Layers thickness
 
-**Kind**: instance method of [<code>Thickness</code>](#Thickness)
+**Kind**: instance method of [<code>Thickness</code>](#Thickness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>int</code> | Number of Thickness |
 | name | <code>string</code> | Name of the Thickness |
-| layers | <code>array</code> | List of layers |
+| layers | <code>array</code> | List of layers [[material,thickness,angle,comment],] |
 | comment | <code>string</code> | Comment for the Thickness |
 | params | <code>dictionary</code> | Parameters of the Thickness |
 
@@ -1977,7 +2974,7 @@ Create Layers thickness
 ### thickness.ShapeOrthotropy(no, name, layers, orthotropy_type, rotation_beta, consideration_of_self_weight, parameters, comment, params)
 Create Shape Orthotropy thickness
 
-**Kind**: instance method of [<code>Thickness</code>](#Thickness)
+**Kind**: instance method of [<code>Thickness</code>](#Thickness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1996,7 +2993,7 @@ Create Shape Orthotropy thickness
 ### thickness.StiffnessMatrix(no, name, rotation_beta, consideration_of_self_weight, coefficient_of_thermal_expansion, stiffness_matrix, comment, params)
 Create Stiffness Matrix thickness
 
-**Kind**: instance method of [<code>Thickness</code>](#Thickness)
+**Kind**: instance method of [<code>Thickness</code>](#Thickness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -2005,9 +3002,182 @@ Create Stiffness Matrix thickness
 | rotation_beta | <code>number</code> | Rotation about Z-axis of surface (Degree) |
 | consideration_of_self_weight | <code>string</code> | Self-Weight definition |
 | coefficient_of_thermal_expansion | <code>array</code> | Coefficient of thermal expansion |
-| stiffness_matrix | <code>array</code> | Stiffness Matrix |
+| stiffness_matrix | <code>array</code> | Stiffness Matrix [[D11,D12,D13,D22,D23,D33],....] |
 | comment | <code>string</code> | Comment for the Thickness |
 | params | <code>dictionary</code> | Parameters of the Thickness |
 
 <a name="getRotationPlane"></a>
+
+## getRotationPlane(rotation_plane) ⇒
+Returns rotation plane from string representation (private)
+
+**Kind**: global function  
+**Returns**: Rotation plane  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| rotation_plane | <code>String</code> | Rotation plane (x-y, x-z) |
+
+<a name="createBaseLine"></a>
+
+## createBaseLine(no, nodes, comment, params) ⇒
+Creates line (private)
+
+**Kind**: global function  
+**Returns**: Created line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of line, can be undefined |
+| nodes | <code>Array</code> | List of node indexes |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Line's parameters, can be undefined |
+
+<a name="setDistributionAtStart"></a>
+
+## setDistributionAtStart()
+Support function for section distributions (private), more info can be find there
+
+**Kind**: global function  
+<a name="setDistributionAtEnd"></a>
+
+## setDistributionAtEnd()
+Support function for section distributions (private), more info can be find there
+
+**Kind**: global function  
+<a name="setResultBeamObjects"></a>
+
+## setResultBeamObjects(member, param1_to_set, param2_to_set, value) ⇒
+Sets result beam objects
+
+**Kind**: global function  
+**Returns**: Modified member  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member | <code>Object</code> | Member to be set |
+| param1_to_set | <code>String</code> | Name of parameter for include/exclude "all" objects |
+| param2_to_set | <code>String</code> | Name of parameter for include/exclude object's indexes |
+| value | <code>Boolean/Array</code> | Value can be specified in two formats, as boolean or array with numbers |
+
+<a name="createBaseMember"></a>
+
+## createBaseMember(no, nodes_or_line, type, section_start, comment, params) ⇒
+Creates member (private)
+
+**Kind**: global function  
+**Returns**: Created member  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of member, can be undefined |
+| nodes_or_line | <code>Array/Number</code> | List of node indexes or number of line |
+| type | <code>String</code> | Type of member, can be undefined |
+| section_start | <code>Number</code> | Section start, can be undefined. Section end is same as section start by default. To set section end specify distribution type. |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Member's parameters, can be undefined |
+
+<a name="createBaseRSectionElement"></a>
+
+## createBaseRSectionElement(no, type, comment, params) ⇒
+Create base RSection Element
+
+**Kind**: global function  
+**Returns**: Element  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Element, can be undefined |
+| type | <code>String</code> | Type of Element |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="createBaseRSectionLine"></a>
+
+## createBaseRSectionLine(no, type, comment, params) ⇒
+Creates RSection base Line
+
+**Kind**: global function  
+**Returns**: Line  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Line, can be undefined |
+| type | <code>String</code> | Type of Line |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="createBaseOpening"></a>
+
+## createBaseOpening(no, boundary_lines, comment, params) ⇒
+**Kind**: global function  
+**Returns**: Opening  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Opening, can be undefined |
+| boundary_lines | <code>Array</code> | Boundary lines |
+| comment | <code>string</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="createBaseRSectionPart"></a>
+
+## createBaseRSectionPart(no, comment, params) ⇒
+Creates base RSection Part
+
+**Kind**: global function  
+**Returns**: Part  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>int</code> | Number of Part, can be undefined |
+| comment | <code>string</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="createBasePoint"></a>
+
+## createBasePoint(no, coordinate_y, coordinate_z, comment, params) ⇒
+Creates base RSection Point (private)
+
+**Kind**: global function  
+**Returns**: Point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Point, can be undefined |
+| coordinate_y | <code>Number</code> | Coordinate Y |
+| coordinate_z | <code>Number</code> | Coordinate Z |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="createBaseStressPoint"></a>
+
+## createBaseStressPoint(no, comment, params) ⇒
+Create RSection Stress Points
+
+**Kind**: global function  
+**Returns**: Stress point  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Number of Stress point, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Parameters, can be undefined |
+
+<a name="createSurfaceWithType"></a>
+
+## createSurfaceWithType(no, boundary_lines, stiffness_type, thickness, comment, params) ⇒
+Creates surface (private)
+
+**Kind**: global function  
+**Returns**: Created surface  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of surface, can be undefined |
+| boundary_lines | <code>Array</code> | List of boundary lines indexes |
+| stiffness_type | <code>String</code> | Stiffness type |
+| thickness | <code>Number</code> | Thickness index, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Surface's parameters, can be undefined |
 

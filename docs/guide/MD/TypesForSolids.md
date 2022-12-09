@@ -3,14 +3,14 @@
 <a name="ContactSolid"></a>
 
 ## ContactSolid
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_ContactSolid_new"></a>
 
 ### new ContactSolid(no, perpendicular_to_surface, parallel_to_surface, values, comment, params)
 Creates contact solid
 
-**Returns**: Created contact solid
+**Returns**: Created contact solid  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -26,7 +26,7 @@ Creates contact solid
 ### contactSolid.AssignTo(solid_list)
 Assigns solids to contact solid
 
-**Kind**: instance method of [<code>ContactSolid</code>](#ContactSolid)
+**Kind**: instance method of [<code>ContactSolid</code>](#ContactSolid)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -35,14 +35,14 @@ Assigns solids to contact solid
 <a name="GasSolid"></a>
 
 ## GasSolid
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_GasSolid_new"></a>
 
 ### new GasSolid(no, pressure, temperature, comment, params)
 Creates gas solid
 
-**Returns**: Created gas solid
+**Returns**: Created gas solid  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -57,7 +57,7 @@ Creates gas solid
 ### gasSolid.AssignTo(solid_list)
 Assigns solids to gas solid
 
-**Kind**: instance method of [<code>GasSolid</code>](#GasSolid)
+**Kind**: instance method of [<code>GasSolid</code>](#GasSolid)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -66,14 +66,14 @@ Assigns solids to gas solid
 <a name="SolidMeshRefinement"></a>
 
 ## SolidMeshRefinement
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_SolidMeshRefinement_new"></a>
 
 ### new SolidMeshRefinement(no, solid_list, comment, params)
 Creates solid mesh refinement
 
-**Returns**: Created solid mesh refinement
+**Returns**: Created solid mesh refinement  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ Creates solid mesh refinement
 ### solidMeshRefinement.TargetLength(no, solid_list, target_length, comment, params)
 Creates solid mesh refinement
 
-**Kind**: instance method of [<code>SolidMeshRefinement</code>](#SolidMeshRefinement)
+**Kind**: instance method of [<code>SolidMeshRefinement</code>](#SolidMeshRefinement)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -98,3 +98,45 @@ Creates solid mesh refinement
 | params | <code>Object</code> | Solid mesh refinement's parameters, can be undefined |
 
 <a name="createContactSolid"></a>
+
+## createContactSolid(no, comment, params) ⇒
+Creates contact solid (private)
+
+**Kind**: global function  
+**Returns**: Created contact solid  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of contact solid |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Contact solid's parameters, can be undefined |
+
+<a name="createGasSolid"></a>
+
+## createGasSolid(no, comment, params) ⇒
+Creates gas solid (private)
+
+**Kind**: global function  
+**Returns**: Created gas solid  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of gas solid |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Gas solid's parameters, can be undefined |
+
+<a name="createSolidMeshRefinement"></a>
+
+## createSolidMeshRefinement(no, solid_list, comment, params) ⇒
+Creates solid mesh refinement (private)
+
+**Kind**: global function  
+**Returns**: Created solid mesh refinement  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of solid mesh refinement, can be undefined |
+| solid_list | <code>Array</code> | List of solid indexes |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Solid mesh refinement's parameters, can be undefined |
+

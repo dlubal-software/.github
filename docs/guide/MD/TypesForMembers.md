@@ -3,14 +3,14 @@
 <a name="MemberDefinableStiffness"></a>
 
 ## MemberDefinableStiffness
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_MemberDefinableStiffness_new"></a>
 
 ### new MemberDefinableStiffness(no, member_list, comment, params)
 Creates member definable stiffness
 
-**Returns**: <code>Object</code> - Created member definable stiffness
+**Returns**: <code>Object</code> - Created member definable stiffness  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ Creates member definable stiffness
 ### memberDefinableStiffness.TorsionalAndBendingStiffness(torsional_stiffness, bending_stiffness_y, bending_stiffness_z)
 Sets torsional and bending stiffness parameters
 
-**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)
+**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ Sets torsional and bending stiffness parameters
 ### memberDefinableStiffness.AxialAndShearStiffness(axial_stiffness, shear_stiffness_y, shear_stiffness_z)
 Sets axial and shear stiffness parameters
 
-**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)
+**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -50,7 +50,7 @@ Sets axial and shear stiffness parameters
 ### memberDefinableStiffness.SelfWeightAndSectionArea(specific_weight, section_area)
 Sets self weight stiffness parameters
 
-**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)
+**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ Sets self weight stiffness parameters
 ### memberDefinableStiffness.MainAxesRotation(rotation)
 Sets main axes rotation parameter
 
-**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)
+**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -73,7 +73,7 @@ Sets main axes rotation parameter
 ### memberDefinableStiffness.ThermalExpansionCoefficient(thermal_expansion, width, height)
 Sets coefficient of thermal expansion stiffness parameters
 
-**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)
+**Kind**: instance method of [<code>MemberDefinableStiffness</code>](#MemberDefinableStiffness)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -84,14 +84,14 @@ Sets coefficient of thermal expansion stiffness parameters
 <a name="MemberEccentricity"></a>
 
 ## MemberEccentricity
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_MemberEccentricity_new"></a>
 
 ### new MemberEccentricity(no, members_start_list, members_end_list, comment, params)
 Creates member eccentricity
 
-**Returns**: <code>Object</code> - Created member eccentricity
+**Returns**: <code>Object</code> - Created member eccentricity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -106,8 +106,8 @@ Creates member eccentricity
 ### memberEccentricity.RelativeToSection(no, members_start_list, members_end_list, alignment, comment, params) ⇒ <code>Object</code>
 Creates member eccentricity relative to section
 
-**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)
-**Returns**: <code>Object</code> - Created member eccentricity
+**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)  
+**Returns**: <code>Object</code> - Created member eccentricity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -123,8 +123,8 @@ Creates member eccentricity relative to section
 ### memberEccentricity.Absolute(no, members_start_list, members_end_list, offset_x, offset_y, offset_z, coordinate_system, comment, params) ⇒ <code>Object</code>
 Creates absolute member eccentricity
 
-**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)
-**Returns**: <code>Object</code> - Created member eccentricity
+**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)  
+**Returns**: <code>Object</code> - Created member eccentricity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -143,8 +143,8 @@ Creates absolute member eccentricity
 ### memberEccentricity.RelativeAndAbsolute(no, members_start_list, members_end_list, offset_x, offset_y, offset_z, coordinate_system, alignment, comment, params) ⇒ <code>Object</code>
 Creates absolute member eccentricity
 
-**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)
-**Returns**: <code>Object</code> - Created member eccentricity
+**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)  
+**Returns**: <code>Object</code> - Created member eccentricity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -164,7 +164,7 @@ Creates absolute member eccentricity
 ### memberEccentricity.AxialOffset(active)
 Sets axial offset from adjoining member
 
-**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)
+**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -175,7 +175,7 @@ Sets axial offset from adjoining member
 ### memberEccentricity.HingeLocationAtNode(active)
 Sets hinge location at node (if applied)
 
-**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)
+**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -186,7 +186,7 @@ Sets hinge location at node (if applied)
 ### memberEccentricity.TransverseOffsetMember(reference_member, reference_node, alignment)
 Transverse offset from section of another member
 
-**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)
+**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -199,7 +199,7 @@ Transverse offset from section of another member
 ### memberEccentricity.TransverseOffsetSurface(reference_surface, alignment)
 Transverse offset from section of another thickness of other surface
 
-**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)
+**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -211,18 +211,18 @@ Transverse offset from section of another thickness of other surface
 ### memberEccentricity.TransverseOffsetNone()
 Set off transverse offset
 
-**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)
+**Kind**: instance method of [<code>MemberEccentricity</code>](#MemberEccentricity)  
 <a name="MemberHinge"></a>
 
 ## MemberHinge
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_MemberHinge_new"></a>
 
 ### new MemberHinge(no, members_start_list, members_end_list, comment, params)
 Creates member hinge
 
-**Returns**: <code>Object</code> - Created member hinge
+**Returns**: <code>Object</code> - Created member hinge  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -237,8 +237,8 @@ Creates member hinge
 ### memberHinge.Translational(no, members_start_list, members_end_list, axial_release_n, axial_release_vy, axial_release_vz, comment, params) ⇒ <code>Object</code>
 Creates member hinge with specified axis release
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
-**Returns**: <code>Object</code> - Created member hinge
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
+**Returns**: <code>Object</code> - Created member hinge  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -256,8 +256,8 @@ Creates member hinge with specified axis release
 ### memberHinge.Rotational(no, members_start_list, members_end_list, moment_release_mt, moment_release_my, moment_release_mz, comment, params) ⇒ <code>Object</code>
 Creates member hinge with specified moment release
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
-**Returns**: <code>Object</code> - Created member hinge
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
+**Returns**: <code>Object</code> - Created member hinge  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -275,7 +275,7 @@ Creates member hinge with specified moment release
 ### memberHinge.PartialActivityTranslationalX(negative_zone_values, positive_zone_values)
 Sets negative and/or positive zone to partial activity translation x nonlinearity
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -287,7 +287,7 @@ Sets negative and/or positive zone to partial activity translation x nonlinearit
 ### memberHinge.PartialActivityTranslationalY(negative_zone_values, positive_zone_values)
 Sets negative and/or positive zone to partial activity translation y nonlinearity
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -299,7 +299,7 @@ Sets negative and/or positive zone to partial activity translation y nonlinearit
 ### memberHinge.PartialActivityTranslationalZ(negative_zone_values, positive_zone_values)
 Sets negative and/or positive zone to partial activity translation z nonlinearity
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -311,7 +311,7 @@ Sets negative and/or positive zone to partial activity translation z nonlinearit
 ### memberHinge.PartialActivityRotationalX(negative_zone_values, positive_zone_values)
 Sets negative and/or positive zone to partial activity rotational x nonlinearity
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -323,7 +323,7 @@ Sets negative and/or positive zone to partial activity rotational x nonlinearity
 ### memberHinge.PartialActivityRotationalY(negative_zone_values, positive_zone)
 Sets negative and/or positive zone to partial activity rotational y nonlinearity
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -335,7 +335,7 @@ Sets negative and/or positive zone to partial activity rotational y nonlinearity
 ### memberHinge.PartialActivityRotationalZ(negative_zone_values, positive_zone_values)
 Sets negative and/or positive zone to partial activity rotational z nonlinearity
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -347,7 +347,7 @@ Sets negative and/or positive zone to partial activity rotational z nonlinearity
 ### memberHinge.DiagramTranslationalX(diagram_values)
 Sets translational diagram values for ux
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -358,7 +358,7 @@ Sets translational diagram values for ux
 ### memberHinge.DiagramTranslationalY(diagram_values)
 Sets translational diagram values for uy
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -369,7 +369,7 @@ Sets translational diagram values for uy
 ### memberHinge.DiagramTranslationalZ(diagram_values)
 Sets translational diagram values for uz
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -380,7 +380,7 @@ Sets translational diagram values for uz
 ### memberHinge.DiagramRotationalX(diagram_values)
 Sets rotational diagram values for φx
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -391,7 +391,7 @@ Sets rotational diagram values for φx
 ### memberHinge.DiagramRotationalY(diagram_values)
 Sets rotational diagram values for φy
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -402,7 +402,7 @@ Sets rotational diagram values for φy
 ### memberHinge.DiagramRotationalZ(diagram_values)
 Sets rotational diagram values for φz
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -413,7 +413,7 @@ Sets rotational diagram values for φz
 ### memberHinge.FrictionVyTranslationalX(friction_coefficient_x, spring_constant_x)
 Sets translational friction Vy values for ux
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -425,7 +425,7 @@ Sets translational friction Vy values for ux
 ### memberHinge.FrictionVzTranslationalX(friction_coefficient_x, spring_constant_x)
 Sets translational friction Vz values for ux
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -437,7 +437,7 @@ Sets translational friction Vz values for ux
 ### memberHinge.FrictionVyVzTranslationalX(friction_coefficient_x, spring_constant_x)
 Sets translational friction VyVz values for ux
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -449,7 +449,7 @@ Sets translational friction VyVz values for ux
 ### memberHinge.FrictionVyPlusVzTranslationalX(friction_coefficient_xy, friction_coefficient_xz, spring_constant_x)
 Sets translational friction Vy+Vz values for ux
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -462,7 +462,7 @@ Sets translational friction Vy+Vz values for ux
 ### memberHinge.FrictionNTranslationalY(friction_coefficient_y, spring_constant_y)
 Sets translational friction N values for uy
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -474,7 +474,7 @@ Sets translational friction N values for uy
 ### memberHinge.FrictionVzTranslationalY(friction_coefficient_y, spring_constant_y)
 Sets translational friction Vz values for uy
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -486,7 +486,7 @@ Sets translational friction Vz values for uy
 ### memberHinge.FrictionNVzTranslationalY(friction_coefficient_y, spring_constant_y)
 Sets translational friction NVz values for uy
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -498,7 +498,7 @@ Sets translational friction NVz values for uy
 ### memberHinge.FrictionNPlusVzTranslationalY(friction_coefficient_yx, friction_coefficient_yz, spring_constant_y)
 Sets translational friction N+Vz values for uy
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -511,7 +511,7 @@ Sets translational friction N+Vz values for uy
 ### memberHinge.FrictionNTranslationalZ(friction_coefficient_z, spring_constant_z)
 Sets translational friction N values for uz
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -523,7 +523,7 @@ Sets translational friction N values for uz
 ### memberHinge.FrictionVyTranslationalZ(friction_coefficient_z, spring_constant_z)
 Sets translational friction Vy values for uz
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -535,7 +535,7 @@ Sets translational friction Vy values for uz
 ### memberHinge.FrictionNVyTranslationalZ(friction_coefficient_z, spring_constant_z)
 Sets translational friction NVy values for uz
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -547,7 +547,7 @@ Sets translational friction NVy values for uz
 ### memberHinge.FrictionNPlusVyTranslationalZ(friction_coefficient_zx, friction_coefficient_zy, spring_constant_z)
 Sets translational friction N+Vy values for uz
 
-**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)
+**Kind**: instance method of [<code>MemberHinge</code>](#MemberHinge)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -558,14 +558,14 @@ Sets translational friction N+Vy values for uz
 <a name="MemberNonlinearity"></a>
 
 ## MemberNonlinearity
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_MemberNonlinearity_new"></a>
 
 ### new MemberNonlinearity(no, comment, params)
 Creates member nonlinearity
 
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -578,8 +578,8 @@ Creates member nonlinearity
 ### memberNonlinearity.FailureIfTension(no, members, comment, params) ⇒ <code>Object</code>
 Creates member failure if tension nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -593,8 +593,8 @@ Creates member failure if tension nonlinearity
 ### memberNonlinearity.FailureIfCompression(no, members, comment, params) ⇒ <code>Object</code>
 Creates member failure if compression nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -608,8 +608,8 @@ Creates member failure if compression nonlinearity
 ### memberNonlinearity.FailureIfTensionWithSlippage(no, members, slippage, comment, params) ⇒ <code>Object</code>
 Creates member failure if tension with slippage nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -624,8 +624,8 @@ Creates member failure if tension with slippage nonlinearity
 ### memberNonlinearity.FailureIfCompressionWithSlippage(no, members, slippage, comment, params) ⇒ <code>Object</code>
 Creates member failure if compression with slippage nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -640,8 +640,8 @@ Creates member failure if compression with slippage nonlinearity
 ### memberNonlinearity.Slippage(no, members, slippage, comment, params) ⇒ <code>Object</code>
 Creates member slippage nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -651,13 +651,13 @@ Creates member slippage nonlinearity
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Member nonlinearity parameters, can be undefined |
 
-<a name="MemberNonlinearity+TearingUnderTension"></a>
+<a name="MemberNonlinearity+FailureUnderTension"></a>
 
-### memberNonlinearity.TearingUnderTension(no, members, tension_force, comment, params) ⇒ <code>Object</code>
+### memberNonlinearity.FailureUnderTension(no, members, tension_force, comment, params) ⇒ <code>Object</code>
 Creates member tearing under tension nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -672,8 +672,8 @@ Creates member tearing under tension nonlinearity
 ### memberNonlinearity.YieldingUnderTension(no, members, tension_force, comment, params) ⇒ <code>Object</code>
 Creates member yielding under tension nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -683,13 +683,13 @@ Creates member yielding under tension nonlinearity
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Member nonlinearity parameters, can be undefined |
 
-<a name="MemberNonlinearity+TearingUnderCompression"></a>
+<a name="MemberNonlinearity+FailureUnderCompression"></a>
 
-### memberNonlinearity.TearingUnderCompression(no, members, compression_force, comment, params) ⇒ <code>Object</code>
+### memberNonlinearity.FailureUnderCompression(no, members, compression_force, comment, params) ⇒ <code>Object</code>
 Creates member tearing under compression nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -704,8 +704,8 @@ Creates member tearing under compression nonlinearity
 ### memberNonlinearity.YieldingUnderCompression(no, members, compression_force, comment, params) ⇒ <code>Object</code>
 Creates member yielding under compression nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -715,13 +715,13 @@ Creates member yielding under compression nonlinearity
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Member nonlinearity parameters, can be undefined |
 
-<a name="MemberNonlinearity+Tearing"></a>
+<a name="MemberNonlinearity+Failure"></a>
 
-### memberNonlinearity.Tearing(no, members, compression_force, tension_force, comment, params) ⇒ <code>Object</code>
+### memberNonlinearity.Failure(no, members, compression_force, tension_force, comment, params) ⇒ <code>Object</code>
 Creates member tearing nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -737,8 +737,8 @@ Creates member tearing nonlinearity
 ### memberNonlinearity.Yielding(no, members, compression_force, tension_force, comment, params) ⇒ <code>Object</code>
 Creates member yielding nonlinearity
 
-**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)
-**Returns**: <code>Object</code> - Created member nonlinearity
+**Kind**: instance method of [<code>MemberNonlinearity</code>](#MemberNonlinearity)  
+**Returns**: <code>Object</code> - Created member nonlinearity  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -752,14 +752,14 @@ Creates member yielding nonlinearity
 <a name="MemberResultIntermediatePoint"></a>
 
 ## MemberResultIntermediatePoint
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_MemberResultIntermediatePoint_new"></a>
 
 ### new MemberResultIntermediatePoint(no, members, comment, params)
 Creates member result intermediate point
 
-**Returns**: <code>Object</code> - Created member result intermediate point
+**Returns**: <code>Object</code> - Created member result intermediate point  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -773,7 +773,7 @@ Creates member result intermediate point
 ### memberResultIntermediatePoint.UniformDistances(divisions_count, notes)
 Sets number of points
 
-**Kind**: instance method of [<code>MemberResultIntermediatePoint</code>](#MemberResultIntermediatePoint)
+**Kind**: instance method of [<code>MemberResultIntermediatePoint</code>](#MemberResultIntermediatePoint)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -785,7 +785,7 @@ Sets number of points
 ### memberResultIntermediatePoint.DivisionOrdinates(division_ordinates, notes, absolute, clear_ordinates)
 Sets division ordinates
 
-**Kind**: instance method of [<code>MemberResultIntermediatePoint</code>](#MemberResultIntermediatePoint)
+**Kind**: instance method of [<code>MemberResultIntermediatePoint</code>](#MemberResultIntermediatePoint)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -797,14 +797,14 @@ Sets division ordinates
 <a name="MemberStiffnessModification"></a>
 
 ## MemberStiffnessModification
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_MemberStiffnessModification_new"></a>
 
 ### new MemberStiffnessModification(no, structure_modifications, comment, params)
 Creates member stiffness modification
 
-**Returns**: <code>Object</code> - Created member stiffness modification
+**Returns**: <code>Object</code> - Created member stiffness modification  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -818,7 +818,7 @@ Creates member stiffness modification
 ### memberStiffnessModification.TotalStiffnessFactor(total_stiffness)
 Sets total stiffness factor
 
-**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)
+**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -829,7 +829,7 @@ Sets total stiffness factor
 ### memberStiffnessModification.PartialStiffnessFactors(axial_stiffness, bending_stiffness_y, bending_stiffness_z, shear_stiffness_y, shear_stiffness_z, torsional_stiffness, weight)
 Sets partial stiffness factors
 
-**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)
+**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -846,7 +846,7 @@ Sets partial stiffness factors
 ### memberStiffnessModification.ConcreteStructuresAci(component_type)
 Sets concrete structure ACI
 
-**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)
+**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -857,7 +857,7 @@ Sets concrete structure ACI
 ### memberStiffnessModification.ConcreteStructuresCsa(component_type)
 Sets concrete structure CSA
 
-**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)
+**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -868,7 +868,7 @@ Sets concrete structure CSA
 ### memberStiffnessModification.SteelStructuresAisc(determine_tau_b, design_method)
 Sets steel structures AISC
 
-**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)
+**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -881,7 +881,7 @@ Sets steel structures AISC
 ,
 Sets steel structures CSA
 
-**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)
+**Kind**: instance method of [<code>MemberStiffnessModification</code>](#MemberStiffnessModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -894,3 +894,172 @@ Sets steel structures CSA
 | torsional_stiffness | <code>Number</code> | Torsional stiffness, can be undefined. If defined, apply τb is set to true. |
 
 <a name="setTransverseOffset"></a>
+
+## setTransverseOffset(memberEccentricity, reference_type, reference, reference_node_index, alignment_type)
+Sets transverse offset (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| memberEccentricity | <code>Object</code> | Member eccentricity to be set |
+| reference_type | <code>String</code> | Reference type ("None", "Member", "Surface") |
+| reference | <code>Number</code> | object index	Reference member or surface index |
+| reference_node_index | <code>Number</code> | Reference member node index, in case of surface is undefined |
+| alignment_type | <code>String</code> | For member offset:	SECTION_ALIGNMENT_LEFT_TOP, 																	SECTION_ALIGNMENT_CENTER_TOP, 																	SECTION_ALIGNMENT_RIGHT_TOP, 																	SECTION_ALIGNMENT_LEFT_CENTER, 																	SECTION_ALIGNMENT_CENTER_CENTER, 																	SECTION_ALIGNMENT_RIGHT_CENTER, 																	SECTION_ALIGNMENT_LEFT_BOTTOM, 																	SECTION_ALIGNMENT_CENTER_BOTTOM, 																	SECTION_ALIGNMENT_RIGHT_BOTTOM. 												For surface offset:	SECTION_ALIGNMENT_CENTER_TOP, 																	SECTION_ALIGNMENT_CENTER_CENTER, 																	SECTION_ALIGNMENT_CENTER_BOTTOM. |
+
+<a name="createMemberEccentricity"></a>
+
+## createMemberEccentricity(no, members_start_list, members_end_list, comment, params) ⇒ <code>Object</code>
+Creates member eccentricity
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - Created member eccentricity  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of member eccentricity, can be undefined |
+| members_start_list | <code>Array</code> | Members start, can be undefined |
+| members_end_list | <code>Array</code> | Members end, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Member eccentricity parameters, can be undefined |
+
+<a name="setRelativeValues"></a>
+
+## setRelativeValues(member_eccentricity, alignment_type)
+Sets member eccentricity for relative to section type (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member_eccentricity | <code>Object</code> | Member eccentricity to be set |
+| alignment_type | <code>String</code> | Alignment: 	SECTION_ALIGNMENT_LEFT_TOP, 														SECTION_ALIGNMENT_CENTER_TOP, 														SECTION_ALIGNMENT_RIGHT_TOP, 														SECTION_ALIGNMENT_LEFT_CENTER, 														SECTION_ALIGNMENT_CENTER_CENTER, 														SECTION_ALIGNMENT_RIGHT_CENTER, 														SECTION_ALIGNMENT_LEFT_BOTTOM, 														SECTION_ALIGNMENT_CENTER_BOTTOM, 														SECTION_ALIGNMENT_RIGHT_BOTTOM. |
+
+<a name="getAlignmentParts"></a>
+
+## getAlignmentParts(alignment) ⇒ <code>Array</code>
+Creates horizontal and vertical strings of alignment (private)
+
+**Kind**: global function  
+**Returns**: <code>Array</code> - Horizontal and vertical strings of alignment  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| alignment | <code>String</code> | Alignment string |
+
+<a name="setAbsoluteValues"></a>
+
+## setAbsoluteValues(memberEccentricity, offset_x, offset_y, offset_z, coordinate_system)
+Sets member eccentricity for absolute type (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| memberEccentricity | <code>Object</code> | Member eccentricity to be set |
+| offset_x | <code>Number</code> | Eccentricity in X |
+| offset_y | <code>Number</code> | Eccentricity in Y |
+| offset_z | <code>Number</code> | Eccentricity in Z |
+| coordinate_system | <code>Number</code> | Coordinate system, can be undefined. Default value is "Local xyz". |
+
+<a name="setPartialActivityZoneValues"></a>
+
+## setPartialActivityZoneValues(member_hinge, zone_values, param_type_name, param_slippage_name, param_displacement_name, param_force_name)
+Sets values for partial activity zone (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member_hinge | <code>Object</code> | Member hinge to which values has to be set |
+| zone_values | <code>Array</code> | Negative / positive zone values 												- "Complete": [0] 												- "Fixed from release displacement": [1, u(x|y|z)-|φ(x|y|z)-, u(x|y|z)s-|φ(x|y|z)s-] / [1, u(x|y|z)+|φ(x|y|z)+, u(x|y|z)s+|φ(x|y|z)s+] 												- "Tearing from release force": [2, N-, u(x|y|z)s-|φ(x|y|z)s-] / [2, N+, u(x|y|z)s+|φ(x|y|z)s+] 												- "Yielding from release force": [3, N-, u(x|y|z)s-|φ(x|y|z)s-] / [3, N+, u(x|y|z)s+|φ(x|y|z)s+] 												- "Spring ineffectiveness": [4] |
+| param_type_name | <code>String</code> | Parameter name for partial activity zone name |
+| param_slippage_name | <code>String</code> | Parameter name for partial activity slippage name |
+| param_displacement_name | <code>String</code> | Parameter name for partial activity displacement name |
+| param_force_name | <code>String</code> | Parameter name for partial activity force name |
+
+<a name="setMainHingeValues"></a>
+
+## setMainHingeValues(member_hinge, values, property_1, property_2) ⇒
+Sets values to member hinge (private)
+
+**Kind**: global function  
+**Returns**: Returns modified member hinge  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member_hinge | <code>Object</code> | Member hinge |
+| values | <code>Array</code> | Values to be set, [Translational/Rotational, Spring constant, Nonlinearity] 										- Values can be in two formats: 											[bool, float, int] - if bool is true (translation is enabled), then can be specified next two values (spring constant and nonlinearity) 											[bool, int]		   - if bool is false (translation is disabled), then can be specified only next one value (nonlinearity) 											Nonlinearity: can be string name or index: None (0), Fixed if negative (1), Fixed if positive (2), Failure all if negative (3), Failure all if positive (4), 														  Partial activity (5), Diagram (6), Stiffness diagram (7), Friction direction 1 (8), Friction direction 2 (9), 														  Friction direction 1 2 (10), Friction direction 1 + 2 (11) |
+| property_1 | <code>String</code> | Spring constant string name |
+| property_2 | <code>String</code> | Nonlinearity string name |
+
+<a name="createMemberHinge"></a>
+
+## createMemberHinge(no, members_start_list, members_end_list, comment, params) ⇒ <code>Object</code>
+Creates member hinge (private)
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - Created member hinge  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of member hinge, van be undefined |
+| members_start_list | <code>Array</code> | Member start, can be undefined |
+| members_end_list | <code>Array</code> | Member end, can be undefined |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Member hinge parameters, can be undefined |
+
+<a name="setParameters"></a>
+
+## setParameters(member_nonlinearity, parameters, param_1_name, param_2_name)
+Sets parameters to member nonlinearity (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member_nonlinearity | <code>Object</code> | Member nonlinearity to be setParameters |
+| parameters | <code>Array</code> | Nonlinearity parameters |
+| param_1_name | <code>String</code> | Name of first parameter |
+| param_2_name | <code>String</code> | Name of first parameter, can be undefined |
+
+<a name="createNonlinearity"></a>
+
+## createNonlinearity(no, member_list, comment, params) ⇒ <code>Object</code>
+Creates member nonlinearity
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - Created member nonlinearity  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| no | <code>Number</code> | Index of member nonlinearity, can be undefined |
+| member_list | <code>Array</code> | Assigned members |
+| comment | <code>String</code> | Comment, can be undefined |
+| params | <code>Object</code> | Member nonlinearity parameters, can be undefined |
+
+<a name="DistancesAreAbsolute"></a>
+
+## DistancesAreAbsolute(memberResultIntermediatePoint, absolute)
+Sets division ordinates as absolute (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| memberResultIntermediatePoint | <code>Object</code> | Member result intermediate point to be set |
+| absolute | <code>Boolean</code> | Division ordinates are absolute, can be undefined (default value is true) |
+
+<a name="setConcreteStructuresComponentType"></a>
+
+## setConcreteStructuresComponentType(member_stiffness_modification, component_type)
+Sets concrete structures parameters (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| member_stiffness_modification | <code>Object</code> | Member stiffness modification to set |
+| component_type | <code>Number</code> | Component type: Columns (1), Walls uncracked (2), Walls cracked (3), Beams (4), Flat plates and flat stabs (5). Can be undefined |
+

@@ -3,14 +3,14 @@
 <a name="StructureModification"></a>
 
 ## StructureModification
-**Kind**: global class
+**Kind**: global class  
 
 <a name="new_StructureModification_new"></a>
 
 ### new StructureModification(no, comment, params)
 Creates member
 
-**Returns**: Created structure modification
+**Returns**: Created structure modification  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Creates member
 ### structureModification.Material(material_name, modification_type, factor_for_e_and_g, comment)
 Modification of material
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ Modification of material
 ### structureModification.Section(section_name, sectional_areas_factor_a, sectional_areas_factor_a_y, sectional_areas_factor_a_z, moment_of_inertia_factor_j, moment_of_inertia_favor_i_y, moment_of_inertia_favor_i_z)
 Modification of section
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Modification of section
 ### structureModification.Members(member_stiffness_modification, members, comment)
 Modification of members
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -67,7 +67,7 @@ Modification of members
 ### structureModification.Surfaces(surface_stiffness_modification, surfaces, comment)
 Modification of surfaces
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ Modification of surfaces
 ### structureModification.MemberHinges(member_no, member_side, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, rotational_factor_phi_x, rotational_factor_phi_y, rotational_factor_phi_z)
 Modification of member hinges
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -98,7 +98,7 @@ Modification of member hinges
 ### structureModification.LineHinges(surface_no, line_no, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, rotational_factor_phi_x)
 MOdification for line hinges
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -114,7 +114,7 @@ MOdification for line hinges
 ### structureModification.NodalSupports(node_no, support_factor_ux, support_factor_uy, support_factor_uz, restraint_factor_phi_x, restraint_factor_phi_y, restraint_factor_phi_z)
 Modification of nodal supports
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -131,7 +131,7 @@ Modification of nodal supports
 ### structureModification.LineSupports(line_no, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, rotational_factor_phi_x, rotational_factor_phi_y, rotational_factor_phi_z)
 Mofification of line supports
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -148,7 +148,7 @@ Mofification of line supports
 ### structureModification.MemberSupports(member_no, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, shear_factor_s_x, shear_factor_s_y, shear_factor_s_z, rotational_factor_phi_x)
 Modification of member supports
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -166,7 +166,7 @@ Modification of member supports
 ### structureModification.SurfaceSupports(surface_no, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, shear_factor_v_xz, shear_factor_v_yz)
 Modification of surface supports
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -182,7 +182,7 @@ Modification of surface supports
 ### structureModification.DeactivateObjects(members_object_selection, surfaces_object_selection, solids_object_selection, support_on_nodes_object_selection, support_on_lines_object_selection, support_on_members_object_selection, support_on_surfaces_object_selection)
 Deactivation of objects
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -199,7 +199,7 @@ Deactivation of objects
 ### structureModification.ModifyMemberReinforcement(enabled)
 Sets member concrete reinforcement
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -210,7 +210,7 @@ Sets member concrete reinforcement
 ### structureModification.ModifySurfaceReinforcement(enabled)
 Sets surface concrete reinforcement
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -221,7 +221,7 @@ Sets surface concrete reinforcement
 ### structureModification.ModifyTimberMember(enabled)
 Sets timber members due to moisture class
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -232,7 +232,7 @@ Sets timber members due to moisture class
 ### structureModification.DisableMaterialNonlinearityModels(disabled)
 Deactivates material nonlinearity models
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -243,7 +243,7 @@ Deactivates material nonlinearity models
 ### structureModification.DisableTemperatureDependencies(disabled)
 Deactivates temperature dependencies
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -254,7 +254,7 @@ Deactivates temperature dependencies
 ### structureModification.DisableNonlinearitiesLineHinges(disabled)
 Deactivates line nonlinearities - line hinges
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -265,7 +265,7 @@ Deactivates line nonlinearities - line hinges
 ### structureModification.DisableNonlinearitiesMemberTypes(disabled)
 Deactivates member nonlinearities - member types
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -276,7 +276,7 @@ Deactivates member nonlinearities - member types
 ### structureModification.DisableNonlinearitiesMemberHinges(disabled)
 Deactivates member nonlinearities - member hinges
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -287,7 +287,7 @@ Deactivates member nonlinearities - member hinges
 ### structureModification.DisableMemberNonlinearities(disabled)
 Deactivates member nonlinearities
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -298,7 +298,7 @@ Deactivates member nonlinearities
 ### structureModification.DisableNonlinearitiesSurfaceOrSolidContact(disabled)
 Deactivates contact nonlinearities - surface contact, solid types "Contact"
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -309,7 +309,7 @@ Deactivates contact nonlinearities - surface contact, solid types "Contact"
 ### structureModification.DisableNonlinearitiesNodalSupports(disabled)
 Deactivates support nonlinearities - nodal supports
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -320,7 +320,7 @@ Deactivates support nonlinearities - nodal supports
 ### structureModification.DisableNonlinearitiesLineSupports(disabled)
 Deactivates support nonlinearities - line supports
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -331,7 +331,7 @@ Deactivates support nonlinearities - line supports
 ### structureModification.DisableNonlinearitiesMemberSupports(disabled)
 Deactivates support nonlinearities - member supports
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -342,10 +342,51 @@ Deactivates support nonlinearities - member supports
 ### structureModification.DisableNonlinearitiesSurfaceSupports(disabled)
 Deactivates support nonlinearities - surface supports
 
-**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)
+**Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | disabled | <code>Boolean</code> | Disabled, true if undefined |
 
 <a name="setTableValue"></a>
+
+## setTableValue(value, table, tableParameter, row, controlParameter, errorString)
+Sets table value (private)
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>Number</code> | Value to set |
+| table | <code>String</code> | Table to set |
+| tableParameter | <code>String</code> | Table parameter with value to set |
+| row | <code>Number</code> | Row with parameter and its value |
+| controlParameter | <code>Number</code> | Control parameter to check, if value can be set |
+| errorString | <code>Number</code> | Error message in case the value cannot be set |
+
+<a name="getMembersWithHinges"></a>
+
+## getMembersWithHinges() ⇒
+Finds all members with hinges (private)
+
+**Kind**: global function  
+**Returns**: List with array (member index, member side, member hinge)  
+<a name="getLinesWithHinges"></a>
+
+## getLinesWithHinges() ⇒
+Finds all lines with hinges (private)
+
+**Kind**: global function  
+**Returns**: List with array (surface index, line index, line hinge)  
+<a name="getObjectsWithSupport"></a>
+
+## getObjectsWithSupport(objects_list) ⇒
+Finds all specified objects with hinges
+
+**Kind**: global function  
+**Returns**: List with array (object's index, support)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| objects_list | <code>Object</code> | Object's container |
+

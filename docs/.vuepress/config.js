@@ -14,13 +14,12 @@ module.exports = {
             { text: 'User Guide',
               items: [
                 {text: 'Quick Start', link: '/guide/'},
-                {text: 'Articles', link: '/guide/Articles'},
                 {text: 'RFEM Python HLF', link: '/guide/ready'},
                 {text: 'RSTAB Python HLF', link: '/guide/RSTAB.BasicObjects'},
                 {text: 'RSECTION Python HLF', link: '/guide/RSECTION.BasicObjects'},
                 {text: '.NET', link: '/guide/netintro'},
-                {text: 'JaveScript Articles', link: '/guide/MD/JSarticles'},
                 {text: 'JavaScript HLF', link: '/guide/MD/AnalysisSettings'},
+                {text: 'Articles', link: '/guide/Articles'},
                 {text: 'Tutorials', link: '/guide/tutorialintro'},
               ]
             },

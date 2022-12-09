@@ -1,4 +1,4 @@
-# Overview of functions used for blocks
+# Overview of functions used for blocks (via JavaScript)
 
 ## Sections
 

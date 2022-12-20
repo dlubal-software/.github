@@ -344,7 +344,7 @@
 
 
 
-### Line.NURBS(no, control_points, components, weights, order, comment, params, model)
+### Line.NURBS(no, control_points, components, order, weights, comment, params, model)
 
 * **Parameters**
 
@@ -360,10 +360,10 @@
         > component = [[start_point_x, start_point_y], [control_point_x, control_point_y], ..., [end_point_x, end_point]]
 
 
-    * **weights** (*list*) – Control Points Weights
-
-
     * **order** (*int*) – Nurbs Order
+
+
+    * **weights** (*list*, *optional*) – Control Points Weights
 
 
     * **comment** (*str*, *optional*) – Comments

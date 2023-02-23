@@ -2226,7 +2226,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### Thickness.Layers(no, name, layers, comment, params, model)
+### Thickness.Layers(no, name, layers, stiffness_reduction, stiffness_modification, specify_integration, integration_type, clt_options, comment, params, model)
 
 --> NOTE: Available only for Special Solution Add-on Multilayer Surfaces.
 
@@ -2239,10 +2239,31 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **name** (*str*) – Thickness Name
 
 
-    * **layers** (*list of lists*) - Layers Table as an Array
+    * **layers** (*list of lists*) - Layers Table as an Array. Angle of the material will be set if material model is orthotropic.
 
 
-        > layers = [[thickness_type, material, thickness], ...]
+        > layers = [[thickness_type, material, thickness, angle], ...]
+
+
+    * **stiffness_reduction** (*bool, optional*) – Enable/disable Stiffness Reduction
+
+
+    * **stiffness_modification** (*list of lists, optional*) – Stiffness Modification Table (Entries K33, K44, K55, K88 with notes, respectivly)
+
+
+        > stiffness_modification = [[K33, K33 notes], ...]
+
+
+    * **specify_integration** (*bool, optional*) – Enable/disable Specify Integration
+
+
+    * **integration_type** (*enum*) – Specify which Integration should be used
+
+
+    * **clt_options** (*list of lists, optional*) – List that allows to set options for CLT
+
+
+        > clt_options = [[False, 100, 100], [False, 0, 0]]
 
 
     * **comment** (*str*, *optional*) – Comments

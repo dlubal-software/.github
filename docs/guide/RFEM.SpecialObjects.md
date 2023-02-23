@@ -31,6 +31,139 @@ Intersection
     * **model** (*RFEM Class, optional*) - Model to be edited
 
 
+
+## LineRelease
+
+
+### LineRelease(no, lines, line_release_type, release_location, released_members, released_surfaces, released_solids, use_nodes_as_definition_nodes, deactivated, name, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Line Release Tag
+
+
+    * **lines** (*str*) – Assigned Lines
+
+
+    * **line_release_type** (*int*) – Line Release Type Number
+
+
+    * **release_location** (*enum*) – Line Release Release Location Enumeration
+
+
+    * **released_members** (*str*) – Assigned Release Members
+
+
+    * **released_surfaces** (*str*) – Assigned Release Surfaces
+
+
+    * **released_solids** (*str*) – Assigned Release Solids
+
+
+    * **use_nodes_as_definition_nodes** (*str*) – Assigned Definition Nodes
+
+
+    * **deactivated** (*bool*) – Activate/Deactivate Line Release
+
+
+    * **name** (*str*) – User Defined Name
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+## LineReleaseType
+
+
+### LineReleaseType(no, spring_constant, translational_release_ux_nonlinearity, translational_release_uy_nonlinearity, translational_release_uz_nonlinearity, rotational_release_phi_x_nonlinearity, local_axis_system, system_para, name, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Line Release Type Tag
+
+
+    * **spring_constant** (*list*) – Spring Constant List
+
+
+    * **translational_release_ux_nonlinearity** (*list of lists*) – Nonlinearity Parameter for Translation Release along X Direction
+
+
+    * **translational_release_uy_nonlinearity** (*list of lists*) – Nonlinearity Parameter for Translation Release along Y Direction
+
+
+    * **translational_release_uz_nonlinearity** (*list of lists*) – Nonlinearity Parameter for Translation Release along Z Direction
+
+        > * for translational_release_ux/y/z_nonlinearity[0] == TranslationalReleaseNonlinearity.NONLINEARITY_TYPE_PARTIAL_ACTIVITY:    
+        translational_release_ux/y/z_nonlinearity = [nonlinearity type Partial_Activity, negative zone, positive zone]   
+            >> * for negative/positive zone[0] == PartialActivityAlongType.PARTIAL_ACTIVITY_TYPE_COMPLETE:  
+            negative/positive zone = [negative/positive zone type, slippage]    
+            >> * for negative/positive zone[0] == PartialActivityAlongType.PARTIAL_ACTIVITY_TYPE_FIXED:   
+            negative/positive zone = [negative/positive zone type, slippage, displacement]  (Note: Displacement must be greater than slippage)  
+            >> * for negative/positive zone[0] == PartialActivityAlongType.PARTIAL_ACTIVITY_TYPE_FAILURE_FROM_FORCE/PARTIAL_ACTIVITY_TYPE_YIELDING_FROM_FORCE:  
+            negative/positive zone = [negative/positive zone type, slippage, force]     
+
+        > * for translational_release_ux/y/z_nonlinearity[0] == TranslationalReleaseNonlinearity.NONLINEARITY_TYPE_DIAGRAM:     
+        translational_release_ux/y/z_nonlinearity = [nonlinearity type Diagram, [symmetric(bool), LineReleaseDiagram Enumeration(start), LineReleaseDiagram Enumeration(end)], [[displacement, force],...]]
+
+
+    * **rotational_release_phi_x_nonlinearity** (*list of lists*) – Nonlinearity Parameter for Rotational Release around X Direction
+
+
+        > * for rotational_release_phi_x_nonlinearity[0] == RotationalReleaseNonlinearity.NONLINEARITY_TYPE_PARTIAL_ACTIVITY:   
+        rotational_release_phi_x_nonlinearity = [nonlinearity type Partial_Activity, negative zone, positive zone]      
+            >> * for negative/positive zone[0] == RotationalReleaseNonlinearity.PARTIAL_ACTIVITY_TYPE_COMPLETE:     
+            negative/positive zone = [negative/positive zone type, slippage]   
+            >> * for negative/positive zone[0] == RotationalReleaseNonlinearity.PARTIAL_ACTIVITY_TYPE_FIXED:    
+            negative/positive zone = [negative/positive zone type, slippage, rotation] 
+            >> * for negative/positive zone[0] == RotationalReleaseNonlinearity.PARTIAL_ACTIVITY_TYPE_FAILURE_FROM_MOMENT/PARTIAL_ACTIVITY_TYPE_YIELDING_FROM_MOMENT:   
+            negative/positive zone = [negative/positive zone type, slippage, moment]
+
+        > * for rotational_release_phi_x_nonlinearity[0] == RotationalReleaseNonlinearity.NONLINEARITY_TYPE_DIAGRAM:    
+        rotational_release_phi_x_nonlinearity = [nonlinearity type Diagram, [symmetric(bool), LineReleaseDiagram Enumeration(start), LineReleaseDiagram Enumeration(end)], [[rotation, moment],...]]
+
+        > * for rotational_release_phi_x_nonlinearity[0] == RotationalReleaseNonlinearity.NONLINEARITY_TYPE_FORCE_MOMENT_DIAGRAM:   
+        rotational_release_phi_x_nonlinearity = [nonlinearity type Force_Moment_Diagram, [symmetric(bool), LineReleaseForceMomentDiagram Enumeration(end), LineReleaseForceMomentDepend Enumeration], [[force, max_moment, min_moment(if not symetric)],...]]
+
+
+    * **local_axis_system** (*enum*) – Line Release Local Axis System Enumeration
+
+
+    * **system_para** (*list*) – System Parameters
+
+
+        > * for local_axis_system ==LineReleaseLocalAxisSystem.LOCAL_AXIS_SYSTEM_TYPE_ORIGINAL_LINE:    
+        system_para = [rotational_angle]    
+
+        > * for local_axis_system ==LineReleaseLocalAxisSystem.LOCAL_AXIS_SYSTEM_TYPE_Z_AXIS_PERPENDICULAR_TO_SURFACE:  
+        system_para = [rotational_angle, surface_tag]
+
+        > * for local_axis_system ==LineReleaseLocalAxisSystem.E_LOCAL_AXIS_SYSTEM_TYPE_HELP_NODE:  
+        system_para = [rotational_angle, node_tag, local_axis_system_object_in_plane]
+
+
+
+    * **name** (*str*) – User Defined Name
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## ResultSection
 
 

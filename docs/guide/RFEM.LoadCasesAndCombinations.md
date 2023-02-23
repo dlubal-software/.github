@@ -2,6 +2,99 @@
 
 Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/main/RFEM/LoadCasesAndCombinations)*
 
+## CombinationWizard
+
+
+### CombinationWizard(no, name, static_analysis_settings, stability_analysis_setting, consider_imperfection_case, generate_same_CO_without_IC, initial_state_case, initial_state_definition_type, structure_modification, user_defined_action_combinations, favorable_permanent_actions, reduce_number_of_generated_combinations, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Combination Wizard Tag
+
+
+    * **name** (*str*, *optional*) – User-Defined Name
+
+
+    * **static_analysis_settings** (*int*) – Assign Static Analysis Settings
+
+
+    * **stability_analysis_setting** (*int*) – Assign Stability Analysis Setting
+
+
+    * **consider_imperfection_case** (*bool*) – Enable/disable Inferpaction Case
+
+
+    * **generate_same_CO_without_IC** (*bool*) – Enable/disable Generate same CO without IC
+
+
+    * **initial_state_case** (*int*) – Assign Initial State Case
+
+
+    * **initial_state_definition_type** (*enum*) – Initial State Defintion Type Enumeration
+
+
+    * **structure_modification** (*int*) – Structure Modification to be considered
+
+
+    * **user_defined_action_combinations** (*bool*) – Enable/disable User defined Combinations
+
+
+    * **favorable_permanent_actions** (*bool*) – Enable/diable Favourable Permanent Actions
+
+
+    * **reduce_number_of_generated_combinations** (*bool*) – Enable/disable Reduce Number of Generated Combinations
+
+
+    * **comment** (*str*, *optional*) – Comments
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### CombinationWizard.SetResultCombination(no, name, stability_analysis_setting, consider_imperfection_case, generate_same_CO_without_IC, user_defined_action_combinations, favorable_permanent_actions, generate_subcombinations_of_type_superposition, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Result Combination Wizard Tag
+
+
+    * **name** (*str*, *optional*) – User-Defined Name
+
+
+    * **stability_analysis_setting** (*int*) – Assign Stability Analysis Settings
+
+
+    * **consider_imperfection_case** (*bool*) – Enable/disable Imperfection Case
+
+
+    * **generate_same_CO_without_IC** (*bool*) – Enable/disable Generate same CO without IC
+
+
+    * **user_defined_action_combinations** (*bool*) – Enable/disable User Defined Action Combinations
+
+
+    * **favorable_permanent_actions** (*bool*) – Enable/disable Favorable Permanent Actions
+
+
+    * **generate_subcombinations_of_type_superposition** (*bool*) – Enable/disable Subcombinations of Type Superposition
+
+
+    * **comment** (*str*, *optional*) – Comments
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## DesignSituation
 
 
@@ -34,7 +127,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## LoadCase
 
 
-### LoadCase(no, name, self_weight, comment, params, model)
+### LoadCase(no, name, self_weight, action_category, comment, params, model)
 
 * **Parameters**
 
@@ -47,6 +140,9 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **self_weight** (*list*) – Self-Weight Parameters
         > self_weight = [self_weight_active, self_weight_factor_x, self_weight_factor_y, self_weight_factor_z]
+
+
+    * **action_category** (*enum*) – Action Category Type Enumeration
 
 
     * **comment** (*str*, *optional*) – Comments

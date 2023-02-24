@@ -815,6 +815,144 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+## WindSimulationAnalysisSettings
 
+
+### WindSimulationAnalysisSettings(no, name, density, kinematic_viscosity, member_load_distribution, finite_volume_mesh_density, snap_to_model_edges, calculation_parameters, options, advanced_options, residual_pressure, boundary_layers_checked, boundary_layers_value, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Wind Simulation Analysis Setting Tag
+
+
+    * **name** (*str*) – User Defined Name
+
+
+    * **density** (*float*) – Density
+
+
+    * **kinematic_viscosity** (*float*) – Kinematic Viscosity
+
+
+    * **member_load_distribution** (*enum*) – Wind Simulation Analysis Settings Member Load Distribution Enumeration
+
+
+    * **finite_volume_mesh_density** (*float*) – Finite Volume Mesh Density
+
+
+    * **snap_to_model_edges** (*bool*) – Enable/disable Snap to Model Edges
+
+
+    * **calculation_parameters** (*list*) – Calculation Parameters List
+
+        > calculation_parameters = [Use Potential Flow to calculate initial Condition, Use Second Order numerical Scheme, Maximum number of Iterations, Turbulence Model]
+
+
+    * **options** (*list*) – Options List
+
+        > options = [Consider Turbulence, Slip Boundary on Bottom Boundary, User Defined Dimensions of Wind Tunnel, Save Solver Data To Continue Calculation]
+
+
+    * **advanced_options** (*list*) – Relaxation Factors
+
+        > advanced_options = [Pressure Field, Velocity field, Turbulence Kinetic Energy, Turbulence dissipation Rate, Specific Turbulence Dissipation Rate, Modified Turbulence kinetic Viscosity, Turbulence Intermittency, Momentum Thickness Reynolds Number]
+
+
+    * **residual_pressure** (*float*) – Residual Pressure
+
+
+    * **boundary_layers_checked** (*bool*) – Enable/disable Boundary Layers Checked
+
+
+    * **boundary_layers_value** (*float*) – Boundary Layers Value
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+ 
+      
+### WindSimulationAnalysisSettings.SurfaceRoughness(no, name, consider_surface_roughness, sand_grain_roughness_height, roughness_constant, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Wind Simulation Analysis Setting Tag
+
+
+    * **name** (*str*) – User Defined Name
+
+
+    * **consider_surface_roughness** (*bool*) – Enable/disable Surface Roughness
+
+
+    * **nasand_grain_roughness_heightme** (*float*) – Sand Grain Roughness Height
+
+
+    * **roughness_constant** (*float*) – Roughness Constant
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### WindSimulationAnalysisSettings.TransientFlow(no, name, calculation_parameters, user_defined_simulation_time, simulation_time, start_time_for_saving_transient_result, turbulence_model_type, saving_results, user_defined_in_domain_for_flow_animation, user_defined_in_point_probes, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Wind Simulation Analysis Setting Tag
+
+
+    * **name** (*str*) – User Defined Name
+
+
+    * **calculation_parameters** (*list*) – Calculation Parameters List
+
+        > calculation_parameters = [Use Steady Flow Solver To Calculate Initial Condition, Maximum Number Of Iterations Of Steady Flow Solver, Turbulence Type For Initial Condition, Error Tolerance for Data Compression]
+
+
+    * **user_defined_simulation_time** (*bool*) – Enable/disable User defined simulation time and time steps
+
+
+    * **simulation_time** (*flaot*) – Simulation Time
+
+
+    * **start_time_for_saving_transient_result** (*flaot*) – Start Time For Saving Transient Result
+
+
+    * **turbulence_model_type** (*enums*) – Wind Simulation Analysis Settings Turbulence Model Type
+
+
+    * **saving_results** (*list*) – Saving Results
+
+        > saving_results = [Transient Flow Time Step For Animation, Transient Flow Number Of Time Layers, Transient Flow Time Step Probes, Transient Flow Number Of Time Layers Probes]
+
+
+    * **user_defined_in_domain_for_flow_animation** (*bool*) – Enable/disable User Defined In Domain For Flow Animation
+
+
+    * **user_defined_in_point_probes** (*bool*) – Enable/disable User Defined In Point Probes
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
 
 

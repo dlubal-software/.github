@@ -1,17 +1,17 @@
-# Steel Design
+# Timber Design
 
-Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/main/RFEM/SteelDesign)*
-
-
-## SteelDesignServiceabilityConfigurations
+Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/main/RFEM/TimberDesign)*
 
 
-### SteelDesignServiceabilityConfigurations(no, name, members_no, member_sets_no, comment, params, model)
+## TimberDesignServiceLimitStateConfigurations
+
+
+### TimberDesignServiceLimitStateConfigurations(no, name, members_no, member_sets_no, comment, params, model)
 
 * **Parameters**
 
     
-    * **no** (*int*) – Steel Design Serviceability Configuration Tag
+    * **no** (*int*) – Timber Design Service Limit State Configuration Tag
 
 
     * **name** (*str*) – User Defined Configuration Name
@@ -33,15 +33,15 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-## SteelDesignUltimateConfigurations
+## TimberDesignUltimateConfigurations
 
 
-### SteelDesignUltimateConfigurations(no, name, members_no, member_sets_no, comment, params, model)
+### TimberDesignUltimateConfigurations(no, name, members_no, member_sets_no, comment, params, model)
 
 * **Parameters**
 
     
-    * **no** (*int*) – Steel Design Ultimate Configuration Tag
+    * **no** (*int*) – Timber Design Ultimate Configuration Tag
 
 
     * **name** (*str*) – User Defined Configuration Name
@@ -60,3 +60,5 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
+
+

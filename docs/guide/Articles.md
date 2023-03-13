@@ -1,5 +1,15 @@
 # Python Articles 📰
 
+## How to connect to remote PC
+
+Much of our development involved testing on localhost i.e. RFEM and the Client side by side on one computer. Althought this is valid scenario we aimed from the beginning to enable Client to connect to remote PC. With the latest update (branch: OndrejMichal-remote_PC_connection) it is possible. 
+
+To make it easy here are some usefull tips:
+
+* Be sure to use RFEM6 license with unrestricted WebServices only. At the moment only Enterprise meets the requirements.
+* Be sure to check if ports on the server side (with RFEM) are not blocked for example in the antivirus. By default port numbers are 8081-8090.
+* Checks for open ports are included in the initialization routine.
+
 ## How to edit multiple models in one script
 
 If your project requires editing multiple models you can do it. There are 3 options to choose from:
@@ -347,6 +357,82 @@ model = Client(new)
 # printout all model functions and types
 print(model)
 ```
+
+## How to set 'params'
+
+When working with the client, user can often face the task to set attributes which are not found in object parameters. For this purpose **params** were introduced to every object. It is optional parameter in form of a dictionary where key is the name of the parameter found in WSDL (see [How to query the model](https://github.com/Dlubal-Software/RFEM_Python_Client/wiki/How-to-query-the-model) or [model ](https://github.com/Dlubal-Software/RFEM_Python_Client/wiki/WS-Model-Methods-and-Types) and [application](https://github.com/Dlubal-Software/RFEM_Python_Client/wiki/WS-Application-Methods-and-Types) methods). Because it is set as the end of the routine, it can also override any parameters set previously.
+
+### Step by step
+First, print the object of your interest on the command line using a script like this:
+
+```js
+from suds.client import Client
+
+client = Client('http://localhost:8081/wsdl')
+new = client.service.get_active_model()+'wsdl'
+model = Client(new)
+
+print(model.service.get_nodal_support(1))
+```
+
+You will get full description of Nodal Support no.1. From this you can figure out the structure of the object and create whole new object with parameters and nested objects. For example, if you want to descibe support condition in X direction via diagram, focus on these parameters:
+
+```js
+diagram_along_x_end = "DIAGRAM_ENDING_TYPE_CONTINUOUS"
+diagram_along_x_is_sorted = True
+diagram_along_x_start = "DIAGRAM_ENDING_TYPE_CONTINUOUS"
+diagram_along_x_symmetric = True
+diagram_along_x_table =
+    (array_of_nodal_support_diagram_along_x_table){
+        nodal_support_diagram_along_x_table[] =
+            (nodal_support_diagram_along_x_table_row){
+                no = 1
+                description = None
+                row =
+                    (nodal_support_diagram_along_x_table){
+                       displacement = -0.0001
+                       force = -200000000.0
+                       spring = 3900000000000.0
+                       note = None
+                   }
+              },
+             (nodal_support_diagram_along_x_table_row){
+                no = 2
+                description = None
+                row =
+                    (nodal_support_diagram_along_x_table){
+                        displacement = -5e-05
+                        force = -5000000.0
+                        spring = 100000000000.0
+                        note = None
+                   }
+             },
+       }
+```
+
+You can then write:
+
+```js
+NodalSupport(..., params = {'diagram_along_x_end':"DIAGRAM_ENDING_TYPE_CONTINUOUS"})
+```
+
+To define something like **diagram_along_x_table** nested structure must be properly populated:
+
+```js
+diagram_along_x = model.clientModel.factory.create('ns0:response_spectrum.user_defined_response_spectrum')
+for i,j in enumerate(nodal_support_diagrams):
+    ns = model.clientModel.factory.create('ns0:nodal_support_diagram_along_x_table_row')
+    ns.no = i+1
+    ns.row.displacement= user_defined_spectrum[i][0]
+    rsp.row.force= user_defined_spectrum[i][1]
+    ns.row.force= user_defined_spectrum[i][2]
+
+    diagram_along_x.nodal_support_diagram_along_x_table.append(ns)
+
+NodalSupport(..., params = {'diagram_along_x_end':"DIAGRAM_ENDING_TYPE_CONTINUOUS", 'diagram_along_x_table' : diagram_along_x})
+```
+
+This is the process we use to develop this library, so if you're looking for something similar, many instances can be found throughout the project.
 
 ## How to start
 

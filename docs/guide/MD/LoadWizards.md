@@ -375,7 +375,6 @@ Sets consider section distribution
 ### new SnowLoadWizard(no, comment, params)
 Creates empty snow load wizard
 
-
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>Number</code> | Snow load wizard index, can be undefined |
@@ -423,7 +422,7 @@ Sets loaded roofs
 
 | Param | Type | Description |
 | --- | --- | --- |
-| loaded_planes_accessibility | <code>Array</code> | Enable or disable loaded roofs (array of booleans [roof1 | roof1, roof2]) |
+| loaded_planes_accessibility | <code>Array</code> | Enable or disable loaded roofs (array of booleans [roof1 or roof1, roof2]) |
 
 <a name="SnowLoadWizard+WithoutLoadsOnMembers"></a>
 

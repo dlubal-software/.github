@@ -223,12 +223,6 @@ Creates default nodal node refinement
 | comment | <code>String</code> | Comment |
 | params | <code>Object</code> | Additional parameters |
 
-
-* [NodalMeshRefinement(no, assigned_nodes, comment, params)](#NodalMeshRefinement)
-    * [.Circular(no, assigned_nodes, radius, inner_target_fe_length, outer_target_fe_length, fe_length_arrangement, comment, params)](#NodalMeshRefinement+Circular)
-    * [.Rectangular(no, assigned_nodes, side_length, inner_target_fe_length, comment, params)](#NodalMeshRefinement+Rectangular)
-    * [.ApplyToSurfaces(indexes)](#NodalMeshRefinement+ApplyToSurfaces)
-
 <a name="NodalMeshRefinement+Circular"></a>
 
 ### nodalMeshRefinement.Circular(no, assigned_nodes, radius, inner_target_fe_length, outer_target_fe_length, fe_length_arrangement, comment, params)

@@ -153,7 +153,7 @@ Creates concrete structure ACI type of surface stiffness modification
 | --- | --- | --- |
 | no | <code>Number</code> | Index of surface stiffness modification |
 | structural_modification | <code>Number</code> | Structural modification index, can be undefined |
-| component_type | <code>Number</code> | Component type (1 - Columns, 2 - Walls uncracked, 3 - Walls cracked, 4 - Beams, 5 - Flat plates and flat slabs), can be undefined (Columns type as default) |
+| component_type | <code>Number</code> | Component type (WALLS_UNCRACKED, WALLS_CRACKED, PLATES_AND_FLAT_SLABS), can be undefined (WALLS_UNCRACKED as default) |
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Surface stiffness modification's parameters, can be undefined |
 
@@ -169,7 +169,7 @@ Creates concrete structure CSA type of surface stiffness modification
 | --- | --- | --- |
 | no | <code>Number</code> | Index of surface stiffness modification |
 | structural_modification | <code>Number</code> | Structural modification index, can be undefined |
-| component_type | <code>Number</code> | Component type (1 - Columns, 2 - Walls uncracked, 3 - Walls cracked, 4 - Beams, 5 - Flat plates and flat slabs), can be undefined (Columns type as default) |
+| component_type | <code>Number</code> | Component type (WALLS_UNCRACKED, WALLS_CRACKED, PLATES_AND_FLAT_SLABS), can be undefined (WALLS_UNCRACKED as default) |
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Surface stiffness modification's parameters, can be undefined |
 
@@ -226,7 +226,7 @@ Modifies concrete structures surface stiffness modification (private)
 | --- | --- | --- |
 | surface_stiffness_modification | <code>Object</code> | Surface stiffness modification to be set |
 | stiffness_modification_type | <code>String</code> | Stiffness modification type |
-| component_type | <code>Number</code> | Component type (1 - Columns, 2 - Walls uncracked, 3 - Walls cracked, 4 - Beams, 5 - Flat plates and flat slabs), can be undefined (Columns type as default) |
+| component_type | <code>Number</code> | Component type (WALLS_UNCRACKED, WALLS_CRACKED, PLATES_AND_FLAT_SLABS), can be undefined (WALLS_UNCRACKED as default) |
 
 <a name="createSurfaceStiffnessModification"></a>
 

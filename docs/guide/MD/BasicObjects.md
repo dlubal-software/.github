@@ -1,8 +1,11 @@
 # Basic Objects
 
-## Line
+<a name="Line"></a>
 
+## Line
 **Kind**: global class  
+
+<a name="new_Line_new"></a>
 
 ### new Line(no, nodes, comment, params)
 Creates line
@@ -12,7 +15,7 @@ Creates line
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>Number</code> | Index of line, can be undefined |
-| nodes | <code>Array</code> | List of node indexes |
+| nodes | <code>Array</code> | List of [Node](#Node) indexes |
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Line's parameters, can be undefined |
 
@@ -39,10 +42,16 @@ Creates polyline
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>Number</code> | Index of line, can be undefined |
-| nodes | <code>Array</code> | List of node indexes |
+| nodes | <code>Array</code> | List of [Node](#Node) indexes |
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Line's parameters, can be undefined |
 
+**Example**  
+```js
+// returns polyline
+var line = new line();
+line.Polyline(1, [1,2]);
+```
 <a name="Line+Arc"></a>
 
 ### line.Arc(no, nodes, control_point, arc_parameters, center_of_arc, alpha_adjustement_target, comment, params)
@@ -53,7 +62,7 @@ Creates arc line
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>Number</code> | Index of line, can be undefined |
-| nodes | <code>Array</code> | List of node indexes |
+| nodes | <code>Array</code> | List of [Node](#Node) indexes |
 | control_point | <code>Array</code> | Control point of arc |
 | arc_parameters | <code>Array</code> | Arc's parameters, can be undefined (only one of three parameter can be set, when arc parameter is set, other parameters (control point) will be recalculated) |
 | center_of_arc | <code>Array</code> | Center of arc, can be undefined (when center of is set, control point will be recalculated) |
@@ -253,7 +262,7 @@ Sets line welded joints
 <a name="LineSet"></a>
 
 ## LineSet
-**Kind**: global class  
+**Kind**: global class 
 
 <a name="new_LineSet_new"></a>
 
@@ -351,6 +360,16 @@ Creates member
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Member's parameters, can be undefined |
 
+<a name="Member+GetNo"></a>
+
+### member.GetNo() ⇒
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Member's number  
+<a name="Member+GetMember"></a>
+
+### member.GetMember() ⇒
+**Kind**: instance method of [<code>Member</code>](#Member)  
+**Returns**: Member object  
 <a name="Member+Beam"></a>
 
 ### member.Beam(no, nodes_or_line, section_start, comment, params) ⇒
@@ -817,6 +836,16 @@ Create Member Set
 | comment | <code>string</code> | Comment for the Member Set |
 | params | <code>dictionary</code> | Parameters of the Member Set |
 
+<a name="MemberSet+GetNo"></a>
+
+### memberSet.GetNo() ⇒
+**Kind**: instance method of [<code>MemberSet</code>](#MemberSet)  
+**Returns**: Number of member set  
+<a name="MemberSet+GetMemberSet"></a>
+
+### memberSet.GetMemberSet() ⇒
+**Kind**: instance method of [<code>MemberSet</code>](#MemberSet)  
+**Returns**: Member set object  
 <a name="MemberSet+ContinuousMembers"></a>
 
 ### memberSet.ContinuousMembers(no, members, comment, params)
@@ -849,7 +878,6 @@ Create Group of  Member memberSet type
 
 ## Node
 **Kind**: global class  
-
 <a name="new_Node_new"></a>
 
 ### new Node(no, coordinate_X, coordinate_Y, coordinate_Z, comment, params)
@@ -1063,7 +1091,7 @@ Creates line
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>Number</code> | Index of line, can be undefined |
-| nodes | <code>Array</code> | List of node indexes |
+| nodes | <code>Array</code> | List of [Node](#Node) indexes |
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Line's parameters, can be undefined |
 
@@ -1090,10 +1118,16 @@ Creates polyline
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>Number</code> | Index of line, can be undefined |
-| nodes | <code>Array</code> | List of node indexes |
+| nodes | <code>Array</code> | List of [Node](#Node) indexes |
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Line's parameters, can be undefined |
 
+**Example**  
+```js
+// returns polyline
+var line = new line();
+line.Polyline(1, [1,2]);
+```
 <a name="Line+Arc"></a>
 
 ### line.Arc(no, nodes, control_point, arc_parameters, center_of_arc, alpha_adjustement_target, comment, params)
@@ -1104,7 +1138,7 @@ Creates arc line
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>Number</code> | Index of line, can be undefined |
-| nodes | <code>Array</code> | List of node indexes |
+| nodes | <code>Array</code> | List of [Node](#Node) indexes |
 | control_point | <code>Array</code> | Control point of arc |
 | arc_parameters | <code>Array</code> | Arc's parameters, can be undefined (only one of three parameter can be set, when arc parameter is set, other parameters (control point) will be recalculated) |
 | center_of_arc | <code>Array</code> | Center of arc, can be undefined (when center of is set, control point will be recalculated) |
@@ -2549,6 +2583,16 @@ Creates surface
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Surface's parameters, can be undefined |
 
+<a name="Surface+GetSurface"></a>
+
+### surface.GetSurface() ⇒
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+**Returns**: Surface object  
+<a name="Surface+GetNo"></a>
+
+### surface.GetNo() ⇒
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+**Returns**: Surface number  
 <a name="Surface+Standard"></a>
 
 ### surface.Standard(no, boundary_lines, thickness, comment, params) ⇒
@@ -2629,7 +2673,7 @@ Creates without membrane tension surface
 
 <a name="Surface+LoadTransfer"></a>
 
-### surface.LoadTransfer(no, boundary_lines, values, comment, params) ⇒
+### surface.LoadTransfer(no, boundary_lines, load_transfer_direction, load_distribution, comment, params) ⇒
 Creates load transfer surface
 
 **Kind**: instance method of [<code>Surface</code>](#Surface)  
@@ -2639,9 +2683,82 @@ Creates load transfer surface
 | --- | --- | --- |
 | no | <code>Number</code> | Index of surface, can be undefined |
 | boundary_lines | <code>Array</code> | List of boundary lines indexes |
-| values | <code>Array</code> | Load transfer's parameters, can be undefined 											[load_transfer_direction, surface_weight, consider_member_eccentricity, consider_section_distribution 											excluded_members, excluded_parallel_to_members, excluded_lines, excluded_parallel_to_lines, 											loaded_lines, loaded_members] |
+| load_transfer_direction | <code>String</code> | Load transfer direction, can be undefined (DIRECTION_IN_X as default) |
+| load_distribution | <code>String</code> | Load distribution, can be undefined (UNIFORM as default) |
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Surface's parameters, can be undefined |
+
+<a name="Surface+RemoveInfluenceFrom"></a>
+
+### surface.RemoveInfluenceFrom(excluded_members_no, excluded_parallel_to_members, excluded_lines, excluded_parallel_to_lines, excluded_nodes)
+Removes influence from members, lines and nodes
+
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| excluded_members_no | <code>Array</code> | Remove influence from members, can be undefined |
+| excluded_parallel_to_members | <code>Array</code> | Remove influence from parallel to members, can be undefined |
+| excluded_lines | <code>Array</code> | Remove influence from lines, can be undefined |
+| excluded_parallel_to_lines | <code>Array</code> | Remove influence from parallel to lines, can be undefined |
+| excluded_nodes | <code>Array</code> | Remove influence from nodes, can be undefined |
+
+<a name="Surface+SurfaceWeight"></a>
+
+### surface.SurfaceWeight(surface_weight)
+Sets Load transfer surface's weight
+
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| surface_weight | <code>Number</code> | Surface weight |
+
+<a name="Surface+ConsiderMemberEccentricity"></a>
+
+### surface.ConsiderMemberEccentricity(consider_member_eccentricity)
+Sets Load transfer surface's consider member eccentricity
+
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| consider_member_eccentricity | <code>Boolean</code> | Consider member eccentricity enabled/disabled, can be undefined (true as default) |
+
+<a name="Surface+ConsiderSectionDistribution"></a>
+
+### surface.ConsiderSectionDistribution(consider_section_distribution)
+Sets Load transfer surface's consider section distribution
+
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| consider_section_distribution | <code>Boolean</code> | Consider section distribution enabled/disabled, can be undefined (true as default) |
+
+<a name="Surface+AdvancedDistribution"></a>
+
+### surface.AdvancedDistribution(stripe_width, sampling_factor, enabled)
+Sets load transfer surface's advance distribution
+
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| stripe_width | <code>Number</code> | Strip width, can be undefined (0.01 as default) |
+| sampling_factor | <code>Number</code> | Sampling factor, can be set only with varying load distribution, can be undefined (0.02 as default) |
+| enabled | <code>Boolean</code> | Advance distribution enabled/disabled, can be undefined (true as default) |
+
+<a name="Surface+NeglectEquilibriumOfMoments"></a>
+
+### surface.NeglectEquilibriumOfMoments(neglect_equilibrium_of_moments)
+Sets load transfer surface's neglect equilibrium of moments
+
+**Kind**: instance method of [<code>Surface</code>](#Surface)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| neglect_equilibrium_of_moments | <code>Boolean</code> | Neglect equilibrium of moments enabled/disabled, can be undefined (true as default) |
 
 <a name="Surface+SurfaceType"></a>
 
@@ -2825,6 +2942,16 @@ Create Surface Set
 | comment | <code>string</code> | Comment for the Surface Set |
 | params | <code>dictionary</code> | Parameters of the Surface Set |
 
+<a name="SurfaceSet+GetSurfaceSet"></a>
+
+### surfaceSet.GetSurfaceSet() ⇒
+**Kind**: instance method of [<code>SurfaceSet</code>](#SurfaceSet)  
+**Returns**: Surface set object  
+<a name="SurfaceSet+GetNo"></a>
+
+### surfaceSet.GetNo() ⇒
+**Kind**: instance method of [<code>SurfaceSet</code>](#SurfaceSet)  
+**Returns**: Surface set number  
 <a name="SurfaceSet+ContinuousSurfaces"></a>
 
 ### surfaceSet.ContinuousSurfaces(no, surfaces, comment, params)
@@ -3029,7 +3156,7 @@ Creates line (private)
 | Param | Type | Description |
 | --- | --- | --- |
 | no | <code>Number</code> | Index of line, can be undefined |
-| nodes | <code>Array</code> | List of node indexes |
+| nodes | <code>Array</code> | List of [Node](#Node) indexes |
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Line's parameters, can be undefined |
 

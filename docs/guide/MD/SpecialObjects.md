@@ -129,7 +129,7 @@ Modification of nodal supports
 <a name="StructureModification+LineSupports"></a>
 
 ### structureModification.LineSupports(line_no, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, rotational_factor_phi_x, rotational_factor_phi_y, rotational_factor_phi_z)
-Mofification of line supports
+Modification of line supports
 
 **Kind**: instance method of [<code>StructureModification</code>](#StructureModification)  
 

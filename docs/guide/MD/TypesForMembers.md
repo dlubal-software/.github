@@ -850,7 +850,7 @@ Sets concrete structure ACI
 
 | Param | Type | Description |
 | --- | --- | --- |
-| component_type | <code>Number</code> | Component type: Columns (1), Walls uncracked (2), Walls cracked (3), Beams (4), Flat plates and flat stabs (5). Can be undefined |
+| component_type | <code>Number</code> | Component type: COLUMNS, BEAMS. Can be undefined |
 
 <a name="MemberStiffnessModification+ConcreteStructuresCsa"></a>
 
@@ -861,7 +861,7 @@ Sets concrete structure CSA
 
 | Param | Type | Description |
 | --- | --- | --- |
-| component_type | <code>Number</code> | Component type: Columns (1), Walls uncracked (2), Walls cracked (3), Beams (4), Flat plates and flat stabs (5). Can be undefined |
+| component_type | <code>Number</code> | Component type: COLUMNS, BEAMS. Can be undefined |
 
 <a name="MemberStiffnessModification+SteelStructuresAisc"></a>
 
@@ -906,7 +906,7 @@ Sets transverse offset (private)
 | reference_type | <code>String</code> | Reference type ("None", "Member", "Surface") |
 | reference | <code>Number</code> | object index	Reference member or surface index |
 | reference_node_index | <code>Number</code> | Reference member node index, in case of surface is undefined |
-| alignment_type | <code>String</code> | For member offset:	SECTION_ALIGNMENT_LEFT_TOP, 																	SECTION_ALIGNMENT_CENTER_TOP, 																	SECTION_ALIGNMENT_RIGHT_TOP, 																	SECTION_ALIGNMENT_LEFT_CENTER, 																	SECTION_ALIGNMENT_CENTER_CENTER, 																	SECTION_ALIGNMENT_RIGHT_CENTER, 																	SECTION_ALIGNMENT_LEFT_BOTTOM, 																	SECTION_ALIGNMENT_CENTER_BOTTOM, 																	SECTION_ALIGNMENT_RIGHT_BOTTOM. 												For surface offset:	SECTION_ALIGNMENT_CENTER_TOP, 																	SECTION_ALIGNMENT_CENTER_CENTER, 																	SECTION_ALIGNMENT_CENTER_BOTTOM. |
+| alignment_type | <code>String</code> | For member offset:	LEFT_TOP, CENTER_TOP, RIGHT_TOP, LEFT_CENTER, CENTER_CENTER, RIGHT_CENTER, LEFT_BOTTOM, CENTER_BOTTOM, RIGHT_BOTTOM. 												For surface offset:	CENTER_TOP, CENTER_CENTER, CENTER_BOTTOM. |
 
 <a name="createMemberEccentricity"></a>
 
@@ -934,7 +934,7 @@ Sets member eccentricity for relative to section type (private)
 | Param | Type | Description |
 | --- | --- | --- |
 | member_eccentricity | <code>Object</code> | Member eccentricity to be set |
-| alignment_type | <code>String</code> | Alignment: 	SECTION_ALIGNMENT_LEFT_TOP, 														SECTION_ALIGNMENT_CENTER_TOP, 														SECTION_ALIGNMENT_RIGHT_TOP, 														SECTION_ALIGNMENT_LEFT_CENTER, 														SECTION_ALIGNMENT_CENTER_CENTER, 														SECTION_ALIGNMENT_RIGHT_CENTER, 														SECTION_ALIGNMENT_LEFT_BOTTOM, 														SECTION_ALIGNMENT_CENTER_BOTTOM, 														SECTION_ALIGNMENT_RIGHT_BOTTOM. |
+| alignment_type | <code>String</code> | Alignment: LEFT_TOP, CENTER_TOP, RIGHT_TOP, LEFT_CENTER, CENTER_CENTER, RIGHT_CENTER, LEFT_BOTTOM, CENTER_BOTTOM, RIGHT_BOTTOM. |
 
 <a name="getAlignmentParts"></a>
 
@@ -990,7 +990,7 @@ Sets values to member hinge (private)
 | Param | Type | Description |
 | --- | --- | --- |
 | member_hinge | <code>Object</code> | Member hinge |
-| values | <code>Array</code> | Values to be set, [Translational/Rotational, Spring constant, Nonlinearity] 										- Values can be in two formats: 											[bool, float, int] - if bool is true (translation is enabled), then can be specified next two values (spring constant and nonlinearity) 											[bool, int]		   - if bool is false (translation is disabled), then can be specified only next one value (nonlinearity) 											Nonlinearity: can be string name or index: None (0), Fixed if negative (1), Fixed if positive (2), Failure all if negative (3), Failure all if positive (4), 														  Partial activity (5), Diagram (6), Stiffness diagram (7), Friction direction 1 (8), Friction direction 2 (9), 														  Friction direction 1 2 (10), Friction direction 1 + 2 (11) |
+| values | <code>Array</code> | Values to be set, [Translational/Rotational, Spring constant, Nonlinearity] 										- Values can be in two formats: 											[bool, float, string] - if bool is true (translation is enabled), then can be specified next two values (spring constant and nonlinearity) 											[bool, string]		   - if bool is false (translation is disabled), then can be specified only next one value (nonlinearity) 											Nonlinearity: can be string name or index: None (0), Fixed if negative (1), Fixed if positive (2), Failure all if negative (3), Failure all if positive (4), 														  Partial activity (5), Diagram (6), Stiffness diagram (7), Friction direction 1 (8), Friction direction 2 (9), 														  Friction direction 1 2 (10), Friction direction 1 + 2 (11) |
 | property_1 | <code>String</code> | Spring constant string name |
 | property_2 | <code>String</code> | Nonlinearity string name |
 
@@ -1050,16 +1050,4 @@ Sets division ordinates as absolute (private)
 | --- | --- | --- |
 | memberResultIntermediatePoint | <code>Object</code> | Member result intermediate point to be set |
 | absolute | <code>Boolean</code> | Division ordinates are absolute, can be undefined (default value is true) |
-
-<a name="setConcreteStructuresComponentType"></a>
-
-## setConcreteStructuresComponentType(member_stiffness_modification, component_type)
-Sets concrete structures parameters (private)
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| member_stiffness_modification | <code>Object</code> | Member stiffness modification to set |
-| component_type | <code>Number</code> | Component type: Columns (1), Walls uncracked (2), Walls cracked (3), Beams (4), Flat plates and flat stabs (5). Can be undefined |
 

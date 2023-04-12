@@ -239,13 +239,13 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **load_direction** (*enum*) – Member Load Direction Enumeration
 
 
-    * **load_parameter** (*float/list/list of lists*) – Load Parameter List
+    * **load_parameter** (*list/list of lists*) – Load Parameter List
 
         > * for load_distribution == LOAD_DISTRIBUTION_UNIFORM:     
-        load_parameter = magnitude
+        load_parameter = [magnitude]
 
         > * for load_distribution == LOAD_DISTRIBUTION_UNIFORM_TOTAL:   
-        load_parameter = magnitude
+        load_parameter = [magnitude]
 
         > * for load_distribution == LOAD_DISTRIBUTION_CONCENTRATED_1:  
         load_parameter = [relative_distance = False, magnitude, distance_a]
@@ -383,10 +383,10 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **load_direction** (*enum*) – Load Direction Enumeration
 
 
-    * **load_parameter** (*float/list/list of lists*) – Load Parameter List
+    * **load_parameter** (*list/list of lists*) – Load Parameter List
 
         > * for load_distribution == LOAD_DISTRIBUTION_UNIFORM:     
-        load_parameter = magnitude
+        load_parameter = [magnitude]
 
         > * for load_distribution == LOAD_DISTRIBUTION_CONCENTRATED_1:  
         load_parameter = [relative_distance = False, magnitude, distance_a]

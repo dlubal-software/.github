@@ -87,7 +87,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
     * **nodal_supports** (*list of lists*) – Nodal Support Table
 
-        > nodal_supports = [[support_type, support_in_z, support_spring_in_y, eccentricity_type, eccentricity_ez, restraint_spring_about_x, restraint_spring_about_z, restraint_spring_warping, support_in_y_type, restraint_about_x_type, restraint_about_z_type, restraint_warping_type, nodes], …]
+        > nodal_supports = [[support_type, support_in_z, eccentricity_type, support_in_y_type, restraint_about_x_type, restraint_about_z_type, restraint_warping_type, nodes], …]
 
 
     * **factors** (*list of lists*) – Factors Table

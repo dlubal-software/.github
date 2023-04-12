@@ -35,7 +35,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 ## LoadCase 
 
 
-### LoadCase(no, name, self_weight, comment, params, model)
+### LoadCase(no, name, self_weight, action_category, comment, params, model)
 
 * **Parameters**
 
@@ -49,6 +49,9 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **self_weight** (*list*) – Self-Weight Parameters
 
         > self_weight = [self_weight_active, self_weight_factor_x, self_weight_factor_y, self_weight_factor_z]
+
+
+    * **action_category** (*enum*) – Action Category Enumeration
 
 
     * **comment** (*str*, *optional*) – Comments
@@ -97,6 +100,32 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
 
     * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
+
+
+## LoadCasesAndCombinations
+
+
+### LoadCasesAndCombinations(params, model)
+
+* **Parameters**
+
+
+    * **params** (*dict, optional*): Combination Wizard Parameters
+
+        > params = {["current_standard_for_combination_wizard": 6207](https://github.com/Dlubal-Software/RSTAB_Python_Client/blob/main/RSTAB/LoadCasesAndCombinations/loadCasesAndCombinations.py#L20), "activate_combination_wizard_and_classification": True, "activate_combination_wizard": True, "result_combinations_active": False, "result_combinations_parentheses_active": False, "result_combinations_consider_sub_results": False, "combination_name_according_to_action_category": False}
+
+    
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
+
+
+### LoadCasesAndCombinations.getAvailableLoadActionCategoryTypes(model)
+
+* **Parameters**
+
+    
+    * **model** (*RSTAB Class*, *optional*) – Model to be read
 
 
 

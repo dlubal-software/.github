@@ -36,16 +36,16 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
         > nodal_supports[i][0] (*enum*): Support Type Enumeration Type    
         nodal_supports[i][1] (*bool*): Support in Z Option    
-        nodal_supports[i][2] (*enum*): Eccentricity Type Enumeration
-        nodal_supports[i][3] (*enum*): Support Type in Y Enumeration
-        nodal_supports[i][4] (*enum*): Restraint Type in X Enumeration
+        nodal_supports[i][2] (*enum*): Eccentricity Type Enumeration    
+        nodal_supports[i][3] (*enum*): Support Type in Y Enumeration    
+        nodal_supports[i][4] (*enum*): Restraint Type in X Enumeration      
         nodal_supports[i][5] (*str*): Assigned Nodes     
 
 
     * **factors** (*list of lists*) – Effective Length Factors
 
         > factors[i][0] (*float*): Flexural Buckling in U Coefficient     
-        factors[i][1] (*float*): Flexural Buckling in V Coefficient
+        factors[i][1] (*float*): Flexural Buckling in V Coefficient     
         factors[i][2] (*float*): Critical Moment     
 
 
@@ -119,75 +119,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-## TimberMemberRotationalRestraint
-
-
-### TimberMemberRotationalRestraint(no, name, members, member_sets, spring_stiffness, comment, params, model)
-
-* **Parameters**
-
-    
-    * **no** (*int*) – Timber Member Rotational Restraint Tag
-
-
-    * **name** (*str*) – User Defined Member Rotational Restraint Name
-
-
-    * **members** (*str*) – Assigned Members
-
-
-    * **member_sets** (*str*) – Assigned Member Sets
-
-
-    * **spring_stiffness** (*float*) – Total Rotational Spring Stiffness
-
-
-    * **comment** (*str*, *optional*) – Comment
-
-
-    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
-
-
-    * **model** (*RFEM Class, optional*) – Model to be edited
-
-
-
-## TimberMemberShearPanel
-
-
-### TimberMemberShearPanel(no, name, members, member_sets, position_on_section, stiffness, position_on_section_value, comment, params)
-
-* **Parameters**
-
-    
-    * **no** (*int*) – Timber Member Shear Panel Tag
-
-
-    * **name** (*str*) – User Defined Member Shear Panel Name
-
-
-    * **members** (*str*) – Assigned Members
-
-
-    * **member_sets** (*str*) – Assigned Member Sets
-
-
-    * **position_on_section** (*enum*) – Position On Section Enumeration
-
-
-    * **stiffness** (*float*) – Shear Panel Stiffness
-
-
-    * **position_on_section_value** (*float*) – Position On Section Value if POsition On Section equals POSITION_DEFINE
-
-
-    * **comment** (*str*, *optional*) – Comment
-
-
-    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
-
-
-
 ## TimberServiceClass
 
 
@@ -196,10 +127,10 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 * **Parameters**
 
     
-    * **no** (*int*) – Timber Member Shear Panel Tag
+    * **no** (*int*) – Timber Service Class Tag
 
 
-    * **name** (*str*) – User Defined Member Shear Panel Name
+    * **name** (*str*) – User Defined Timber Service Class Name
 
 
     * **members** (*str*) – Assigned Members

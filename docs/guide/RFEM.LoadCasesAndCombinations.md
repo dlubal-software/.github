@@ -124,10 +124,11 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **model** (*RFEM Class, optional*) - Model to be edited
 
 
+
 ## LoadCase
 
 
-### LoadCase(no, name, self_weight, action_category, comment, params, model)
+### LoadCase(no, name, self_weight, action_category, imperfection_case, structure_modification, comment, params, model)
 
 * **Parameters**
 
@@ -145,6 +146,12 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **action_category** (*enum*) – Action Category Type Enumeration
 
 
+    * **imperfection_case** (*int*, *optional*) - Assign Imperfection Case
+
+
+    * **structure_modification** (*int*, *optional*) - Assign Structure Modification
+
+
     * **comment** (*str*, *optional*) – Comments
 
 
@@ -155,7 +162,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### LoadCase.StaticAnalysis(no, name, to_solve, analysis_settings_no, action_category, self_weight, comment, params, model)
+### LoadCase.StaticAnalysis(no, name, to_solve, analysis_settings_no, action_category, self_weight, imperfection_case, structure_modification, comment, params, model)
 
 * **Parameters**
 
@@ -184,10 +191,32 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         self_weight = [False]
 
 
+    * **imperfection_case** (*int*, *optional*) - Assign Imperfection Case
+
+
+    * **structure_modification** (*int*, *optional*) - Assign Structure Modification
+
+
     * **comment** (*str*, *optional*) – Comments
 
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+## LoadCasesAndCombinations 
+
+
+### LoadCasesAndCombinations(params, model)
+
+* **Parameters**
+
+
+    * **params** (*dict*, *optional*) – Combination Wizard Parameters
+
+        > params = {"current_standard_for_combination_wizard":, "activate_combination_wizard_and_classification":, "activate_combination_wizard":, "result_combinations_active":, "result_combinations_parentheses_active":,"result_combinations_consider_sub_results":, "combination_name_according_to_action_category":}
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited

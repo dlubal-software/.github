@@ -26,6 +26,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **model** (*RFEM Class, optional*) - Model to be edited
 
 
+
 ### Line.Arc(no, nodes_no, control_point, alpha_adjustment_target, comment, params, model)
 
 * **Parameters**
@@ -246,6 +247,19 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **model** (*RFEM Class, optional*) - Model to be edited
 
 
+
+### Line.GetLine(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Line Index
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## LineSet
 
 
@@ -315,6 +329,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+### LineSet.GetLineSet(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - LineSet Index
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## Material
 
 
@@ -343,6 +369,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 * **Parameters**
 
     * **materials_no** (*str*) – Numbers of Materials to be deleted
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### Material.GetMaterial(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Material Index
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -1201,6 +1239,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+### Member.GetMember(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Member Index
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## MemberSet
 
 
@@ -1264,6 +1314,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### MemberSet.GetMemberSet(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - MemberSet Index
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -1520,6 +1582,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+### Node.GetNode(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Node Index
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## Opening
 
 
@@ -1549,6 +1623,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 * **Parameters**
 
     * **openings_no** (*str*) – Numbers of Openings to be deleted
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### Opening.GetOpening(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Opening Index
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -1587,6 +1673,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 * **Parameters**
 
     * **sections_no** (*str*) – Numbers of Sections to be deleted
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### Section.GetSection(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Section Index
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -1727,6 +1825,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+### Solid.GetSolid(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Solid Index
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## SolidSet
 
 
@@ -1790,6 +1900,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### SolidSet.GetSolidSet(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - SolidSet Index
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -2116,6 +2238,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+### Surface.GetSurface(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Surface Index
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## SurfaceSet
 
 
@@ -2180,6 +2314,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### SurfaceSet.GetSurfaceSet(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - SurfaceSet Index
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -2535,6 +2681,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### Thickness.GetThickness(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Thickness Index
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited

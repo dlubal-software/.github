@@ -147,10 +147,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-#### TypeSpecificParams = {'target_length': , 'elements_finite_elements': , 'gradual_rows': }
-
-
-
 ## LineSupport
 
 
@@ -187,7 +183,7 @@ Sets Line Support Conditions
     * **lines_no** (*str*) – Assigned Lines
 
 
-    * **support_type** (*enum*) – Line Support Type Enumeration
+    * **support_type** (*enum or list*) – Line Support Type Enumeration or Support Definition List
 
 
     * **comment** (*str*, *optional*) – Comment

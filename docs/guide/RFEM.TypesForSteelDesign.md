@@ -2,7 +2,9 @@
 
 Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/main/RFEM/TypesForSteelDesign)*
 
+
 ## SteelBoundaryConditions
+
 
 ### SteelBoundaryConditions(no, name, members, member_sets, intermediate_nodes, different_properties_supports, different_properties_hinges, nodal_supports, member_hinges, comment, params, model)
 
@@ -186,6 +188,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 ## SteelMemberLocalSectionReduction
 
+
 ### SteelMemberLocalSectionReduction(no, members, member_sets, components, user_defined_name, comment, params, model)
 
 * **Parameters**
@@ -235,170 +238,3 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **model** (*RFEM Class, optional*) – Model to be edited
 
 
-
-## SteelMemberRotationalRestraint
-
-
-### SteelMemberRotationalRestraint(no, name, definition_type, members, member_sets, categories, parameters, comment, params, model)
-
-* **Parameters**
-
-    
-    * **no** (*int*) – Steel Member Rotational Restraint Tag
-
-
-    * **name** (*str*) – User Defined Member Rotational Restraint Name
-    
-
-    * **definition_type** (*enum*) – Steel Member Rotational Restraint Type Enumeration
-
-
-    * **members** (*str*) – Assigned Members
-
-
-    * **member_sets** (*str*) – Assigned Member Sets
-
-
-    * **categories** (*list*) – Categories List
-
-
-        > * for definition_type = SteelMemberRotationalRestraintType.TYPE_CONTINUOUS:   
-                categories[0] = Sheeting Material Name      
-                categories[1] = Sheeting Name   
-                categories[2] = Position of Sheeting    
-                categories[3] = Continuous Beam Effect  
-                categories[4] = Section Deformation Option  
-        
-        > * for definition_type = SteelMemberRotationalRestraintType.TYPE_DISCRETE:     
-                categories[0] = Section Material Name   
-                categories[1] = Section Name    
-                categories[2] = Rotational Stifness     
-                categories[3] = Continuous Beam Effect  
-                categories[4] = Section Deformation Option  
-        
-        > * for definition_type = SteelMemberRotationalRestraintType.TYPE_MANUALLY:     
-                categories = None
-
-
-    * **parameters** (*list*) – Parameters List
-
-
-        > * for definition_type = SteelMemberRotationalRestraintType.TYPE_CONTINUOUS:   
-                parameters[0] = Modulus of Elasticity   
-                parameters[1] = Sheeting Thickness  
-                parameters[2] = Sheeting Moment of Inertia  
-                parameters[3] = Sheeting Distance of Ribs   
-                parameters[4] = Width of Sheeting Flanges   
-                parameters[5] = Spring Stiffness    
-                parameters[6] = Beam Spacing    
-
-        > * for definition_type = SteelMemberRotationalRestraintType.TYPE_DISCRETE:     
-                parameters[0] = Modulus of Elasticity       
-                parameters[1] = Section Moment of Inertia   
-                parameters[2] = Purlin Spacing  
-                parameters[3] = Beam Spacing    
-        
-        > * for definition_type = SteelMemberRotationalRestraintType.TYPE_MANUALLY:     
-                parameters[0] = Rotational Spring Stifness      
-
-
-    * **comment** (*str*, *optional*) – Comment
-
-
-    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
-
-
-    * **model** (*RFEM Class, optional*) – Model to be edited
-
-
-
-## SteelMemberShearPanel
-
-
-### SteelMemberShearPanel(no, name, definition_type, members, member_sets, categories, parameters, comment, params)
-
-* **Parameters**
-
-    
-    * **no** (*int*) – Steel Member Rotational Restraint Tag
-
-
-    * **name** (*str*) – User Defined Member Shear Panel Name
-
-
-    * **definition_type** (*enum*) – Steel Member Shear Panel Definition Type Enumeration
-
-
-    * **members** (*str*) – Assigned Members
-
-
-    * **member_sets** (*str*) – Assigned Member Sets
-
-
-    * **categories** (*list*) – Categories List
-
-
-        > * for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_TRAPEZOIDAL_SHEETING:    
-                categories[0] = Section Position Enumeration Type   
-                categories[1] = Sheeting Name   
-                categories[2] = Fastening Arrangment Enumeration Type   
-                
-        > * for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_BRACING:     
-                categories[0] = Section Position Enumeration Type   
-                categories[1] = Diagonal Section Name   
-                categories[2] = Post Section Name       
-                
-        > * for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_TRAPEZOIDAL_SHEETING_AND_BRACING:    
-                categories[0] = Section Position Enumeration Type   
-                categories[1] = Sheeting Name   
-                categories[2] = Digonal Section Name    
-                categories[3] = Post Section Name   
-                categories[4] = Fastening Arrangment Enumeration Type   
-                
-        > * for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_DEFINE_S_PROV:   
-                categories[0] = Section Position Enumeration Type   
-
-
-    * **parameters** (*list*) – Parameters List
-
-
-        > * for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_TRAPEZOIDAL_SHEETING:    
-                parameters[0] = Panel Length    
-                parameters[1] = Beam Spacing    
-                parameters[2] = K1 Coefficient  
-                parameters[3] = K2 Coefficient  
-            >> * if categories[0] == "POSITION_DEFINE":  
-                    parameters[4] = Position on Section Value   
-                
-        > * for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_BRACING:     
-                parameters[0] = Panel Length    
-                parameters[1] = Beam Spacing    
-                parameters[2] = Post Spacing    
-                parameters[3] = Number of Bracings  
-                parameters[4] = Diagonals Section Area  
-                parameters[5] = Post Section Area   
-            >> * if categories[0] == "POSITION_DEFINE":  
-                    parameters[6] = Position on Section Value   
-                
-        > * for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_TRAPEZOIDAL_SHEETING_AND_BRACING:    
-                parameters[0] = Panel Length    
-                parameters[1] = Beam Spacing    
-                parameters[2] = K1 Coefficient  
-                parameters[3] = K2 Coefficient      
-                parameters[4] = Post Spacing    
-                parameters[5] = Number of Bracing   
-                parameters[6] = Diagonals Section Area  
-                parameters[7] = Post Section Area   
-            >> * if categories[0] == "POSITION_DEFINE":  
-                    parameters[8] = Position on Section Value   
-                
-        > * for definition_type == SteelMemberShearPanelDefinitionType.DEFINITION_TYPE_DEFINE_S_PROV:   
-                parameters[0] = Stifness    
-            >> * if categories[0] == "POSITION_DEFINE":  
-                    parameters[1] = Position on Section Value   
-
-
-    * **comment** (*str*, *optional*) – Comment
-
-
-    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary

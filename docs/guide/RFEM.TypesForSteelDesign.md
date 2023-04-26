@@ -226,7 +226,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
                 components[i][7] (float): Multiple Offset Value (value must be between 0.0 and 1.0)  
 
 
-    * **user_defined_name** (*str*) – User Defined Local Section Reduction Name
+    * **name** (*str*) – User Defined Local Section Reduction Name
 
 
     * **comment** (*str*, *optional*) – Comment

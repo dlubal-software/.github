@@ -251,6 +251,446 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+## MemberRotationalRestraint
+
+
+### MemberRotationalRestraint.Continuous(no, name, member_supports, sheeting_material, sheeting_name, position_of_sheeting, continuous_beam_effect, section_deformation_cdb, modulus_of_elasticity, sheeting_thickness, sheeting_moment_of_inertia, sheeting_distance_of_ribs, width_of_sheeting_flange, spring_stiffness, beam_spacing, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Member Rotational Restraint Tag
+
+    
+    * **name** (*str*) – User Defined Member Rotational Restraint Name
+
+        > * if name == '':  
+            user_defined_name_enabled = False (Automatic Name Assignment)
+
+        > * else:   
+            user_defined_name_enabled = True    
+            name = User Defined Name
+
+    
+    * **member_supports** (*str*) – Assigned Member Supports
+
+    
+    * **sheeting_material** (*str*) – Sheeting Material
+
+    
+    * **sheeting_name** (*str*) – Sheeting Name According to Library
+
+    
+    * **position_of_sheeting** (*enum*) – Position of Sheeting Enumeration
+
+    
+    * **continuous_beam_effect** (*enum*) – Continous Beam Effect Enumeration
+
+    
+    * **section_deformation_cdb** (*bool*) – Section Deformation Cdb Option
+
+    
+    * **modulus_of_elasticity** (*float, optional*) – Modulus of Elasticity
+
+    
+    * **sheeting_thickness** (*float, optional*) – Sheeting Thickness
+
+    
+    * **sheeting_moment_of_inertia** (*float, optional*) – Sheeting Moment of Inertia
+
+    
+    * **sheeting_distance_of_ribs** (*float, optional*) – Sheeting Distance of Ribs
+
+    
+    * **width_of_sheeting_flange** (*float, optional*) – Width of Sheeting Flange
+
+    
+    * **spring_stiffness** (*float*) – Spring Stiffness
+
+    
+    * **beam_spacing** (*float*) – Beam Spacing
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*): Model to be edited
+
+
+
+### MemberRotationalRestraint.Discrete(no, name, member_supports, section_material, section_name, rotational_stifness, continous_beam_effect, section_deformation_cdb, modulus_of_elasticity, section_moment_of_inertia, purlin_spacing, beam_spacing, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Member Rotational Restraint Tag
+
+    
+    * **name** (*str*) – User Defined Member Rotational Restraint Name
+
+        > * if name == '':  
+            user_defined_name_enabled = False (Automatic Name Assignment)
+
+        > * else:   
+            user_defined_name_enabled = True    
+            name = User Defined Name
+
+    
+    * **member_supports** (*str*) – Assigned Member Supports
+
+    
+    * **section_material** (*str*) – Section Material
+
+    
+    * **section_name** (*str*) – Section Name
+
+    
+    * **rotational_stifness** (*list*) – Rotational Stiffness
+
+        > * if rotational_stiffness[0] == MemberRotationalRestraintRotationalStiffness.ROTATIONAL_STIFFNESS_INFINITELY:     
+            pass
+
+        > * elif rotational_stiffness[0] == MemberRotationalRestraintRotationalStiffness.ROTATIONAL_STIFFNESS_MANUALLY:   
+            rotational_stiffness[1] (float): Rotational Stiffness Value
+
+    
+    * **continous_beam_effect** (*enum*) – Continous Beam Effect Enumeration
+
+    
+    * **section_deformation_cdb** (*bool*) – Section Deformation Cdb Option
+
+    
+    * **modulus_of_elasticity** (*float, optional*) – Modulus of Elasticity
+
+    
+    * **section_moment_of_inertia** (*float, optional*) – Section Moment of Inertia
+
+    
+    * **purlin_spacing** (*float*) – Purlin Spacing
+
+    
+    * **beam_spacing** (*float*) – Beam Spacing
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*): Model to be edited
+
+
+
+### MemberRotationalRestraint.Manually(no, name, member_supports, rotational_spring_stiffness, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Member Rotational Restraint Tag
+
+    
+    * **name** (*str*) – User Defined Member Rotational Restraint Name
+
+        > * if name == '':  
+            user_defined_name_enabled = False (Automatic Name Assignment)
+
+        > * else:   
+            user_defined_name_enabled = True    
+            name = User Defined Name
+
+    
+    * **member_supports** (*str*) – Assigned Member Supports
+
+    
+    * **rotational_spring_stiffness** (*float*) – Rotational Spring Stiffness
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*): Model to be edited
+
+
+
+## MemberShearPanel
+
+
+### MemberShearPanel.TrapezodialSheeting(no, name, member_supports, position_on_section, girder_length_definition, sheeting_name, fastening_arrangement, panel_length, beam_spacing, coefficient_k1, coefficient_k2, position_on_section_value, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Member Shear Panel Tag
+
+    
+    * **name** (*str*) – User Defined Member Shear Panel Name
+
+        > * if name == '':  
+            user_defined_name_enabled = False (Automatic Name Assignment)
+
+        > * else:   
+            user_defined_name_enabled = True    
+            name = User Defined Name
+
+    
+    * **member_supports** (*str*) – Assigned Member Supports
+
+    
+    * **position_on_section** (*enum*) – Member Shear Panel Position Enumeration
+
+    
+    * **girder_length_definition** (*list*) – Girder Length Definition List
+
+        > girder_length_definition[0] (bool): Activate/Deactivate Automatically Girder Length     
+        
+        > girder_length_definition[1] (float): Girder Length Value
+
+    
+    * **sheeting_name** (*str*) – Sheeting Name According to Library
+
+    
+    * **fastening_arrangement** (*enum*) – Fastening Arrangement Enumeration
+
+    
+    * **panel_length** (*float*) – Panel Length
+
+    
+    * **beam_spacing** (*float*) – Beam Spacing
+
+    
+    * **coefficient_k1** (*float, optional*) – Coefficient K1
+
+    
+    * **coefficient_k2** (*float, optional*) – Coefficient K2
+
+    
+    * **position_on_section_value** (*float*) – Position on Section Value (only for position_on_section == MemberShearPanelPositionOnSection.POSITION_DEFINE)
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*): Model to be edited
+
+
+
+### MemberShearPanel.Bracing(no, name, member_supports, position_on_section, girder_length_definition, material_name, diagonal_section, posts_section, modulus_of_elasticity, panel_length, beam_spacing, posts_spacing, number_of_bracings, diagonals_section_area, posts_section_area, position_on_section_value, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Member Shear Panel Tag
+
+    
+    * **name** (*str*) – User Defined Member Shear Panel Name
+
+        > * if name == '':  
+            user_defined_name_enabled = False (Automatic Name Assignment)
+
+        > * else:   
+            user_defined_name_enabled = True    
+            name = User Defined Name
+
+    
+    * **member_supports** (*str*) – Assigned Member Supports
+
+    
+    * **position_on_section** (*enum*) – Member Shear Panel Position Enumeration
+
+    
+    * **girder_length_definition** (*list*) – Girder Length Definition List
+
+        > girder_length_definition[0] (bool): Activate/Deactivate Automatically Girder Length     
+        
+        > girder_length_definition[1] (float): Girder Length Value
+
+    
+    * **material_name** (*str*) – Material Name
+
+    
+    * **diagonal_section** (*str*) – Diagonal Section
+
+    
+    * **posts_section** (*str*) – Posts Section
+
+    
+    * **modulus_of_elasticity** (*float, optional*) – Modulus of Elasticity
+
+    
+    * **panel_length** (*float*) – Panel Length
+
+    
+    * **beam_spacing** (*float*) – Beam Spacing
+
+    
+    * **posts_spacing** (*float*) – Posts Spacing
+
+    
+    * **number_of_bracings** (*int*) – Number of Bracings
+
+    
+    * **diagonals_section_area** (*float, optional*) – Diagonals Section Area
+
+    
+    * **posts_section_area** (*float, optional*) – Posts Section Area
+
+    
+    * **position_on_section_value** (*float*) – Position on Section Value (only for position_on_section == MemberShearPanelPositionOnSection.POSITION_DEFINE)
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*): Model to be edited
+
+
+
+### MemberShearPanel.DefineSProv(no, name, member_supports, position_on_section, girder_length_definition, shear_panel_stiffness, position_on_section_value, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Member Shear Panel Tag
+
+    
+    * **name** (*str*) – User Defined Member Shear Panel Name
+
+        > * if name == '':  
+            user_defined_name_enabled = False (Automatic Name Assignment)
+
+        > * else:   
+            user_defined_name_enabled = True    
+            name = User Defined Name
+
+    
+    * **member_supports** (*str*) – Assigned Member Supports
+
+    
+    * **position_on_section** (*enum*) – Member Shear Panel Position Enumeration
+
+    
+    * **girder_length_definition** (*list*) – Girder Length Definition List
+
+        > girder_length_definition[0] (bool): Activate/Deactivate Automatically Girder Length     
+        
+        > girder_length_definition[1] (float): Girder Length Value
+
+    
+    * **shear_panel_stiffness** (*float*) – Shear Panel Stiffness
+
+    
+    * **position_on_section_value** (*float*) – Position on Section Value (only for position_on_section == MemberShearPanelPositionOnSection.POSITION_DEFINE)
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*): Model to be edited
+
+
+
+### MemberShearPanel.TrapeziodalSheetingAndBracing(no, name, member_supports, position_on_section, sheeting_name, material_name, diagonals_section, posts_section, fastening_arrangement, modulus_of_elasticity, panel_length, girder_length_definition, beam_spacing, coefficient_k1, coefficient_k2, post_spacing, number_of_bracing, diagonals_section_area, posts_section_area, position_on_section_value, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Member Shear Panel Tag
+
+    
+    * **name** (*str*) – User Defined Member Shear Panel Name
+
+        > * if name == '':  
+            user_defined_name_enabled = False (Automatic Name Assignment)
+
+        > * else:   
+            user_defined_name_enabled = True    
+            name = User Defined Name
+
+    
+    * **member_supports** (*str*) – Assigned Member Supports
+
+    
+    * **position_on_section** (*enum*) – Member Shear Panel Position Enumeration
+
+    
+    * **sheeting_name** (*str*) – Sheeting Name According to Library
+
+    
+    * **material_name** (*str*) – Material Name
+
+    
+    * **diagonal_section** (*str*) – Diagonal Section
+
+    
+    * **posts_section** (*str*) – Posts Section
+
+    
+    * **fastening_arrangement** (*enum*) – Fastening Arrangement Enumeration
+
+    
+    * **modulus_of_elasticity** (*float, optional*) – Modulus of Elasticity
+
+    
+    * **panel_length** (*float*) – Panel Length
+
+    
+    * **girder_length_definition** (*list*) – Girder Length Definition List
+
+        > girder_length_definition[0] (bool): Activate/Deactivate Automatically Girder Length     
+        
+        > girder_length_definition[1] (float): Girder Length Value
+
+    
+    * **beam_spacing** (*float*) – Beam Spacing
+
+    
+    * **coefficient_k1** (*float, optional*) – Coefficient K1
+
+    
+    * **coefficient_k2** (*float, optional*) – Coefficient K2
+
+    
+    * **posts_spacing** (*float*) – Posts Spacing
+
+    
+    * **number_of_bracings** (*int*) – Number of Bracings
+
+    
+    * **diagonals_section_area** (*float, optional*) – Diagonals Section Area
+
+    
+    * **posts_section_area** (*float, optional*) – Posts Section Area
+
+    
+    * **position_on_section_value** (*float*) – Position on Section Value (only for position_on_section == MemberShearPanelPositionOnSection.POSITION_DEFINE)
+
+
+    * **comment** (*str*, *optional*) – Comment
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*): Model to be edited
+
+
+
 ## MemberStiffnessModification
 
 

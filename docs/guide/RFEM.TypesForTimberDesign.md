@@ -106,7 +106,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **components** (*list*) – List of Component Classes
 
 
-    * **user_defined_name** (*str*) – User Defined Member Local Section Reduction Name
+    * **name** (*str*) – User Defined Member Local Section Reduction Name
 
 
     * **comment** (*str*, *optional*) – Comment

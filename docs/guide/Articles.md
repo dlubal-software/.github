@@ -22,7 +22,7 @@ If your project requires editing multiple models you can do it. There are 3 opti
 
 Ad 1.
 
-```js
+```py
 Model(True, "TestModel") <-- create new model
 Material(1,'S235') <-- assign material to TestModel
 Material(2,'S235') <-- assign material to TestModel
@@ -30,7 +30,7 @@ Material(2,'S235') <-- assign material to TestModel
 
 Ad 2.
 
-```js
+```py
 model1 = Model(True, 'TestModel1') <-- create new model
 Material(1,'S235') <-- assign material to TestModel1
 Material(2,'S235') <-- assign material to TestModel1
@@ -47,7 +47,7 @@ Material(5,'S275') <-- assign material to TestModel2
 
 Ad 3.
 
-```js
+```py
 model1 = Model(True, 'TestModel1') <-- create new model
 Material(1,'S235', model = model1) <-- assign to TestModel1
 Material(2,'S235', model = model1) <-- assign to TestModel1
@@ -75,7 +75,7 @@ If there is a specific function you are missing, please use [Discussions](https:
 
 ### Soon available result table functions 
 
-```js
+```py
 BuildingStoriesForcesInSpandrels()
 BuildingStoriesForcesInShearWalls()
 BuildingStoriesCentresMassRigidity()
@@ -344,7 +344,7 @@ If you want to see all currently available web service model functions and types
 
 Whole example:
 
-```js
+```py
 from suds.client import Client
 import sys
 
@@ -365,7 +365,7 @@ When working with the client, user can often face the task to set attributes whi
 ### Step by step
 First, print the object of your interest on the command line using a script like this:
 
-```js
+```py
 from suds.client import Client
 
 client = Client('http://localhost:8081/wsdl')
@@ -377,7 +377,7 @@ print(model.service.get_nodal_support(1))
 
 You will get full description of Nodal Support no.1. From this you can figure out the structure of the object and create whole new object with parameters and nested objects. For example, if you want to descibe support condition in X direction via diagram, focus on these parameters:
 
-```js
+```py
 diagram_along_x_end = "DIAGRAM_ENDING_TYPE_CONTINUOUS"
 diagram_along_x_is_sorted = True
 diagram_along_x_start = "DIAGRAM_ENDING_TYPE_CONTINUOUS"
@@ -412,13 +412,13 @@ diagram_along_x_table =
 
 You can then write:
 
-```js
+```py
 NodalSupport(..., params = {'diagram_along_x_end':"DIAGRAM_ENDING_TYPE_CONTINUOUS"})
 ```
 
 To define something like **diagram_along_x_table** nested structure must be properly populated:
 
-```js
+```py
 diagram_along_x = model.clientModel.factory.create('ns0:response_spectrum.user_defined_response_spectrum')
 for i,j in enumerate(nodal_support_diagrams):
     ns = model.clientModel.factory.create('ns0:nodal_support_diagram_along_x_table_row')
@@ -446,7 +446,7 @@ The client structure is designed to allow the simplest possible setting of objec
 ### Syntax 
 First start with import of relevat modules.
 
-```js
+```py
 from RFEM.initModel import Model
 from RFEM.BasicObjects import Material
 from RFEM.BasicObjects import Line
@@ -454,19 +454,19 @@ from RFEM.BasicObjects import Line
 
 Add boilerplate code that protects users from accidentally invoking the script when they didn't intend to.
 
-```js
+```py
 if __name__ == '__main__':
 ```
 
 Then you need to create a model. Here it's as simple as in RFEM, just enter True if you're creating a new model and model name. For starters, I might add that we omit the standard indent here. 
 
-```js
+```py
 Model(True, 'MyModel')
 ```
 
 Now follows all objects and types you want to set in RFEM. If you want to use the default object type than just object is sufficient (see Material bellow) or put object, than dot (.) and then put type of object. Every object and type of object has method with default parameters to describe what to put where to sucessfully create it. To make it even easier the default parameters enable to specify any parameter disregarding its possition with the name of the parameter followed by '=' and value.
 
-```js
+```py
 Material(1, 'S235')
 Line.Arc(1, [10,0,0], 3, comment='my first arc')
 ```

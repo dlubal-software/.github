@@ -3,7 +3,8 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "vuepress": "^1.9.7"
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-code-copy": "^1.0.6"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.7"

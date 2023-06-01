@@ -6,7 +6,7 @@ module.exports = {
     ],
     title: 'Dlubal Dev Docs',
     base: '/.github/',
-    plugins: ['@vuepress/back-to-top'],
+    plugins: ['@vuepress/back-to-top', ['vuepress-plugin-code-copy', {align: 'top'}]],
     themeConfig: {
         logo: '/images/dev_docs.png',
         nav: [

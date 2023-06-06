@@ -32,7 +32,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **comment** (*str*, *optional*) – Comments
 
 
-    * **params** (*dict**, **optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -65,7 +65,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **comment** (*str*, *optional*) – Comments
 
 
-    * **params** (*dict**, **optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited

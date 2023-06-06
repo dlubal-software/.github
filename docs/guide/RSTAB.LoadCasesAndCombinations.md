@@ -467,7 +467,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **no** (*int*) – Stability Analysis Setting Tag
 
 
-    * **name** (*str**, **optional*) – Stability Analysis Setting Name
+    * **name** (*str*, *optional*) – Stability Analysis Setting Name
 
 
     * **number_of_lowest_eigenvalues** (*int*) – Number of Lowest Eigenvalues
@@ -527,7 +527,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **no** (*int*) – Stability Analysis Setting Tag
 
 
-    * **name** (*str**, **optional*) – Stability Analysis Setting Name
+    * **name** (*str*, *optional*) – Stability Analysis Setting Name
 
 
     * **number_of_lowest_eigenvalues** (*int*) – Number of Lowest Eigenvalues
@@ -568,7 +568,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
         > incrementally_increasing_loading = [initial_load_factor, load_factor_increment, refinement_of_the_last_load_increment, maximum_number_of_load_increments]
 
 
-    * **stopping_of_load_increasing** (*list**, **optional*) – Stopping of Load Increasing
+    * **stopping_of_load_increasing** (*list*, *optional*) – Stopping of Load Increasing
 
         > * for stopping of load increasing deactivated:    
         stopping_of_load_increasing = None

@@ -67,10 +67,10 @@ Circular Nodal Mesh Refinement
     * **apply_on_selected_surfaces** (*bool*) – Enable/Disable Apply on Selected Surfaces
 
 
-    * **comment** (*str**, **optional*) – Comment
+    * **comment** (*str*, *optional*) – Comment
 
 
-    * **params** (*dict**, **optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
     * **model** (*RFEM Class, optional*) – Model to be edited

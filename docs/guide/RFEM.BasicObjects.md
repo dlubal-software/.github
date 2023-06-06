@@ -106,7 +106,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **ellipse_control_point** (*list*) – Ellipse Control Point [X, Y, Z]
 
 
-    * **comment** (*str**, **optional*) – Comments
+    * **comment** (*str*, *optional*) – Comments
 
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
@@ -166,10 +166,10 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         > control_points = [[start_point_x, start_point_y, start_point_z], [control_point_x, control_point_y, control_point_z],...., [end_point_x, end_point_y, end_point_z]]
 
 
-    * **weights** (*list**, **optional*) – Control points weights e.g. [1,1,1] (Length of list must be same as length of list of control_points)
+    * **weights** (*list*, *optional*) – Control points weights e.g. [1,1,1] (Length of list must be same as length of list of control_points)
 
 
-    * **order** (*int**, **optional*) – Nurbs order (for nurbs order must define control_points)
+    * **order** (*int*, *optional*) – Nurbs order (for nurbs order must define control_points)
 
 
     * **comment** (*str*, *optional*) – Comments
@@ -322,10 +322,10 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **lines_no** (*str*) – Numbers of Lines Contained Within Group of Lines Line Set
 
 
-    * **comment** (*str**, **optional*) – Comments
+    * **comment** (*str*, *optional*) – Comments
 
 
-    * **params** (*dict**, **optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -361,7 +361,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **comment** (*str*, *optional*) – Comments
 
 
-    * **params** (*dict**, **optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -504,7 +504,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **distribution_parameters** (*list*) – Distribution Parameters
 
 
-    * **line** (*int**, **optional*) – Assigned Line
+    * **line** (*int*, *optional*) – Assigned Line
 
 
     * **comment** (*str*, *optional*) – Comment
@@ -1572,10 +1572,10 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **coordinate_system_type** (*enum*) – Coordinate System Type Enumeration
 
 
-    * **comment** (*str**, **optional*) – Comments
+    * **comment** (*str*, *optional*) – Comments
 
 
-    * **params** (*dict**, **optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited

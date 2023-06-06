@@ -1684,7 +1684,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
         params={‘shifted_display’ : [offset_x, offset_y, offset_y, distance]}
 
 
-    * **model** (*RSTAB Class**, **optional*) – Model to be edited
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
 
 
 
@@ -1720,7 +1720,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
-    * **model** (*RSTAB Class**, **optional*) – Model to be edited
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
 
 
 

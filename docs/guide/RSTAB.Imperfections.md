@@ -24,10 +24,10 @@ Imperfection Case
     * **type** (*enum*) – Imperfection Type
 
 
-    * **assigned_to_load_cases** (*str**, **optional*) – Assigned to Load Case
+    * **assigned_to_load_cases** (*str*, *optional*) – Assigned to Load Case
 
 
-    * **assigned_to_load_combinations** (*str**, **optional*) – Assigned to Load Combinations
+    * **assigned_to_load_combinations** (*str*, *optional*) – Assigned to Load Combinations
 
 
     * **assign_to_combinations_without_assigned_imperfection_case** (*bool*) – Assign to all Load Combinations without Assigned Imperfection Case

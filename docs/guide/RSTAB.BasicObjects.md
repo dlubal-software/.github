@@ -25,12 +25,25 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **model** (*RSTAB Class*, *optional*) – Model to be edited
 
 
+
 ### Material.DeleteMaterial(materials_no, model)
 
 * **Parameters**
 
     
     * **materials_no** (*str*) – Numbers of Materials to be deleted
+
+
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
+
+
+### Material.GetMaterial(object_index, model)
+
+* **Parameters**
+
+    
+    * **object_index** (*int*) – Material Index
 
 
     * **model** (*RSTAB Class*, *optional*) – Model to be edited
@@ -722,6 +735,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
 
 
+### Member.GetMember(object_index, model)
+
+* **Parameters**
+
+    
+    * **object_index** (*int*) – Member Index
+
+
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
+
+
 ## MemberSet
 
 
@@ -785,6 +810,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
+
+
+### MemberSet.GetMemberSet(object_index, model)
+
+* **Parameters**
+
+    
+    * **object_index** (*int*) – Member Set Index
 
 
     * **model** (*RSTAB Class*, *optional*) – Model to be edited
@@ -1006,6 +1043,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
 
 
+### Node.GetNode(object_index, model)
+
+* **Parameters**
+
+    
+    * **object_index** (*int*) – Node Index
+
+
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
+
+
 ## Section
 
 
@@ -1041,4 +1090,17 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
 
     * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
+
+
+### Section.GetSection(object_index, model)
+
+* **Parameters**
+
+    
+    * **object_index** (*int*) – Section Index
+
+
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
 

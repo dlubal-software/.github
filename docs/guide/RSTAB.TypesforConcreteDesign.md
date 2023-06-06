@@ -5,7 +5,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 ## ConcreteDurability 
 
 
-### ConcreteDurability(no, name, members_no, member_sets_no, surfaces_no, exposure_classes_reinforcement, exposure_classes_reinforcement_types, exposure_classes_concrete, exposure_classes_concrete_types, structural_class, stainless_steel_reduction, additional_protection_reduction, allowance_deviation, comment, params, model)
+### ConcreteDurability(no, name, members_no, member_sets_no, exposure_classes_reinforcement, exposure_classes_reinforcement_types, exposure_classes_concrete, exposure_classes_concrete_types, structural_class, stainless_steel_reduction, additional_protection_reduction, allowance_deviation, comment, params, model)
 
 * **Parameters**
 
@@ -20,9 +20,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
 
     * **member_sets_no** (*str*) – Assigned Member Sets
-
-
-    * **surfaces_no** (*str*) – Assigned Surfaces
 
 
     * **exposure_classes_reinforcement** (*list*) – Exposure Classes Reinforcement Parameters

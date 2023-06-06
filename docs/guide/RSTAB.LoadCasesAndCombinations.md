@@ -2,6 +2,99 @@
 
 Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/main/RSTAB/LoadCasesAndCombinations)*
 
+## CombinationWizard
+
+
+### CombinationWizard(no, name, static_analysis_settings, stability_analysis_setting, consider_imperfection_case, generate_same_CO_without_IC, initial_state_case, initial_state_definition_type, structure_modification, user_defined_action_combinations, favorable_permanent_actions, reduce_number_of_generated_combinations, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Combination Wizard Tag
+
+    
+    * **name** (*int*) – User-Defined Name
+
+    
+    * **static_analysis_settings** (*int*) – Assign Static Analysis Settings
+
+    
+    * **stability_analysis_setting** (*int*) – Assign Stability Analysis Setting
+
+    
+    * **consider_imperfection_case** (*bool*) – Enable/disable Inferpaction Case
+
+    
+    * **generate_same_CO_without_IC** (*bool*) – Enable/disable Generate same CO without IC
+
+    
+    * **initial_state_case** (*int*) – Assign Initial State Case
+
+    
+    * **initial_state_definition_type** (*enum*) – Initial State Defintion Type Enumeration
+
+    
+    * **structure_modification** (*int*) – Structure Modification to be considered
+
+    
+    * **user_defined_action_combinations** (*bool*) – Enable/disable User defined Combinations
+
+    
+    * **favorable_permanent_actions** (*bool*) – Enable/diable Favourable Permanent Actions
+
+    
+    * **reduce_number_of_generated_combinations** (*bool*) – Enable/disable Reduce Number of Generated Combinations
+
+
+    * **comment** (*str*, *optional*) – Comments
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
+
+
+### CombinationWizard.SetResultCombination(o, name, stability_analysis_setting, consider_imperfection_case, generate_same_CO_without_IC, user_defined_action_combinations, favorable_permanent_actions, generate_subcombinations_of_type_superposition, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Combination Wizard Tag
+
+    
+    * **name** (*int*) – User-Defined Name
+
+    
+    * **stability_analysis_setting** (*int*) – Assign Stability Analysis Setting
+
+    
+    * **consider_imperfection_case** (*bool*) – Enable/disable Inferpaction Case
+
+    
+    * **generate_same_CO_without_IC** (*bool*) – Enable/disable Generate same CO without IC
+
+    
+    * **user_defined_action_combinations** (*bool*) – Enable/disable User defined Combinations
+
+    
+    * **favorable_permanent_actions** (*bool*) – Enable/diable Favourable Permanent Actions
+
+    
+    * **generate_subcombinations_of_type_superposition** (*bool*) – Enable/disable Subcombinations of Type Superposition
+
+
+    * **comment** (*str*, *optional*) – Comments
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RSTAB Class*, *optional*) – Model to be edited
+
+
+
 ## DesignSituation
 
 
@@ -35,7 +128,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 ## LoadCase 
 
 
-### LoadCase(no, name, self_weight, action_category, comment, params, model)
+### LoadCase(no, name, self_weight, action_category, imperfection_case, structure_modification, comment, params, model)
 
 * **Parameters**
 
@@ -53,6 +146,12 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
     * **action_category** (*enum*) – Action Category Enumeration
 
+    
+    * **imperfection_case** (*int, optional*) – Assign Imperfection Case
+
+    
+    * **structure_modification** (*int, optional*) – Assign Structure Modification
+
 
     * **comment** (*str*, *optional*) – Comments
 
@@ -64,7 +163,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
 
 
-### LoadCase.StaticAnalysis(no, name, to_solve, analysis_settings_no, action_category, self_weight, comment, params, model)
+### LoadCase.StaticAnalysis(no, name, to_solve, analysis_settings_no, action_category, self_weight, imperfection_case, structure_modification, comment, params, model)
 
 * **Parameters**
 
@@ -91,6 +190,12 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
         > * for no self-weight considerations;  
         self_weight = [False]
+
+    
+    * **imperfection_case** (*int, optional*) – Assign Imperfection Case
+
+    
+    * **structure_modification** (*int, optional*) – Assign Structure Modification
 
 
     * **comment** (*str*, *optional*) – Comments
@@ -132,7 +237,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 ## LoadCombination 
 
 
-### LoadCombination(no, analysis_type, design_situation, user_defined_name, static_analysis_settings, consider_imperfection, consider_initial_state, structure_modification, to_solve, combination_items, comment, params, model)
+### LoadCombination(no, analysis_type, design_situation, name, static_analysis_settings, consider_imperfection, consider_initial_state, structure_modification, to_solve, combination_items, comment, params, model)
 
 * **Parameters**
 
@@ -146,7 +251,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **design_situation** (*int*) – Design Situation
 
 
-    * **user_defined_name** (*list*) – User defined Combination Name
+    * **name** (*str*) – User defined Combination Name
 
 
     * **static_analysis_settings** (*int*) – Static Analysis Settings Number

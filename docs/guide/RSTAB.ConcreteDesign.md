@@ -5,7 +5,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 ## ConcreteServiceabilityConfigurations
 
 
-### ConcreteServiceabilityConfiguration(no, name, members, member_sets, surfaces, surface_sets, nodes, comment, params, model)
+### ConcreteServiceabilityConfiguration(no, name, members, member_sets, comment, params, model)
 
 * **Parameters**
 
@@ -20,15 +20,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
 
     * **member_sets** (*str*) – Assigned Member Sets
-
-
-    * **surfaces** (*str*) – Assigned Surfaces
-
-
-    * **surface_sets** (*str*) – Assigned Surface Sets
-
-
-    * **nodes** (*str*) – Assigned Nodes
 
 
     * **comment** (*str*, *optional*) – Comment
@@ -40,10 +31,11 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **model** (*RSTAB Class*, *optional*) – Model to be edited
 
 
+
 ## ConcreteUltimateConfigurations
 
 
-### ConcreteUltimateConfiguration(no, name, members, member_sets, surfaces, surface_sets, nodes, comment, params, model)
+### ConcreteUltimateConfiguration(no, name, members, member_sets, comment, params, model)
 
 * **Parameters**
 
@@ -58,15 +50,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
 
 
     * **member_sets** (*str*) – Assigned Member Sets
-
-
-    * **surfaces** (*str*) – Assigned Surfaces
-
-
-    * **surface_sets** (*str*) – Assigned Surface Sets
-
-
-    * **nodes** (*str*) – Assigned Nodes
 
 
     * **comment** (*str*, *optional*) – Comment

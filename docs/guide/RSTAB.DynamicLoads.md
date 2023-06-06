@@ -22,7 +22,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **sort_table** (*bool*) – Sort Table Option
 
 
-    * **user_defined_spectrum** (*list*) – User Defined Spectrum
+    * **user_defined_spectrum** (*list of lists*) – User Defined Spectrum
 
         > user_defined_spectrum = [[period, acceleration], [period, acceleration], ...]
 
@@ -54,7 +54,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **sort_table** (*bool*) – Sort Table Option
 
 
-    * **user_defined_spectrum** (*list*) – User Defined Spectrum
+    * **user_defined_spectrum** (*list of lists*) – User Defined Spectrum
 
         > user_defined_spectrum = [[period, acceleration], [period, acceleration], ...]
 

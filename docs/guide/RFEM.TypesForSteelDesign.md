@@ -189,7 +189,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## SteelMemberLocalSectionReduction
 
 
-### SteelMemberLocalSectionReduction(no, members, member_sets, components, user_defined_name, comment, params, model)
+### SteelMemberLocalSectionReduction(no, members, member_sets, components, name, comment, params, model)
 
 * **Parameters**
 

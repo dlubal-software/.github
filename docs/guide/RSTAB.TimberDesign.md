@@ -13,7 +13,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **no** (*int*) – Timber Design Service Limit State Configuration Tag
 
 
-    * **name** (*str*) – User Defined Name Configuration Name
+    * **name** (*str*) – User Defined Configuration Name
 
 
     * **members_no** (*str*) – Assign Configuration to Selected Members
@@ -43,7 +43,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/ma
     * **no** (*int*) – Timber Design Ultimate Configuration Tag
 
 
-    * **name** (*str*) – User Defined Name Configuration Name
+    * **name** (*str*) – User Defined Configuration Name
 
 
     * **members_no** (*str*) – Assign Configuration to Selected Members

@@ -163,10 +163,13 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **control_points** (*list of lists*, *optional*) – Nested List of Respective Control Point’s Cartesian Co-Ordinates
 
 
-    * **weights** (*list**, **optional*) – Control points weights e.g. [1,1,1]
+        > control_points = [[start_point_x, start_point_y, start_point_z], [control_point_x, control_point_y, control_point_z],...., [end_point_x, end_point_y, end_point_z]]
 
 
-    * **order** (*int**, **optional*) – Order of the curve with 3 as default value
+    * **weights** (*list**, **optional*) – Control points weights e.g. [1,1,1] (Length of list must be same as length of list of control_points)
+
+
+    * **order** (*int**, **optional*) – Nurbs order (for nurbs order must define control_points)
 
 
     * **comment** (*str*, *optional*) – Comments
@@ -995,7 +998,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### Member.Rib(no, start_node_no, end_node_no, section_distribution_type, start_section_no, end_section_no, rib_surfaces_no, rib_alignment, reference_width_type, line, comment, params, model)
+### Member.Rib(no, start_node_no, end_node_no, section_distribution_type, start_section_no, end_section_no, rib_surfaces_no, rib_alignment, line, comment, params, model)
 
 * **Parameters**
 
@@ -1022,9 +1025,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
     * **rib_alignment** (*enum*) – Rib Alignment Enumeration
-
-
-    * **reference_width_type** (*enum*) – Reference Width Type Enumeration
 
 
     * **line** (*int*, *optional*) – Assigned Line

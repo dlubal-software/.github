@@ -254,7 +254,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## MemberRotationalRestraint
 
 
-### MemberRotationalRestraint.Continuous(no, name, member_supports, sheeting_material, sheeting_name, position_of_sheeting, continuous_beam_effect, section_deformation_cdb, modulus_of_elasticity, sheeting_thickness, sheeting_moment_of_inertia, sheeting_distance_of_ribs, width_of_sheeting_flange, spring_stiffness, beam_spacing, comment, params, model)
+### MemberRotationalRestraint.Continuous(no, name, sheeting_material, sheeting_name, position_of_sheeting, continuous_beam_effect, section_deformation_cdb, modulus_of_elasticity, sheeting_thickness, sheeting_moment_of_inertia, sheeting_distance_of_ribs, width_of_sheeting_flange, spring_stiffness, beam_spacing, comment, params, model)
 
 * **Parameters**
 
@@ -270,9 +270,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         > * else:   
             user_defined_name_enabled = True    
             name = User Defined Name
-
-    
-    * **member_supports** (*str*) – Assigned Member Supports
 
     
     * **sheeting_material** (*str*) – Sheeting Material
@@ -321,7 +318,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### MemberRotationalRestraint.Discrete(no, name, member_supports, section_material, section_name, rotational_stifness, continous_beam_effect, section_deformation_cdb, modulus_of_elasticity, section_moment_of_inertia, purlin_spacing, beam_spacing, comment, params, model)
+### MemberRotationalRestraint.Discrete(no, name, section_material, section_name, rotational_stifness, continous_beam_effect, section_deformation_cdb, modulus_of_elasticity, section_moment_of_inertia, purlin_spacing, beam_spacing, comment, params, model)
 
 * **Parameters**
 
@@ -337,9 +334,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         > * else:   
             user_defined_name_enabled = True    
             name = User Defined Name
-
-    
-    * **member_supports** (*str*) – Assigned Member Supports
 
     
     * **section_material** (*str*) – Section Material
@@ -385,7 +379,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### MemberRotationalRestraint.Manually(no, name, member_supports, rotational_spring_stiffness, comment, params, model)
+### MemberRotationalRestraint.Manually(no, name, rotational_spring_stiffness, comment, params, model)
 
 * **Parameters**
 
@@ -401,9 +395,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         > * else:   
             user_defined_name_enabled = True    
             name = User Defined Name
-
-    
-    * **member_supports** (*str*) – Assigned Member Supports
 
     
     * **rotational_spring_stiffness** (*float*) – Rotational Spring Stiffness
@@ -422,7 +413,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## MemberShearPanel
 
 
-### MemberShearPanel.TrapezodialSheeting(no, name, member_supports, position_on_section, girder_length_definition, sheeting_name, fastening_arrangement, panel_length, beam_spacing, coefficient_k1, coefficient_k2, position_on_section_value, comment, params, model)
+### MemberShearPanel.TrapezodialSheeting(no, name, girder_length_definition, sheeting_name, fastening_arrangement, panel_length, beam_spacing, coefficient_k1, coefficient_k2, comment, params, model)
 
 * **Parameters**
 
@@ -438,12 +429,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         > * else:   
             user_defined_name_enabled = True    
             name = User Defined Name
-
-    
-    * **member_supports** (*str*) – Assigned Member Supports
-
-    
-    * **position_on_section** (*enum*) – Member Shear Panel Position Enumeration
 
     
     * **girder_length_definition** (*list*) – Girder Length Definition List
@@ -470,9 +455,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     
     * **coefficient_k2** (*float, optional*) – Coefficient K2
 
-    
-    * **position_on_section_value** (*float*) – Position on Section Value (only for position_on_section == MemberShearPanelPositionOnSection.POSITION_DEFINE)
-
 
     * **comment** (*str*, *optional*) – Comment
 
@@ -484,7 +466,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### MemberShearPanel.Bracing(no, name, member_supports, position_on_section, girder_length_definition, material_name, diagonal_section, posts_section, modulus_of_elasticity, panel_length, beam_spacing, posts_spacing, number_of_bracings, diagonals_section_area, posts_section_area, position_on_section_value, comment, params, model)
+### MemberShearPanel.Bracing(no, name, girder_length_definition, material_name, diagonal_section, posts_section, modulus_of_elasticity, panel_length, beam_spacing, posts_spacing, number_of_bracings, diagonals_section_area, posts_section_area, comment, params, model)
 
 * **Parameters**
 
@@ -500,12 +482,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         > * else:   
             user_defined_name_enabled = True    
             name = User Defined Name
-
-    
-    * **member_supports** (*str*) – Assigned Member Supports
-
-    
-    * **position_on_section** (*enum*) – Member Shear Panel Position Enumeration
 
     
     * **girder_length_definition** (*list*) – Girder Length Definition List
@@ -544,9 +520,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     
     * **posts_section_area** (*float, optional*) – Posts Section Area
 
-    
-    * **position_on_section_value** (*float*) – Position on Section Value (only for position_on_section == MemberShearPanelPositionOnSection.POSITION_DEFINE)
-
 
     * **comment** (*str*, *optional*) – Comment
 
@@ -558,7 +531,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### MemberShearPanel.DefineSProv(no, name, member_supports, position_on_section, girder_length_definition, shear_panel_stiffness, position_on_section_value, comment, params, model)
+### MemberShearPanel.DefineSProv(no, name, girder_length_definition, shear_panel_stiffness, comment, params, model)
 
 * **Parameters**
 
@@ -574,12 +547,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         > * else:   
             user_defined_name_enabled = True    
             name = User Defined Name
-
-    
-    * **member_supports** (*str*) – Assigned Member Supports
-
-    
-    * **position_on_section** (*enum*) – Member Shear Panel Position Enumeration
 
     
     * **girder_length_definition** (*list*) – Girder Length Definition List
@@ -591,9 +558,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     
     * **shear_panel_stiffness** (*float*) – Shear Panel Stiffness
 
-    
-    * **position_on_section_value** (*float*) – Position on Section Value (only for position_on_section == MemberShearPanelPositionOnSection.POSITION_DEFINE)
-
 
     * **comment** (*str*, *optional*) – Comment
 
@@ -605,7 +569,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### MemberShearPanel.TrapeziodalSheetingAndBracing(no, name, member_supports, position_on_section, sheeting_name, material_name, diagonals_section, posts_section, fastening_arrangement, modulus_of_elasticity, panel_length, girder_length_definition, beam_spacing, coefficient_k1, coefficient_k2, post_spacing, number_of_bracing, diagonals_section_area, posts_section_area, position_on_section_value, comment, params, model)
+### MemberShearPanel.TrapeziodalSheetingAndBracing(no, name, sheeting_name, material_name, diagonals_section, posts_section, fastening_arrangement, modulus_of_elasticity, panel_length, girder_length_definition, beam_spacing, coefficient_k1, coefficient_k2, post_spacing, number_of_bracing, diagonals_section_area, posts_section_area, comment, params, model)
 
 * **Parameters**
 
@@ -621,12 +585,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
         > * else:   
             user_defined_name_enabled = True    
             name = User Defined Name
-
-    
-    * **member_supports** (*str*) – Assigned Member Supports
-
-    
-    * **position_on_section** (*enum*) – Member Shear Panel Position Enumeration
 
     
     * **sheeting_name** (*str*) – Sheeting Name According to Library
@@ -676,9 +634,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     
     * **posts_section_area** (*float, optional*) – Posts Section Area
-
-    
-    * **position_on_section_value** (*float*) – Position on Section Value (only for position_on_section == MemberShearPanelPositionOnSection.POSITION_DEFINE)
 
 
     * **comment** (*str*, *optional*) – Comment
@@ -742,7 +697,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## MemberSupport
 
 
-### MemberSupport(no, members, spring_translation_x, spring_translation_y, spring_translation_z, spring_rotation, spring_shear_x, spring_shear_y, spring_shear_z, comment, params, model)
+### MemberSupport(no, members, spring_translation_x, spring_translation_y, spring_translation_z, spring_rotation, spring_shear_x, spring_shear_y, spring_shear_z, member_rotational_restraint, comment, params, model)
 
 * **Parameters**
 
@@ -774,6 +729,14 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **spring_shear_z** (*float*) – Shear Z Spring Constant
 
 
+    * **member_rotational_restraint** (**list**) – Member Rotational Restraint Option
+                
+                
+        > if member_rotational_restraint:   
+            member_rotational_restraint[0] (int): Member Rotational Restraint Number    
+            member_rotational_restraint[1] (float): Load Introduced from Sheeting to Beam
+
+
     * **comment** (*str*, *optional*) – Comment
 
 
@@ -781,6 +744,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
     * **model** (*RFEM Class, optional*): Model to be edited
+
 
 
 ## memberTransverseStiffeners

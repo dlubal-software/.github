@@ -914,7 +914,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **start_node_no** (*int*) – Tag of Start Node
 
 
-    * **end_node_no** (*int**,*) – Tag of End Node
+    * **end_node_no** (*int*) – Tag of End Node
 
 
     * **section_distribution_type** (*enum*) – Section Distribution Type Enumeration
@@ -1077,7 +1077,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **line** (*int*, *optional*) – Assigned Line
 
 
-    * **comment** (*str**, *optional*) – Comment
+    * **comment** (*str*, *optional*) – Comment
 
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
@@ -2138,7 +2138,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **geometry_type_parameters** (*list*) – Geometry Type Parameters
     
         > * for geometry_type == SurfaceGeometry.GEOMETRY_NURBS:    
-        geometry_type_parameters = [nurbs_control_point_count_in_direction_u,     > * nurbs_control_point_count_in_direction_v, nurbs_order_in_direction_u, nurbs_order_in_direction_v]
+        geometry_type_parameters = [nurbs_control_point_count_in_direction_u, nurbs_control_point_count_in_direction_v, nurbs_order_in_direction_u, nurbs_order_in_direction_v]
 
         > * for geometry_type == SurfaceGeometry.GEOMETRY_PLANE:    
         geometry_type_parameters = None

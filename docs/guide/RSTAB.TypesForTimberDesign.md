@@ -1,6 +1,6 @@
 # Types For Timber Design
 
-Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/main/RFEM/TypesForTimberDesign)*
+Go to *[[source]](https://github.com/Dlubal-Software/RSTAB_Python_Client/tree/main/RSTAB/TypesForTimberDesign)*
 
 
 ## TimberEffectiveLengths
@@ -73,7 +73,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
-    * **model** (*RFEM Class, optional*) – Model to be edited
+    * **model** (*RSTAB Class, optional*) – Model to be edited
 
 
 
@@ -115,52 +115,14 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
-    * **model** (*RFEM Class, optional*) – Model to be edited
-
-
-## TimberMoistureClass
-
-
-### TimberMoistureClass(no, name, members, member_sets, surfaces, surface_sets, moisture_class, comment, params, model)
-
-* **Parameters**
-
-    
-    * **no** (*int*) – Timber Moisture Class Tag
-
-
-    * **name** (*str*) – User Defined Moisture Class Name
-
-
-    * **members** (*str*) – Assigned Members
-
-
-    * **member_sets** (*str*) – Assigned Member Sets
-
-
-    * **surfaces** (*str*) – Assigned Surfaces
-
-
-    * **surface_sets** (*str*) – Assigned Surface Sets
-
-
-    * **moisture_class** (*enum*) – Timber Moisture Class Enumeration
-
-
-    * **comment** (*str*, *optional*) – Comment
-
-
-    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
-
-
-    * **model** (*RFEM Class, optional*) – Model to be edited
+    * **model** (*RSTAB Class, optional*) – Model to be edited
 
 
 
 ## TimberServiceClass
 
 
-### TimberServiceClass(no, name, members, member_sets, surfaces, surface_sets, service_class, comment, params, model)
+### TimberServiceClass(no, name, members, member_sets, service_class, comment, params, model)
 
 * **Parameters**
 
@@ -177,12 +139,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **member_sets** (*str*) – Assigned Member Sets
 
 
-    * **surfaces** (*str*) – Assigned Surfaces
-
-
-    * **surface_sets** (*str*) – Assigned Surface Sets
-
-
     * **service_class** (*enum*) – Timber Service Class Service Class Enumeration
 
 
@@ -192,66 +148,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
-    * **model** (*RFEM Class, optional*) – Model to be edited
-
-
-
-## TimberServiceConditions
-
-
-### TimberServiceConditions(no, name, members, member_sets, surfaces, surface_sets, standard, moisture_service_condition, temperature, treatment_csa, treatment_nds, treatment_gb, service_conditions, comment, params, model)
-
-* **Parameters**
-
-    
-    * **no** (*int*) – Timber Service Conditions Tag
-
-
-    * **name** (*str*) – User Defined Timber Service Condition Name
-
-
-    * **members** (*str*) – Assigned Members
-
-
-    * **member_sets** (*str*) – Assigned Member Sets
-
-
-    * **surfaces** (*str*) – Assigned Surfaces
-
-
-    * **surface_sets** (*str*) – Assigned Surface Sets
-
-    
-    * **standard** (*int*) – Code Number
-
-    
-    * **moisture_service_condition** (*enum*) – Timber Moisture Service Condition Enumeration
-
-    
-    * **temperature** (*enum*) – Timber Service Conditions Temperature Enumeration
-
-    
-    * **treatment_csa** (*enum*) – Timber Service Conditions Treatment Enumeration
-
-    
-    * **treatment_nds** (*bool*) – Member Pressure Treated
-
-    
-    * **treatment_gb** (*bool*) – Timber Is Point Impregnated
-
-    
-    * **service_conditions** (*list*) – Service Conditions List
-
-
-        > service_conditions = [outdoor_environment, long_term_high_temperature_of_surface, permanent_load_design_situation, timber_structures, short_term_construction_or_maintenance]
-
-
-    * **comment** (*str*, *optional*) – Comment
-
-
-    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
-
-
-    * **model** (*RFEM Class, optional*) – Model to be edited
+    * **model** (*RSTAB Class, optional*) – Model to be edited
 
 

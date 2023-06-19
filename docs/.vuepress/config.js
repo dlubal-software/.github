@@ -17,7 +17,7 @@ module.exports = {
                 {text: 'RFEM Python HLF', link: '/guide/ready'},
                 {text: 'RSTAB Python HLF', link: '/guide/RSTAB.BasicObjects'},
                 {text: 'RSECTION Python HLF', link: '/guide/RSECTION.BasicObjects'},
-                {text: '.NET', link: '/guide/netintro'},
+                {text: '.NET', link: '/guide/net/netArticle'},
                 {text: 'JavaScript HLF', link: '/guide/MD/AnalysisSettings'},
                 {text: 'Articles', link: '/guide/Articles'},
                 {text: 'Tutorials', link: '/guide/tutorialintro'},

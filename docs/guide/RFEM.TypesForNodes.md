@@ -5,7 +5,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## NodalMeshRefinement
 
 
-### NodalMeshRefinement(no, type, mesh_parameters, apply_on_selected_surfaces, comment, params, model)
+### NodalMeshRefinement(no, assigned_nodes, type, mesh_parameters, apply_on_selected_surfaces, comment, params, model)
 
 Nodal Mesh Refinement
 
@@ -14,6 +14,9 @@ Nodal Mesh Refinement
 
     
     * **no** (*int*) – Nodal Mesh Refinement Tag
+
+
+    * **assigned_nodes** (*str*) – Assigned Nodes
 
 
     * **type** (*enum*) – Nodal Mesh Refinement Type Enumeration
@@ -41,7 +44,7 @@ Nodal Mesh Refinement
 
 
 
-### NodalMeshRefinement.Circular(no, circular_radius, circular_target_inner_length, circular_target_outer_length, circular_length_arrangement, apply_on_selected_surfaces, comment, params, model)
+### NodalMeshRefinement.Circular(no, assigned_nodes, circular_radius, circular_target_inner_length, circular_target_outer_length, circular_length_arrangement, apply_on_selected_surfaces, comment, params, model)
 
 Circular Nodal Mesh Refinement
 
@@ -50,6 +53,9 @@ Circular Nodal Mesh Refinement
 
     
     * **no** (*int*) – Nodal Mesh Refinement Tag
+
+
+    * **assigned_nodes** (*str*) – Assigned Nodes
 
 
     * **circular_radius** (*float*) – Radius
@@ -77,7 +83,7 @@ Circular Nodal Mesh Refinement
 
 
 
-### NodalMeshRefinement.Rectangular(no, rectangular_side, rectangular_target_inner_length, apply_on_selected_surfaces, comment, params, model)
+### NodalMeshRefinement.Rectangular(no, assigned_nodes, rectangular_side, rectangular_target_inner_length, apply_on_selected_surfaces, comment, params, model)
 
 Rectangular Nodal Mesh Refinement
 
@@ -86,6 +92,9 @@ Rectangular Nodal Mesh Refinement
 
     
     * **no** (*int*) – Nodal Mesh Refinement Tag
+
+
+    * **assigned_nodes** (*str*) – Assigned Nodes
 
 
     * **rectangular_side** (*float*) – Side Length

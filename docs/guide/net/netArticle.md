@@ -280,9 +280,9 @@ double std_magnitude = 10000;   //  surface load per water height in [N/m^3]
 
 With regard to the implementation, the program must include the following elements:
 
-1. [Filtering out selected members](#1-filtering-out-selected-members)
-2. [Deleting water loads from previous runs](#2-deleting-water-loads-from-previous-runs)
-3. [Creating new loads](#3-creating-new-loads)
+1. [Filtering out selected members](#1-Filtering-out-selected-members)
+2. [Deleting water loads from previous runs](#2-Deleting-water-loads-from-previous-runs)
+3. [Creating new loads](#3-Creating-new-loads)
 4. Start calculation
 5. Determining deflection
 6. Going back to step 3 and creating new loads from deformations
@@ -473,3 +473,126 @@ The WebService interface offers countless options for modifying elements in RFEM
 ![Summary](../img/netPondingWater1.png)
 
 Due to this variety, the program is also intended to serve as a template for other projects.
+
+
+## Verification of WebService operations with Boomerang and SOAP-UI
+
+The browser plugin Boomerang as well as the API testing program SoapUI are both useful tools to quickly check our C# WebService functions. With their assistance, it becomes effortless to identify available C# classes and their respective parameters. This article aims to serve as a comprehensive guide on effectively utilizing Boomerang and SoapUI in conjunction with the Dlubal C# WebService.
+
+### Server Ports
+
+To establish a WebService connection to RFEM and RSTAB, specific server ports need to be accessed. The range of available server ports can be modified within the program settings by navigating to Options -> Program Options:
+
+![Server Ports](../img/serverPort.png)
+
+By default, the server port range is set from 8081 to 8089. The lowest port value in the program settings corresponds to the port specified in the WSDL URL for accessing RfemApplication, which in this guide will be 8081.
+
+### Boomerang Guide
+
+Boomerang is a user-friendly API testing tool designed for API debugging. It can be accessed either as a browser plugin or through the following link: [Boomerang Page](https://app.boomerangapi.com/workspace).
+
+#### 1.  Accessing RfemApplication classes
+
+To access the available classes in RfemApplication, follow these steps:
+* Use the following WSDL URL: [http://localhost:8081/wsdl](http://localhost:8081/wsdl)
+* Load the URL and add it to services
+
+![Access RfemApplication](../img/Boomerang_1.png)
+
+Once completed, the RfemApplication service will be accessible under the service tab, displaying all associated classes. These classes encompass everything related to the RFEM application itself.
+
+#### 2.	Obtaining the URL of the active model
+
+To retrieve the URL of your model with the correct server port, execute the following steps:
+* Run the "get_active_model" function by double-clicking it in the left menu
+* Click the send button
+
+![URL of active model - Request](../img/Boomerang_2.png)
+
+Boomerang will automatically navigate to the response tab, where the URL of the model will be displayed. In this example the server port of the current model is 8083.
+
+![URL of active model - Response](../img/Boomerang_3.png)
+
+#### 3. Accessing RfemModel classes
+
+To access all available classes in RfemModel, execute the following steps:
+* Click on "Add Service" on the left
+* Use the following WSDL URL: [http://localhost:8083/wsdl](http://localhost:8083/wsdl)
+* Load the URL and add it to services
+
+![Access RfemModel](../img/Boomerang_4.png)
+
+Upon completion, the RfemModel service will be accessible under the service tab, displaying all associated classes. These classes encompass all the model data, including basic objects, loads and more.
+
+#### 4. Verifying WebService operations
+
+You can now test all operations by double-clicking on them in the service menu on the left. Some operations require passing parameters in the request tab, while others can be executed simply by clicking “Send”. This tutorial will demonstrate the testing of certain operations.
+
+* #### get_all_selected_objects()
+To test this operation no parameters need to be passed. You can directly send the request after selecting some objects in RFEM. 
+
+![get_all_selected_objects - Request](../img/Boomerang_5.png)
+
+The operation returns a list of object_location objects which consist of object type and object number:
+
+![get_all_selected_objects - Response](../img/Boomerang_6.png)
+
+* #### get_member()
+In order to test the get_member function you need to provide the number of the desired member:
+
+![get_member - Request](../img/Boomerang_7.png)
+
+The response of this operation provides all properties of member number 1:
+
+![get_member - Response](../img/Boomerang_8.png)
+
+
+### SoapUI Guide
+
+SoapUI is a powerful open-source application designed for testing SOAP and REST protocols. The desktop application can be downloaded  [here](https://www.soapui.org/downloads/soapui/).
+
+#### 1. Creating a new SOAP project
+
+To get started, open SoapUI and create a new SOAP project:
+
+![New SOAP project](../img/SoapUI_1.png)
+
+Customize the project name as desired and utilize [http://localhost:8081/wsdl](http://localhost:8081/wsdl) as initial WSDL. Once loaded, the navigator on the left will display all the classes associated with RfemApplication.
+To acquire the initial WSDL for RfemModel, execute the get_active_model operation by double-clicking on “Request 1”. Prior to running the operation, ensure that a model is opened in RFEM or RSTAB. Initiate the operation by clicking on the green triangle and shortly afterward the response containing the current server port will be displayed:
+
+![get_active_model](../img/SoapUI_2.png)
+
+Now you can add a new WSDL to the project using the server port 8083 via Project -> Add WSDL:
+
+![Add RfemModel service](../img/SoapUI_3.png)
+
+Subsequently all classes of RfemModel will appear in the navigator as well. 
+
+#### 2. Verifying WebService operations
+
+All WebService operations can now be tested by double-clicking on “Request 1” under the respective class. For certain operations, parameters need to be provided on the left side. However, for other operations no parameters are required and you can simply click „Send“. This tutorial will show the testing of some operations.
+
+* #### get_all_selected_objects()
+To test this operation, no parameters need to be passed. After selecting objects in RFEM, you can directly send the request and view the response.
+
+![get_all_selected_objects - Request](../img/SoapUI_4.png)
+
+On the right side of SoapUI the function returns a list of type object_location that consists of object type and object number:
+
+![get_all_selected_objects - Response](../img/SoapUI_5.png)
+
+* #### get_member()
+In order to test the get_member function you need to input the number of the desired member:
+
+![get_member - Request](../img/SoapUI_6.png)
+
+The response of this operation provides all properties of member number 1:
+
+![get_member - Response](../img/SoapUI_7.png)
+
+
+### Conclusion
+
+Both Boomerang and SoapUI are valuable tools for visualizing and testing the available operations within the C# HLF library. They facilitate efficient API testing and debugging.
+
+

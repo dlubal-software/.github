@@ -479,6 +479,11 @@ Due to this variety, the program is also intended to serve as a template for oth
 
 The browser plugin Boomerang as well as the API testing program SoapUI are both useful tools to quickly check our C# WebService functions. With their assistance, it becomes effortless to identify available C# classes and their respective parameters. This article aims to serve as a comprehensive guide on effectively utilizing Boomerang and SoapUI in conjunction with the Dlubal C# WebService.
 
+* [Server Ports](#server-ports)
+* [Boomerang Guide](#boomerang-guide)
+* [SoapUI Guide](#soapui-guide)
+* [Conclusion](#conclusion)
+
 ### Server Ports
 
 To establish a WebService connection to RFEM and RSTAB, specific server ports need to be accessed. The range of available server ports can be modified within the program settings by navigating to Options -> Program Options:

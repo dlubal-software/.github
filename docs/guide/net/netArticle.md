@@ -280,9 +280,9 @@ double std_magnitude = 10000;   //  surface load per water height in [N/m^3]
 
 With regard to the implementation, the program must include the following elements:
 
-1. [Filtering out selected members](#1-Filtering-out-selected-members)
-2. [Deleting water loads from previous runs](#2-Deleting-water-loads-from-previous-runs)
-3. [Creating new loads](#3-Creating-new-loads)
+1. [Filtering out selected members](#_1-filtering-out-selected-members)
+2. [Deleting water loads from previous runs](#_2-deleting-water-loads-from-previous-runs)
+3. [Creating new loads](#_3-creating-new-loads)
 4. Start calculation
 5. Determining deflection
 6. Going back to step 3 and creating new loads from deformations
@@ -594,5 +594,3 @@ The response of this operation provides all properties of member number 1:
 ### Conclusion
 
 Both Boomerang and SoapUI are valuable tools for visualizing and testing the available operations within the C# HLF library. They facilitate efficient API testing and debugging.
-
-

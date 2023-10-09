@@ -22,7 +22,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **stability_analysis_setting** (*int*) – Assign Stability Analysis Setting
 
 
-    * **consider_imperfection_case** (*bool*) – Enable/disable Inferpaction Case
+    * **consider_imperfection_case** (*bool*) – Enable/disable Imferpaction Case
 
 
     * **generate_same_CO_without_IC** (*bool*) – Enable/disable Generate same CO without IC

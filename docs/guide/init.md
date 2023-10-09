@@ -143,7 +143,7 @@ Dynamic addOns list:
 - pushover_active
 - harmonic_response_active
 
-Special aadOns list:
+Special addOns list:
 
 - building_model_active
 - wind_simulation_active

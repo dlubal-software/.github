@@ -448,8 +448,8 @@ First start with import of relevat modules.
 
 ```py
 from RFEM.initModel import Model
-from RFEM.BasicObjects import Material
-from RFEM.BasicObjects import Line
+from RFEM.BasicObjects.material import Material
+from RFEM.BasicObjects.line import Line
 ```
 
 Add boilerplate code that protects users from accidentally invoking the script when they didn't intend to.

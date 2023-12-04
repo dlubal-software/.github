@@ -56,19 +56,21 @@ Here you can find some tips and commands to initalize your connection with RFEM.
 
 
     * **generateXmlSolverInput** (*bool**) – Generate XML solver input
+
+
     * **model** (*RFEM Class**) – Model to be edited
 
 
 ### ConvertToDlString(s)
 `The function converts strings commonly used in RSTAB / RFEM so that they
-can be used In WebServices.
-Examples:
-‘1,3’       -> ‘1 3’
-‘1, 3’      -> ‘1 3’
-‘1-3’       -> ‘1 2 3’
-‘1,3,5-9’   -> ‘1 3 5 6 7 8 9’
-Returns a WS conform string.
-`
+can be used In WebServices.`    
+`Examples:     
+‘1,3’       -> ‘1 3’    
+‘1, 3’      -> ‘1 3’    
+‘1-3’       -> ‘1 2 3’  
+‘1,3,5-9’   -> ‘1 3 5 6 7 8 9’  
+Returns a WS conform string.   ` 
+   
 
 * **Parameters**
 
@@ -110,6 +112,7 @@ For some types of objects, specific Add-ons need to be enabled.`
     * **addOn** (*enum*) – AddOn enumeration item
 
 ### SetAddonStatus(modelClient, addOn, status)
+
 `Activate or deactivate Add-on.
 For some types of objects, specific Add-ons need to be ennabled.`
 
@@ -162,6 +165,7 @@ Special addOns list:
     * **status** (*bool*) – in/active
 
 ### CalculateSelectedCases(loadCases, designSituations, loadCombinations, model)
+
 `This method calculate just selected objects - load cases, desingSituations, loadCombinations.`
 
 * **Parameters**
@@ -176,6 +180,7 @@ Special addOns list:
     * **model** (*RFEM Class*) – model to be edited
 
 ### FirstFreeIdNumber(memType, parent_no, model)
+
 `This method returns the next available Id Number for the selected object type. A geometric object has, in general, a parent_no = 0. The parent_no parameter becomes significant for example with loads.`
 
 
@@ -189,6 +194,7 @@ Special addOns list:
 
 
 ### SetModelType(model_type, model)
+
 `This method sets the model type. The model type is E_MODEL_TYPE_3D by default.`
 
 
@@ -205,3 +211,4 @@ Special addOns list:
 * **Parameters**
 
     **model** (*RFEM Class*) – model to be edited
+

@@ -252,6 +252,7 @@ Static Deformation Type
 ### MemberImperfection(no, imperfection_case, members, imperfection_type, definition_type, imperfection_direction, parameters, comment, params, model)
 
 Member Imperfection     
+
 An imperfection case must be created before.
 
 
@@ -294,6 +295,7 @@ An imperfection case must be created before.
 ### _class_ MemberSetImperfection(no, imperfection_case, member_sets, imperfection_type, definition_type, imperfection_direction, parameters, comment, params, model)
 
 Member Imperfection     
+
 An imperfection case must be created before.
 
 

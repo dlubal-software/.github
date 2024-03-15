@@ -2,10 +2,164 @@
 
 Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/main/RFEM/LoadCasesAndCombinations)*
 
+## Action
+
+
+### Action(no, action_category, action_type, action_items, name, is_active, comment, params, model)
+
+Combination Wizard Action
+
+
+* **Parameters**
+
+    
+    * **no** (*int, optional*) - Action Tag
+
+   
+    * **action_category** (*enum, optional*) - Action Category Type Enumeration
+
+    
+    * **action_type** (*enum, optional*) - Action Type Enumeration
+
+    
+    * **action_items** (*list or list of lists, optional*) - Action Items   
+        
+        > * if action_type == 'ACTING_DIFFERENTLY':     
+            action_items = [[Load_case, acting_group], ...]     
+        
+        > * else:   
+            action_items = [Load_case, Load_case, ...]
+
+    
+    * **name** (*str, optional*) - User Defined Action Name
+
+    
+    * **is_active** (*bool, optional*) - Define if active
+
+    
+    * **comment** (*str, optional*) - Comments
+
+    
+    * **params** (*dict, optional*) - Any WS Parameter relevant to the object and its value in form of a dictionary
+
+    
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### Action.DeleteAction(action_no, model)
+
+* **Parameters**
+
+
+    * **action_no** (*str*) - Numbers of Actions to be deleted
+
+    
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### Action.GetAction(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Action Index
+
+    
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+## ActionCombination
+
+
+### ActionCombinationItem(model, **kwargs)
+
+Set Action Combination Item.
+
+* **Parameters**
+
+    
+    * **model** (*RFEM Class*) - Model to be edited
+
+
+    * ****kwargs** - Pass a keyworded, variable-length argument list. Following are all possible keywords:  
+
+        > action_item, operator_type, left_parenthesis, right_parenthesis, group_factor, action_factor,
+        action_load_type, group_load_type, action, is_leading, gamma, psi, xi, k_fi, c_esl, k_def,
+        psi_0, psi_1, psi_2, fi, gamma_0, alfa, k_f, phi, omega_0, gamma_l_1, k_creep, gamma_n, j_2
+
+
+* **Usage:**
+
+    > aci1 = ActionCombinationItem(Model, action_item=1, operator_type=OperatorType.OPERATOR_AND.name, action_factor=1.0, action=1)
+
+
+
+### ActionCombination(no, design_situation, action_combination_items, name, active, comment, params, model)
+
+Action Combination
+
+Attribute: Design Situation     
+WARNING: Only design situations with an assigned combination wizard where a user-defined action combination is set are valid.
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Action Combination Tag
+
+
+    * **design_situation** (*int*) – Design Situation
+
+
+    * **action_combination_items** (*list*) – Action Combination Items list
+
+
+    * **name** (*str*, *optional*) – User Defined Action Combination Name
+
+
+    * **active** (*bool*, *optional*) – Define if Active
+
+
+    * **comment** (*str*, *optional*) – Comments
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class*, *optional*) - Model to be edited
+
+
+
+### ActionCombination.DeleteActionCombination(action_combination_no, model)
+
+* **Parameters**
+
+
+    * **action_combination_no** (*str*) - Numbers of Action Combinations to be deleted
+
+    
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### ActionCombination.GetActionCombination(object_index, model)
+
+* **Parameters**
+
+
+    * **obejct_index** (*int*) - Action Combination Index
+
+    
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## CombinationWizard
 
 
-### CombinationWizard(no, name, static_analysis_settings, stability_analysis_setting, consider_imperfection_case, generate_same_CO_without_IC, initial_state_case, initial_state_definition_type, structure_modification, user_defined_action_combinations, favorable_permanent_actions, reduce_number_of_generated_combinations, comment, params, model)
+### CombinationWizard(no, name, static_analysis_settings, stability_analysis_setting, consider_imperfection_case, generate_same_CO_without_IC, initial_state_cases, structure_modification, user_defined_action_combinations, favorable_permanent_actions, reduce_number_of_generated_combinations, comment, params, model)
 
 * **Parameters**
 
@@ -28,10 +182,9 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **generate_same_CO_without_IC** (*bool*) – Enable/disable Generate same CO without IC
 
 
-    * **initial_state_case** (*int*) – Assign Initial State Case
+    * **initial_state_cases** (*list*) – Assign Initial State Cases
 
-
-    * **initial_state_definition_type** (*enum*) – Initial State Defintion Type Enumeration
+        > initial_state_cases = [[case_object (int), definition_type (initial_state_definition_type enum)],... ]
 
 
     * **structure_modification** (*int*) – Structure Modification to be considered
@@ -322,21 +475,55 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## ResultCombination
 
 
-### ResultCombination(no, comment, params, model)
+### ResultCombination(no, design_situation, combination_type, combination_items, generate_subcombinations, srss_combination, name, comment, params, model)
 
 * **Parameters**
 
     
-    * **no** (*int*) – Result Combination Tag
+    * **no** (*int*) – Result Combination tag
 
+    
+    * **design_situation** (*int*) – Assign Design Situation
 
-    * **comment** (*str*, *optional*) – Comments
+    
+    * **combination_type** (*enum*) – Result Combination Type Enumeration
 
+    
+    * **combination_items** (*list of lists*) – Combination Items Table
 
-    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+        > combination_item[0] (*int*) – case_object_item
+        
+        > combination_item[1] (*enum*) – operator_type enumeration
 
+        > combination_item[2] (*float*) – case_object_factor
 
+        > combination_item[3] (*enum*) – case_object_load_type enumeration
+
+        > combination_item[4] (*bool*) – left_parenthesis (if parenthesis active in LoadCaseandCombination)
+
+        > combination_item[5] (*bool*) – right_parenthesis (if parenthesis active in LoadCaseandCombination)
+
+        > combination_item[6] (*float*) – group_factor (if left_parenthesis is True then value else None)
+
+        > combination_item[7] (*enum*) – group_load_type (if right_parenthesis is True then enumeration else None)
+
+    
+    * **srss_combination** (*list, optional*) – SRSS Combination. If None then False.
+        
+        > srss_combination – [srss_use_equivalent_linear_combination(bool), srss_extreme_value_sign(enum), srss_according_load_case_or_combination(int)]
+
+    
+    * **name** (*str, optional*) – User Defined Result Combination Name
+
+    
+    * **comment** (*str, optional*) – Comments
+
+    
+    * **params** (*dict, optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+    
     * **model** (*RFEM Class, optional*) - Model to be edited
+
 
 
 ## SpectralAnalysisSettings
@@ -847,7 +1034,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 ## WindSimulationAnalysisSettings
 
 
-### WindSimulationAnalysisSettings(no, name, density, kinematic_viscosity, member_load_distribution, finite_volume_mesh_density, snap_to_model_edges, calculation_parameters, options, advanced_options, residual_pressure, boundary_layers_checked, boundary_layers_value, comment, params, model)
+### WindSimulationAnalysisSettings(no, name, density, kinematic_viscosity, member_load_distribution, finite_volume_mesh_density, snap_to_model_edges, calculation_parameters, options, advanced_options, residual_pressure, boundary_layers_value, comment, params, model)
 
 * **Parameters**
 
@@ -891,9 +1078,6 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **residual_pressure** (*float*) – Residual Pressure
 
 
-    * **boundary_layers_checked** (*bool*) – Enable/disable Boundary Layers Checked
-
-
     * **boundary_layers_value** (*float*) – Boundary Layers Value
 
 
@@ -905,9 +1089,9 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
     * **model** (*RFEM Class, optional*) - Model to be edited
 
- 
-      
-### WindSimulationAnalysisSettings.SurfaceRoughness(no, name, consider_surface_roughness, sand_grain_roughness_height, roughness_constant, comment, params, model)
+
+
+### WindSimulationAnalysisSettings.TransientFlow(no, name, density, kinematic_viscosity, finite_volume_mesh_density, calculation_parameters, simulation_time, start_time_for_saving_transient_result, turbulence_model_type, comment, params, model)
 
 * **Parameters**
 
@@ -918,42 +1102,18 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **name** (*str*) – User Defined Name
 
 
-    * **consider_surface_roughness** (*bool*) – Enable/disable Surface Roughness
+    * **density** (*float*) – Density
 
 
-    * **nasand_grain_roughness_heightme** (*float*) – Sand Grain Roughness Height
+    * **kinematic_viscosity** (*float*) – Kinematic Viscosity
 
 
-    * **roughness_constant** (*float*) – Roughness Constant
-
-
-    * **comment** (*str*, *optional*) – Comment
-
-
-    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
-
-
-    * **model** (*RFEM Class, optional*) - Model to be edited
-
-
-
-### WindSimulationAnalysisSettings.TransientFlow(no, name, calculation_parameters, user_defined_simulation_time, simulation_time, start_time_for_saving_transient_result, turbulence_model_type, saving_results, user_defined_in_domain_for_flow_animation, user_defined_in_point_probes, comment, params, model)
-
-* **Parameters**
-
-    
-    * **no** (*int*) – Wind Simulation Analysis Setting Tag
-
-
-    * **name** (*str*) – User Defined Name
+    * **finite_volume_mesh_density** (*float*) – Finite Volume Mesh Density
 
 
     * **calculation_parameters** (*list*) – Calculation Parameters List
 
         > calculation_parameters = [Use Steady Flow Solver To Calculate Initial Condition, Maximum Number Of Iterations Of Steady Flow Solver, Turbulence Type For Initial Condition, Error Tolerance for Data Compression]
-
-
-    * **user_defined_simulation_time** (*bool*) – Enable/disable User defined simulation time and time steps
 
 
     * **simulation_time** (*flaot*) – Simulation Time
@@ -962,18 +1122,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **start_time_for_saving_transient_result** (*flaot*) – Start Time For Saving Transient Result
 
 
-    * **turbulence_model_type** (*enums*) – Wind Simulation Analysis Settings Turbulence Model Type
-
-
-    * **saving_results** (*list*) – Saving Results
-
-        > saving_results = [Transient Flow Time Step For Animation, Transient Flow Number Of Time Layers, Transient Flow Time Step Probes, Transient Flow Number Of Time Layers Probes]
-
-
-    * **user_defined_in_domain_for_flow_animation** (*bool*) – Enable/disable User Defined In Domain For Flow Animation
-
-
-    * **user_defined_in_point_probes** (*bool*) – Enable/disable User Defined In Point Probes
+    * **turbulence_model_type** (*enum*) – Wind Simulation Analysis Settings Turbulence Model Type Enumeration
 
 
     * **comment** (*str*, *optional*) – Comment

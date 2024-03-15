@@ -311,6 +311,17 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+### LineSet.DeleteLineSet(lines_no, model)
+
+* **Parameters**
+
+    * **lines_no** (*str*) – Numbers of Line Sets to be deleted
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ### LineSet.GroupOfLines(no, lines_no, comment, params, model)
 
 * **Parameters**
@@ -372,6 +383,105 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 * **Parameters**
 
     * **materials_no** (*str*) – Numbers of Materials to be deleted
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### Material.UserDefinedMaterial(no, name, material_type, material_model, elasticity_modulus, elasticity_modulus_x, elasticity_modulus_y, elasticity_modulus_z, shear_modulus, shear_modulus_yz, shear_modulus_xz, shear_modulus_xy, poisson_ratio, poisson_ratio_yz, poisson_ratio_xz, poisson_ratio_xy, poisson_ratio_zy, poisson_ratio_zx, poisson_ratio_yx, poisson_ratio_editable_group_type, mass_density, thermal_expansion_coefficient, thermal_expansion_coefficient_x, thermal_expansion_coefficient_y, thermal_expansion_coefficient_z, definition_type, stiffness_modification_type, division_multiplication_factor, comment, params, model)
+
+* **Parameters**
+
+
+    * **no** (*int*) – Material Tag
+
+
+    * **name** (*str*) – Uder Defined Material Name
+
+
+    * **material_type** (*enum*) – Material Type Enumeration
+
+
+    * **material_model** (*enum*) – Material Model Enumeration
+
+
+    * **elasticity_modulus** (*float*) – Elasticity Modulus
+
+
+    * **elasticity_modulus_x** (*float*) – X-Direction Elasticity Modulus
+
+
+    * **elasticity_modulus_y** (*float*) – Y-Direction Elasticity Modulus
+
+
+    * **elasticity_modulus_z** (*float*) – Z-Direction Elasticity Modulus
+
+
+    * **shear_modulus** (*float*) – Shear Modulus
+
+
+    * **shear_modulus_yz** (*float*) – YZ-Direction Shear Modulus
+
+
+    * **shear_modulus_xz** (*float*) – XZ-Direction Shear Modulus
+
+
+    * **shear_modulus_xy** (*float*) – XY-Direction Shear Modulus
+
+
+    * **poisson_ratio** (*float*) – Poisson Ratio
+
+
+    * **poisson_ratio_yz** (*float*) – YZ-Direction Poisson Ratio
+
+
+    * **poisson_ratio_xz** (*float*) – XZ-Direction Poisson Ratio
+
+
+    * **poisson_ratio_xy** (*float*) – XY-Direction Poisson Ratio
+
+
+    * **poisson_ratio_zy** (*float*) – ZY-Direction Poisson Ratio
+
+
+    * **poisson_ratio_zx** (*float*) – ZX-Direction Poisson Ratio
+
+
+    * **poisson_ratio_yx** (*float*) – YX-Direction Poisson Ratio
+
+
+    * **poisson_ratio_editable_group_type** (*enum*) – Poisson Ratio Editable Group Type Enumeration
+
+
+    * **mass_density** (*float*) – Mass Density
+
+
+    * **thermal_expansion_coefficient** (*float*) – Thermal Expansion Coefficient
+
+
+    * **thermal_expansion_coefficient_x** (*float*) – X-Direction Thermal Expansion Coefficient
+
+
+    * **thermal_expansion_coefficient_y** (*float*) – Y-Direction Thermal Expansion Coefficient
+
+
+    * **thermal_expansion_coefficient_z** (*float*) – Z-Direction Thermal Expansion Coefficient
+
+
+    * **definition_type** (*enum*) – Material Definition Type Enumeration
+
+
+    * **stiffness_modification_type** (*enum*) – Material Stiffness Modification Type Enumeration
+
+
+    * **division_multiplication_factor** (*float*) – Division Multiplication Factor
+
+
+    * **comment** (*str*, *optional*) – Comments
+
+
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
@@ -1299,6 +1409,17 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+### MemberSet.DeleteMemberSet(members_no, model)
+
+* **Parameters**
+
+    * **members_no** (*str*) – Numbers of Members Sets to be deleted
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ### MemberSet.GroupOfmembers(no, members_no, comment, params, model)
 
 * **Parameters**
@@ -1885,6 +2006,17 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
+### SolidSet.DeleteSolidSet(solids_no, model)
+
+* **Parameters**
+
+    * **solids_no** (*str*) – Numbers of Solid Sets to be deleted
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ### SolidSet.GroupOfSolids(no, solids_no, comment, params, model)
 
 * **Parameters**
@@ -2293,6 +2425,17 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
     * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### SurfaceSet.DeleteSurfaceSet(surfaces_no, model)
+
+* **Parameters**
+
+    * **surfaces_no** (*str*) – Numbers of Surface Sets to be deleted
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited

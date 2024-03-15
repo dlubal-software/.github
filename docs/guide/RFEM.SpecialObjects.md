@@ -2,10 +2,59 @@
 
 Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/main/RFEM/SpecialObjects)*
 
+## Borehole
+
+
+### Borehole(no, coordinates, groundwater, layers, name, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Borehole tag
+
+    
+    * **coordinates** (*list*) – Borehole Coordinate List.  
+        
+        > coordinates = [coordinate_x, coordinate_y, coordinate_z]
+
+    
+    * **groundwater** (*float*) – Groundwater Ordinate
+
+    
+    * **layers** (*list of lists*) – Soil Layers Table. 
+    
+        > layers = [[soil_material_no(int), thickness(float)], ...]
+
+    
+    * **name** (*str*, *optional*) – User Defined Borehole Name
+
+    
+    * **comment** (*str*, *optional*) – Comment
+
+    
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+    
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+### Borehole.GetBorehole(object_index, model)
+
+* **Parameters**
+
+    
+    * **object_index** (*int*) – Borehole Index
+
+    
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
 ## Intersection
 
 
-### Instersection(no, surface_1, surface_2, comment, params, model)
+### Intersection(no, surface_1, surface_2, comment, params, model)
 
 Intersection
 
@@ -483,6 +532,59 @@ Surface Contact
 
 
     * **model** (*RFEM Class, optional*) - Model to be edited
+
+
+
+## SurfaceRelease
+
+
+### SurfaceRelease(no, surfaces, surface_release_type, release_location, released_members, released_surfaces, released_solids, use_nodes_as_definition_nodes, use_lines_as_definition_lines, deactivated, name, comment, params, model)
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Surface Release Tag
+
+    
+    * **surfaces** (*str*) – Assigned Surfaces
+
+    
+    * **surface_release_type** (*int*) – Surface Release Type Number
+
+    
+    * **release_location** (*enum*) – Surface Release Release Location Enumeration
+
+    
+    * **released_members** (*str*) – Assigned Released Members
+
+    
+    * **released_surfaces** (*str*) – Assigned Released Surfaces
+
+    
+    * **released_solids** (*str*) – Assigned Released Solids
+
+    
+    * **use_nodes_as_definition_nodes** (*str*) – Assigned Definition Nodes
+
+    
+    * **use_lines_as_definition_lines** (*str*) – Assigned Definition Lines
+
+    
+    * **deactivated** (*bool*) – Activate/Deactivate Surface Release
+
+    
+    * **name** (*str, optional*) – User Defined Surface Release Name
+
+    
+    * **comment** (*str, optional*) – Comment
+
+    
+    * **params** (*dict, optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+    
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+
 
 
 ## SurfaceResultAdjustment

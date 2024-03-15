@@ -36,7 +36,7 @@ module.exports = {
               {
                 title: "RFEM Python HLF",
                 collapsable: true,
-                children: ["ready", "init", "RFEM.BasicObjects", "RFEM.ConcreteDesign", "RFEM.DynamicLoads", "RFEM.GuideObjects", "RFEM.Imperfections", "RFEM.LoadCasesAndCombinations", "RFEM.Loads", "RFEM.SpecialObjects", "RFEM.SteelDesign", "RFEM.TimberDesign", "RFEM.TypesForAluminumDesign", "RFEM.TypesforConcreteDesign", "RFEM.TypesForLines", "RFEM.TypesForMembers", "RFEM.TypesForNodes", "RFEM.TypesForSolids", "RFEM.TypesForSpecialObjects", "RFEM.TypesForSteelDesign", "RFEM.TypesForSurfaces", "RFEM.TypesForTimberDesign"]
+                children: ["ready", "init", "RFEM.AluminumDesign", "RFEM.BasicObjects", "RFEM.ConcreteDesign", "RFEM.DynamicLoads", "RFEM.GuideObjects", "RFEM.Imperfections", "RFEM.LoadCasesAndCombinations", "RFEM.Loads", "RFEM.Results", "RFEM.SpecialObjects", "RFEM.SteelDesign", "RFEM.TimberDesign", "RFEM.TypesForAluminumDesign", "RFEM.TypesforConcreteDesign", "RFEM.TypesForLines", "RFEM.TypesForMembers", "RFEM.TypesForNodes", "RFEM.TypesForSolids", "RFEM.TypesForSpecialObjects", "RFEM.TypesForSteelDesign", "RFEM.TypesForSurfaces", "RFEM.TypesForTimberDesign"]
               },
               {
                 title: "RSTAB Python HLF",

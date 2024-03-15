@@ -12,7 +12,9 @@ These libraries are available for download to your local computer by clicking cl
 
 If you would like to work with RFEM library globally in your computer easily enter the following command in your Command Prompt or Terminal.
 
-`pip install RFEM`
+```py
+pip install RFEM
+```
 
 ### Installation of C# High Level Functions Library
 

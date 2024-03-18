@@ -2,18 +2,18 @@
 
 Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/main/RFEM/TypesForSolids)*
 
-## SolidContact
+## SolidContacts
 
 
-### SolidContact(no, perpendicular_contact, parallel_contact, contact_parameters, solids, comment, params, model)
+### SolidContacts(no, perpendicular_contact, parallel_contact, contact_parameters, solids, comment, params, model)
 
-Solid Contact
+Solid Contacts
 
 
 * **Parameters**
 
     
-    * **no** (*int*) – Solid Contact Tag
+    * **no** (*int*) – Solid Contacts Tag
 
 
     * **perpendicular_contact** (*enum*) – Solid Contact Perpendicular Type Enumeration

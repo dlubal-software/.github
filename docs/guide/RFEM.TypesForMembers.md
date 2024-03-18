@@ -729,12 +729,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
     * **spring_shear_z** (*float*) – Shear Z Spring Constant
 
 
-    * **member_rotational_restraint** (**list**) – Member Rotational Restraint Option
-                
-                
-        > if member_rotational_restraint:   
-            member_rotational_restraint[0] (int): Member Rotational Restraint Number    
-            member_rotational_restraint[1] (float): Load Introduced from Sheeting to Beam
+    * **member_rotational_restraint** (**int**) – Member Rotational Restraint Number
 
 
     * **comment** (*str*, *optional*) – Comment
@@ -747,10 +742,10 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-## memberTransverseStiffeners
+## memberTransverseStiffener
 
 
-### MemberTransverseStiffeners(no, members, member_sets, components, comment, params, model)
+### MemberTransverseStiffener(no, members, member_sets, components, comment, params, model)
 
 * **Parameters**
 

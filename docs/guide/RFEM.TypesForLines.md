@@ -36,10 +36,10 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-## LineMeshRefinements
+## LineMeshRefinement
 
 
-### LineMeshRefinements(no, lines, type, number_of_layers, comment, params, model)
+### LineMeshRefinement(no, lines, type, number_of_layers, comment, params, model)
 
 * **Parameters**
 
@@ -66,7 +66,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### LineMeshRefinements.Gradually(no, lines, gradual_rows, number_of_layers, comment, params, model)
+### LineMeshRefinement.Gradually(no, lines, gradual_rows, number_of_layers, comment, params, model)
 
 * **Parameters**
 
@@ -93,7 +93,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### LineMeshRefinements.NumberFiniteElements(no, lines, elements_finite_elements, number_of_layers, comment, params, model)
+### LineMeshRefinement.NumberFiniteElements(no, lines, elements_finite_elements, number_of_layers, comment, params, model)
 
 * **Parameters**
 
@@ -120,7 +120,7 @@ Go to *[[source]](https://github.com/Dlubal-Software/RFEM_Python_Client/tree/mai
 
 
 
-### LineMeshRefinements.TargetFELength(no, lines, target_length, number_of_layers, comment, params, model)
+### LineMeshRefinement.TargetFELength(no, lines, target_length, number_of_layers, comment, params, model)
 
 * **Parameters**
 

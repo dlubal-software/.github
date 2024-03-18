@@ -347,3 +347,49 @@ Rigid Friction Surface Contact Type
     * **model** (*RFEM Class, optional*) – Model to be edited
 
 
+
+## SurfaceReleaseType
+
+
+### SurfaceReleaseType(no, spring_constant, translational_release_ux_nonlinearity, translational_release_uy_nonlinearity, translational_release_uz_nonlinearity, local_axis_system_type, surface_releases, name, comment, params, model)
+
+Surface Release Type
+
+* **Parameters**
+
+    
+    * **no** (*int*) – Surface Release Type Tag
+
+    
+    * **spring_constant** (*list*) – Spring Constant List. 
+    
+        > spring_constant = [translational_release_u_x, translational_release_u_y, translational_release_u_z]
+
+    
+    * **translational_release_ux_nonlinearity** (*enum*) – Surface Translation Release along X Direction Nonlinearity Enumeration
+
+    
+    * **translational_release_uy_nonlinearity** (*enum*) – Surface Translation Release along Y Direction Nonlinearity Enumeration
+
+    
+    * **translational_release_uz_nonlinearity** (*enum*) – Surface Translation Release along Z Direction Nonlinearity Enumeration
+
+    
+    * **local_axis_system_type** (*enum*) – Surface Release Local Axis System Enumeration
+
+    
+    * **surface_releases** (*str*, *optional*) – Assign Surface Release
+
+    
+    * **name** (*str*, *optional*) – User Defined Surface Release Type Name
+
+    
+    * **comment** (*str*, *optional*) – Comment
+
+    
+    * **params** (*dict*, *optional*) – Any WS Parameter relevant to the object and its value in form of a dictionary
+
+    
+    * **model** (*RFEM Class, optional*) - Model to be edited
+
+

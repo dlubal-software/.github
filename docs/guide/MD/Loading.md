@@ -228,16 +228,11 @@ Creates load case
 <a name="LoadCase+GetActionCategoryList"></a>
 
 ### loadCase.GetActionCategoryList() ⇒
-<<<<<<< HEAD
-
 **Kind**: instance method of [<code>LoadCase</code>](#LoadCase)  
 **Returns**: List of action categories  
 <a name="LoadCase+GetLoadCase"></a>
 
 ### loadCase.GetLoadCase() ⇒
-=======
->>>>>>> 197138568d3 (Before rebase)
-
 **Kind**: instance method of [<code>LoadCase</code>](#LoadCase)  
 **Returns**: Load case object  
 <a name="LoadCase+GetNo"></a>

@@ -1,9 +1,42 @@
-# Types For Lines
+# TypesForLines
+
+## Classes
+
+<dl>
+<dt><a href="#LineHinge">LineHinge</a></dt>
+<dd></dd>
+<dt><a href="#LineMeshRefinement">LineMeshRefinement</a></dt>
+<dd></dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#createLineHinge">createLineHinge(no, comment, params)</a> ⇒ <code>Object</code></dt>
+<dd><p>Creates line hinge</p>
+</dd>
+<dt><a href="#CreateHingeConstant">CreateHingeConstant(hinge)</a> ⇒ <code>Object</code></dt>
+<dd><p>Creates line hinge constant</p>
+</dd>
+<dt><a href="#CreateHinge">CreateHinge(hinge)</a> ⇒</dt>
+<dd><p>Creates Hinge</p>
+</dd>
+</dl>
 
 <a name="LineHinge"></a>
 
 ## LineHinge
 **Kind**: global class  
+
+* [LineHinge](#LineHinge)
+    * [new LineHinge(no, surface, lines, comment, params)](#new_LineHinge_new)
+    * [.Translation(ux, uy, uz)](#LineHinge+Translation) ⇒ <code>Object</code>
+    * [.TranslationX(ux)](#LineHinge+TranslationX) ⇒ <code>Object</code>
+    * [.TranslationY(uy)](#LineHinge+TranslationY) ⇒ <code>Object</code>
+    * [.TranslationZ(uz)](#LineHinge+TranslationZ) ⇒ <code>Object</code>
+    * [.Rotation(rx)](#LineHinge+Rotation) ⇒ <code>Object</code>
+    * [.AssignTo(surface, lines)](#LineHinge+AssignTo)
+    * [.WallSlabConnection(surface, lines)](#LineHinge+WallSlabConnection)
 
 <a name="new_LineHinge_new"></a>
 
@@ -96,7 +129,7 @@ Assign line hinge to line and surface (line must be involved in the surface)
 
 <a name="LineHinge+WallSlabConnection"></a>
 
-### lineHinge.WallSlabConnection(surface, or)
+### lineHinge.WallSlabConnection(surface, lines)
 Assign wall-slab connection to line hinge
 
 **Kind**: instance method of [<code>LineHinge</code>](#LineHinge)  
@@ -104,12 +137,19 @@ Assign wall-slab connection to line hinge
 | Param | Type | Description |
 | --- | --- | --- |
 | surface | <code>Integer</code> | surface id (lines must lie on this surface) |
-| or | <code>Integer</code> | {Array}	lines			one or more lines id for line hinge assign |
+| lines | <code>Integer</code> \| <code>Array</code> | one or more lines id for line hinge assign |
 
 <a name="LineMeshRefinement"></a>
 
 ## LineMeshRefinement
 **Kind**: global class  
+
+* [LineMeshRefinement](#LineMeshRefinement)
+    * [new LineMeshRefinement(no, targetFELength, numberOfLayers, lines, comment, params)](#new_LineMeshRefinement_new)
+    * [.TargetFELength(targetFELength, numberOfLayers, lines)](#LineMeshRefinement+TargetFELength) ⇒ <code>Object</code>
+    * [.NumberFiniteElements(numberOfFiniteElements, numberOfLayers, lines)](#LineMeshRefinement+NumberFiniteElements) ⇒ <code>Object</code>
+    * [.Gradual(gradual_rows, numberOfLayers, lines)](#LineMeshRefinement+Gradual) ⇒ <code>Object</code>
+    * [.SetLines(gradual_rows, lines)](#LineMeshRefinement+SetLines) ⇒ <code>Object</code>
 
 <a name="new_LineMeshRefinement_new"></a>
 

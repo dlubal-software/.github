@@ -1,9 +1,49 @@
-# Types For Nodes
+# TypesForNodes
+
+## Classes
+
+<dl>
+<dt><a href="#NodalSupport">NodalSupport</a></dt>
+<dd></dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#NodalMeshRefinement">NodalMeshRefinement(no, assigned_nodes, comment, params)</a></dt>
+<dd><p>Creates default nodal node refinement</p>
+</dd>
+<dt><a href="#createNodalMeshRefinement">createNodalMeshRefinement(no, assigned_nodes, comment, params)</a> ⇒</dt>
+<dd><p>Creates default nodal node refinement</p>
+</dd>
+</dl>
 
 <a name="NodalSupport"></a>
 
 ## NodalSupport
 **Kind**: global class  
+
+* [NodalSupport](#NodalSupport)
+    * [new NodalSupport(no, nodes, comment, params)](#new_NodalSupport_new)
+    * [.Status()](#NodalSupport+Status)
+    * [.SetNodes(nodes)](#NodalSupport+SetNodes) ⇒
+    * [.SetComment(comment)](#NodalSupport+SetComment) ⇒
+    * [.SetNo(no)](#NodalSupport+SetNo)
+    * [.Fixed()](#NodalSupport+Fixed) ⇒
+    * [.Hinged()](#NodalSupport+Hinged) ⇒
+    * [.Roller()](#NodalSupport+Roller) ⇒
+    * [.RollerX()](#NodalSupport+RollerX) ⇒
+    * [.RollerY()](#NodalSupport+RollerY) ⇒
+    * [.RollerZ()](#NodalSupport+RollerZ) ⇒
+    * [.Free()](#NodalSupport+Free) ⇒
+    * [.Translation(x, y, z)](#NodalSupport+Translation) ⇒
+    * [.TranslationX(x)](#NodalSupport+TranslationX) ⇒
+    * [.TranslationY(y)](#NodalSupport+TranslationY) ⇒
+    * [.TranslationZ(z)](#NodalSupport+TranslationZ) ⇒
+    * [.Rotation(x, y, z)](#NodalSupport+Rotation) ⇒
+    * [.RotationX(x)](#NodalSupport+RotationX) ⇒
+    * [.RotationY(y)](#NodalSupport+RotationY) ⇒
+    * [.RotationZ(z)](#NodalSupport+RotationZ) ⇒
 
 <a name="new_NodalSupport_new"></a>
 
@@ -222,6 +262,12 @@ Creates default nodal node refinement
 | assigned_nodes | <code>Array</code> | Assigned nodes |
 | comment | <code>String</code> | Comment |
 | params | <code>Object</code> | Additional parameters |
+
+
+* [NodalMeshRefinement(no, assigned_nodes, comment, params)](#NodalMeshRefinement)
+    * [.Circular(no, assigned_nodes, radius, inner_target_fe_length, outer_target_fe_length, fe_length_arrangement, comment, params)](#NodalMeshRefinement+Circular)
+    * [.Rectangular(no, assigned_nodes, side_length, inner_target_fe_length, comment, params)](#NodalMeshRefinement+Rectangular)
+    * [.ApplyToSurfaces(indexes)](#NodalMeshRefinement+ApplyToSurfaces)
 
 <a name="NodalMeshRefinement+Circular"></a>
 

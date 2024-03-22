@@ -1,9 +1,61 @@
-# Special Objects
+# SpecialObjects
+
+## Classes
+
+<dl>
+<dt><a href="#StructureModification">StructureModification</a></dt>
+<dd></dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#setTableValue">setTableValue(value, table, tableParameter, row, controlParameter, errorString)</a></dt>
+<dd><p>Sets table value (private)</p>
+</dd>
+<dt><a href="#getMembersWithHinges">getMembersWithHinges()</a> ⇒</dt>
+<dd><p>Finds all members with hinges (private)</p>
+</dd>
+<dt><a href="#getLinesWithHinges">getLinesWithHinges()</a> ⇒</dt>
+<dd><p>Finds all lines with hinges (private)</p>
+</dd>
+<dt><a href="#getObjectsWithSupport">getObjectsWithSupport(objects_list)</a> ⇒</dt>
+<dd><p>Finds all specified objects with hinges</p>
+</dd>
+</dl>
 
 <a name="StructureModification"></a>
 
 ## StructureModification
 **Kind**: global class  
+
+* [StructureModification](#StructureModification)
+    * [new StructureModification(no, comment, params)](#new_StructureModification_new)
+    * [.Material(material_name, modification_type, factor_for_e_and_g, comment)](#StructureModification+Material)
+    * [.Section(section_name, sectional_areas_factor_a, sectional_areas_factor_a_y, sectional_areas_factor_a_z, moment_of_inertia_factor_j, moment_of_inertia_favor_i_y, moment_of_inertia_favor_i_z)](#StructureModification+Section)
+    * [.Members(member_stiffness_modification, members, comment)](#StructureModification+Members)
+    * [.Surfaces(surface_stiffness_modification, surfaces, comment)](#StructureModification+Surfaces)
+    * [.MemberHinges(member_no, member_side, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, rotational_factor_phi_x, rotational_factor_phi_y, rotational_factor_phi_z)](#StructureModification+MemberHinges)
+    * [.LineHinges(surface_no, line_no, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, rotational_factor_phi_x)](#StructureModification+LineHinges)
+    * [.NodalSupports(node_no, support_factor_ux, support_factor_uy, support_factor_uz, restraint_factor_phi_x, restraint_factor_phi_y, restraint_factor_phi_z)](#StructureModification+NodalSupports)
+    * [.LineSupports(line_no, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, rotational_factor_phi_x, rotational_factor_phi_y, rotational_factor_phi_z)](#StructureModification+LineSupports)
+    * [.MemberSupports(member_no, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, shear_factor_s_x, shear_factor_s_y, shear_factor_s_z, rotational_factor_phi_x)](#StructureModification+MemberSupports)
+    * [.SurfaceSupports(surface_no, translational_factor_u_x, translational_factor_u_y, translational_factor_u_z, shear_factor_v_xz, shear_factor_v_yz)](#StructureModification+SurfaceSupports)
+    * [.DeactivateObjects(members_object_selection, surfaces_object_selection, solids_object_selection, support_on_nodes_object_selection, support_on_lines_object_selection, support_on_members_object_selection, support_on_surfaces_object_selection)](#StructureModification+DeactivateObjects)
+    * [.ModifyMemberReinforcement(enabled)](#StructureModification+ModifyMemberReinforcement)
+    * [.ModifySurfaceReinforcement(enabled)](#StructureModification+ModifySurfaceReinforcement)
+    * [.ModifyTimberMember(enabled)](#StructureModification+ModifyTimberMember)
+    * [.DisableMaterialNonlinearityModels(disabled)](#StructureModification+DisableMaterialNonlinearityModels)
+    * [.DisableTemperatureDependencies(disabled)](#StructureModification+DisableTemperatureDependencies)
+    * [.DisableNonlinearitiesLineHinges(disabled)](#StructureModification+DisableNonlinearitiesLineHinges)
+    * [.DisableNonlinearitiesMemberTypes(disabled)](#StructureModification+DisableNonlinearitiesMemberTypes)
+    * [.DisableNonlinearitiesMemberHinges(disabled)](#StructureModification+DisableNonlinearitiesMemberHinges)
+    * [.DisableMemberNonlinearities(disabled)](#StructureModification+DisableMemberNonlinearities)
+    * [.DisableNonlinearitiesSurfaceOrSolidContact(disabled)](#StructureModification+DisableNonlinearitiesSurfaceOrSolidContact)
+    * [.DisableNonlinearitiesNodalSupports(disabled)](#StructureModification+DisableNonlinearitiesNodalSupports)
+    * [.DisableNonlinearitiesLineSupports(disabled)](#StructureModification+DisableNonlinearitiesLineSupports)
+    * [.DisableNonlinearitiesMemberSupports(disabled)](#StructureModification+DisableNonlinearitiesMemberSupports)
+    * [.DisableNonlinearitiesSurfaceSupports(disabled)](#StructureModification+DisableNonlinearitiesSurfaceSupports)
 
 <a name="new_StructureModification_new"></a>
 

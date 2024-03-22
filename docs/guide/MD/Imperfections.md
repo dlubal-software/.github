@@ -1,9 +1,43 @@
 # Imperfections
 
+## Classes
+
+<dl>
+<dt><a href="#ImperfectionCase">ImperfectionCase</a></dt>
+<dd></dd>
+<dt><a href="#MemberImperfection">MemberImperfection</a></dt>
+<dd></dd>
+<dt><a href="#MemberSetImperfection">MemberSetImperfection</a></dt>
+<dd></dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#SurfaceImperfection">SurfaceImperfection(no, imperfection_case_no, surfaces_no, comment, params)</a> ⇒</dt>
+<dd><p>Creates default Surface imperfection</p>
+</dd>
+<dt><a href="#SurfaceSetImperfection">SurfaceSetImperfection(no, imperfection_case_no, surface_sets_no, comment, params)</a> ⇒</dt>
+<dd><p>Creates default Surface set imperfection</p>
+</dd>
+</dl>
+
 <a name="ImperfectionCase"></a>
 
 ## ImperfectionCase
 **Kind**: global class  
+
+* [ImperfectionCase](#ImperfectionCase)
+    * [new ImperfectionCase(no, comment, params)](#new_ImperfectionCase_new)
+    * [.GetNo()](#ImperfectionCase+GetNo) ⇒
+    * [.GetImperfectionCase()](#ImperfectionCase+GetImperfectionCase) ⇒
+    * [.LocalImperfection(no, load_cases_to_assign, assign_to_all_load, is_active, comment, params)](#ImperfectionCase+LocalImperfection)
+    * [.Notional(no, load_cases_to_assign, notional_loads_from_load_case_no, assign_to_all_load, is_active, comment, params)](#ImperfectionCase+Notional)
+    * [.InitialSway(no, load_cases_to_assign, level_imperfections, coordinate_system_no, level_direction, imperfection_direction, sway_coefficients_reciprocal, assign_to_all_load, is_active, comment, params)](#ImperfectionCase+InitialSway)
+    * [.StaticDeformation(no, load_cases_to_assign, source_type, shape_from_no, imperfection_magnitude, magnitude_assignment_type, node_no, coordinate_system_no, imperfection_direction, assign_to_all_load, is_active, comment, params)](#ImperfectionCase+StaticDeformation)
+    * [.GroupOfImperfection(no, load_cases_to_assign, imperfection_cases, assign_to_all_load, is_active, comment, params)](#ImperfectionCase+GroupOfImperfection)
+    * [.GetImperfectionCase()](#ImperfectionCase+GetImperfectionCase) ⇒
+    * [.GetNo()](#ImperfectionCase+GetNo) ⇒
 
 <a name="new_ImperfectionCase_new"></a>
 
@@ -136,6 +170,33 @@ Returns Group of Imperfection cases
 
 ## MemberImperfection
 **Kind**: global class  
+
+* [MemberImperfection](#MemberImperfection)
+    * [new MemberImperfection(no, imperfection_case_no, members_no, comment, params)](#new_MemberImperfection_new)
+    * [.InitialSway(no, imperfection_case_no, members_no, coordinate_system, imperfection_direction, reference_to_members, comment, params)](#MemberImperfection+InitialSway)
+    * [.InitialBow(no, imperfection_case_no, members_no, coordinate_system, imperfection_direction, reference_to_members, comment, params)](#MemberImperfection+InitialBow)
+    * [.InitialBowAndCriterion(no, imperfection_case_no, members_no, coordinate_system, imperfection_direction, reference_to_members, comment, params)](#MemberImperfection+InitialBowAndCriterion)
+    * [.Relative(initial_sway, active_criterion, active_bow)](#MemberImperfection+Relative)
+    * [.Absolute(initial_sway, active_criterion, active_bow)](#MemberImperfection+Absolute)
+    * [.EN_1992_1(basic_value_relative, height, columns_inn_row_count, reduction_factor_h_limit)](#MemberImperfection+EN_1992_1)
+    * [.EN_1993_1_1(basic_value_relative, height, columns_inn_row_count)](#MemberImperfection+EN_1993_1_1)
+    * [.InitialBow_EN_1993_1_1(section_design)](#MemberImperfection+InitialBow_EN_1993_1_1)
+    * [.EN_1995_1_1(value, height)](#MemberImperfection+EN_1995_1_1)
+    * [.ANSI_CURRENT(notional_load_coefficient, standard_factor_enumeration)](#MemberImperfection+ANSI_CURRENT)
+    * [.InitialBow_ANSI_CURRENT(initial_bow)](#MemberImperfection+InitialBow_ANSI_CURRENT)
+    * [.ANSI_GRAVITY_LOAD(load_case_combination_no, notional_load_coefficient, standard_factor_enumeration)](#MemberImperfection+ANSI_GRAVITY_LOAD)
+    * [.InitialBow_ANSI_GRAVITY_LOAD(load_case_combination_no, initial_bow)](#MemberImperfection+InitialBow_ANSI_GRAVITY_LOAD)
+    * [.CSA_CURRENT(value)](#MemberImperfection+CSA_CURRENT)
+    * [.CSA_GRAVITY_LOAD(load_case_combination_no, value)](#MemberImperfection+CSA_GRAVITY_LOAD)
+    * [.GB_50017_2017_CURRENT(basic_value_relative, structure_height, number_of_floors)](#MemberImperfection+GB_50017_2017_CURRENT)
+    * [.GB_50017_2017_GRAVITY_LOAD(load_case_combination_no, notional_load_coefficient, number_of_floors)](#MemberImperfection+GB_50017_2017_GRAVITY_LOAD)
+    * [.EN_1999_1_1(section_design)](#MemberImperfection+EN_1999_1_1)
+    * [.GB_50017_2017(buckling_curve)](#MemberImperfection+GB_50017_2017)
+    * [.ReferenceToListOfMembers(enable)](#MemberImperfection+ReferenceToListOfMembers)
+    * [.RefereDistanceToTheMemberEnd(enable)](#MemberImperfection+RefereDistanceToTheMemberEnd)
+    * [.ImperfectionOverTotalLength(enable)](#MemberImperfection+ImperfectionOverTotalLength)
+    * [.GetMemberImperfection()](#MemberImperfection+GetMemberImperfection) ⇒
+    * [.GetNo()](#MemberImperfection+GetNo) ⇒
 
 <a name="new_MemberImperfection_new"></a>
 
@@ -449,6 +510,30 @@ Sets imperfection over total length of member
 ## MemberSetImperfection
 **Kind**: global class  
 
+* [MemberSetImperfection](#MemberSetImperfection)
+    * [new MemberSetImperfection(no, imperfection_case_no, member_sets_no, comment, params)](#new_MemberSetImperfection_new)
+    * [.InitialSway(no, imperfection_case_no, member_sets_no, coordinate_system, imperfection_direction, comment, params)](#MemberSetImperfection+InitialSway)
+    * [.InitialBow(no, imperfection_case_no, member_sets_no, coordinate_system, imperfection_direction, comment, params)](#MemberSetImperfection+InitialBow)
+    * [.InitialBowAndCriterion(no, imperfection_case_no, member_sets_no, coordinate_system, imperfection_direction, comment, params)](#MemberSetImperfection+InitialBowAndCriterion)
+    * [.Relative(initial_sway, active_criterion, active_bow)](#MemberSetImperfection+Relative)
+    * [.Absolute(initial_sway, active_criterion, active_bow)](#MemberSetImperfection+Absolute)
+    * [.EN_1992_1(basic_value_relative, height, columns_inn_row_count, reduction_factor_h_limit)](#MemberSetImperfection+EN_1992_1)
+    * [.EN_1993_1_1(basic_value_relative, height, columns_inn_row_count)](#MemberSetImperfection+EN_1993_1_1)
+    * [.InitialBow_EN_1993_1_1(section_design)](#MemberSetImperfection+InitialBow_EN_1993_1_1)
+    * [.EN_1995_1_1(value, height)](#MemberSetImperfection+EN_1995_1_1)
+    * [.ANSI_CURRENT(notional_load_coefficient, standard_factor_enumeration)](#MemberSetImperfection+ANSI_CURRENT)
+    * [.InitialBow_ANSI_CURRENT(initial_bow)](#MemberSetImperfection+InitialBow_ANSI_CURRENT)
+    * [.ANSI_GRAVITY_LOAD(load_case_combination_no, notional_load_coefficient, standard_factor_enumeration)](#MemberSetImperfection+ANSI_GRAVITY_LOAD)
+    * [.InitialBow_ANSI_GRAVITY_LOAD(load_case_combination_no, initial_bow)](#MemberSetImperfection+InitialBow_ANSI_GRAVITY_LOAD)
+    * [.CSA_CURRENT(value)](#MemberSetImperfection+CSA_CURRENT)
+    * [.CSA_GRAVITY_LOAD(load_case_combination_no, value)](#MemberSetImperfection+CSA_GRAVITY_LOAD)
+    * [.GB_50017_2017_CURRENT(basic_value_relative, structure_height, number_of_floors)](#MemberSetImperfection+GB_50017_2017_CURRENT)
+    * [.GB_50017_2017_GRAVITY_LOAD(load_case_combination_no, notional_load_coefficient, number_of_floors)](#MemberSetImperfection+GB_50017_2017_GRAVITY_LOAD)
+    * [.EN_1999_1_1(section_design)](#MemberSetImperfection+EN_1999_1_1)
+    * [.GB_50017_2017(buckling_curve)](#MemberSetImperfection+GB_50017_2017)
+    * [.GetMemberSetImperfection()](#MemberSetImperfection+GetMemberSetImperfection) ⇒
+    * [.GetNo()](#MemberSetImperfection+GetNo) ⇒
+
 <a name="new_MemberSetImperfection_new"></a>
 
 ### new MemberSetImperfection(no, imperfection_case_no, member_sets_no, comment, params)
@@ -737,6 +822,12 @@ Creates default Surface imperfection
 | params | <code>String</code> | Parameters, can be undefined |
 
 
+* [SurfaceImperfection(no, imperfection_case_no, surfaces_no, comment, params)](#SurfaceImperfection) ⇒
+    * [.Relative(no, imperfection_case_no, surfaces_no, reference_length, initial_bow_relative, imperfection_direction, comment, params)](#SurfaceImperfection+Relative)
+    * [.Absolute(no, imperfection_case_no, surfaces_no, initial_bow, imperfection_direction, comment, params)](#SurfaceImperfection+Absolute)
+    * [.GetSurfaceImperfection()](#SurfaceImperfection+GetSurfaceImperfection) ⇒
+    * [.GetNo()](#SurfaceImperfection+GetNo) ⇒
+
 <a name="SurfaceImperfection+Relative"></a>
 
 ### surfaceImperfection.Relative(no, imperfection_case_no, surfaces_no, reference_length, initial_bow_relative, imperfection_direction, comment, params)
@@ -798,6 +889,12 @@ Creates default Surface set imperfection
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>String</code> | Parameters, can be undefined |
 
+
+* [SurfaceSetImperfection(no, imperfection_case_no, surface_sets_no, comment, params)](#SurfaceSetImperfection) ⇒
+    * [.Relative(no, imperfection_case_no, surface_sets_no, reference_length, initial_bow_relative, imperfection_direction, comment, params)](#SurfaceSetImperfection+Relative)
+    * [.Absolute(no, imperfection_case_no, surface_sets_no, initial_bow, imperfection_direction, comment, params)](#SurfaceSetImperfection+Absolute)
+    * [.GetSurfaceImperfection()](#SurfaceSetImperfection+GetSurfaceImperfection) ⇒
+    * [.GetNo()](#SurfaceSetImperfection+GetNo) ⇒
 
 <a name="SurfaceSetImperfection+Relative"></a>
 

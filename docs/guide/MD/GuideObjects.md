@@ -1,9 +1,33 @@
-# Guide Objects
+# GuideObjects
+
+## Classes
+
+<dl>
+<dt><a href="#CoordinateSystem">CoordinateSystem</a></dt>
+<dd></dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#createBaseCoordinateSystem">createBaseCoordinateSystem(no, comment, params)</a> ⇒ <code>Object</code></dt>
+<dd><p>Create coordinate system (private)</p>
+</dd>
+</dl>
 
 <a name="CoordinateSystem"></a>
 
 ## CoordinateSystem
 **Kind**: global class  
+
+* [CoordinateSystem](#CoordinateSystem)
+    * [new CoordinateSystem(no, coordinate_system_type, comment, params)](#new_CoordinateSystem_new)
+    * [.GetCoordinateSystem()](#CoordinateSystem+GetCoordinateSystem) ⇒
+    * [.GetNo()](#CoordinateSystem+GetNo) ⇒
+    * [.Offset(no, original_point, comment, params)](#CoordinateSystem+Offset) ⇒
+    * [.ThreePoints(no, original_point, u_axis_point_coordinate, uw_plane_point_coordinate, comment, params)](#CoordinateSystem+ThreePoints) ⇒
+    * [.TwoPointsAndAngle(no, original_point, uw_plane_point_coordinate, uw_plane_angle, comment, params)](#CoordinateSystem+TwoPointsAndAngle) ⇒
+    * [.PointAndThreeAngels(no, original_point, rotation_angle_1, rotation_angle_2, rotation_angle_3, rotation_angles_sequence, comment, params)](#CoordinateSystem+PointAndThreeAngels) ⇒
 
 <a name="new_CoordinateSystem_new"></a>
 
@@ -19,6 +43,16 @@ Creates coordinate system
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Additional coordinate system parameters, can be undefined |
 
+<a name="CoordinateSystem+GetCoordinateSystem"></a>
+
+### coordinateSystem.GetCoordinateSystem() ⇒
+**Kind**: instance method of [<code>CoordinateSystem</code>](#CoordinateSystem)  
+**Returns**: Coordinate system object  
+<a name="CoordinateSystem+GetNo"></a>
+
+### coordinateSystem.GetNo() ⇒
+**Kind**: instance method of [<code>CoordinateSystem</code>](#CoordinateSystem)  
+**Returns**: Coordinate system number  
 <a name="CoordinateSystem+Offset"></a>
 
 ### coordinateSystem.Offset(no, original_point, comment, params) ⇒

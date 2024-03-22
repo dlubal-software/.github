@@ -1,9 +1,51 @@
 # Loading
 
+## Classes
+
+<dl>
+<dt><a href="#DesignSituation">DesignSituation</a></dt>
+<dd></dd>
+<dt><a href="#LoadCase">LoadCase</a></dt>
+<dd></dd>
+<dt><a href="#ResultCombination">ResultCombination</a></dt>
+<dd></dd>
+<dt><a href="#RSectionLoadCase">RSectionLoadCase</a></dt>
+<dd></dd>
+<dt><a href="#RSectionLoadCombination">RSectionLoadCombination</a></dt>
+<dd></dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#createBaseDesignSituation">createBaseDesignSituation(no, params, comment)</a> ⇒</dt>
+<dd><p>Creates base design situation (private)</p>
+</dd>
+<dt><a href="#LoadCombination">LoadCombination(no, design_situation_no, load_combination_items, comment, params)</a> ⇒</dt>
+<dd><p>Creates load combination</p>
+</dd>
+<dt><a href="#createBaseLoadCombination">createBaseLoadCombination(no, comment, params)</a> ⇒</dt>
+<dd><p>Creates load combination (private)</p>
+</dd>
+<dt><a href="#createBaseLoadCase">createBaseLoadCase(no, action_category, name, to_solve, comment, params)</a> ⇒</dt>
+<dd></dd>
+<dt><a href="#createBaseLoadCombinations">createBaseLoadCombinations(no, name, to_solve, comment, params)</a> ⇒</dt>
+<dd><p>Create RSection Load combination</p>
+</dd>
+</dl>
+
 <a name="DesignSituation"></a>
 
 ## DesignSituation
 **Kind**: global class  
+
+* [DesignSituation](#DesignSituation)
+    * [new DesignSituation(no, design_situation_type, params, comment)](#new_DesignSituation_new)
+    * [.GetDesignSituation()](#DesignSituation+GetDesignSituation) ⇒
+    * [.GetNo()](#DesignSituation+GetNo) ⇒
+    * [.SetCombinationWizard(combination_wizard_no)](#DesignSituation+SetCombinationWizard)
+    * [.SetConsiderInclusiveExclusiveLoadCases(relationship_between_load_cases_no)](#DesignSituation+SetConsiderInclusiveExclusiveLoadCases)
+    * [.SetActive(active)](#DesignSituation+SetActive)
 
 <a name="new_DesignSituation_new"></a>
 
@@ -70,6 +112,18 @@ Enables/disables design situation
 
 ## LoadCase
 **Kind**: global class  
+
+* [LoadCase](#LoadCase)
+    * [new LoadCase(no, name, comment, params)](#new_LoadCase_new)
+    * [.StaticAnalysis(no, name, staticAnalysisSettingsNo, ActionCategory, selfWeighParams, stabilityAnalysisSettingsNo, comment, params)](#LoadCase+StaticAnalysis) ⇒
+    * [.ModalAnalysis(no, name, modalAnalysisSettingsNo, importMassesFrom, selfWeighParams, comment, params)](#LoadCase+ModalAnalysis) ⇒
+    * [.ResponseSpectrumAnalysis(no, name, responseSpectrumAnalysisSettingsNo, importModalAnalysisFrom, responseSpectrums, comment, params)](#LoadCase+ResponseSpectrumAnalysis) ⇒
+    * [.WindSimulation(no, name, staticAnalysisSettingsNo, windAnalysisSettingsNo, windProfileNo, windDirection, terrainOffset, stabilityAnalysisSettingsNo, comment, params)](#LoadCase+WindSimulation) ⇒
+    * [.ConsiderImperfection(imperfectionCaseNo)](#LoadCase+ConsiderImperfection)
+    * [.SetStructureModification(structureModificationNo)](#LoadCase+SetStructureModification)
+    * [.GetActionCategoryList()](#LoadCase+GetActionCategoryList) ⇒
+    * [.GetLoadCase()](#LoadCase+GetLoadCase) ⇒
+    * [.GetNo()](#LoadCase+GetNo) ⇒
 
 <a name="new_LoadCase_new"></a>
 
@@ -174,12 +228,15 @@ Creates load case
 <a name="LoadCase+GetActionCategoryList"></a>
 
 ### loadCase.GetActionCategoryList() ⇒
+<<<<<<< HEAD
 
 **Kind**: instance method of [<code>LoadCase</code>](#LoadCase)  
 **Returns**: List of action categories  
 <a name="LoadCase+GetLoadCase"></a>
 
 ### loadCase.GetLoadCase() ⇒
+=======
+>>>>>>> 197138568d3 (Before rebase)
 
 **Kind**: instance method of [<code>LoadCase</code>](#LoadCase)  
 **Returns**: Load case object  
@@ -192,6 +249,18 @@ Creates load case
 
 ## ResultCombination
 **Kind**: global class  
+
+* [ResultCombination](#ResultCombination)
+    * [new ResultCombination(no, design_situation_no, load_case_items, load_combination_items, combination_type, comment, params)](#new_ResultCombination_new)
+    * [.General(no, design_situation_no, load_case_items, load_combination_items, comment, params)](#ResultCombination+General)
+    * [.EnvelopePermanent(no, design_situation_no, load_case_items, load_combination_items, comment, params)](#ResultCombination+EnvelopePermanent)
+    * [.EnvelopeTransient(no, design_situation_no, load_case_items, load_combination_items, comment, params)](#ResultCombination+EnvelopeTransient)
+    * [.Superposition(no, design_situation_no, load_case_items, load_combination_items, comment, params)](#ResultCombination+Superposition)
+    * [.SRSSCombination(use_equivalent_linear_combination, extreme_value_sign, according_load_case_or_combination)](#ResultCombination+SRSSCombination)
+    * [.ToSolve(to_solve)](#ResultCombination+ToSolve)
+    * [.GenerateSubCombinations(generate)](#ResultCombination+GenerateSubCombinations)
+    * [.GetNo()](#ResultCombination+GetNo) ⇒
+    * [.GetResultCombination()](#ResultCombination+GetResultCombination) ⇒
 
 <a name="new_ResultCombination_new"></a>
 
@@ -323,6 +392,11 @@ Sets Generate sub-combinations of type 'Superposition'
 ## RSectionLoadCase
 **Kind**: global class  
 
+* [RSectionLoadCase](#RSectionLoadCase)
+    * [new RSectionLoadCase(no, action_category, name, to_solve, comment, params)](#new_RSectionLoadCase_new)
+    * [.GetLoadcase()](#RSectionLoadCase+GetLoadcase)
+    * [.GetNo()](#RSectionLoadCase+GetNo)
+
 <a name="new_RSectionLoadCase_new"></a>
 
 ### new RSectionLoadCase(no, action_category, name, to_solve, comment, params)
@@ -355,6 +429,10 @@ Returns load case number
 
 ## RSectionLoadCombination
 **Kind**: global class  
+
+* [RSectionLoadCombination](#RSectionLoadCombination)
+    * [new RSectionLoadCombination(no, load_combination_items, name, to_solve, comment, params)](#new_RSectionLoadCombination_new)
+    * [.AssignLoadCases(load_combination_items)](#RSectionLoadCombination+AssignLoadCases) ⇒
 
 <a name="new_RSectionLoadCombination_new"></a>
 
@@ -413,6 +491,18 @@ Creates load combination
 | load_combination_items | <code>Array</code> | Items of load combination - load case index and factor [[LC1no,factor],[LC2no,factor]] |
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Additional parameters, can be undefined |
+
+
+* [LoadCombination(no, design_situation_no, load_combination_items, comment, params)](#LoadCombination) ⇒
+    * [.StaticAnalysis(no, static_analysis_settings, design_situation, comment, params)](#LoadCombination+StaticAnalysis) ⇒
+    * [.ConsiderImperfection(imperfection_case, enabled)](#LoadCombination+ConsiderImperfection) ⇒
+    * [.StructureModification(structure_modification, enabled)](#LoadCombination+StructureModification) ⇒
+    * [.ConsiderInitialState(initial_state_case, initial_state_definition_type, enabled)](#LoadCombination+ConsiderInitialState) ⇒
+    * [.CriticalLoadForCalculation(stability_analysis_settings, enabled)](#LoadCombination+CriticalLoadForCalculation) ⇒
+    * [.CreepCausedByPermanentLoadingCase(creep_caused_by_permanent_loading_case, enabled)](#LoadCombination+CreepCausedByPermanentLoadingCase) ⇒
+    * [.ConsiderConstructionStage(construction_stage, enabled)](#LoadCombination+ConsiderConstructionStage) ⇒
+    * [.AssignLoadCases(load_combination_items)](#LoadCombination+AssignLoadCases) ⇒
+    * [.ToSolve(to_solve)](#LoadCombination+ToSolve) ⇒
 
 <a name="LoadCombination+StaticAnalysis"></a>
 

@@ -1,4 +1,23 @@
-# Analysis Settings
+# AnalysisSettings
+
+## Classes
+
+<dl>
+<dt><a href="#ModalAnalysisSettings">ModalAnalysisSettings</a></dt>
+<dd><p>Modal analysis settings high level function</p>
+</dd>
+<dt><a href="#SpectralAnalysisSettings">SpectralAnalysisSettings</a></dt>
+<dd><p>Class for setting up the spectral analysis settings.</p>
+</dd>
+<dt><a href="#StabilityAnalysisSettings">StabilityAnalysisSettings</a></dt>
+<dd><p>StabilityAnalysisSettings is a class that represents a stability analysis settings.</p>
+</dd>
+<dt><a href="#StaticAnalysisSettings">StaticAnalysisSettings</a></dt>
+<dd></dd>
+<dt><a href="#WindSimulationSettings">WindSimulationSettings</a></dt>
+<dd><p>Class creates WindSimulationSettings object</p>
+</dd>
+</dl>
 
 <a name="ModalAnalysisSettings"></a>
 
@@ -6,6 +25,12 @@
 Modal analysis settings high level function
 
 **Kind**: global class  
+
+* [ModalAnalysisSettings](#ModalAnalysisSettings)
+    * [new ModalAnalysisSettings(no, solverMethod, beyondFrequency, maximalFrequency, comment, params)](#new_ModalAnalysisSettings_new)
+    * [.UserDefinedNumberOfModes(no, name, numberOfModes, solverMethod, typeOfMassMatrix, massConversion, actingMasses, comment, params)](#ModalAnalysisSettings+UserDefinedNumberOfModes) ⇒
+    * [.AutomaticNumberOfModesToReachEffMass(no, name, effectiveModalMassFactor, solverMethod, typeOfMassMatrix, massConversion, actingMasses, comment, params)](#ModalAnalysisSettings+AutomaticNumberOfModesToReachEffMass) ⇒
+    * [.AutomaticNumberOfModesToReachMaxFreq(no, name, maxNaturalFrequency, solverMethod, typeOfMassMatrix, massConversion, actingMasses, comment, params)](#ModalAnalysisSettings+AutomaticNumberOfModesToReachMaxFreq) ⇒
 
 <a name="new_ModalAnalysisSettings_new"></a>
 
@@ -92,6 +117,12 @@ Class for setting up the spectral analysis settings.
 **Kind**: global class  
 **@returns**: Object SpectralAnalysisSettings  
 
+* [SpectralAnalysisSettings](#SpectralAnalysisSettings)
+    * [new SpectralAnalysisSettings(no, name, combinationRulePeriodic, combinationRuleDirectional, scaledSumDirectionalComponentValue, useEquivalentLinearCombination, signedResultsUsingDominantMode, saveResultsOfAllSelectedModes, comment, params)](#new_SpectralAnalysisSettings_new)
+    * [.SetDampingRuleForCQC(dampingRule, dampingConstantForEachMode)](#SpectralAnalysisSettings+SetDampingRuleForCQC)
+    * [.IncludeMissingMasses(ruleForMasses, zeroPeriodicAccelerationType, userDefinedValue)](#SpectralAnalysisSettings+IncludeMissingMasses)
+    * [.GetNo()](#SpectralAnalysisSettings+GetNo) ⇒
+
 <a name="new_SpectralAnalysisSettings_new"></a>
 
 ### new SpectralAnalysisSettings(no, name, combinationRulePeriodic, combinationRuleDirectional, scaledSumDirectionalComponentValue, useEquivalentLinearCombination, signedResultsUsingDominantMode, saveResultsOfAllSelectedModes, comment, params)
@@ -164,6 +195,14 @@ Constructor creates a new object of type StabilityAnalysisSettings
 
 ## StaticAnalysisSettings
 **Kind**: global class  
+
+* [StaticAnalysisSettings](#StaticAnalysisSettings)
+    * [new StaticAnalysisSettings(no, analysisType, equationSolver, nonlinearMethod, comment, params)](#new_StaticAnalysisSettings_new)
+    * [.GetNo()](#StaticAnalysisSettings+GetNo) ⇒
+    * [.GetStaticAnalysisSettings()](#StaticAnalysisSettings+GetStaticAnalysisSettings) ⇒
+    * [.GeometricallyLinear(no, name, equationSolver, plateBendingTheory, activeMass, modifyLoading, comment, params)](#StaticAnalysisSettings+GeometricallyLinear) ⇒
+    * [.SecondOrder(no, name, equationSolver, nonlinearMethod, maxNumberOfIterations, numberOfLoadIncrements, plateBendingTheory, activeMass, modifyLoading, comment, params)](#StaticAnalysisSettings+SecondOrder) ⇒
+    * [.LargeDeformations(no, name, equationSolver, nonlinearMethod, maxNumberOfIterations, numberOfLoadIncrements, percentageOfIterations, plateBendingTheory, activeMass, modifyLoading, comment, params)](#StaticAnalysisSettings+LargeDeformations) ⇒
 
 <a name="new_StaticAnalysisSettings_new"></a>
 

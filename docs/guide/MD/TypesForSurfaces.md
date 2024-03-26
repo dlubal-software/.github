@@ -1,53 +1,9 @@
 # TypesForSurfaces
 
-## Classes
-
-<dl>
-<dt><a href="#SurfaceEccentricity">SurfaceEccentricity</a></dt>
-<dd></dd>
-<dt><a href="#SurfaceMeshRefinement">SurfaceMeshRefinement</a></dt>
-<dd></dd>
-<dt><a href="#SurfaceStiffnessModification">SurfaceStiffnessModification</a></dt>
-<dd></dd>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#createSurfaceEccentricity">createSurfaceEccentricity(no, surfaces_list, comment, params)</a> ⇒</dt>
-<dd><p>Creates base surface eccentricity</p>
-</dd>
-<dt><a href="#getAlignment">getAlignment(alignment)</a> ⇒</dt>
-<dd><p>Convert string representation of alignment (private)</p>
-</dd>
-<dt><a href="#createSurfaceMeshRefinement">createSurfaceMeshRefinement(no, surface_list, comment, params)</a> ⇒</dt>
-<dd><p>Creates surface mesh refinement (private)</p>
-</dd>
-<dt><a href="#setConcreteStructures">setConcreteStructures(surface_stiffness_modification, stiffness_modification_type, component_type)</a></dt>
-<dd><p>Modifies concrete structures surface stiffness modification (private)</p>
-</dd>
-<dt><a href="#createSurfaceStiffnessModification">createSurfaceStiffnessModification(no, structural_modification, comment, params)</a> ⇒</dt>
-<dd><p>Creates surface stiffness modification</p>
-</dd>
-<dt><a href="#setParameter">setParameter(surface_stiffness_modification, parameter_name, parameter_value)</a></dt>
-<dd><p>Sets parameter to surface stiffness modification object (private)</p>
-</dd>
-<dt><a href="#setStiffnessMatrixValues">setStiffnessMatrixValues(arguments)</a></dt>
-<dd><p>Set load parameters</p>
-</dd>
-</dl>
-
-<a name="SurfaceEccentricity"></a>
 
 ## SurfaceEccentricity
 **Kind**: global class  
 
-* [SurfaceEccentricity](#SurfaceEccentricity)
-    * [new SurfaceEccentricity(no, surfaces_list, comment, params)](#new_SurfaceEccentricity_new)
-    * [.OffsetAndThicknessAssignment(no, surfaces_list, offset, thickness_alignment, comment, params)](#SurfaceEccentricity+OffsetAndThicknessAssignment)
-    * [.TransverseOffset(reference_type, reference_no, offset_alignment)](#SurfaceEccentricity+TransverseOffset)
-
-<a name="new_SurfaceEccentricity_new"></a>
 
 ### new SurfaceEccentricity(no, surfaces_list, comment, params)
 Creates surface eccentricity
@@ -114,15 +70,6 @@ Creates surface mesh refinement
 ## SurfaceStiffnessModification
 **Kind**: global class  
 
-* [SurfaceStiffnessModification](#SurfaceStiffnessModification)
-    * [new SurfaceStiffnessModification(no, structural_modification, comment, params)](#new_SurfaceStiffnessModification_new)
-    * [.TotalStiffnessFactor(no, structural_modification, total_stiffness, comment, params)](#SurfaceStiffnessModification+TotalStiffnessFactor) ⇒
-    * [.PartialStiffnessesFactors(no, structural_modification, bending_stiffness_factor, shear_stiffness, membrane_stiffness, eccentric_effects, weight, comment, params)](#SurfaceStiffnessModification+PartialStiffnessesFactors) ⇒
-    * [.StiffnessMatrixElementsFactors(no, structural_modification, bending_torsional_stiffness_elements, shear_stiffness_elements, membrane_stiffness_elements, eccentric_stiffness_elements, comment, params)](#SurfaceStiffnessModification+StiffnessMatrixElementsFactors) ⇒
-    * [.ConcreteStructuresACI(no, structural_modification, component_type, comment, params)](#SurfaceStiffnessModification+ConcreteStructuresACI) ⇒
-    * [.ConcreteStructuresCSA(no, structural_modification, component_type, comment, params)](#SurfaceStiffnessModification+ConcreteStructuresCSA) ⇒
-
-<a name="new_SurfaceStiffnessModification_new"></a>
 
 ### new SurfaceStiffnessModification(no, structural_modification, comment, params)
 Creates surface stiffness modification

@@ -1,121 +1,9 @@
 # BasicObjects
 
-## Classes
-
-<dl>
-<dt><a href="#Bar">Bar</a></dt>
-<dd></dd>
-<dt><a href="#Line">Line</a></dt>
-<dd></dd>
-<dt><a href="#LineSet">LineSet</a></dt>
-<dd></dd>
-<dt><a href="#Material">Material</a></dt>
-<dd></dd>
-<dt><a href="#Member">Member</a></dt>
-<dd></dd>
-<dt><a href="#MemberSet">MemberSet</a></dt>
-<dd></dd>
-<dt><a href="#Node">Node</a></dt>
-<dd></dd>
-<dt><a href="#Opening">Opening</a></dt>
-<dd></dd>
-<dt><a href="#Dimension">Dimension</a></dt>
-<dd></dd>
-<dt><a href="#ControlPoint">ControlPoint</a></dt>
-<dd></dd>
-<dt><a href="#RSectionElement">RSectionElement</a></dt>
-<dd></dd>
-<dt><a href="#RSectionLine">RSectionLine</a></dt>
-<dd></dd>
-<dt><a href="#RSectionOpening">RSectionOpening</a></dt>
-<dd></dd>
-<dt><a href="#RSectionPart">RSectionPart</a></dt>
-<dd></dd>
-<dt><a href="#RSectionPoint">RSectionPoint</a></dt>
-<dd></dd>
-<dt><a href="#Stiffener">Stiffener</a></dt>
-<dd></dd>
-<dt><a href="#RSectionStressPoint">RSectionStressPoint</a></dt>
-<dd></dd>
-<dt><a href="#Subpanel">Subpanel</a></dt>
-<dd></dd>
-<dt><a href="#Section">Section</a></dt>
-<dd></dd>
-<dt><a href="#Solid">Solid</a></dt>
-<dd></dd>
-<dt><a href="#SolidSet">SolidSet</a></dt>
-<dd></dd>
-<dt><a href="#Stirrup">Stirrup</a></dt>
-<dd></dd>
-<dt><a href="#Surface">Surface</a></dt>
-<dd></dd>
-<dt><a href="#SurfaceSet">SurfaceSet</a></dt>
-<dd></dd>
-<dt><a href="#Thickness">Thickness</a></dt>
-<dd></dd>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#Layer">Layer(no, name, comment, params)</a></dt>
-<dd><p>Creates Layer</p>
-</dd>
-<dt><a href="#getRotationPlane">getRotationPlane(rotation_plane)</a> ⇒</dt>
-<dd><p>Returns rotation plane from string representation (private)</p>
-</dd>
-<dt><a href="#createBaseLine">createBaseLine(no, nodes, comment, params)</a> ⇒</dt>
-<dd><p>Creates line (private)</p>
-</dd>
-<dt><a href="#setDistributionAtStart">setDistributionAtStart()</a></dt>
-<dd><p>Support function for section distributions (private), more info can be find there</p>
-</dd>
-<dt><a href="#setDistributionAtEnd">setDistributionAtEnd()</a></dt>
-<dd><p>Support function for section distributions (private), more info can be find there</p>
-</dd>
-<dt><a href="#setResultBeamObjects">setResultBeamObjects(member, param1_to_set, param2_to_set, value)</a> ⇒</dt>
-<dd><p>Sets result beam objects</p>
-</dd>
-<dt><a href="#createBaseMember">createBaseMember(no, nodes_or_line, type, section_start, comment, params)</a> ⇒</dt>
-<dd><p>Creates member (private)</p>
-</dd>
-<dt><a href="#createBaseRSectionElement">createBaseRSectionElement(no, type, comment, params)</a> ⇒</dt>
-<dd><p>Create base RSection Element</p>
-</dd>
-<dt><a href="#createBaseRSectionLine">createBaseRSectionLine(no, type, comment, params)</a> ⇒</dt>
-<dd><p>Creates RSection base Line</p>
-</dd>
-<dt><a href="#createBaseOpening">createBaseOpening(no, boundary_lines, comment, params)</a> ⇒</dt>
-<dd></dd>
-<dt><a href="#createBaseRSectionPart">createBaseRSectionPart(no, comment, params)</a> ⇒</dt>
-<dd><p>Creates base RSection Part</p>
-</dd>
-<dt><a href="#createBasePoint">createBasePoint(no, coordinate_y, coordinate_z, comment, params)</a> ⇒</dt>
-<dd><p>Creates base RSection Point (private)</p>
-</dd>
-<dt><a href="#createBaseStressPoint">createBaseStressPoint(no, comment, params)</a> ⇒</dt>
-<dd><p>Create RSection Stress Points</p>
-</dd>
-<dt><a href="#createSurfaceWithType">createSurfaceWithType(no, boundary_lines, stiffness_type, thickness, comment, params)</a> ⇒</dt>
-<dd><p>Creates surface (private)</p>
-</dd>
-</dl>
-
-<a name="Bar"></a>
 
 ## Bar
 **Kind**: global class  
 
-* [Bar](#Bar)
-    * [new Bar(no, material_no, layer_no, comment, params)](#new_Bar_new)
-    * [.GetNo()](#Bar+GetNo) ⇒
-    * [.GetBar()](#Bar+GetBar) ⇒
-    * [.MultiUniform(no, material_no, layer_no, distance_between_i_and_j_type, diameter, offset, number_of_bars, comment, params)](#Bar+MultiUniform)
-    * [.MultiVariable(no, material_no, layer_no, distance_between_i_and_j_type, diameter, offset, number_of_bars, axial_distance_si, axial_distance_sn, axial_distance_sj, comment, params)](#Bar+MultiVariable)
-    * [.SingleBetweenTwoPoints(no, material_no, layer_no, distance_between_i_and_j_type, diameter, offset, distance_from_type, distance, relative, comment, params)](#Bar+SingleBetweenTwoPoints)
-    * [.SinglePoint(no, material_no, layer_no, diameter, offset_y, offset_z, comment, params)](#Bar+SinglePoint)
-
-<a name="new_Bar_new"></a>
 
 ### new Bar(no, material_no, layer_no, comment, params)
 Creates RSECTION Bar
@@ -224,27 +112,6 @@ Creates Single point Bar
 ## Line
 **Kind**: global class  
 
-* [Line](#Line)
-    * [new Line(no, nodes, comment, params)](#new_Line_new)
-    * [.GetNo()](#Line+GetNo) ⇒
-    * [.GetLine()](#Line+GetLine) ⇒
-    * [.Polyline(no, nodes, comment, params)](#Line+Polyline)
-    * [.Arc(no, nodes, control_point, arc_parameters, center_of_arc, alpha_adjustement_target, comment, params)](#Line+Arc)
-    * [.Circle(no, center_of_circle, circle_radius, normal_point, comment, params)](#Line+Circle)
-    * [.EllipticalArc(no, control_point_1, control_point_2, perimeter_point, elliptical_arc_alpha, elliptical_arc_beta, comment, params)](#Line+EllipticalArc)
-    * [.Ellipse(no, nodes, control_point, comment, params)](#Line+Ellipse)
-    * [.Parabola(no, nodes, control_point, parabola_alpha, comment, params)](#Line+Parabola)
-    * [.Spline(no, nodes, comment, params)](#Line+Spline)
-    * [.NURBS(no, nodes, control_points_by_components, nurbs_order, comment, params)](#Line+NURBS)
-    * [.RectangularPolygon(no, center_point, length, width, plane, comment, params)](#Line+RectangularPolygon) ⇒
-    * [.nPolygon(no, control_point, no_edges, radius, rotation_plane, rotation_angle, join, comment, params)](#Line+nPolygon) ⇒
-    * [.Rotation(rotation_values, rotation_type)](#Line+Rotation)
-    * [.NodesOnLine(values)](#Line+NodesOnLine)
-    * [.Supports(line_support)](#Line+Supports)
-    * [.MeshRefinement(line_mesh_refinement)](#Line+MeshRefinement)
-    * [.WeldedJoints(values)](#Line+WeldedJoints)
-
-<a name="new_Line_new"></a>
 
 ### new Line(no, nodes, comment, params)
 Creates line
@@ -504,12 +371,6 @@ Sets line welded joints
 ## LineSet
 **Kind**: global class  
 
-* [LineSet](#LineSet)
-    * [new LineSet(no, lines, comment, params)](#new_LineSet_new)
-    * [.ContinuousLines(no, lines, comment, params)](#LineSet+ContinuousLines)
-    * [.GroupOfLines(no, lines, comment, params)](#LineSet+GroupOfLines)
-
-<a name="new_LineSet_new"></a>
 
 ### new LineSet(no, lines, comment, params)
 **Returns**: lineSet  
@@ -554,11 +415,6 @@ Create Group of Lines
 ## Material
 **Kind**: global class  
 
-* [Material](#Material)
-    * [new Material(no, name, basic_material, comment, params)](#new_Material_new)
-    * [.BasicProperties(modulus_of_elasticity, shear_modulus, definition_type, poisson_ratio, specific_weight, mass_density, thermal_coefficient)](#Material+BasicProperties) ⇒
-
-<a name="new_Material_new"></a>
 
 ### new Material(no, name, basic_material, comment, params)
 Create Material
@@ -595,52 +451,6 @@ Sets base material properties
 ## Member
 **Kind**: global class  
 
-* [Member](#Member)
-    * [new Member(no, nodes_or_line, comment, params)](#new_Member_new)
-    * [.GetNo()](#Member+GetNo) ⇒
-    * [.GetMember()](#Member+GetMember) ⇒
-    * [.Beam(no, nodes_or_line, section_start, comment, params)](#Member+Beam) ⇒
-    * [.Rigid(no, nodes_or_line, comment, params)](#Member+Rigid) ⇒
-    * [.Truss(no, nodes_or_line, section_start, comment, params)](#Member+Truss) ⇒
-    * [.TrussOnlyN(no, nodes_or_line, section_start, comment, params)](#Member+TrussOnlyN) ⇒
-    * [.Tension(no, nodes_or_line, section_start, comment, params)](#Member+Tension) ⇒
-    * [.Compression(no, nodes_or_line, section_start, comment, params)](#Member+Compression) ⇒
-    * [.Buckling(no, nodes_or_line, section_start, comment, params)](#Member+Buckling) ⇒
-    * [.Cable(no, nodes_or_line, section_start, comment, params)](#Member+Cable) ⇒
-    * [.SurfaceModel(no, nodes_or_line, section_start, material_no, comment, params)](#Member+SurfaceModel) ⇒
-    * [.ResultBeam(no, nodes_or_line, section_start, result_beam_integrate_stresses_and_forces, result_beam_parameters, included_objects, excluded_objects, comment, params)](#Member+ResultBeam) ⇒
-    * [.DefinableStiffness(no, nodes_or_line, definable_stiffness, comment, params)](#Member+DefinableStiffness) ⇒
-    * [.CouplingRigidRigid(no, nodes_or_line, comment, params)](#Member+CouplingRigidRigid) ⇒
-    * [.CouplingRigidHinge(no, nodes_or_line, comment, params)](#Member+CouplingRigidHinge) ⇒
-    * [.CouplingHingeRigid(no, nodes_or_line, comment, params)](#Member+CouplingHingeRigid) ⇒
-    * [.CouplingHingeHinge(no, nodes_or_line, comment, params)](#Member+CouplingHingeHinge) ⇒
-    * [.Rib(nodes_or_line, no, section_start, rib_alignment, surface_assignment_autodetect, align_axes, flange_dimensions, surfaces, comment, params)](#Member+Rib) ⇒
-    * [.NodesOnMember(values)](#Member+NodesOnMember)
-    * [.Hinges(member_start_hinge, member_end_hinge)](#Member+Hinges)
-    * [.Eccentricities(member_start_eccentricity, member_end_eccentricity)](#Member+Eccentricities)
-    * [.Supports(member_support)](#Member+Supports)
-    * [.Nonlinearity(member_nonlinearity)](#Member+Nonlinearity)
-    * [.ResultIntermediatePoints(member_result_intermediate_point)](#Member+ResultIntermediatePoints)
-    * [.EndModifications(member_start, member_end)](#Member+EndModifications)
-    * [.SectionDistributionUniform()](#Member+SectionDistributionUniform)
-    * [.SectionDistributionLinear(section_start, section_end, section_alignment)](#Member+SectionDistributionLinear)
-    * [.SectionDistributionTaperedAtBothSides(section_start, section_internal, section_end, reference_type, section_distance_from_start, section_distance_from_end, section_alignment)](#Member+SectionDistributionTaperedAtBothSides)
-    * [.SectionDistributionTaperedAtStart(section_start, section_end, reference_type, section_distance_from_start, section_alignment)](#Member+SectionDistributionTaperedAtStart)
-    * [.SectionDistributionTaperedAtEnd(section_start, section_end, reference_type, section_distance_from_end, section_alignment)](#Member+SectionDistributionTaperedAtEnd)
-    * [.SectionDistributionSaddle(section_start, section_internal, section_end, reference_type, section_distance_from_start, section_alignment)](#Member+SectionDistributionSaddle)
-    * [.SectionDistributionOffsetAtBothSides(section_start, section_internal, section_end, reference_type, section_offset_from_start, section_offset_from_end, section_alignment)](#Member+SectionDistributionOffsetAtBothSides)
-    * [.SectionDistributionOffsetAtStart(section_start, section_end, reference_type, section_offset_from_start, section_alignment)](#Member+SectionDistributionOffsetAtStart)
-    * [.SectionDistributionOffsetAtEnd(reference_type, section_offset_from_end, section_alignment)](#Member+SectionDistributionOffsetAtEnd)
-    * [.GetNo()](#Member+GetNo) ⇒
-    * [.GetMember()](#Member+GetMember) ⇒
-    * [.SetSteelDesignProperties(enabled)](#Member+SetSteelDesignProperties)
-    * [.SetSteelDesignPropertiesViaParentMemberSet(design_properties_via_parent_member_set)](#Member+SetSteelDesignPropertiesViaParentMemberSet)
-    * [.SetSteelDesignTypes(steel_effective_lengths_no, steel_boundary_conditions_no, steel_member_local_section_reduction_no)](#Member+SetSteelDesignTypes)
-    * [.SetSteeleDesignConfigurations(member_steel_design_uls_configuration_no, member_steel_design_sls_configuration_no, member_steel_design_fr_configuration_no)](#Member+SetSteeleDesignConfigurations)
-    * [.SetDesignSupport(design_support_on_member_start, design_support_on_member_end)](#Member+SetDesignSupport)
-    * [.SetDeflectionAnalysis(deflection_check_direction, deflection_check_displacement_reference, active_z, length_z, precamber_z, active_y, length_y, precamber_y)](#Member+SetDeflectionAnalysis)
-
-<a name="new_Member_new"></a>
 
 ### new Member(no, nodes_or_line, comment, params)
 Creates member
@@ -1221,20 +1031,6 @@ Sets Deflection analysis
 ## MemberSet
 **Kind**: global class  
 
-* [MemberSet](#MemberSet)
-    * [new MemberSet(no, members, comment, params)](#new_MemberSet_new)
-    * [.GetNo()](#MemberSet+GetNo) ⇒
-    * [.GetMemberSet()](#MemberSet+GetMemberSet) ⇒
-    * [.SetSteelDesignProperties(enabled)](#MemberSet+SetSteelDesignProperties)
-    * [.SetSteelDesignTypes(steel_effective_lengths_no, steel_boundary_conditions_no, steel_member_local_section_reduction_no)](#MemberSet+SetSteelDesignTypes)
-    * [.SetSteeleDesignConfigurations(member_steel_design_uls_configuration_no, member_steel_design_sls_configuration_no, member_steel_design_fr_configuration_no)](#MemberSet+SetSteeleDesignConfigurations)
-    * [.ContinuousMembers(no, members, comment, params)](#MemberSet+ContinuousMembers)
-    * [.GroupOfMembers(no, members, comment, params)](#MemberSet+GroupOfMembers)
-    * [.SetDesignSupport(design_support_on_member_set_start, design_support_on_member_set_end)](#MemberSet+SetDesignSupport)
-    * [.SetDesignSupportAtInternalNodes()](#MemberSet+SetDesignSupportAtInternalNodes)
-    * [.SetDeflectionAnalysis(deflection_check_direction, deflection_check_displacement_reference, segments_in_z_axis, active_y, length_y, precamber_y)](#MemberSet+SetDeflectionAnalysis)
-
-<a name="new_MemberSet_new"></a>
 
 ### new MemberSet(no, members, comment, params)
 Create Member Set
@@ -1362,15 +1158,6 @@ Sets Deflection analysis
 ## Node
 **Kind**: global class  
 
-* [Node](#Node)
-    * [new Node(no, coordinate_X, coordinate_Y, coordinate_Z, comment, params)](#new_Node_new)
-    * [.Standard(no, coordinates, coordinate_system_type, comment, params)](#Node+Standard)
-    * [.BetweenTwoNodes(no, start_node_no, end_node_no, node_reference, parameters, offset_y, offset_z, comment, params)](#Node+BetweenTwoNodes)
-    * [.BetweenTwoPoints(no, start_point, end_point, node_reference, parameters, offset_y, offset_z, comment, params)](#Node+BetweenTwoPoints)
-    * [.OnLine(no, line_number, node_reference, parameters, comment, params)](#Node+OnLine)
-    * [.OnMember(no, member_number, node_reference, parameters, comment, params)](#Node+OnMember)
-
-<a name="new_Node_new"></a>
 
 ### new Node(no, coordinate_X, coordinate_Y, coordinate_Z, comment, params)
 Create Node
@@ -1475,7 +1262,7 @@ Create Node on Member
 
 ## Opening
 **Kind**: global class  
-<a name="new_Opening_new"></a>
+
 
 ### new Opening(no, boundary_lines, comment, params)
 Create Opening
@@ -1493,7 +1280,7 @@ Create Opening
 
 ## Dimension
 **Kind**: global class  
-<a name="new_Dimension_new"></a>
+
 
 ### new Dimension(no, comment, params)
 Create RSection Dimensions
@@ -1510,7 +1297,7 @@ Create RSection Dimensions
 
 ## ControlPoint
 **Kind**: global class  
-<a name="new_ControlPoint_new"></a>
+
 
 ### new ControlPoint(no, comment, params)
 Create RSection Control Point
@@ -1528,17 +1315,6 @@ Create RSection Control Point
 ## RSectionElement
 **Kind**: global class  
 
-* [RSectionElement](#RSectionElement)
-    * [new RSectionElement(no, type, comment, params)](#new_RSectionElement_new)
-    * [.SingleLine(no, boundary_lines, thickness, shear_thickness, comment, params)](#RSectionElement+SingleLine) ⇒
-    * [.Arc(no, points_of_arc, control_point, thickness, shear_thickness, arc_parameters, arc_center, alpha_adjustment_target, comment, params)](#RSectionElement+Arc) ⇒
-    * [.Circle(no, circle_center, circle_radius, thickness, shear_thickness, comment, params)](#RSectionElement+Circle) ⇒
-    * [.Ellipse(no, first_point, second_point, control_point, thickness, shear_thickness, comment, params)](#RSectionElement+Ellipse) ⇒
-    * [.Parabola(no, points_of_parabola, control_point, thickness, shear_thickness, parabola_alpha, comment, params)](#RSectionElement+Parabola) ⇒
-    * [.NURBS(no, control_points, nurbs_order, nurbs_knots, thickness, shear_thickness, comment, params)](#RSectionElement+NURBS) ⇒
-    * [.Thickness(thickness, shear_thickness)](#RSectionElement+Thickness) ⇒
-
-<a name="new_RSectionElement_new"></a>
 
 ### new RSectionElement(no, type, comment, params)
 Create RSection Element
@@ -1683,19 +1459,6 @@ Sets thickness and/or shear thickness
 ## RSectionLine
 **Kind**: global class  
 
-* [RSectionLine](#RSectionLine)
-    * [new RSectionLine(no, type, comment, params)](#new_RSectionLine_new)
-    * [.GetNo()](#RSectionLine+GetNo) ⇒
-    * [.GetLine()](#RSectionLine+GetLine) ⇒
-    * [.Polyline(no, definition_points, comment, params)](#RSectionLine+Polyline) ⇒
-    * [.Arc(no, points_of_arc, control_point, arc_parameters, arc_center, alpha_adjustment_target, comment, params)](#RSectionLine+Arc) ⇒
-    * [.Circle(no, circle_center, circle_radius, comment, params)](#RSectionLine+Circle) ⇒
-    * [.Ellipse(no, first_point, second_point, control_point, comment, params)](#RSectionLine+Ellipse) ⇒
-    * [.Parabola(no, points_of_parabola, control_point, parabola_alpha, comment, params)](#RSectionLine+Parabola) ⇒
-    * [.NURBS(no, definition_points, control_points, nurbs_order, nurbs_knots, comment, params)](#RSectionLine+NURBS) ⇒
-    * [.PointsOnLine(points_on_line)](#RSectionLine+PointsOnLine)
-
-<a name="new_RSectionLine_new"></a>
 
 ### new RSectionLine(no, type, comment, params)
 Creates RSection Line
@@ -1837,14 +1600,6 @@ Sets points on line
 ## RSectionOpening
 **Kind**: global class  
 
-* [RSectionOpening](#RSectionOpening)
-    * [new RSectionOpening(no, boundary_lines, comment, params)](#new_RSectionOpening_new)
-    * [.Rectangle(no, top_left_corner, width, height, comment, params)](#RSectionOpening+Rectangle) ⇒
-    * [.Triangle(no, first_vertex, second_vertex, third_vertex, comment, params)](#RSectionOpening+Triangle) ⇒
-    * [.Circle(no, center_vertex, radius, comment, params)](#RSectionOpening+Circle) ⇒
-    * [.Polygon(no, vertex_points, comment, params)](#RSectionOpening+Polygon) ⇒
-
-<a name="new_RSectionOpening_new"></a>
 
 ### new RSectionOpening(no, boundary_lines, comment, params)
 Creates RSection Opening
@@ -1928,17 +1683,6 @@ Creates polygon Opening
 ## RSectionPart
 **Kind**: global class  
 
-* [RSectionPart](#RSectionPart)
-    * [new RSectionPart(no, comment, params)](#new_RSectionPart_new)
-    * [.Rectangle(no, top_left_corner, width, height, material, comment, params)](#RSectionPart+Rectangle) ⇒
-    * [.Triangle(no, first_vertex, second_vertex, third_vertex, material, comment, params)](#RSectionPart+Triangle) ⇒
-    * [.Circle(no, center_vertex, radius, material, comment, params)](#RSectionPart+Circle) ⇒
-    * [.Polygon(no, vertex_points, material, comment, params)](#RSectionPart+Polygon) ⇒
-    * [.WithBoundaryLines(no, boundary_lines, material, comment, params)](#RSectionPart+WithBoundaryLines) ⇒
-    * [.IntegratedObjects(enable, automatic_object_detection, integrated_openings)](#RSectionPart+IntegratedObjects) ⇒
-    * [.No()](#RSectionPart+No) ⇒
-
-<a name="new_RSectionPart_new"></a>
 
 ### new RSectionPart(no, comment, params)
 Creates RSection Part
@@ -2062,18 +1806,6 @@ Returns number of Part
 ## RSectionPoint
 **Kind**: global class  
 
-* [RSectionPoint](#RSectionPoint)
-    * [new RSectionPoint(no, coordinate_y, coordinate_z, comment, params)](#new_RSectionPoint_new)
-    * [.GetNo()](#RSectionPoint+GetNo) ⇒
-    * [.GetPoint()](#RSectionPoint+GetPoint) ⇒
-    * [.y()](#RSectionPoint+y)
-    * [.z()](#RSectionPoint+z)
-    * [.Standard(no, coordinate_y, coordinate_z, reference_point, comment, params)](#RSectionPoint+Standard) ⇒
-    * [.BetweenTwoLocations(no, start_location, end_location, distance_from_start, distance_from_end, distance_from_start_relative, reference_type, offset_in_local_direction, comment, params)](#RSectionPoint+BetweenTwoLocations) ⇒
-    * [.BetweenTwoPoints(no, start_point, end_point, distance_from_start, distance_from_end, distance_from_start_relative, reference_type, offset_in_local_direction, comment, params)](#RSectionPoint+BetweenTwoPoints) ⇒
-    * [.OnLine(no, line, distance_from_start, distance_from_end, distance_from_start_relative, reference_type, comment, params)](#RSectionPoint+OnLine) ⇒
-
-<a name="new_RSectionPoint_new"></a>
 
 ### new RSectionPoint(no, coordinate_y, coordinate_z, comment, params)
 Creates RSection Point
@@ -2192,7 +1924,7 @@ Creates On lines RSection Point
 
 ## Stiffener
 **Kind**: global class  
-<a name="new_Stiffener_new"></a>
+
 
 ### new Stiffener(no, comment, params)
 Create RSection Stiffener
@@ -2210,13 +1942,6 @@ Create RSection Stiffener
 ## RSectionStressPoint
 **Kind**: global class  
 
-* [RSectionStressPoint](#RSectionStressPoint)
-    * [new RSectionStressPoint(no, comment, params)](#new_RSectionStressPoint_new)
-    * [.Standard(no, part_no, reference_stress_point_no, non_global_coordinates, global_coordinations, element_no, comment, params)](#RSectionStressPoint+Standard) ⇒
-    * [.OnLine(no, line_no, distance_points, reference_type, part_no, element_no, comment, params)](#RSectionStressPoint+OnLine) ⇒
-    * [.OnElement(no, element_no, distance_points, reference_type, element_side, comment, params)](#RSectionStressPoint+OnElement) ⇒
-
-<a name="new_RSectionStressPoint_new"></a>
 
 ### new RSectionStressPoint(no, comment, params)
 Create RSection Stress Points
@@ -2289,7 +2014,7 @@ Creates stress point on element
 
 ## Subpanel
 **Kind**: global class  
-<a name="new_Subpanel_new"></a>
+
 
 ### new Subpanel(no, comment, params)
 Create RSection Subpanel
@@ -2307,25 +2032,6 @@ Create RSection Subpanel
 ## Section
 **Kind**: global class  
 
-* [Section](#Section)
-    * [new Section(no, section_name, material_no, comment, params)](#new_Section_new)
-    * [.GetNo()](#Section+GetNo) ⇒
-    * [.SectionType(section_type)](#Section+SectionType) ⇒
-    * [.ManufacturingType(manufacturing_type)](#Section+ManufacturingType) ⇒
-    * [.SectionProperties(area_shear_y, area_shear_z, warping, width_temperature_load, depth_temperature_load)](#Section+SectionProperties) ⇒
-    * [.DeactivateShearStiffness(deactivated)](#Section+DeactivateShearStiffness) ⇒
-    * [.Rotation(rotation_angle)](#Section+Rotation) ⇒
-    * [.ThinWalledModel(thin_walled_model)](#Section+ThinWalledModel) ⇒
-    * [.UsNotation(us_spelling_of_properties)](#Section+UsNotation) ⇒
-    * [.StressSmoothing(stress_smoothing_to_avoid_singularities)](#Section+StressSmoothing) ⇒
-    * [.DeactivateWarpingStiffness(deactivated)](#Section+DeactivateWarpingStiffness) ⇒
-    * [.CostEstimation(cost_estimation)](#Section+CostEstimation) ⇒
-    * [.CostEstimationValues(member_weight, member_volume, member_surface, member_length)](#Section+CostEstimationValues) ⇒
-    * [.EmissionEstimation(emission_estimation)](#Section+EmissionEstimation) ⇒
-    * [.EmissionEstimationValues(member_weight, member_volume, member_surface, member_length)](#Section+EmissionEstimationValues) ⇒
-    * [.Optimization(optimization)](#Section+Optimization) ⇒
-
-<a name="new_Section_new"></a>
 
 ### new Section(no, section_name, material_no, comment, params)
 Create Section
@@ -2528,13 +2234,6 @@ Sets optimization
 ## Solid
 **Kind**: global class  
 
-* [Solid](#Solid)
-    * [new Solid(no, boundary_surfaces, material, comment, params)](#new_Solid_new)
-    * [.Standard(no, boundary_surfaces, material, comment, params)](#Solid+Standard)
-    * [.Gas(no, boundary_surfaces, material, gasssolid_no, comment, params)](#Solid+Gas)
-    * [.Contact(no, boundary_surfaces, material, contact_solid_no, first_contact_surface, comment, params)](#Solid+Contact)
-
-<a name="new_Solid_new"></a>
 
 ### new Solid(no, boundary_surfaces, material, comment, params)
 Create Solid
@@ -2602,12 +2301,6 @@ Create Contact solid
 ## SolidSet
 **Kind**: global class  
 
-* [SolidSet](#SolidSet)
-    * [new SolidSet(no, solids_no, solid_set_type, comment, params)](#new_SolidSet_new)
-    * [.ContinuousSolids(no, solids_no, comment, params)](#SolidSet+ContinuousSolids)
-    * [.GroupOfSolids(no, solids_no, comment, params)](#SolidSet+GroupOfSolids)
-
-<a name="new_SolidSet_new"></a>
 
 ### new SolidSet(no, solids_no, solid_set_type, comment, params)
 Create Solid Set
@@ -2655,12 +2348,6 @@ Create Group of Solids
 ## Stirrup
 **Kind**: global class  
 
-* [Stirrup](#Stirrup)
-    * [new Stirrup(no, cover_points_no, material_no, diameter, diameter_of_curvature, mandrel_diameter_factor, comment, params)](#new_Stirrup_new)
-    * [.GetNo()](#Stirrup+GetNo) ⇒
-    * [.GetStirrup()](#Stirrup+GetStirrup) ⇒
-
-<a name="new_Stirrup_new"></a>
 
 ### new Stirrup(no, cover_points_no, material_no, diameter, diameter_of_curvature, mandrel_diameter_factor, comment, params)
 Creates RSECTION Stirrup
@@ -2692,46 +2379,6 @@ Creates RSECTION Stirrup
 ## Surface
 **Kind**: global class  
 
-* [Surface](#Surface)
-    * [new Surface(no, boundary_lines, thickness, comment, params)](#new_Surface_new)
-    * [.GetSurface()](#Surface+GetSurface) ⇒
-    * [.GetNo()](#Surface+GetNo) ⇒
-    * [.Standard(no, boundary_lines, thickness, comment, params)](#Surface+Standard) ⇒
-    * [.WithoutThickness(no, boundary_lines, comment, params)](#Surface+WithoutThickness) ⇒
-    * [.Rigid(no, boundary_lines, comment, params)](#Surface+Rigid) ⇒
-    * [.Membrane(no, boundary_lines, thickness, comment, params)](#Surface+Membrane) ⇒
-    * [.WithoutMembraneTension(no, boundary_lines, thickness, comment, params)](#Surface+WithoutMembraneTension) ⇒
-    * [.LoadTransfer(no, boundary_lines, load_transfer_direction, load_distribution, comment, params)](#Surface+LoadTransfer) ⇒
-    * [.RemoveInfluenceFrom(excluded_members_no, excluded_parallel_to_members, excluded_lines, excluded_parallel_to_lines, excluded_nodes)](#Surface+RemoveInfluenceFrom)
-    * [.SurfaceWeight(surface_weight)](#Surface+SurfaceWeight)
-    * [.ConsiderMemberEccentricity(consider_member_eccentricity)](#Surface+ConsiderMemberEccentricity)
-    * [.ConsiderSectionDistribution(consider_section_distribution)](#Surface+ConsiderSectionDistribution)
-    * [.AdvancedDistribution(stripe_width, sampling_factor, enabled)](#Surface+AdvancedDistribution)
-    * [.NeglectEquilibriumOfMoments(neglect_equilibrium_of_moments)](#Surface+NeglectEquilibriumOfMoments)
-    * [.SurfaceType(stiffness_type, material, thickness)](#Surface+SurfaceType)
-    * [.Plane()](#Surface+Plane)
-    * [.Quadrangle(no, boundary_lines, stiffness_type, thickness, boundary_line, corner_node_1, corner_node_2, corner_node_3, corner_node_4, comment, params)](#Surface+Quadrangle)
-    * [.NURBS()](#Surface+NURBS)
-    * [.Rotated(no, boundary_lines, thickness, boundary_line, angle_of_rotation, rotation_axis_p, rotation_axis_r, comment, params)](#Surface+Rotated)
-    * [.Pipe(center_line, radius)](#Surface+Pipe)
-    * [.Hinges(hinges_values)](#Surface+Hinges)
-    * [.Support(support)](#Surface+Support)
-    * [.Eccentricity(eccentricity)](#Surface+Eccentricity)
-    * [.MeshRefinement(mesh_refinement, meshing_type)](#Surface+MeshRefinement)
-    * [.SpecificAxes(input_axes, result_axes)](#Surface+SpecificAxes)
-    * [.GridForResults(grid_type, number_of_grid_points, grid_adapt_automatically, grid_distances, grid_rotation, grid_origin)](#Surface+GridForResults)
-    * [.IntegratedObjects(auto_detection_of_integrated_objects, integrated_nodes, integrated_lines, integrated_openings)](#Surface+IntegratedObjects)
-    * [.ConcreteDesignProperties(enabled)](#Surface+ConcreteDesignProperties)
-    * [.SetConcreteDesignPropertiesViaParentSurfaceSet(design_properties_via_parent_surface_set)](#Surface+SetConcreteDesignPropertiesViaParentSurfaceSet)
-    * [.SetUserDefinedConcreteCover(concrete_cover_top, concrete_cover_bottom, is_user_defined_concrete_cover_enabled)](#Surface+SetUserDefinedConcreteCover)
-    * [.SetConcreteCoverAccToEn1992()](#Surface+SetConcreteCoverAccToEn1992)
-    * [.SetAssignments(surface_concrete_design_uls_configuration, surface_concrete_design_sls_configuration)](#Surface+SetAssignments)
-    * [.SetConcreteDesignReinforcementDirections(reinforcement_direction_top, reinforcement_direction_bottom)](#Surface+SetConcreteDesignReinforcementDirections)
-    * [.SetConcreteDesignConcreteDurability(concrete_durability_top, concrete_durability_bottom)](#Surface+SetConcreteDesignConcreteDurability)
-    * [.SetConcreteDesignSurfaceReinforcement(surface_reinforcement_nos)](#Surface+SetConcreteDesignSurfaceReinforcement)
-    * [.SetDeflectionAnalysis(deflection_check_surface_type, deflection_check_displacement_reference, deflection_check_reference_length_z_definition_type, deflection_check_reference_length_z)](#Surface+SetDeflectionAnalysis)
-
-<a name="new_Surface_new"></a>
 
 ### new Surface(no, boundary_lines, thickness, comment, params)
 Creates surface
@@ -3192,14 +2839,6 @@ Sets Deflection analysis
 ## SurfaceSet
 **Kind**: global class  
 
-* [SurfaceSet](#SurfaceSet)
-    * [new SurfaceSet(no, surfaces, surface_set_type, comment, params)](#new_SurfaceSet_new)
-    * [.GetSurfaceSet()](#SurfaceSet+GetSurfaceSet) ⇒
-    * [.GetNo()](#SurfaceSet+GetNo) ⇒
-    * [.ContinuousSurfaces(no, surfaces, comment, params)](#SurfaceSet+ContinuousSurfaces)
-    * [.GroupOfSurfaces(no, surfaces, comment, params)](#SurfaceSet+GroupOfSurfaces)
-
-<a name="new_SurfaceSet_new"></a>
 
 ### new SurfaceSet(no, surfaces, surface_set_type, comment, params)
 Create Surface Set
@@ -3257,20 +2896,6 @@ Create Group of Surfaces
 ## Thickness
 **Kind**: global class  
 
-* [Thickness](#Thickness)
-    * [new Thickness(no, name, material, uniform_thickness_d, comment, params)](#new_Thickness_new)
-    * [.GetThickness()](#Thickness+GetThickness) ⇒
-    * [.GetNo()](#Thickness+GetNo) ⇒
-    * [.Uniform(no, name, material, thickness, comment, params)](#Thickness+Uniform)
-    * [.Variable_3Nodes(no, name, material, thicknessProperties, comment, params)](#Thickness+Variable_3Nodes)
-    * [.Variable_2NodesAndDirection(no, name, material, thicknessProperties, comment, params)](#Thickness+Variable_2NodesAndDirection)
-    * [.Variable_4SurfaceCorners(no, name, material, thicknessProperties, comment, params)](#Thickness+Variable_4SurfaceCorners)
-    * [.Variable_Circle(no, name, material, thicknessProperties, comment, params)](#Thickness+Variable_Circle)
-    * [.Layers(no, name, layers, comment, params)](#Thickness+Layers)
-    * [.ShapeOrthotropy(no, name, layers, orthotropy_type, rotation_beta, consideration_of_self_weight, parameters, comment, params)](#Thickness+ShapeOrthotropy)
-    * [.StiffnessMatrix(no, name, rotation_beta, consideration_of_self_weight, coefficient_of_thermal_expansion, stiffness_matrix, comment, params)](#Thickness+StiffnessMatrix)
-
-<a name="new_Thickness_new"></a>
 
 ### new Thickness(no, name, material, uniform_thickness_d, comment, params)
 Create Thickness
@@ -3442,12 +3067,6 @@ Creates Layer
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Additional parameters, can be undefined |
 
-
-* [Layer(no, name, comment, params)](#Layer)
-    * [.GetNo()](#Layer+GetNo)
-    * [.GetLayer()](#Layer+GetLayer)
-
-<a name="Layer+GetNo"></a>
 
 ### layer.GetNo()
 Returns layer number

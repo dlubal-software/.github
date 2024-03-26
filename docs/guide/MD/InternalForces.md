@@ -1,35 +1,9 @@
 # InternalForces
 
-## Classes
-
-<dl>
-<dt><a href="#RSectionInternalForces">RSectionInternalForces</a></dt>
-<dd></dd>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#get_internal_forces_system_types">get_internal_forces_system_types()</a></dt>
-<dd><p>Shows list of all available internal forces system types</p>
-</dd>
-</dl>
-
-<a name="RSectionInternalForces"></a>
 
 ## RSectionInternalForces
 **Kind**: global class  
 
-* [RSectionInternalForces](#RSectionInternalForces)
-    * [new RSectionInternalForces(no, load_case_no, internal_forces_system, member_no, location_x, comment, params)](#new_RSectionInternalForces_new)
-    * [.AxialForce(axial_force)](#RSectionInternalForces+AxialForce) ⇒
-    * [.ShearForces(shear_force_1, shear_force_2)](#RSectionInternalForces+ShearForces) ⇒
-    * [.TorsionalMoments(torsional_moment_m_xp, torsional_moment_m_xs)](#RSectionInternalForces+TorsionalMoments) ⇒
-    * [.BendingMoments(bending_moment_1, bending_moment_2)](#RSectionInternalForces+BendingMoments) ⇒
-    * [.Bimoment(bimoment_m_omega)](#RSectionInternalForces+Bimoment) ⇒
-    * [.AssignInternalForces(axial_force, shear_forces, torsional_moments, bending_moments, bimoment)](#RSectionInternalForces+AssignInternalForces)
-
-<a name="new_RSectionInternalForces_new"></a>
 
 ### new RSectionInternalForces(no, load_case_no, internal_forces_system, member_no, location_x, comment, params)
 Creates Internal forces

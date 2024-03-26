@@ -1,74 +1,9 @@
 # LoadWizards
 
-## Classes
-
-<dl>
-<dt><a href="#MemberLoadFromAreaLoadWizard">MemberLoadFromAreaLoadWizard</a></dt>
-<dd></dd>
-<dt><a href="#MemberLoadFromFreeLineLoadWizard">MemberLoadFromFreeLineLoadWizard</a></dt>
-<dd></dd>
-<dt><a href="#SnowLoadWizard">SnowLoadWizard</a></dt>
-<dd></dd>
-<dt><a href="#WindLoadWizard">WindLoadWizard</a></dt>
-<dd></dd>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#createBaseMemberLoadFromAreaLoadWizard">createBaseMemberLoadFromAreaLoadWizard(no, load_case, comment, params)</a> ⇒</dt>
-<dd><p>Creates member load wizard (private)</p>
-</dd>
-<dt><a href="#setMemberLoadFromAreaLoadWizardDistribution">setMemberLoadFromAreaLoadWizardDistribution(member_wizard, load_distribution, load_distribution_values)</a> ⇒</dt>
-<dd><p>Sets load distribution to member load wizard (private)</p>
-</dd>
-<dt><a href="#createBaseMemberLoadFromFreeLineLoadWizard">createBaseMemberLoadFromFreeLineLoadWizard(no, load_case, comment, params)</a> ⇒</dt>
-<dd><p>Creates member load wizard (private)</p>
-</dd>
-<dt><a href="#setMemberLoadFromFreeLineLoadWizardDistribution">setMemberLoadFromFreeLineLoadWizardDistribution(member_wizard, load_distribution, load_distribution_values)</a> ⇒</dt>
-<dd><p>Sets load distribution to member load wizard (private)</p>
-</dd>
-<dt><a href="#withoutLoadsOn">withoutLoadsOn(snow_load_wizard, table_row, objects_without_loads, objects_without_loads_parallel_to)</a></dt>
-<dd><p>Sets objects without load (private)</p>
-</dd>
-<dt><a href="#createSnowLoadWizard">createSnowLoadWizard(no, comment, params)</a></dt>
-<dd><p>Creates empty snow load wizard (private)</p>
-</dd>
-<dt><a href="#setWindDirections">setWindDirections(wind_load_wizard, roof_sides_accessibility)</a></dt>
-<dd><p>Sets wind perpendicular to roofs (private)</p>
-</dd>
-<dt><a href="#withoutLoadsOn">withoutLoadsOn(wind_load_wizard, table_row, objects_without_loads, objects_without_loads_parallel_to)</a></dt>
-<dd><p>Sets objects without load (private)</p>
-</dd>
-<dt><a href="#createWindLoadWizard">createWindLoadWizard(no, comment, params)</a></dt>
-<dd><p>Creates empty wind load wizard (private)</p>
-</dd>
-</dl>
-
-<a name="MemberLoadFromAreaLoadWizard"></a>
 
 ## MemberLoadFromAreaLoadWizard
 **Kind**: global class  
 
-* [MemberLoadFromAreaLoadWizard](#MemberLoadFromAreaLoadWizard)
-    * [new MemberLoadFromAreaLoadWizard(no, load_case, comment, params)](#new_MemberLoadFromAreaLoadWizard_new)
-    * [.Uniform(no, load_case, uniform_magnitude, coordinate_system, load_direction, comment, params)](#MemberLoadFromAreaLoadWizard+Uniform)
-    * [.Linear(no, load_case, magnitude_1, node_1, magnitude_2, node_2, magnitude_3, node_3, coordinate_system, load_direction, comment, params)](#MemberLoadFromAreaLoadWizard+Linear)
-    * [.VaryingInX(no, load_case, load_distribution_values, coordinate_system, load_direction, comment, params)](#MemberLoadFromAreaLoadWizard+VaryingInX)
-    * [.VaryingInY(no, load_case, load_distribution_values, coordinate_system, load_direction, comment, params)](#MemberLoadFromAreaLoadWizard+VaryingInY)
-    * [.VaryingInZ(no, load_case, load_distribution_values, coordinate_system, load_direction, comment, params)](#MemberLoadFromAreaLoadWizard+VaryingInZ)
-    * [.SetCornerNodes(corner_nodes)](#MemberLoadFromAreaLoadWizard+SetCornerNodes)
-    * [.SetExcludedMembers(excluded_members, excluded_parallel_members)](#MemberLoadFromAreaLoadWizard+SetExcludedMembers)
-    * [.LockForNewMembers(lock_for_new_members)](#MemberLoadFromAreaLoadWizard+LockForNewMembers)
-    * [.SmoothConcentratedLoad(smooth_punctual_load_enabled)](#MemberLoadFromAreaLoadWizard+SmoothConcentratedLoad)
-    * [.ConsiderMemberEccentricity(consider_member_eccentricity)](#MemberLoadFromAreaLoadWizard+ConsiderMemberEccentricity)
-    * [.ConsiderSectionDistribution(consider_section_distribution)](#MemberLoadFromAreaLoadWizard+ConsiderSectionDistribution)
-    * [.AbsoluteToleranceForMembersOnPlane(absolute_tolerance)](#MemberLoadFromAreaLoadWizard+AbsoluteToleranceForMembersOnPlane)
-    * [.RelativeToleranceForMembersOnPlane(relative_tolerance)](#MemberLoadFromAreaLoadWizard+RelativeToleranceForMembersOnPlane)
-    * [.AbsoluteToleranceForNodesOnLine(absolute_tolerance)](#MemberLoadFromAreaLoadWizard+AbsoluteToleranceForNodesOnLine)
-    * [.RelativeToleranceForNodesOnLine(relative_tolerance)](#MemberLoadFromAreaLoadWizard+RelativeToleranceForNodesOnLine)
-
-<a name="new_MemberLoadFromAreaLoadWizard_new"></a>
 
 ### new MemberLoadFromAreaLoadWizard(no, load_case, comment, params)
 Creates member load wizard
@@ -287,20 +222,6 @@ Sets relative tolerance for nodes on line
 ## MemberLoadFromFreeLineLoadWizard
 **Kind**: global class  
 
-* [MemberLoadFromFreeLineLoadWizard](#MemberLoadFromFreeLineLoadWizard)
-    * [new MemberLoadFromFreeLineLoadWizard(no, load_case, comment, params)](#new_MemberLoadFromFreeLineLoadWizard_new)
-    * [.Uniform(no, load_case, uniform_magnitude, node_1, node_2, coordinate_system, load_direction, comment, params)](#MemberLoadFromFreeLineLoadWizard+Uniform)
-    * [.Linear(no, load_case, magnitude_1, node_1, magnitude_2, node_2, coordinate_system, load_direction, comment, params)](#MemberLoadFromFreeLineLoadWizard+Linear)
-    * [.AbsoluteToleranceForMembersOnPlane(absolute_tolerance)](#MemberLoadFromFreeLineLoadWizard+AbsoluteToleranceForMembersOnPlane)
-    * [.RelativeToleranceForMembersOnPlane(relative_tolerance)](#MemberLoadFromFreeLineLoadWizard+RelativeToleranceForMembersOnPlane)
-    * [.AbsoluteToleranceForNodesOnLine(absolute_tolerance)](#MemberLoadFromFreeLineLoadWizard+AbsoluteToleranceForNodesOnLine)
-    * [.RelativeToleranceForNodesOnLine(relative_tolerance)](#MemberLoadFromFreeLineLoadWizard+RelativeToleranceForNodesOnLine)
-    * [.ExcludedMembers(excluded_members, excluded_parallel_members)](#MemberLoadFromFreeLineLoadWizard+ExcludedMembers)
-    * [.LockForNewMembers(lock_for_new_members)](#MemberLoadFromFreeLineLoadWizard+LockForNewMembers)
-    * [.ConsiderMemberEccentricity(consider_member_eccentricity)](#MemberLoadFromFreeLineLoadWizard+ConsiderMemberEccentricity)
-    * [.ConsiderSectionDistribution(consider_section_distribution)](#MemberLoadFromFreeLineLoadWizard+ConsiderSectionDistribution)
-
-<a name="new_MemberLoadFromFreeLineLoadWizard_new"></a>
 
 ### new MemberLoadFromFreeLineLoadWizard(no, load_case, comment, params)
 Creates member load wizard
@@ -446,21 +367,6 @@ Sets consider section distribution
 ## SnowLoadWizard
 **Kind**: global class  
 
-* [SnowLoadWizard](#SnowLoadWizard)
-    * [new SnowLoadWizard(no, comment, params)](#new_SnowLoadWizard_new)
-    * [.SetMonoPitchRoofType(no, roof_corner_nodes, load_case, comment, params)](#SnowLoadWizard+SetMonoPitchRoofType)
-    * [.SetDuopitch(no, roof_corner_nodes, load_case_1, load_case_2, load_case_3, comment, params)](#SnowLoadWizard+SetDuopitch)
-    * [.SetLoadedRoofs(loaded_planes_accessibility)](#SnowLoadWizard+SetLoadedRoofs)
-    * [.WithoutLoadsOnMembers(objects_without_loads, objects_without_loads_parallel_to)](#SnowLoadWizard+WithoutLoadsOnMembers)
-    * [.WithoutLoadsOnSurfaces(objects_without_loads, objects_without_loads_parallel_to)](#SnowLoadWizard+WithoutLoadsOnSurfaces)
-    * [.WithoutLoadsOnLines(objects_without_loads, objects_without_loads_parallel_to)](#SnowLoadWizard+WithoutLoadsOnLines)
-    * [.SnowOverhang(enabled)](#SnowLoadWizard+SnowOverhang)
-    * [.SnowGuard(enabled)](#SnowLoadWizard+SnowGuard)
-    * [.LockForNewObjects(enabled)](#SnowLoadWizard+LockForNewObjects)
-    * [.ConsiderMemberEccentricity(enabled)](#SnowLoadWizard+ConsiderMemberEccentricity)
-    * [.ConsiderSectionDistribution(enabled)](#SnowLoadWizard+ConsiderSectionDistribution)
-
-<a name="new_SnowLoadWizard_new"></a>
 
 ### new SnowLoadWizard(no, comment, params)
 Creates empty snow load wizard
@@ -611,21 +517,6 @@ Sets consider section distribution
 ## WindLoadWizard
 **Kind**: global class  
 
-* [WindLoadWizard](#WindLoadWizard)
-    * [new WindLoadWizard(no, comment, params)](#new_WindLoadWizard_new)
-    * [.WallsRoofMonopitch(no, base_corner_nodes, roof_corner_nodes, load_cases, wind_directions, comment, params)](#WindLoadWizard+WallsRoofMonopitch)
-    * [.WallsRoofDuoPitch(no, base_corner_nodes, roof_corner_nodes, load_cases, wind_directions, comment, params)](#WindLoadWizard+WallsRoofDuoPitch)
-    * [.RoofMonoPitch(no, roof_corner_nodes, load_cases, wind_directions, comment, params)](#WindLoadWizard+RoofMonoPitch)
-    * [.RoofDuopitch(no, roof_corner_nodes, load_cases, wind_directions, comment, params)](#WindLoadWizard+RoofDuopitch)
-    * [.SetLoadedWallsAndRoofs(roofs_accessibility)](#WindLoadWizard+SetLoadedWallsAndRoofs)
-    * [.WithoutLoadsOnMembers(objects_without_loads, objects_without_loads_parallel_to)](#WindLoadWizard+WithoutLoadsOnMembers)
-    * [.WithoutLoadsOnSurfaces(objects_without_loads, objects_without_loads_parallel_to)](#WindLoadWizard+WithoutLoadsOnSurfaces)
-    * [.WithoutLoadsOnLines(objects_without_loads, objects_without_loads_parallel_to)](#WindLoadWizard+WithoutLoadsOnLines)
-    * [.LockForNewObjects(enabled)](#WindLoadWizard+LockForNewObjects)
-    * [.ConsiderMemberEccentricity(enabled)](#WindLoadWizard+ConsiderMemberEccentricity)
-    * [.ConsiderSectionDistribution(enabled)](#WindLoadWizard+ConsiderSectionDistribution)
-
-<a name="new_WindLoadWizard_new"></a>
 
 ### new WindLoadWizard(no, comment, params)
 Creates empty wind load wizard

@@ -1,35 +1,9 @@
 # GuideObjects
-
-## Classes
-
-<dl>
-<dt><a href="#CoordinateSystem">CoordinateSystem</a></dt>
-<dd></dd>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#createBaseCoordinateSystem">createBaseCoordinateSystem(no, comment, params)</a> ⇒ <code>Object</code></dt>
-<dd><p>Create coordinate system (private)</p>
-</dd>
-</dl>
-
-<a name="CoordinateSystem"></a>
+ 
 
 ## CoordinateSystem
 **Kind**: global class  
 
-* [CoordinateSystem](#CoordinateSystem)
-    * [new CoordinateSystem(no, coordinate_system_type, comment, params)](#new_CoordinateSystem_new)
-    * [.GetCoordinateSystem()](#CoordinateSystem+GetCoordinateSystem) ⇒
-    * [.GetNo()](#CoordinateSystem+GetNo) ⇒
-    * [.Offset(no, original_point, comment, params)](#CoordinateSystem+Offset) ⇒
-    * [.ThreePoints(no, original_point, u_axis_point_coordinate, uw_plane_point_coordinate, comment, params)](#CoordinateSystem+ThreePoints) ⇒
-    * [.TwoPointsAndAngle(no, original_point, uw_plane_point_coordinate, uw_plane_angle, comment, params)](#CoordinateSystem+TwoPointsAndAngle) ⇒
-    * [.PointAndThreeAngels(no, original_point, rotation_angle_1, rotation_angle_2, rotation_angle_3, rotation_angles_sequence, comment, params)](#CoordinateSystem+PointAndThreeAngels) ⇒
-
-<a name="new_CoordinateSystem_new"></a>
 
 ### new CoordinateSystem(no, coordinate_system_type, comment, params)
 Creates coordinate system

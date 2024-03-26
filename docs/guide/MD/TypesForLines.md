@@ -1,44 +1,9 @@
 # TypesForLines
 
-## Classes
-
-<dl>
-<dt><a href="#LineHinge">LineHinge</a></dt>
-<dd></dd>
-<dt><a href="#LineMeshRefinement">LineMeshRefinement</a></dt>
-<dd></dd>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#createLineHinge">createLineHinge(no, comment, params)</a> ⇒ <code>Object</code></dt>
-<dd><p>Creates line hinge</p>
-</dd>
-<dt><a href="#CreateHingeConstant">CreateHingeConstant(hinge)</a> ⇒ <code>Object</code></dt>
-<dd><p>Creates line hinge constant</p>
-</dd>
-<dt><a href="#CreateHinge">CreateHinge(hinge)</a> ⇒</dt>
-<dd><p>Creates Hinge</p>
-</dd>
-</dl>
-
-<a name="LineHinge"></a>
 
 ## LineHinge
 **Kind**: global class  
 
-* [LineHinge](#LineHinge)
-    * [new LineHinge(no, surface, lines, comment, params)](#new_LineHinge_new)
-    * [.Translation(ux, uy, uz)](#LineHinge+Translation) ⇒ <code>Object</code>
-    * [.TranslationX(ux)](#LineHinge+TranslationX) ⇒ <code>Object</code>
-    * [.TranslationY(uy)](#LineHinge+TranslationY) ⇒ <code>Object</code>
-    * [.TranslationZ(uz)](#LineHinge+TranslationZ) ⇒ <code>Object</code>
-    * [.Rotation(rx)](#LineHinge+Rotation) ⇒ <code>Object</code>
-    * [.AssignTo(surface, lines)](#LineHinge+AssignTo)
-    * [.WallSlabConnection(surface, lines)](#LineHinge+WallSlabConnection)
-
-<a name="new_LineHinge_new"></a>
 
 ### new LineHinge(no, surface, lines, comment, params)
 Creates line hinge
@@ -144,14 +109,6 @@ Assign wall-slab connection to line hinge
 ## LineMeshRefinement
 **Kind**: global class  
 
-* [LineMeshRefinement](#LineMeshRefinement)
-    * [new LineMeshRefinement(no, targetFELength, numberOfLayers, lines, comment, params)](#new_LineMeshRefinement_new)
-    * [.TargetFELength(targetFELength, numberOfLayers, lines)](#LineMeshRefinement+TargetFELength) ⇒ <code>Object</code>
-    * [.NumberFiniteElements(numberOfFiniteElements, numberOfLayers, lines)](#LineMeshRefinement+NumberFiniteElements) ⇒ <code>Object</code>
-    * [.Gradual(gradual_rows, numberOfLayers, lines)](#LineMeshRefinement+Gradual) ⇒ <code>Object</code>
-    * [.SetLines(gradual_rows, lines)](#LineMeshRefinement+SetLines) ⇒ <code>Object</code>
-
-<a name="new_LineMeshRefinement_new"></a>
 
 ### new LineMeshRefinement(no, targetFELength, numberOfLayers, lines, comment, params)
 Creates line mesh refinement

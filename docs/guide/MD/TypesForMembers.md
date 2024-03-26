@@ -1,83 +1,9 @@
 # TypesForMembers
 
-## Classes
-
-<dl>
-<dt><a href="#MemberDefinableStiffness">MemberDefinableStiffness</a></dt>
-<dd></dd>
-<dt><a href="#MemberEccentricity">MemberEccentricity</a></dt>
-<dd></dd>
-<dt><a href="#MemberHinge">MemberHinge</a></dt>
-<dd></dd>
-<dt><a href="#MemberNonlinearity">MemberNonlinearity</a></dt>
-<dd></dd>
-<dt><a href="#MemberResultIntermediatePoint">MemberResultIntermediatePoint</a></dt>
-<dd></dd>
-<dt><a href="#MemberStiffnessModification">MemberStiffnessModification</a></dt>
-<dd></dd>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#setTransverseOffset">setTransverseOffset(memberEccentricity, reference_type, reference, reference_node_index, alignment_type)</a></dt>
-<dd><p>Sets transverse offset (private)</p>
-</dd>
-<dt><a href="#createMemberEccentricity">createMemberEccentricity(no, members_start_list, members_end_list, comment, params)</a> ⇒ <code>Object</code></dt>
-<dd><p>Creates member eccentricity</p>
-</dd>
-<dt><a href="#setRelativeValues">setRelativeValues(member_eccentricity, alignment_type)</a></dt>
-<dd><p>Sets member eccentricity for relative to section type (private)</p>
-</dd>
-<dt><a href="#getAlignmentParts">getAlignmentParts(alignment)</a> ⇒ <code>Array</code></dt>
-<dd><p>Creates horizontal and vertical strings of alignment (private)</p>
-</dd>
-<dt><a href="#setAbsoluteValues">setAbsoluteValues(memberEccentricity, offset_x, offset_y, offset_z, coordinate_system)</a></dt>
-<dd><p>Sets member eccentricity for absolute type (private)</p>
-</dd>
-<dt><a href="#setPartialActivityZoneValues">setPartialActivityZoneValues(member_hinge, zone_values, param_type_name, param_slippage_name, param_displacement_name, param_force_name)</a></dt>
-<dd><p>Sets values for partial activity zone (private)</p>
-</dd>
-<dt><a href="#setMainHingeValues">setMainHingeValues(member_hinge, values, property_1, property_2)</a> ⇒</dt>
-<dd><p>Sets values to member hinge (private)</p>
-</dd>
-<dt><a href="#createMemberHinge">createMemberHinge(no, members_start_list, members_end_list, comment, params)</a> ⇒ <code>Object</code></dt>
-<dd><p>Creates member hinge (private)</p>
-</dd>
-<dt><a href="#setParameters">setParameters(member_nonlinearity, parameters, param_1_name, param_2_name)</a></dt>
-<dd><p>Sets parameters to member nonlinearity (private)</p>
-</dd>
-<dt><a href="#createNonlinearity">createNonlinearity(no, member_list, comment, params)</a> ⇒ <code>Object</code></dt>
-<dd><p>Creates member nonlinearity</p>
-</dd>
-<dt><a href="#MemberOpening">MemberOpening(no, members_no, member_sets_no, comment, params)</a></dt>
-<dd><p>Creates Member Opening</p>
-</dd>
-<dt><a href="#DistancesAreAbsolute">DistancesAreAbsolute(memberResultIntermediatePoint, absolute)</a></dt>
-<dd><p>Sets division ordinates as absolute (private)</p>
-</dd>
-<dt><a href="#MemberRotationalRestraint">MemberRotationalRestraint(no, member_supports_no, restraint_type, comment, params)</a></dt>
-<dd><p>Creates Member Rotational Restraint</p>
-</dd>
-<dt><a href="#MemberShearPanel">MemberShearPanel(no, definition_type, member_supports_no, comment, params)</a></dt>
-<dd><p>Creates Member Shear Panel</p>
-</dd>
-</dl>
-
-<a name="MemberDefinableStiffness"></a>
 
 ## MemberDefinableStiffness
 **Kind**: global class  
 
-* [MemberDefinableStiffness](#MemberDefinableStiffness)
-    * [new MemberDefinableStiffness(no, member_list, comment, params)](#new_MemberDefinableStiffness_new)
-    * [.TorsionalAndBendingStiffness(torsional_stiffness, bending_stiffness_y, bending_stiffness_z)](#MemberDefinableStiffness+TorsionalAndBendingStiffness)
-    * [.AxialAndShearStiffness(axial_stiffness, shear_stiffness_y, shear_stiffness_z)](#MemberDefinableStiffness+AxialAndShearStiffness)
-    * [.SelfWeightAndSectionArea(specific_weight, section_area)](#MemberDefinableStiffness+SelfWeightAndSectionArea)
-    * [.MainAxesRotation(rotation)](#MemberDefinableStiffness+MainAxesRotation)
-    * [.ThermalExpansionCoefficient(thermal_expansion, width, height)](#MemberDefinableStiffness+ThermalExpansionCoefficient)
-
-<a name="new_MemberDefinableStiffness_new"></a>
 
 ### new MemberDefinableStiffness(no, member_list, comment, params)
 Creates member definable stiffness
@@ -158,18 +84,6 @@ Sets coefficient of thermal expansion stiffness parameters
 ## MemberEccentricity
 **Kind**: global class  
 
-* [MemberEccentricity](#MemberEccentricity)
-    * [new MemberEccentricity(no, members_start_list, members_end_list, comment, params)](#new_MemberEccentricity_new)
-    * [.RelativeToSection(no, members_start_list, members_end_list, alignment, comment, params)](#MemberEccentricity+RelativeToSection) ⇒ <code>Object</code>
-    * [.Absolute(no, members_start_list, members_end_list, offset_x, offset_y, offset_z, coordinate_system, comment, params)](#MemberEccentricity+Absolute) ⇒ <code>Object</code>
-    * [.RelativeAndAbsolute(no, members_start_list, members_end_list, offset_x, offset_y, offset_z, coordinate_system, alignment, comment, params)](#MemberEccentricity+RelativeAndAbsolute) ⇒ <code>Object</code>
-    * [.AxialOffset(active)](#MemberEccentricity+AxialOffset)
-    * [.HingeLocationAtNode(active)](#MemberEccentricity+HingeLocationAtNode)
-    * [.TransverseOffsetMember(reference_member, reference_node, alignment)](#MemberEccentricity+TransverseOffsetMember)
-    * [.TransverseOffsetSurface(reference_surface, alignment)](#MemberEccentricity+TransverseOffsetSurface)
-    * [.TransverseOffsetNone()](#MemberEccentricity+TransverseOffsetNone)
-
-<a name="new_MemberEccentricity_new"></a>
 
 ### new MemberEccentricity(no, members_start_list, members_end_list, comment, params)
 Creates member eccentricity
@@ -300,36 +214,6 @@ Set off transverse offset
 ## MemberHinge
 **Kind**: global class  
 
-* [MemberHinge](#MemberHinge)
-    * [new MemberHinge(no, members_start_list, members_end_list, comment, params)](#new_MemberHinge_new)
-    * [.Translational(no, members_start_list, members_end_list, axial_release_n, axial_release_vy, axial_release_vz, comment, params)](#MemberHinge+Translational) ⇒ <code>Object</code>
-    * [.Rotational(no, members_start_list, members_end_list, moment_release_mt, moment_release_my, moment_release_mz, comment, params)](#MemberHinge+Rotational) ⇒ <code>Object</code>
-    * [.PartialActivityTranslationalX(negative_zone_values, positive_zone_values)](#MemberHinge+PartialActivityTranslationalX)
-    * [.PartialActivityTranslationalY(negative_zone_values, positive_zone_values)](#MemberHinge+PartialActivityTranslationalY)
-    * [.PartialActivityTranslationalZ(negative_zone_values, positive_zone_values)](#MemberHinge+PartialActivityTranslationalZ)
-    * [.PartialActivityRotationalX(negative_zone_values, positive_zone_values)](#MemberHinge+PartialActivityRotationalX)
-    * [.PartialActivityRotationalY(negative_zone_values, positive_zone)](#MemberHinge+PartialActivityRotationalY)
-    * [.PartialActivityRotationalZ(negative_zone_values, positive_zone_values)](#MemberHinge+PartialActivityRotationalZ)
-    * [.DiagramTranslationalX(diagram_values)](#MemberHinge+DiagramTranslationalX)
-    * [.DiagramTranslationalY(diagram_values)](#MemberHinge+DiagramTranslationalY)
-    * [.DiagramTranslationalZ(diagram_values)](#MemberHinge+DiagramTranslationalZ)
-    * [.DiagramRotationalX(diagram_values)](#MemberHinge+DiagramRotationalX)
-    * [.DiagramRotationalY(diagram_values)](#MemberHinge+DiagramRotationalY)
-    * [.DiagramRotationalZ(diagram_values)](#MemberHinge+DiagramRotationalZ)
-    * [.FrictionVyTranslationalX(friction_coefficient_x, spring_constant_x)](#MemberHinge+FrictionVyTranslationalX)
-    * [.FrictionVzTranslationalX(friction_coefficient_x, spring_constant_x)](#MemberHinge+FrictionVzTranslationalX)
-    * [.FrictionVyVzTranslationalX(friction_coefficient_x, spring_constant_x)](#MemberHinge+FrictionVyVzTranslationalX)
-    * [.FrictionVyPlusVzTranslationalX(friction_coefficient_xy, friction_coefficient_xz, spring_constant_x)](#MemberHinge+FrictionVyPlusVzTranslationalX)
-    * [.FrictionNTranslationalY(friction_coefficient_y, spring_constant_y)](#MemberHinge+FrictionNTranslationalY)
-    * [.FrictionVzTranslationalY(friction_coefficient_y, spring_constant_y)](#MemberHinge+FrictionVzTranslationalY)
-    * [.FrictionNVzTranslationalY(friction_coefficient_y, spring_constant_y)](#MemberHinge+FrictionNVzTranslationalY)
-    * [.FrictionNPlusVzTranslationalY(friction_coefficient_yx, friction_coefficient_yz, spring_constant_y)](#MemberHinge+FrictionNPlusVzTranslationalY)
-    * [.FrictionNTranslationalZ(friction_coefficient_z, spring_constant_z)](#MemberHinge+FrictionNTranslationalZ)
-    * [.FrictionVyTranslationalZ(friction_coefficient_z, spring_constant_z)](#MemberHinge+FrictionVyTranslationalZ)
-    * [.FrictionNVyTranslationalZ(friction_coefficient_z, spring_constant_z)](#MemberHinge+FrictionNVyTranslationalZ)
-    * [.FrictionNPlusVyTranslationalZ(friction_coefficient_zx, friction_coefficient_zy, spring_constant_z)](#MemberHinge+FrictionNPlusVyTranslationalZ)
-
-<a name="new_MemberHinge_new"></a>
 
 ### new MemberHinge(no, members_start_list, members_end_list, comment, params)
 Creates member hinge
@@ -672,21 +556,6 @@ Sets translational friction N+Vy values for uz
 ## MemberNonlinearity
 **Kind**: global class  
 
-* [MemberNonlinearity](#MemberNonlinearity)
-    * [new MemberNonlinearity(no, comment, params)](#new_MemberNonlinearity_new)
-    * [.FailureIfTension(no, members, comment, params)](#MemberNonlinearity+FailureIfTension) ⇒ <code>Object</code>
-    * [.FailureIfCompression(no, members, comment, params)](#MemberNonlinearity+FailureIfCompression) ⇒ <code>Object</code>
-    * [.FailureIfTensionWithSlippage(no, members, slippage, comment, params)](#MemberNonlinearity+FailureIfTensionWithSlippage) ⇒ <code>Object</code>
-    * [.FailureIfCompressionWithSlippage(no, members, slippage, comment, params)](#MemberNonlinearity+FailureIfCompressionWithSlippage) ⇒ <code>Object</code>
-    * [.Slippage(no, members, slippage, comment, params)](#MemberNonlinearity+Slippage) ⇒ <code>Object</code>
-    * [.FailureUnderTension(no, members, tension_force, comment, params)](#MemberNonlinearity+FailureUnderTension) ⇒ <code>Object</code>
-    * [.YieldingUnderTension(no, members, tension_force, comment, params)](#MemberNonlinearity+YieldingUnderTension) ⇒ <code>Object</code>
-    * [.FailureUnderCompression(no, members, compression_force, comment, params)](#MemberNonlinearity+FailureUnderCompression) ⇒ <code>Object</code>
-    * [.YieldingUnderCompression(no, members, compression_force, comment, params)](#MemberNonlinearity+YieldingUnderCompression) ⇒ <code>Object</code>
-    * [.Failure(no, members, compression_force, tension_force, comment, params)](#MemberNonlinearity+Failure) ⇒ <code>Object</code>
-    * [.Yielding(no, members, compression_force, tension_force, comment, params)](#MemberNonlinearity+Yielding) ⇒ <code>Object</code>
-
-<a name="new_MemberNonlinearity_new"></a>
 
 ### new MemberNonlinearity(no, comment, params)
 Creates member nonlinearity
@@ -880,12 +749,6 @@ Creates member yielding nonlinearity
 ## MemberResultIntermediatePoint
 **Kind**: global class  
 
-* [MemberResultIntermediatePoint](#MemberResultIntermediatePoint)
-    * [new MemberResultIntermediatePoint(no, members, comment, params)](#new_MemberResultIntermediatePoint_new)
-    * [.UniformDistances(divisions_count, notes)](#MemberResultIntermediatePoint+UniformDistances)
-    * [.DivisionOrdinates(division_ordinates, notes, absolute, clear_ordinates)](#MemberResultIntermediatePoint+DivisionOrdinates)
-
-<a name="new_MemberResultIntermediatePoint_new"></a>
 
 ### new MemberResultIntermediatePoint(no, members, comment, params)
 Creates member result intermediate point
@@ -930,16 +793,6 @@ Sets division ordinates
 ## MemberStiffnessModification
 **Kind**: global class  
 
-* [MemberStiffnessModification](#MemberStiffnessModification)
-    * [new MemberStiffnessModification(no, structure_modifications, comment, params)](#new_MemberStiffnessModification_new)
-    * [.TotalStiffnessFactor(total_stiffness)](#MemberStiffnessModification+TotalStiffnessFactor)
-    * [.PartialStiffnessFactors(axial_stiffness, bending_stiffness_y, bending_stiffness_z, shear_stiffness_y, shear_stiffness_z, torsional_stiffness, weight)](#MemberStiffnessModification+PartialStiffnessFactors)
-    * [.ConcreteStructuresAci(component_type)](#MemberStiffnessModification+ConcreteStructuresAci)
-    * [.ConcreteStructuresCsa(component_type)](#MemberStiffnessModification+ConcreteStructuresCsa)
-    * [.SteelStructuresAisc(determine_tau_b, design_method)](#MemberStiffnessModification+SteelStructuresAisc)
-    * [.SteelStructuresCSA(determine_tau_b, axial_stiffness, bending_stiffness_y, bending_stiffness_z, shear_stiffness_y, shear_stiffness_z, torsional_stiffness)](#MemberStiffnessModification+SteelStructuresCSA)
-
-<a name="new_MemberStiffnessModification_new"></a>
 
 ### new MemberStiffnessModification(no, structure_modifications, comment, params)
 Creates member stiffness modification
@@ -1195,18 +1048,6 @@ Creates Member Opening
 | params | <code>Object</code> | Additional parameters, can be undefined |
 
 
-* [MemberOpening(no, members_no, member_sets_no, comment, params)](#MemberOpening)
-    * [.GetMemberOpening()](#MemberOpening+GetMemberOpening) ⇒
-    * [.GetNo()](#MemberOpening+GetNo) ⇒
-    * [.AddTypeAndLocation(reduction_type, position, note)](#MemberOpening+AddTypeAndLocation)
-    * [.SetRectangleDimension(component_row, width, height)](#MemberOpening+SetRectangleDimension)
-    * [.SetCircleDimension(component_row, diameter)](#MemberOpening+SetCircleDimension)
-    * [.SetHexagonalDimension(component_row, width, height, width_center)](#MemberOpening+SetHexagonalDimension)
-    * [.SetPosition(component_row, z_axis_reference, distance)](#MemberOpening+SetPosition)
-    * [.SetMultipleDefinition(component_row, multiple_number, multiple_offset_definition_type, multiple_offset)](#MemberOpening+SetMultipleDefinition)
-
-<a name="MemberOpening+GetMemberOpening"></a>
-
 ### memberOpening.GetMemberOpening() ⇒
 **Kind**: instance method of [<code>MemberOpening</code>](#MemberOpening)  
 **Returns**: Member Opening object  
@@ -1322,17 +1163,6 @@ Creates Member Rotational Restraint
 | params | <code>Object</code> | Additional parameters, can be undefined |
 
 
-* [MemberRotationalRestraint(no, member_supports_no, restraint_type, comment, params)](#MemberRotationalRestraint)
-    * [.GetNo()](#MemberRotationalRestraint+GetNo) ⇒
-    * [.GetMemberRotationalRestraint()](#MemberRotationalRestraint+GetMemberRotationalRestraint) ⇒
-    * [.Continuous(no, member_supports_no, material_name, sheeting_name, position_of_sheeting, continuous_beam_effect, section_deformation_cdb, beam_spacing, comment, params)](#MemberRotationalRestraint+Continuous)
-    * [.Discrete(no, member_supports_no, material_name, section_name, rotational_stiffness, continuous_beam_effect, section_deformation_cdb, beam_spacing, comment, params)](#MemberRotationalRestraint+Discrete)
-    * [.Manually(no, total_rotational_spring_stiffness, member_supports_no, comment, params)](#MemberRotationalRestraint+Manually)
-    * [.SetContinuousParameters(modulus_of_elasticity, sheeting_thickness, sheeting_moment_of_inertia, sheeting_distance_of_ribs, width_of_section_flange, spring_stiffness)](#MemberRotationalRestraint+SetContinuousParameters)
-    * [.SetDiscreteParameters(modulus_of_elasticity, section_moment_of_inertia, purlin_spacing, rotational_stiffness_value)](#MemberRotationalRestraint+SetDiscreteParameters)
-
-<a name="MemberRotationalRestraint+GetNo"></a>
-
 ### memberRotationalRestraint.GetNo() ⇒
 **Kind**: instance method of [<code>MemberRotationalRestraint</code>](#MemberRotationalRestraint)  
 **Returns**: member rotational restraint index  
@@ -1441,19 +1271,6 @@ Creates Member Shear Panel
 | comment | <code>String</code> | Comment, can be undefined |
 | params | <code>Object</code> | Additional parameters, can be undefined |
 
-
-* [MemberShearPanel(no, definition_type, member_supports_no, comment, params)](#MemberShearPanel)
-    * [.AssignMemberSupports(member_supports_no)](#MemberShearPanel+AssignMemberSupports)
-    * [.TrapezoidalSheeting(no, member_supports_no, position_on_section, trapezoidal_sheeting_name, fastening_arrangement, comment, params)](#MemberShearPanel+TrapezoidalSheeting)
-    * [.Bracing(no, member_supports_no, position_on_section, diagonals_section_name, posts_section_name, comment, params)](#MemberShearPanel+Bracing)
-    * [.TrapezoidalSheetingAndBracing(no, member_supports_no, position_on_section, trapezoidal_sheeting_name, fastening_arrangement, diagonals_section_name, posts_section_name, comment, params)](#MemberShearPanel+TrapezoidalSheetingAndBracing)
-    * [.DefineSProv(no, member_supports_no, position_on_section, comment, params)](#MemberShearPanel+DefineSProv)
-    * [.SetTrapezoidalSheetingParameters(shear_panel_length, girder_length, beam_spacing, shear_panel_coefficient_k1, shear_panel_coefficient_k2)](#MemberShearPanel+SetTrapezoidalSheetingParameters)
-    * [.SetBracingParameters(shear_panel_length, girder_length, beam_spacing, post_spacing, number_of_bracings, diagonals_section_area, posts_section_area)](#MemberShearPanel+SetBracingParameters)
-    * [.TrapezoidalSheetingAndBracingParameters(shear_panel_length, girder_length, beam_spacing, shear_panel_coefficient_k1, shear_panel_coefficient_k2, post_spacing, number_of_bracings, diagonals_section_area, posts_section_area)](#MemberShearPanel+TrapezoidalSheetingAndBracingParameters)
-    * [.DefineSProvParameters(shear_panel_stiffness, girder_length)](#MemberShearPanel+DefineSProvParameters)
-
-<a name="MemberShearPanel+AssignMemberSupports"></a>
 
 ### memberShearPanel.AssignMemberSupports(member_supports_no)
 Assign member supports

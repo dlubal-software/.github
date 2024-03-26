@@ -56,7 +56,7 @@ module.exports = {
               {
                 title: "JavaScript Commands",
                 collapsable: true,
-                children: ["MD/AnalysisSettings", "MD/BasicObjects", "MD/GuideObjects", "MD/Imperfections", "MD/InternalForces", "MD/Loading", "MD/Loads", "MD/LoadWizards", "MD/SpecialObjects", "MD/TypesForLines", "MD/TypesForMembers", "MD/TypesForNodes", "MD/TypesForSolids", "MD/TypesForSurfaces"]
+                children: ["MD/AddOns", "MD/AnalysisSettings", "MD/BasicObjects", "MD/GuideObjects", "MD/Imperfections", "MD/InternalForces", "MD/Loading", "MD/Loads", "MD/LoadWizards", "MD/SpecialObjects", "MD/TypesForLines", "MD/TypesForMembers", "MD/TypesForNodes", "MD/TypesForSolids", "MD/TypesForSurfaces"]
               },
               {
                 title: "Articles",

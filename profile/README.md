@@ -22,9 +22,9 @@ Dlubal Software GmbH
 We are glad that you visited our Dlubal's company GitHub. We are publishing our open source libraries developed in Python & C# for WebService.
 We are also publishing open source libraries which we have used for development of our commercial applications and we did some modifications.
 
-> :eyes: *Eyes on Upcoming Developmets!* 🆕
-> ---
-> As you may have already heard, brand new WS features are in the works. Having support for Python scripting directly in the RFEM, we have foundations to build completely new WS API which will be faster, have better access to results, and will have full compatibility with RFEM Console.
+# Eyes on Upcoming Developmets! :eyes: 
+
+As you may have already heard, brand new WS features are in the works. Having support for Python scripting directly in the RFEM, we have foundations to build completely new WS API which will be faster, have better access to results, and will have full compatibility with RFEM Console.
 
 
 # Documentation 📚

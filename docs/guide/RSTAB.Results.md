@@ -14,15 +14,14 @@ List of all staticmethods are given below with associated parameters.
 **Static Methods**
 
 ```py
-BuildingStoriesForcesInSpandrels()
 BuildingStoriesForcesInShearWalls()
 BuildingStoriesCentresMassRigidity()
 BuildingStoriesInterstoryDrifts()
 BuildingStoriesStoryActions()
 CalculationDiagrams()
 CriticalLoadFactors()
-EfeectiveLengthsAndCriticalLoadsByEigenvector()
-EfeectiveLengthsAndCriticalLoadsByMember()
+EffectiveLengthsAndCriticalLoadsByEigenvector()
+EffectiveLengthsAndCriticalLoadsByMember()
 EigenvectorsByMember()
 EigenvectorsByNode()
 EigenvectorsBySolid()
@@ -71,7 +70,6 @@ SolidsPrincipalStresses()
 SolidsPrincipalTotalStrains()
 SpectralAnalysisBuildingStoriesCentresMassRigidity()
 SpectralAnalysisBuildingStoriesForcesInShearWalls()
-SpectralAnalysisBuildingStoriesForcesInSpandrels()
 SpectralAnalysisBuildingStoriesInterstoryDrifts()
 SpectralAnalysisBuildingStoriesStoryActions()
 SpectralAnalysisLineHingesDeformations()
@@ -122,7 +120,6 @@ SpectralAnalysisSurfacesPrincipalStresses()
 SpectralAnalysisSurfacesPrincipalTotalStrains()
 StabilityIncrementalAnalysisBuildingStoriesCentresMassRigidity()
 StabilityIncrementalAnalysisBuildingStoriesForcesInShearWalls()
-StabilityIncrementalAnalysisBuildingStoriesForcesInSpandrels()
 StabilityIncrementalAnalysisBuildingStoriesInterstoryDrifts()
 StabilityIncrementalAnalysisBuildingStoriesStoryActions()
 StabilityIncrementalAnalysisCalculationDiagrams()
@@ -180,7 +177,6 @@ StabilityIncrementalAnalysisSurfacesPrincipalInternalForces()
 StabilityIncrementalAnalysisSurfacesPrincipalPlasticStrains()
 StabilityIncrementalAnalysisSurfacesPrincipalStresses()
 StabilityIncrementalAnalysisSurfacesPrincipalTotalStrains()
-Summary()
 SurfacesBasicInternalForces()
 SurfacesBasicPlasticStrains()
 SurfacesBasicStresses()
@@ -211,7 +207,6 @@ SurfacesPrincipalStresses()
 SurfacesPrincipalTotalStrains()
 TimeHistoryAnalysisBuildingStoriesCentresMassRigidity()
 TimeHistoryAnalysisBuildingStoriesForcesInShearWalls()
-TimeHistoryAnalysisBuildingStoriesForcesInSpandrels()
 TimeHistoryAnalysisBuildingStoriesInterstoryDrifts()
 TimeHistoryAnalysisBuildingStoriesStoryActions()
 TimeHistoryAnalysisLineHingesDeformations()
@@ -272,28 +267,28 @@ TimeHistoryAnalysisSurfacesPrincipalStresses()
 TimeHistoryAnalysisSurfacesPrincipalTotalStrains()
 ```
 
-**Parameters** - (loading_type, loading_no, object_no, include_base, model)
+* **Parameters** - (loading_type, loading_no, object_no, include_base, model)
 
     
-* **loading_type** (*emun*) – Loading type
+    * **loading_type** (*emun*) – Loading type
 
 
-* **loading_no** (*int*) – Loading Number
+    * **loading_no** (*int*) – Loading Number
 
 
-* **object_no** (*int*) – Object number
+    * **object_no** (*int*) – Object number
 
 
-* **include_base** (*bool*) – Include Base
+    * **include_base** (*bool*) – Include Base
 
 
-* **model** (*class, optional*) – Model instance
+    * **model** (*class, optional*) – Model instance
 
 
 
 For example:
 
-> ResultTables.BuildingStoriesForcesInSpandrels(loading_type = CaseObjectType.E_OBJECT_TYPE_LOAD_CASE, loading_no = 1, object_no = 0, include_base = False, model = Model)
+> ResultTables.BuildingStoriesForcesInShearWalls(loading_type = CaseObjectType.E_OBJECT_TYPE_LOAD_CASE, loading_no = 1, object_no = 0, include_base = False, model = Model)
 
 
 
@@ -341,17 +336,57 @@ AluminumDesignSlendernessByMemberSet()
 AluminumDesignSlendernessByMemberSetRepresentative()
 ```
 
-**Parameters** - (include_base, model)
+* **Parameters** - (include_base, model)
 
 
-* **include_base** (*bool*) – Include Base
+    * **include_base** (*bool*) – Include Base
 
 
-* **model** (*class, optional*) – Model instance
+    * **model** (*class, optional*) – Model instance
 
 
 For example:
 
 > ResultTables.AluminumDesignDesignRatiosMemberRepresentativesByConstructionStage(include_base = False, model = Model)
  
+
+
+### **Additional Result Tables Static Methods**
+
+
+### ResultTables.HasAnyResults(model)
+
+* **Parameters**
+
+
+    * **model** (*class, optional*) – Model instance
+
+
+### ResultTables.HasResults(loading_type, loading_no, model)
+
+* **Parameters**
+
+    
+    * **loading_type** (*emun*) – Loading type
+
+
+    * **loading_no** (*int*) – Loading Number
+
+
+    * **model** (*class, optional*) – Model instance
+
+
+### ResultTables.Summary(loading_type, loading_no, model)
+
+* **Parameters**
+
+    
+    * **loading_type** (*emun*) – Loading type
+
+
+    * **loading_no** (*int*) – Loading Number
+
+
+    * **model** (*class, optional*) – Model instance
+
 

@@ -41,7 +41,7 @@ module.exports = {
               {
                 title: "RSTAB Python HLF",
                 collapsable: true,
-                children: ["RSTAB.BasicObjects", "RSTAB.ConcreteDesign", "RSTAB.DynamicLoads", "RSTAB.GuideObjects", "RSTAB.Imperfections", "RSTAB.LoadCasesAndCombinations", "RSTAB.Loads", "RSTAB.SpecialObjects", "RSTAB.SteelDesign", "RSTAB.TimberDesign", "RSTAB.TypesForAluminumDesign", "RSTAB.TypesforConcreteDesign", "RSTAB.TypesForMembers", "RSTAB.TypesForNodes", "RSTAB.TypesForSpecialObjects", "RSTAB.TypesForSteelDesign", "RSTAB.TypesForTimberDesign"]
+                children: ["RSTAB.BasicObjects", "RSTAB.ConcreteDesign", "RSTAB.DynamicLoads", "RSTAB.GuideObjects", "RSTAB.Imperfections", "RSTAB.LoadCasesAndCombinations", "RSTAB.Loads", "RSTAB.Results", "RSTAB.SpecialObjects", "RSTAB.SteelDesign", "RSTAB.TimberDesign", "RSTAB.TypesForAluminumDesign", "RSTAB.TypesforConcreteDesign", "RSTAB.TypesForMembers", "RSTAB.TypesForNodes", "RSTAB.TypesForSpecialObjects", "RSTAB.TypesForSteelDesign", "RSTAB.TypesForTimberDesign"]
               },
               {
                 title: "RSECTION Python HLF",

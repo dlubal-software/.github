@@ -20,7 +20,7 @@ Dlubal Software GmbH
 # Welcome
 Welcome to the GitHub account of Dlubal Software! Here, we share our open-source libraries developed in Python and C# for our WebService. Additionally, we provide enhanced versions of open-source libraries that we use in our commercial applications.
 
-# Eyes on Upcoming Developmets!
+# Eyes on Upcoming Developments!
 Stay tuned for exciting updates! We are continuously working on new features and improvements for our libraries and applications. Follow us to stay up-to-date with the latest developments.
 
 

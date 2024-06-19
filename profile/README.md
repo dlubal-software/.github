@@ -1,5 +1,5 @@
 <h1 align="center">
-Dlubal Software GmbH
+Dlubal Software
 <br>
 <br>
   

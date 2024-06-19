@@ -351,7 +351,7 @@ For example:
  
 
 
-### **Additional Result Tables Static Methods**
+### **Additional Result Table Static Methods**
 
 
 ### ResultTables.HasAnyResults(model)

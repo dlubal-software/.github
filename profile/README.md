@@ -17,14 +17,11 @@ Dlubal Software GmbH
 [![image](https://img.shields.io/badge/RSECTION-v1.0-blue)](https://www.dlubal.com/en/products/cross-section-properties-software/rsection "RSECTION")
 
   
-# Welcome 
-  
-We are glad that you visited our Dlubal's company GitHub. We are publishing our open source libraries developed in Python & C# for WebService.
-We are also publishing open source libraries which we have used for development of our commercial applications and we did some modifications.
+# Welcome
+Welcome to the GitHub account of Dlubal Software! Here, we share our open-source libraries developed in Python and C# for our WebService. Additionally, we provide enhanced versions of open-source libraries that we use in our commercial applications.
 
-# Eyes on Upcoming Developmets! :eyes: 
-
-As you may have already heard, brand new WS features are in the works. Having support for Python scripting directly in the RFEM, we have foundations to build completely new WS API which will be faster, have better access to results, and will have full compatibility with RFEM Console.
+# Eyes on Upcoming Developmets!
+Stay tuned for exciting updates! We are continuously working on new features and improvements for our libraries and applications. Follow us to stay up-to-date with the latest developments.
 
 
 # Documentation 📚

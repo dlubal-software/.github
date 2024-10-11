@@ -477,7 +477,7 @@ Due to this variety, the program is also intended to serve as a template for oth
 
 ## Verification of WebService operations with Boomerang and SoapUI
 
-The browser plugin Boomerang as well as the API testing program SoapUI are both useful tools to quickly check our C# WebService functions. With their assistance, it becomes effortless to identify available C# classes and their respective parameters. This article aims to serve as a comprehensive guide on effectively utilizing Boomerang and SoapUI in conjunction with the Dlubal WebService. It can also be useful as a guide for our Python Webservice
+The browser plugin Boomerang as well as the API testing program SoapUI are both useful tools to quickly check our C# WebService functions. With their assistance, it becomes effortless to identify available C# classes and their respective parameters. This article aims to serve as a comprehensive guide on effectively utilizing Boomerang and SoapUI in conjunction with the Dlubal WebService. It can also be useful as a guide for our Python Webservice.
 
 * [Server Ports](#server-ports)
 * [Boomerang Guide](#boomerang-guide)

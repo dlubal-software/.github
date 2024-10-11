@@ -494,7 +494,7 @@ By default, the server port range is set from 8081 to 8089. The lowest port valu
 
 ### Boomerang Guide
 
-Boomerang is a user-friendly API testing tool designed for API debugging. In order to access it you first need to install the Boomerang browser plugin [browser plugin]([https://app.boomerangapi.com/workspace](https://chromewebstore.google.com/detail/boomerang-soap-rest-clien/eipdnjedkpcnlmmdfdkgfpljanehloah?hl=de)).
+Boomerang is a user-friendly API testing tool designed for API debugging. In order to access it you first need to install the Boomerang browser plugin [browser plugin](https://chromewebstore.google.com/detail/boomerang-soap-rest-clien/eipdnjedkpcnlmmdfdkgfpljanehloah?hl=de)).
 
 #### 1.  Accessing RfemApplication classes
 

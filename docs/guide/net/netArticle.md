@@ -477,7 +477,7 @@ Due to this variety, the program is also intended to serve as a template for oth
 
 ## Verification of WebService operations with Boomerang and SoapUI
 
-The browser plugin Boomerang as well as the API testing program SoapUI are both useful tools to quickly check our C# WebService functions. With their assistance, it becomes effortless to identify available C# classes and their respective parameters. This article aims to serve as a comprehensive guide on effectively utilizing Boomerang and SoapUI in conjunction with the Dlubal C# WebService.
+The browser plugin Boomerang as well as the API testing program SoapUI are both useful tools to quickly check our C# WebService functions. With their assistance, it becomes effortless to identify available C# classes and their respective parameters. This article aims to serve as a comprehensive guide on effectively utilizing Boomerang and SoapUI in conjunction with the Dlubal WebService. It can also be useful as a guide for our Python Webservice
 
 * [Server Ports](#server-ports)
 * [Boomerang Guide](#boomerang-guide)
@@ -494,7 +494,7 @@ By default, the server port range is set from 8081 to 8089. The lowest port valu
 
 ### Boomerang Guide
 
-Boomerang is a user-friendly API testing tool designed for API debugging. It can be accessed either as a browser plugin or through the following link: [Boomerang Page](https://app.boomerangapi.com/workspace).
+Boomerang is a user-friendly API testing tool designed for API debugging. In order to access it you first need to install the Boomerang browser plugin [browser plugin]([https://app.boomerangapi.com/workspace](https://chromewebstore.google.com/detail/boomerang-soap-rest-clien/eipdnjedkpcnlmmdfdkgfpljanehloah?hl=de)).
 
 #### 1.  Accessing RfemApplication classes
 

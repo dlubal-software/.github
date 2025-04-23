@@ -8,7 +8,7 @@ For more details click [here](https://github.com/orgs/Dlubal-Software/discussion
 
 Hello ✋ ,
 
-we have created this discussion to make a space where we can mutually communicate about our open source projects and development of our APIs - WebService and In-App Scripting. 
+we have created this discussion to make a space where we can mutually communicate about our open source projects and development of our WebService and In-App Scripting. 
 
 
 Please read our [code of conduct](/guide/CODE_OF_CONDUCT.md)

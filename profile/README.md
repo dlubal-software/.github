@@ -20,12 +20,29 @@ Dlubal Software
 # Welcome
 Welcome to the GitHub account of Dlubal Software! Here, we share our open-source libraries developed in Python and C# for our WebService. Additionally, we provide enhanced versions of open-source libraries that we use in our commercial applications.
 
-# Eyes on Upcoming Developments!
-Stay tuned for exciting updates! We are continuously working on new features and improvements for our libraries and applications. Follow us to stay up-to-date with the latest developments.
+# Dlubal.API
+The dlubal.api library represents the next generation of interaction for engineers and developers to deliver a faster, simpler, and more efficient way to work with Dlubal programs like RFEM 6, with upcoming support for RSTAB 9 and RSECTION 1. Powered by modern gRPC technology, it accelerates local or remote client-server communication, enabling rapid task automation and seamless integration into your workflows.
+
+You can learn more about this new product [here](https://www.dlubal.com/en/solutions/dlubal-api/dlubal-api-ii) 
+
+Full documentation of our Dlubal API can be found [here - Dlubal API Docs](https://www.dlubal.com/en/solutions/dlubal-api/api-documentation/index)
 
 
-# Documentation 📚
-For complete description of classes and functions visit our [![image](https://img.shields.io/badge/docs-API-darkblue?logo=read-the-docs&amp;logoColor=white)](https://dlubal-software.github.io/.github/)
+# Important Notice: Webservice Maintenance and Dlubal API Transition
+
+**Dear Users,**
+
+We would like to inform you that, effective **23.04.2025**, we are transitioning our existing Webservice into **maintenance mode**. This means that while the Webservice will continue to be available for existing use, **no new enhancements or functionality** will be added to it going forward.
+
+For **new projects**, we highly recommend using the **[Dlubal API](https://www.dlubal.com/en/solutions/dlubal-api/dlubal-api-ii)**, now based on **gRPC**. The new Dlubal API offers improved performance, scalability, and modern capabilities designed to better support your applications.
+
+### Key Points:
+- **Webservice**: Still available for use, but will **not be enhanced** with new functionality.
+- **[Dlubal API (gRPC)](https://www.dlubal.com/en/solutions/dlubal-api/dlubal-api-ii)**: Recommended for **new projects** as it provides better performance and modern features.
+
+If you have any questions or need assistance with transitioning to the Dlubal API, please feel free to reach out to our support team.
+
+
 
 <!--
 
